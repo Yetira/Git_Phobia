@@ -1,0 +1,7 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2553766127	Play_RED			\Default Work Unit\Play_RED	
+	3434539291	Play_GREEN			\Default Work Unit\Play_GREEN	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	152708951	beep_sample1	C:\Users\metaw\BA_Phobia\BA_Phobia_WwiseProject\.cache\Mac\SFX\beep_sample1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SeqCon_test_RED\beep_sample1		42916
+
