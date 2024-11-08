@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{3B5B9A38-771D-FDC2-2A07-5D1599638482}">
+		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{3D9214CC-9F66-937A-1653-544E3DC461B9}">
 			<ShortName>Main_test</ShortName>
 			<Path>Main_test.bnk</Path>
 			<Media>
@@ -56,10 +56,13 @@
 					<MediaRefs>
 						<MediaRef Id="152708951"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="373392551" Name="New_Auxiliary_Bus"/>
+					</AuxBusRefs>
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{167DB4FB-2296-1099-6204-C6112ABBB9F1}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{CAAC1568-A31E-6A79-8C4D-8235B97CAAA9}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -71,6 +74,9 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<AuxBusses>
+				<AuxBus Id="373392551" Name="New_Auxiliary_Bus"/>
+			</AuxBusses>
 			<AcousticTextures>
 				<AcousticTexture Id="504532776" Name="Brick">
 					<Properties>
@@ -201,5 +207,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{667FE64C-FA44-8DCF-5D6D-A28BC66CA733}</FileHash>
+	<FileHash>{22CBCD37-4093-F5BF-0DAB-35CD7A6DCB54}</FileHash>
 </SoundBanksInfo>

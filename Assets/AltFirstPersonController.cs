@@ -7,6 +7,7 @@ public class AltFirstPersonController : MonoBehaviour
 {
     [Header("Movement Settings")]
     public float movementSpeed = 2.0f; // Control the movement speed of the player
+    public float rotationSpeed = 100.0f; // Control the rotation speed of the player
 
     [Header("References")]
     public Transform vrCamera; // Reference to the VR Camera (usually the player's head)
@@ -14,13 +15,18 @@ public class AltFirstPersonController : MonoBehaviour
     private CharacterController characterController;
     private PlayerInputActions playerInputActions;
     private bool isMovingForward = false;
+    private Vector2 lookInput;
 
     void Awake()
     {
-        // Initialize the input actions and register the MoveForward action
+        // Initialize the input actions and register the MoveForward and Look actions
         playerInputActions = new PlayerInputActions();
         playerInputActions.Player.MoveForward.performed += OnMoveForwardPerformed;
         playerInputActions.Player.MoveForward.canceled += OnMoveForwardCanceled;
+
+        // Register the Look action for the left stick
+        playerInputActions.Player.Look.performed += OnLookPerformed;
+        playerInputActions.Player.Look.canceled += OnLookCanceled;
     }
 
     void OnEnable()
@@ -48,10 +54,14 @@ public class AltFirstPersonController : MonoBehaviour
 
     void Update()
     {
+        // Handle movement
         if (isMovingForward)
         {
             MoveForward();
         }
+
+        // Handle rotation based on left stick input
+        RotatePlayer();
     }
 
     private void MoveForward()
@@ -65,6 +75,17 @@ public class AltFirstPersonController : MonoBehaviour
         characterController.Move(movement);
     }
 
+    private void RotatePlayer()
+    {
+        // Only rotate if there is look input (from the left stick)
+        if (lookInput.sqrMagnitude > 0.01f)
+        {
+            // Rotate the player based on the horizontal input
+            float horizontalRotation = lookInput.x * rotationSpeed * Time.deltaTime;
+            transform.Rotate(0, horizontalRotation, 0);
+        }
+    }
+
     private void OnMoveForwardPerformed(InputAction.CallbackContext context)
     {
         // Called when the "A" button is pressed
@@ -75,5 +96,17 @@ public class AltFirstPersonController : MonoBehaviour
     {
         // Called when the "A" button is released
         isMovingForward = false;
+    }
+
+    private void OnLookPerformed(InputAction.CallbackContext context)
+    {
+        // Called when the left stick is moved
+        lookInput = context.ReadValue<Vector2>();
+    }
+
+    private void OnLookCanceled(InputAction.CallbackContext context)
+    {
+        // Called when the left stick is released
+        lookInput = Vector2.zero;
     }
 }
