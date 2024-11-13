@@ -7,8 +7,8 @@ Effect plug-ins	ID	Name	Type				Notes
 	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	152708951	beep_sample1	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\beep_sample1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SeqCon_test_RED\beep_sample1		42916
-	459741117	honk2	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\honk2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\New Random Container\honk2		88252
-	783802535	fridge_hum	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\fridge_hum_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SeqCon_test_GREEN\fridge_hum		7254008
-	864006760	honk1	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\honk1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\New Random Container\honk1		125352
+	152708951	beep_sample1	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\beep_sample1_818F3B66.wem		\Actor-Mixer Hierarchy\Apartment_Ambience\SeqCon_test_RED\beep_sample1		42916
+	459741117	honk2	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\honk2_818F3B66.wem		\Actor-Mixer Hierarchy\Apartment_Ambience\New Random Container\honk2		88252
+	783802535	fridge_hum	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\fridge_hum_818F3B66.wem		\Actor-Mixer Hierarchy\Apartment_Ambience\SeqCon_test_GREEN\fridge_hum		7254008
+	864006760	honk1	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\honk1_818F3B66.wem		\Actor-Mixer Hierarchy\Apartment_Ambience\New Random Container\honk1		125352
 

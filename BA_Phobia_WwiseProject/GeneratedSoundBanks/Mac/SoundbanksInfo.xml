@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{3D9214CC-9F66-937A-1653-544E3DC461B9}">
+		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{C48C7AD7-1D9E-B8A3-49CF-AD18B9345D02}">
 			<ShortName>Main_test</ShortName>
 			<Path>Main_test.bnk</Path>
 			<Media>
@@ -51,21 +51,28 @@
 							<PluginRef Id="3604890626"/>
 						</ShareSets>
 					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="1359360138" Name="Room2"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="2553766127" Name="Play_RED" MaxAttenuation="100" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="152708951"/>
 					</MediaRefs>
 					<AuxBusRefs>
-						<AuxBusRef Id="373392551" Name="New_Auxiliary_Bus"/>
+						<AuxBusRef Id="1359360137" Name="Room1"/>
 					</AuxBusRefs>
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{EF1B047A-755A-D626-93EC-AF831F555CD8}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{439C63FF-CA20-AFAB-5815-B4A7A98347DF}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<Custom>
+					<Plugin Id="268543624" Name="Room_Large (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="766306992" Name="Room_Medium (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</Custom>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
@@ -75,7 +82,20 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 			<AuxBusses>
-				<AuxBus Id="373392551" Name="New_Auxiliary_Bus"/>
+				<AuxBus Id="1359360137" Name="Room1">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="766306992"/>
+						</Custom>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="1359360138" Name="Room2">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="268543624"/>
+						</Custom>
+					</PluginRefs>
+				</AuxBus>
 			</AuxBusses>
 			<AcousticTextures>
 				<AcousticTexture Id="504532776" Name="Brick">
@@ -207,5 +227,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6EA5A65F-3993-CF81-ACEE-4303D45D8925}</FileHash>
+	<FileHash>{2974561C-4E26-55AB-B343-59B3AD5B20C9}</FileHash>
 </SoundBanksInfo>

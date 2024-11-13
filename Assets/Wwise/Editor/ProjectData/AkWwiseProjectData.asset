@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 3e860730979601429f3a22904a750a2e
     GuidInternal: 
-    m_lastTime: -8584705427110673071
+    m_lastTime: -8584700818729528698
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -319,9 +319,9 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
-    - name: New_Auxiliary_Bus
-      guid: 4f7af5cce05ecf4b89b9a32cf9f5394f
-      id: 373392551
+    - name: Room1
+      guid: 3b726cdcac12684e9866a0ccb1f0e65f
+      id: 1359360137
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -332,10 +332,27 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: New_Auxiliary_Bus
+      - ElementName: Room1
         ObjectType: 1
-        guid: 4f7af5cce05ecf4b89b9a32cf9f5394f
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\New_Auxiliary_Bus
+        guid: 3b726cdcac12684e9866a0ccb1f0e65f
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Room1
+    - name: Room2
+      guid: 5303bcca0afb1342a2ccb0b9f9b540f9
+      id: 1359360138
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3e860730979601429f3a22904a750a2e
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Room2
+        ObjectType: 1
+        guid: 5303bcca0afb1342a2ccb0b9f9b540f9
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Room2
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -348,7 +365,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5b7d3d6d0746124ab1d6166bb3175237
     GuidInternal: 
-    m_lastTime: -8584705427110052861
+    m_lastTime: -8584700837742856319
     List:
     - name: Main_test
       guid: f4bfb48e9ef48e4883081f357e8cb44a
@@ -376,7 +393,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 199508fe3d34424d9564a328ccca3022
     GuidInternal: 
-    m_lastTime: -8584705427111503352
+    m_lastTime: -8584700837742656013
     List:
     - name: Play_BLUE
       guid: 209e2139fbde4e498fab7cd338684377
@@ -486,7 +503,7 @@ MonoBehaviour:
     m_lastTime: -8584705427110042857
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000500000006000000070000000b0000000c0000000d000000120000001400000015000000ac000000ad0000004801000049010000
+  ExpandedWaapiItemIds: 01000000030000000400000005000000060000000700000008000000090000000b0000000c0000000d000000120000001400000015000000ac000000ad0000004801000049010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

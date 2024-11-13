@@ -8,7 +8,7 @@
 						<Action Name="" ID="{12960AE8-6D3B-4769-9DB4-ACCA29842FC2}" ShortID="284028231">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="SeqCon_test_RED" ID="{AEF7F100-9A13-46CF-ADE6-0904F3F835B2}" WorkUnitID="{FAD97F9B-AFBF-4D04-83D1-6C87A63C4AD8}"/>
+									<ObjectRef Name="SeqCon_test_RED" ID="{AEF7F100-9A13-46CF-ADE6-0904F3F835B2}" WorkUnitID="{4B4EA75E-6C61-45EC-8E3F-1A8F58D1564D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -19,7 +19,7 @@
 						<Action Name="" ID="{694B3208-4A8A-45FC-97B7-E5E0AF98FF62}" ShortID="204954834">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="SeqCon_test_GREEN" ID="{5CF8A264-14D8-4060-99C0-84AD965F583A}" WorkUnitID="{FAD97F9B-AFBF-4D04-83D1-6C87A63C4AD8}"/>
+									<ObjectRef Name="SeqCon_test_GREEN" ID="{5CF8A264-14D8-4060-99C0-84AD965F583A}" WorkUnitID="{4B4EA75E-6C61-45EC-8E3F-1A8F58D1564D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -30,7 +30,7 @@
 						<Action Name="" ID="{1CC98A37-DC47-479B-A013-3D01FF73316C}" ShortID="833971935">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="New Random Container" ID="{332618D1-6307-4EB7-9245-2CF6E4374A17}" WorkUnitID="{FAD97F9B-AFBF-4D04-83D1-6C87A63C4AD8}"/>
+									<ObjectRef Name="New Random Container" ID="{332618D1-6307-4EB7-9245-2CF6E4374A17}" WorkUnitID="{4B4EA75E-6C61-45EC-8E3F-1A8F58D1564D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
