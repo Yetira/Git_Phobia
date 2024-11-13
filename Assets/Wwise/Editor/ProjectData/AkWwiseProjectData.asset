@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 3e860730979601429f3a22904a750a2e
     GuidInternal: 
-    m_lastTime: -8584700818729528698
+    m_lastTime: -8584700805665183475
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -365,7 +365,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5b7d3d6d0746124ab1d6166bb3175237
     GuidInternal: 
-    m_lastTime: -8584700837742856319
+    m_lastTime: -8584700808584722976
     List:
     - name: Main_test
       guid: f4bfb48e9ef48e4883081f357e8cb44a
@@ -393,7 +393,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 199508fe3d34424d9564a328ccca3022
     GuidInternal: 
-    m_lastTime: -8584700837742656013
+    m_lastTime: -8584700805666383884
     List:
     - name: Play_BLUE
       guid: 209e2139fbde4e498fab7cd338684377
@@ -409,7 +409,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 209e2139fbde4e498fab7cd338684377
       Path: Events\Default Work Unit\Play_BLUE
-      maxAttenuation: 100
+      maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
     - name: Play_GREEN
@@ -426,7 +426,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: d737a0a57f55ee46af2c8d1d8415a92b
       Path: Events\Default Work Unit\Play_GREEN
-      maxAttenuation: 100
+      maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
     - name: Play_RED
@@ -443,7 +443,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 70f9e4bfb5a77140ae666938cba1cba0
       Path: Events\Default Work Unit\Play_RED
-      maxAttenuation: 100
+      maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
   RtpcWwu:

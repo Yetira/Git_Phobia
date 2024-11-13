@@ -23,7 +23,7 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 
 Effect plug-ins	ID	Name	Type				Notes
 	268543624	Room_Large (Custom)	Wwise RoomVerb			
-	766306992	Room_Medium (Custom)	Wwise RoomVerb			
+	673357396	Room_Small (Custom)	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

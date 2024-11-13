@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{C48C7AD7-1D9E-B8A3-49CF-AD18B9345D02}">
+		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{358054DC-8685-F13A-4164-8DF0D539212B}">
 			<ShortName>Main_test</ShortName>
 			<Path>Main_test.bnk</Path>
 			<Media>
@@ -65,13 +65,13 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{3C9AB0BD-301F-07F0-096A-DE0A34FAF335}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{5BF38603-EAA7-1948-91FA-289D02AA957B}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
 				<Custom>
 					<Plugin Id="268543624" Name="Room_Large (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
-					<Plugin Id="766306992" Name="Room_Medium (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="673357396" Name="Room_Small (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</Custom>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
@@ -82,10 +82,10 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 			<AuxBusses>
-				<AuxBus Id="1359360137" Name="Room1">
+				<AuxBus Id="1359360137" Name="Room1" MaxAttenuation="100">
 					<PluginRefs>
 						<Custom>
-							<PluginRef Id="766306992"/>
+							<PluginRef Id="673357396"/>
 						</Custom>
 					</PluginRefs>
 				</AuxBus>
@@ -227,5 +227,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{09A68819-4FE2-C38F-0EFD-1862BB321246}</FileHash>
+	<FileHash>{19DA7EE9-AB04-7ACA-3BEB-09E31B19425A}</FileHash>
 </SoundBanksInfo>
