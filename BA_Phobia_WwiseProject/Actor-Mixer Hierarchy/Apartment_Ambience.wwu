@@ -182,7 +182,7 @@
 						<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
 						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 						<Property Name="SpeakerPanning" Type="int16" Value="2"/>
-						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
