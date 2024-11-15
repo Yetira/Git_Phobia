@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 3e860730979601429f3a22904a750a2e
     GuidInternal: 
-    m_lastTime: -8584699380683148520
+    m_lastTime: -8584699158614748815
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -382,7 +382,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5b7d3d6d0746124ab1d6166bb3175237
     GuidInternal: 
-    m_lastTime: -8584699386599350370
+    m_lastTime: -8584699147831180725
     List:
     - name: Main_test
       guid: f4bfb48e9ef48e4883081f357e8cb44a
@@ -410,11 +410,11 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 199508fe3d34424d9564a328ccca3022
     GuidInternal: 
-    m_lastTime: -8584699386599460538
+    m_lastTime: -8584699156211229373
     List:
-    - name: Ambient_Cathedral
-      guid: b6aea9395ac9ef4bb2520acd6938b07c
-      id: 1821254018
+    - name: footstep_event
+      guid: 0acf0ada71aeba449d708bd59292face
+      id: 116178158
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -422,64 +422,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 199508fe3d34424d9564a328ccca3022
-      - ElementName: Ambient_Cathedral
+      - ElementName: footstep_event
         ObjectType: 3
-        guid: b6aea9395ac9ef4bb2520acd6938b07c
-      Path: Events\Default Work Unit\Ambient_Cathedral
-      maxAttenuation: 100
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_BLUE
-      guid: 209e2139fbde4e498fab7cd338684377
-      id: 1457744122
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 199508fe3d34424d9564a328ccca3022
-      - ElementName: Play_BLUE
-        ObjectType: 3
-        guid: 209e2139fbde4e498fab7cd338684377
-      Path: Events\Default Work Unit\Play_BLUE
-      maxAttenuation: 100
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_GREEN
-      guid: d737a0a57f55ee46af2c8d1d8415a92b
-      id: 3434539291
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 199508fe3d34424d9564a328ccca3022
-      - ElementName: Play_GREEN
-        ObjectType: 3
-        guid: d737a0a57f55ee46af2c8d1d8415a92b
-      Path: Events\Default Work Unit\Play_GREEN
-      maxAttenuation: 100
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_RED
-      guid: 70f9e4bfb5a77140ae666938cba1cba0
-      id: 2553766127
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 199508fe3d34424d9564a328ccca3022
-      - ElementName: Play_RED
-        ObjectType: 3
-        guid: 70f9e4bfb5a77140ae666938cba1cba0
-      Path: Events\Default Work Unit\Play_RED
-      maxAttenuation: 100
-      maxDuration: -1
-      minDuration: -1
+        guid: 0acf0ada71aeba449d708bd59292face
+      Path: Events\Default Work Unit\footstep_event
+      maxAttenuation: 0
+      maxDuration: 0.7190703
+      minDuration: 0.42451248
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -520,8 +469,58 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: e5d7232acd96ac48b5e661cd6c28eb44
     GuidInternal: 
-    m_lastTime: -8584705427110042857
-    List: []
+    m_lastTime: -8584699158614132876
+    List:
+    - name: Footsteps
+      guid: efc889578262544a9c178fac347e9d89
+      id: 2385628198
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e5d7232acd96ac48b5e661cd6c28eb44
+      - ElementName: Footsteps
+        ObjectType: 11
+        guid: efc889578262544a9c178fac347e9d89
+      Path: Switches\Default Work Unit\Footsteps
+      values:
+      - name: Concrete
+        guid: 49b0824ffccaa84f84050998cb93ca0c
+        id: 841620460
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: e5d7232acd96ac48b5e661cd6c28eb44
+        - ElementName: Footsteps
+          ObjectType: 11
+          guid: efc889578262544a9c178fac347e9d89
+        - ElementName: Concrete
+          ObjectType: 10
+          guid: 49b0824ffccaa84f84050998cb93ca0c
+      - name: Tile
+        guid: 0f2f76fb8a3c9345a172632698d9619b
+        id: 2637588553
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: e5d7232acd96ac48b5e661cd6c28eb44
+        - ElementName: Footsteps
+          ObjectType: 11
+          guid: efc889578262544a9c178fac347e9d89
+        - ElementName: Tile
+          ObjectType: 10
+          guid: 0f2f76fb8a3c9345a172632698d9619b
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -537,7 +536,7 @@ MonoBehaviour:
     m_lastTime: -8584705427110042857
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000030000000400000005000000060000000700000008000000090000000b0000000c0000000d000000120000001400000015000000ac000000ad0000004801000049010000
+  ExpandedWaapiItemIds: 0100000002000000030000000400000005000000060000000700000008000000090000000b0000000c0000000d000000120000001400000015000000ac000000ad0000004801000049010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

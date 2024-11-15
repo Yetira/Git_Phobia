@@ -9,82 +9,74 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{3DFA6B1D-DFD5-A7BB-E916-BA6A84DBCB4F}">
+		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{1B5B7796-A404-722B-7923-C4C295FAEA0E}">
 			<ShortName>Main_test</ShortName>
 			<Path>Main_test.bnk</Path>
 			<Media>
-				<File Id="81991997" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>water_drips.wav</ShortName>
-					<CachePath>SFX/water_drips_818F3B66.wem</CachePath>
+				<File Id="78759439" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FS_Tile_03.wav</ShortName>
+					<CachePath>SFX/FS_Tile_03_818F3B66.wem</CachePath>
 				</File>
-				<File Id="152708951" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>beep_sample1.wav</ShortName>
-					<CachePath>SFX/beep_sample1_818F3B66.wem</CachePath>
+				<File Id="307152786" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FS_Concrete_03.wav</ShortName>
+					<CachePath>SFX/FS_Concrete_03_818F3B66.wem</CachePath>
 				</File>
-				<File Id="459741117" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>honk2.wav</ShortName>
-					<CachePath>SFX/honk2_818F3B66.wem</CachePath>
+				<File Id="613318558" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FS_Tile_02.wav</ShortName>
+					<CachePath>SFX/FS_Tile_02_818F3B66.wem</CachePath>
 				</File>
-				<File Id="783802535" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>fridge_hum.wav</ShortName>
-					<CachePath>SFX/fridge_hum_818F3B66.wem</CachePath>
+				<File Id="802854533" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FS_Concrete_01.wav</ShortName>
+					<CachePath>SFX/FS_Concrete_01_818F3B66.wem</CachePath>
 				</File>
-				<File Id="864006760" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>honk1.wav</ShortName>
-					<CachePath>SFX/honk1_818F3B66.wem</CachePath>
+				<File Id="826582764" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FS_Concrete_02.wav</ShortName>
+					<CachePath>SFX/FS_Concrete_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="956928053" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FS_Tile_01.wav</ShortName>
+					<CachePath>SFX/FS_Tile_01_818F3B66.wem</CachePath>
 				</File>
 			</Media>
-			<Plugins>
-				<ShareSets>
-					<Plugin Id="3604890626" Name="High_Pass_60Hz" LibName="Wwise Parametric EQ" LibId="6881283"/>
-				</ShareSets>
-			</Plugins>
 			<Events>
-				<Event Id="1821254018" Name="Ambient_Cathedral" MaxAttenuation="100" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="81991997"/>
-					</MediaRefs>
-					<AuxBusRefs>
-						<AuxBusRef Id="1359360139" Name="Room3"/>
-					</AuxBusRefs>
-				</Event>
-				<Event Id="1457744122" Name="Play_BLUE" MaxAttenuation="100" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="459741117"/>
-						<MediaRef Id="864006760"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="3434539291" Name="Play_GREEN" MaxAttenuation="100" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="783802535"/>
-					</MediaRefs>
-					<PluginRefs>
-						<ShareSets>
-							<PluginRef Id="3604890626"/>
-						</ShareSets>
-					</PluginRefs>
-					<AuxBusRefs>
-						<AuxBusRef Id="1359360138" Name="Room2"/>
-					</AuxBusRefs>
-				</Event>
-				<Event Id="2553766127" Name="Play_RED" MaxAttenuation="100" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="152708951"/>
-					</MediaRefs>
-					<AuxBusRefs>
-						<AuxBusRef Id="1359360137" Name="Room1"/>
-					</AuxBusRefs>
+				<Event Id="116178158" Name="footstep_event" DurationType="OneShot" DurationMin="0.42451248" DurationMax="0.7190703">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="2637588553"/>
+							<MediaRefs>
+								<MediaRef Id="78759439"/>
+								<MediaRef Id="613318558"/>
+								<MediaRef Id="956928053"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="841620460" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="307152786"/>
+								<MediaRef Id="802854533"/>
+								<MediaRef Id="826582764"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 			</Events>
+			<SwitchGroups>
+				<SwitchGroup Id="2385628198" Name="Footsteps">
+					<Switches>
+						<Switch Id="841620460" Name="Concrete"/>
+						<Switch Id="2637588553" Name="Tile"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{760756A0-1B3B-30AC-3298-DF522016243D}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{125976EC-108F-E77B-7782-215E8930F5EF}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
 				<Custom>
 					<Plugin Id="268543624" Name="Room_Large (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="312555977" Name="Hall_Medium (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="430185970" Name="Room_Large (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
-					<Plugin Id="673357396" Name="Room_Small (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</Custom>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
@@ -98,7 +90,7 @@
 				<AuxBus Id="1359360137" Name="Room1" MaxAttenuation="100">
 					<PluginRefs>
 						<Custom>
-							<PluginRef Id="673357396"/>
+							<PluginRef Id="312555977"/>
 						</Custom>
 					</PluginRefs>
 				</AuxBus>
@@ -117,6 +109,14 @@
 					</PluginRefs>
 				</AuxBus>
 			</AuxBusses>
+			<SwitchGroups>
+				<SwitchGroup Id="2385628198" Name="Footsteps">
+					<Switches>
+						<Switch Id="841620460" Name="Concrete"/>
+						<Switch Id="2637588553" Name="Tile"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 			<AcousticTextures>
 				<AcousticTexture Id="504532776" Name="Brick">
 					<Properties>
@@ -247,5 +247,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A70AFB30-669A-0452-52A9-2FF2E224452E}</FileHash>
+	<FileHash>{9049E5D2-D3E7-5E2B-9DB9-3453838AA161}</FileHash>
 </SoundBanksInfo>

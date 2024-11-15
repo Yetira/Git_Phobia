@@ -17,6 +17,11 @@ public class AltFirstPersonController : MonoBehaviour
     private bool isMovingForward = false;
     private Vector2 lookInput;
 
+    private float m_StepCycle = 0f;         // Tracks the current step cycle progress
+    private float m_NextStep = 0f;          // Threshold for the next footstep sound
+    public float m_StepInterval = 0.5f;     // Time interval between footsteps
+    public float m_FixedSpeedFactor = 1.0f; // Factor to control footstep timing rate
+
     void Awake()
     {
         // Initialize the input actions and register the MoveForward and Look actions
@@ -58,12 +63,45 @@ public class AltFirstPersonController : MonoBehaviour
         if (isMovingForward)
         {
             MoveForward();
+   
         }
 
         // Handle rotation based on left stick input
         RotatePlayer();
+
+        ProgressStepCycle();
     }
 
+    private void ProgressStepCycle()
+    {
+        // Check if character is moving
+        if (isMovingForward && characterController.velocity.sqrMagnitude > 0)
+        {
+            // Increment step cycle by a fixed value (e.g., based on desired steps per second)
+            m_StepCycle += Time.fixedDeltaTime * m_FixedSpeedFactor; // Set m_FixedSpeedFactor based on desired timing
+
+            // Check if it's time to play a footstep
+            if (m_StepCycle > m_NextStep)
+            {
+                m_NextStep = m_StepCycle + m_StepInterval;
+                
+                PlayFootStepAudio();
+            }
+        }
+        else
+        {
+            //reset cycle when stop moving
+            m_StepCycle = 0f;
+            m_NextStep = m_StepInterval;
+        }
+    }
+
+    private void PlayFootStepAudio()
+    {
+      
+        AkSoundEngine.PostEvent("footstep_event", gameObject);
+
+    }
     private void MoveForward()
     {
         // Calculate the forward movement vector based on the VR Camera's forward direction
