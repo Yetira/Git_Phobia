@@ -20,9 +20,11 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	1359360137	Room1			\Default Work Unit\Master Audio Bus\Room1	
 	1359360138	Room2			\Default Work Unit\Master Audio Bus\Room2	
+	1359360139	Room3			\Default Work Unit\Master Audio Bus\Room3	
 
 Effect plug-ins	ID	Name	Type				Notes
 	268543624	Room_Large (Custom)	Wwise RoomVerb			
+	430185970	Room_Large (Custom)	Wwise RoomVerb			
 	673357396	Room_Small (Custom)	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes

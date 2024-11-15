@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1457744122	Play_BLUE			\Default Work Unit\Play_BLUE	
+	1821254018	Ambient_Cathedral			\Default Work Unit\Ambient_Cathedral	
 	2553766127	Play_RED			\Default Work Unit\Play_RED	
 	3434539291	Play_GREEN			\Default Work Unit\Play_GREEN	
 
@@ -7,6 +8,7 @@ Effect plug-ins	ID	Name	Type				Notes
 	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	81991997	water_drips	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\water_drips_818F3B66.wem		\Actor-Mixer Hierarchy\Room_Tones\Cathedral\water_drips		10539708
 	152708951	beep_sample1	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\beep_sample1_818F3B66.wem		\Actor-Mixer Hierarchy\Apartment_Ambience\SeqCon_test_RED\beep_sample1		42916
 	459741117	honk2	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\honk2_818F3B66.wem		\Actor-Mixer Hierarchy\Apartment_Ambience\New Random Container\honk2		88252
 	783802535	fridge_hum	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\fridge_hum_818F3B66.wem		\Actor-Mixer Hierarchy\Apartment_Ambience\SeqCon_test_GREEN\fridge_hum		7254008

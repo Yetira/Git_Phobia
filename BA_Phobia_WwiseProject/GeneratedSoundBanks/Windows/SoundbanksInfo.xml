@@ -9,10 +9,14 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{358054DC-8685-F13A-4164-8DF0D539212B}">
+		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{3DFA6B1D-DFD5-A7BB-E916-BA6A84DBCB4F}">
 			<ShortName>Main_test</ShortName>
 			<Path>Main_test.bnk</Path>
 			<Media>
+				<File Id="81991997" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>water_drips.wav</ShortName>
+					<CachePath>SFX/water_drips_818F3B66.wem</CachePath>
+				</File>
 				<File Id="152708951" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>beep_sample1.wav</ShortName>
 					<CachePath>SFX/beep_sample1_818F3B66.wem</CachePath>
@@ -36,6 +40,14 @@
 				</ShareSets>
 			</Plugins>
 			<Events>
+				<Event Id="1821254018" Name="Ambient_Cathedral" MaxAttenuation="100" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="81991997"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="1359360139" Name="Room3"/>
+					</AuxBusRefs>
+				</Event>
 				<Event Id="1457744122" Name="Play_BLUE" MaxAttenuation="100" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="459741117"/>
@@ -65,12 +77,13 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{5BF38603-EAA7-1948-91FA-289D02AA957B}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{760756A0-1B3B-30AC-3298-DF522016243D}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
 				<Custom>
 					<Plugin Id="268543624" Name="Room_Large (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="430185970" Name="Room_Large (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="673357396" Name="Room_Small (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</Custom>
 				<AudioDevices>
@@ -93,6 +106,13 @@
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="268543624"/>
+						</Custom>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="1359360139" Name="Room3" MaxAttenuation="100">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="430185970"/>
 						</Custom>
 					</PluginRefs>
 				</AuxBus>
@@ -227,5 +247,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{19DA7EE9-AB04-7ACA-3BEB-09E31B19425A}</FileHash>
+	<FileHash>{A70AFB30-669A-0452-52A9-2FF2E224452E}</FileHash>
 </SoundBanksInfo>

@@ -8,6 +8,7 @@
 						<ObjectRef Name="Play_RED" ID="{BFE4F970-A7B5-4071-AE66-6938CBA1CBA0}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_GREEN" ID="{A5A037D7-557F-46EE-AF2C-8D1D8415A92B}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BLUE" ID="{39219E20-DEFB-494E-8FAB-7CD338684377}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Ambient_Cathedral" ID="{39A9AEB6-C95A-4BEF-B252-0ACD6938B07C}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

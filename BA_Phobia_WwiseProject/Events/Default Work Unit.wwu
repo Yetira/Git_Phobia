@@ -36,6 +36,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Ambient_Cathedral" ID="{39A9AEB6-C95A-4BEF-B252-0ACD6938B07C}">
+					<ChildrenList>
+						<Action Name="" ID="{0679E504-B0EB-4974-A65E-7AC46477EEA4}" ShortID="1015008645">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cathedral" ID="{77282D07-024C-4321-8C04-B4BC4FA9BC83}" WorkUnitID="{88E26C86-0A4C-47B2-99CA-45BC07B014FE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
