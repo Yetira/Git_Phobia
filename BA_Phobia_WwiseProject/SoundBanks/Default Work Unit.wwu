@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Main_test" ID="{8EB4BFF4-F49E-488E-8308-1F357E8CB44A}">
 					<ObjectInclusionList>
+						<ObjectRef Name="play_testmelody" ID="{DBC05B64-CF7E-4252-AEAC-8F37D62BF77B}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="footstep_event" ID="{DA0ACF0A-AE71-44BA-9D70-8BD59292FACE}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

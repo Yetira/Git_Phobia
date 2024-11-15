@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{88E26C86-0A4C-47B2-99CA-45BC07B014FE}" SchemaVersion="119">
 	<AudioObjects>
-		<WorkUnit Name="Room_Tones" ID="{88E26C86-0A4C-47B2-99CA-45BC07B014FE}" PersistMode="Standalone"/>
+		<WorkUnit Name="Room_Tones" ID="{88E26C86-0A4C-47B2-99CA-45BC07B014FE}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="water_drips" ID="{2B9D7BA7-9B18-4EC4-A422-A53785EB1FAE}" ShortID="250397734">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+						</Reference>
+						<Reference Name="ReflectionsAuxSend">
+							<ObjectRef Name="Cathedral" ID="{CABC0353-FB0A-4213-A2CC-B0B9F9B540F9}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="water_drips" ID="{410E6CC1-7EC1-43C7-86EC-8DF05BC216B8}">
+							<Language>SFX</Language>
+							<AudioFile>water_drips.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="358163932"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="water_drips" ID="{410E6CC1-7EC1-43C7-86EC-8DF05BC216B8}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

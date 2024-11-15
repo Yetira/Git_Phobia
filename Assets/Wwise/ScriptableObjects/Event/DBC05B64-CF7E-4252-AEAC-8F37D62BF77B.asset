@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dad54a909eb91c240aa4f6d9e7ac712e, type: 3}
-  m_Name: CABC0353-FB0A-4213-A2CC-B0B9F9B540F9
+  m_Script: {fileID: 11500000, guid: eed664dff49413a4983d2092ac0e03e8, type: 3}
+  m_Name: DBC05B64-CF7E-4252-AEAC-8F37D62BF77B
   m_EditorClassIdentifier: 
-  objectName: Cathedral
-  id: 1024696295
-  guid: CABC0353-FB0A-4213-A2CC-B0B9F9B540F9
+  objectName: play_testmelody
+  id: 1542721370
+  guid: DBC05B64-CF7E-4252-AEAC-8F37D62BF77B

@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{1B5B7796-A404-722B-7923-C4C295FAEA0E}">
+		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{4C45D946-C4E6-7BCE-C612-94B6DBF403BA}">
 			<ShortName>Main_test</ShortName>
 			<Path>Main_test.bnk</Path>
 			<Media>
@@ -20,6 +20,10 @@
 				<File Id="307152786" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FS_Concrete_03.wav</ShortName>
 					<CachePath>SFX/FS_Concrete_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="435254687" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>test_melody.wav</ShortName>
+					<CachePath>SFX/test_melody_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="613318558" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FS_Tile_02.wav</ShortName>
@@ -59,6 +63,11 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="1542721370" Name="play_testmelody" MaxAttenuation="100" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="435254687"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 			<SwitchGroups>
 				<SwitchGroup Id="2385628198" Name="Footsteps">
@@ -69,14 +78,14 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{125976EC-108F-E77B-7782-215E8930F5EF}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{FB380A60-A736-4344-1739-BD0D4785094F}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
 				<Custom>
-					<Plugin Id="268543624" Name="Room_Large (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="312555977" Name="Hall_Medium (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="430185970" Name="Room_Large (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="675253459" Name="Holy (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</Custom>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
@@ -87,17 +96,10 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 			<AuxBusses>
-				<AuxBus Id="1359360137" Name="Room1" MaxAttenuation="100">
+				<AuxBus Id="1024696295" Name="Cathedral">
 					<PluginRefs>
 						<Custom>
-							<PluginRef Id="312555977"/>
-						</Custom>
-					</PluginRefs>
-				</AuxBus>
-				<AuxBus Id="1359360138" Name="Room2">
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="268543624"/>
+							<PluginRef Id="675253459"/>
 						</Custom>
 					</PluginRefs>
 				</AuxBus>
@@ -105,6 +107,13 @@
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="430185970"/>
+						</Custom>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="3059984139" Name="Tunnel" MaxAttenuation="100">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="312555977"/>
 						</Custom>
 					</PluginRefs>
 				</AuxBus>
@@ -247,5 +256,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9049E5D2-D3E7-5E2B-9DB9-3453838AA161}</FileHash>
+	<FileHash>{EC0B9B32-598C-B235-C263-87F2101982A5}</FileHash>
 </SoundBanksInfo>

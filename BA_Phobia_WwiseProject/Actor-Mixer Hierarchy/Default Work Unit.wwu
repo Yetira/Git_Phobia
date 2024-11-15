@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{FAD97F9B-AFBF-4D04-83D1-6C87A63C4AD8}" SchemaVersion="119">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{FAD97F9B-AFBF-4D04-83D1-6C87A63C4AD8}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{FAD97F9B-AFBF-4D04-83D1-6C87A63C4AD8}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="test_melody" ID="{7783EC61-F516-44C8-A282-3F0DC53E0C85}" ShortID="309603705">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Attenuation_test" ID="{A3CFFE80-4E86-49E6-A57E-1EFF5B9035B6}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="test_melody" ID="{CDA48F58-D745-4FCC-B472-152E50E7BC94}">
+							<Language>SFX</Language>
+							<AudioFile>test_melody.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="435254687"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="test_melody" ID="{CDA48F58-D745-4FCC-B472-152E50E7BC94}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
