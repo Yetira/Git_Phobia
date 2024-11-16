@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 3e860730979601429f3a22904a750a2e
     GuidInternal: 
-    m_lastTime: -8584698582189571064
+    m_lastTime: -8584698389039184296
     List:
     - name: Cathedral
       guid: 5303bcca0afb1342a2ccb0b9f9b540f9
@@ -336,6 +336,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Reflect
+      guid: 1401f4327c192e4e87f1d24a3c7dda4e
+      id: 243379636
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3e860730979601429f3a22904a750a2e
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Reflect
+        ObjectType: 1
+        guid: 1401f4327c192e4e87f1d24a3c7dda4e
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reflect
     - name: Room3
       guid: 98fabb0d2278d944b90038c3fdb0bbe0
       id: 1359360139

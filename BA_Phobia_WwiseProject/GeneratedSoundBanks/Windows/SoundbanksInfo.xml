@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{36AB804B-4164-1679-C45F-2A3046FBEAD8}">
+		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{EAF039C8-0641-5F99-4CE1-DF02A2B301FB}">
 			<ShortName>Main_test</ShortName>
 			<Path>Main_test.bnk</Path>
 			<Media>
@@ -44,6 +44,9 @@
 			</Media>
 			<Events>
 				<Event Id="116178158" Name="footstep_event" DurationType="OneShot" DurationMin="0.42451248" DurationMax="0.7190703">
+					<AuxBusRefs>
+						<AuxBusRef Id="243379636" Name="Reflect"/>
+					</AuxBusRefs>
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="2637588553"/>
@@ -68,7 +71,7 @@
 						<MediaRef Id="435254687"/>
 					</MediaRefs>
 					<AuxBusRefs>
-						<AuxBusRef Id="1024696295" Name="Cathedral"/>
+						<AuxBusRef Id="243379636" Name="Reflect"/>
 					</AuxBusRefs>
 				</Event>
 			</Events>
@@ -81,7 +84,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{6C888659-08FC-4CF2-9989-F7A2769F19E3}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{EA0C0863-167F-6F05-13AA-A272CA2DD55A}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -89,6 +92,7 @@
 					<Plugin Id="430185970" Name="Room_Large (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</Custom>
 				<ShareSets>
+					<Plugin Id="243379636" Name="Reflect" LibName="Wwise Reflect" LibId="11206659"/>
 					<Plugin Id="3164629247" Name="Holy" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="3451596814" Name="Hall_Medium" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</ShareSets>
@@ -101,6 +105,13 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 			<AuxBusses>
+				<AuxBus Id="243379636" Name="Reflect">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="243379636"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
 				<AuxBus Id="1024696295" Name="Cathedral">
 					<PluginRefs>
 						<ShareSets>
@@ -261,5 +272,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{04C920F1-E779-468A-6BE6-4A5B0D9699EC}</FileHash>
+	<FileHash>{BE8E57DD-0C76-8C8B-E3CC-6AF442193C00}</FileHash>
 </SoundBanksInfo>

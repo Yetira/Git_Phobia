@@ -46,7 +46,7 @@ MonoBehaviour:
       m_MaxDiffractionOrder: 4
       m_DiffractionOnReflectionsOrder: 2
       m_MaxEmitterRoomAuxSends: 3
-      m_MaxPathLength: 10000
+      m_MaxPathLength: 1000
       m_CPULimitPercentage: 0
       m_EnableGeometricDiffractionAndTransmission: 1
       m_CalcEmitterVirtualPosition: 1
