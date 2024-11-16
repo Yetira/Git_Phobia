@@ -19,7 +19,7 @@
 						<Action Name="" ID="{CAFA0DFD-1469-48FB-9C32-39E2B34FAF24}" ShortID="541922769">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="test_melody" ID="{7783EC61-F516-44C8-A282-3F0DC53E0C85}" WorkUnitID="{FAD97F9B-AFBF-4D04-83D1-6C87A63C4AD8}"/>
+									<ObjectRef Name="test_sound" ID="{7783EC61-F516-44C8-A282-3F0DC53E0C85}" WorkUnitID="{FAD97F9B-AFBF-4D04-83D1-6C87A63C4AD8}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

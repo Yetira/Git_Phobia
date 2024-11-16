@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{4C45D946-C4E6-7BCE-C612-94B6DBF403BA}">
+		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{36AB804B-4164-1679-C45F-2A3046FBEAD8}">
 			<ShortName>Main_test</ShortName>
 			<Path>Main_test.bnk</Path>
 			<Media>
@@ -67,6 +67,9 @@
 					<MediaRefs>
 						<MediaRef Id="435254687"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="1024696295" Name="Cathedral"/>
+					</AuxBusRefs>
 				</Event>
 			</Events>
 			<SwitchGroups>
@@ -78,15 +81,17 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{FB380A60-A736-4344-1739-BD0D4785094F}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{6C888659-08FC-4CF2-9989-F7A2769F19E3}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
 				<Custom>
-					<Plugin Id="312555977" Name="Hall_Medium (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="430185970" Name="Room_Large (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
-					<Plugin Id="675253459" Name="Holy (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</Custom>
+				<ShareSets>
+					<Plugin Id="3164629247" Name="Holy" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="3451596814" Name="Hall_Medium" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
@@ -98,9 +103,9 @@
 			<AuxBusses>
 				<AuxBus Id="1024696295" Name="Cathedral">
 					<PluginRefs>
-						<Custom>
-							<PluginRef Id="675253459"/>
-						</Custom>
+						<ShareSets>
+							<PluginRef Id="3164629247"/>
+						</ShareSets>
 					</PluginRefs>
 				</AuxBus>
 				<AuxBus Id="1359360139" Name="Room3" MaxAttenuation="100">
@@ -110,11 +115,11 @@
 						</Custom>
 					</PluginRefs>
 				</AuxBus>
-				<AuxBus Id="3059984139" Name="Tunnel" MaxAttenuation="100">
+				<AuxBus Id="3059984139" Name="Tunnel">
 					<PluginRefs>
-						<Custom>
-							<PluginRef Id="312555977"/>
-						</Custom>
+						<ShareSets>
+							<PluginRef Id="3451596814"/>
+						</ShareSets>
 					</PluginRefs>
 				</AuxBus>
 			</AuxBusses>
@@ -256,5 +261,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{EC0B9B32-598C-B235-C263-87F2101982A5}</FileHash>
+	<FileHash>{04C920F1-E779-468A-6BE6-4A5B0D9699EC}</FileHash>
 </SoundBanksInfo>

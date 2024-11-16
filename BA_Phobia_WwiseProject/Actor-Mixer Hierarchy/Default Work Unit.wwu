@@ -3,11 +3,17 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{FAD97F9B-AFBF-4D04-83D1-6C87A63C4AD8}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="test_melody" ID="{7783EC61-F516-44C8-A282-3F0DC53E0C85}" ShortID="309603705">
+				<Sound Name="test_sound" ID="{7783EC61-F516-44C8-A282-3F0DC53E0C85}" ShortID="309603705">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-21</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -18,6 +24,9 @@
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+						</Reference>
+						<Reference Name="ReflectionsAuxSend">
+							<ObjectRef Name="Cathedral" ID="{CABC0353-FB0A-4213-A2CC-B0B9F9B540F9}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

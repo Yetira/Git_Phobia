@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 3e860730979601429f3a22904a750a2e
     GuidInternal: 
-    m_lastTime: -8584699048113157085
+    m_lastTime: -8584698582189571064
     List:
     - name: Cathedral
       guid: 5303bcca0afb1342a2ccb0b9f9b540f9
@@ -410,7 +410,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 199508fe3d34424d9564a328ccca3022
     GuidInternal: 
-    m_lastTime: -8584699038788595957
+    m_lastTime: -8584698589433418831
     List:
     - name: footstep_event
       guid: 0acf0ada71aeba449d708bd59292face
@@ -443,7 +443,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 645bc0db7ecf5242aeac8f37d62bf77b
       Path: Events\Default Work Unit\play_testmelody
-      maxAttenuation: 0
+      maxAttenuation: 100
       maxDuration: -1
       minDuration: -1
   RtpcWwu:
