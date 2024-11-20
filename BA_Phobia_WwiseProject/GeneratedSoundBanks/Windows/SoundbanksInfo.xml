@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{EAF039C8-0641-5F99-4CE1-DF02A2B301FB}">
+		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{35F36FBF-FF61-1345-DC30-F9D3B8FD8F97}">
 			<ShortName>Main_test</ShortName>
 			<Path>Main_test.bnk</Path>
 			<Media>
@@ -17,9 +17,25 @@
 					<ShortName>FS_Tile_03.wav</ShortName>
 					<CachePath>SFX/FS_Tile_03_818F3B66.wem</CachePath>
 				</File>
+				<File Id="156846198" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>rock_land1.3.wav</ShortName>
+					<CachePath>SFX/rock_land1.3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="181027316" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>rock_land1.1.wav</ShortName>
+					<CachePath>SFX/rock_land1.1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="279319453" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>rock_fall_noise.wav</ShortName>
+					<CachePath>SFX/rock_fall_noise_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="307152786" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FS_Concrete_03.wav</ShortName>
 					<CachePath>SFX/FS_Concrete_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="313438146" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>rock_land1.2.wav</ShortName>
+					<CachePath>SFX/rock_land1.2_818F3B66.wem</CachePath>
 				</File>
 				<File Id="435254687" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>test_melody.wav</ShortName>
@@ -28,6 +44,10 @@
 				<File Id="613318558" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FS_Tile_02.wav</ShortName>
 					<CachePath>SFX/FS_Tile_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="776517462" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>lullaby.wav</ShortName>
+					<CachePath>SFX/lullaby_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="802854533" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FS_Concrete_01.wav</ShortName>
@@ -66,6 +86,14 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="2466003463" Name="lullaby_event" MaxAttenuation="100" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="776517462"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="243379636" Name="Reflect"/>
+					</AuxBusRefs>
+				</Event>
 				<Event Id="1542721370" Name="play_testmelody" MaxAttenuation="100" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="435254687"/>
@@ -74,7 +102,22 @@
 						<AuxBusRef Id="243379636" Name="Reflect"/>
 					</AuxBusRefs>
 				</Event>
+				<Event Id="3378404558" Name="rock_fall" MaxAttenuation="100" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="156846198"/>
+						<MediaRef Id="181027316"/>
+						<MediaRef Id="279319453"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="119891818" Name="rock_land" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.6666667" DurationMax="0.6666667">
+					<MediaRefs>
+						<MediaRef Id="313438146"/>
+					</MediaRefs>
+				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="3378404558" Name="rock_fall"/>
+			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="2385628198" Name="Footsteps">
 					<Switches>
@@ -84,7 +127,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{EA0C0863-167F-6F05-13AA-A272CA2DD55A}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{CB65B3F7-BEDB-3C9D-1DEB-09F886648E40}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -95,6 +138,7 @@
 					<Plugin Id="243379636" Name="Reflect" LibName="Wwise Reflect" LibId="11206659"/>
 					<Plugin Id="3164629247" Name="Holy" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="3451596814" Name="Hall_Medium" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="4113267698" Name="Hall_Guns" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
@@ -126,6 +170,13 @@
 						</Custom>
 					</PluginRefs>
 				</AuxBus>
+				<AuxBus Id="2761991509" Name="Schacht">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="4113267698"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
 				<AuxBus Id="3059984139" Name="Tunnel">
 					<PluginRefs>
 						<ShareSets>
@@ -134,6 +185,9 @@
 					</PluginRefs>
 				</AuxBus>
 			</AuxBusses>
+			<GameParameters>
+				<GameParameter Id="3378404558" Name="rock_fall"/>
+			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="2385628198" Name="Footsteps">
 					<Switches>
@@ -272,5 +326,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BE8E57DD-0C76-8C8B-E3CC-6AF442193C00}</FileHash>
+	<FileHash>{6F641120-7DA5-D9B4-346E-6052A2763268}</FileHash>
 </SoundBanksInfo>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" SchemaVersion="119" RootDocumentID="{FE089519-343D-4D42-9564-A328CCCA3022}" ParentDocumentID="{FE089519-343D-4D42-9564-A328CCCA3022}">
+	<Events>
+		<WorkUnit Name="Schacht" ID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" OwnerID="{FE089519-343D-4D42-9564-A328CCCA3022}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="rock_fall" ID="{E16C388B-C4BA-49DE-B0AE-415C5ABCCD0A}">
+					<ChildrenList>
+						<Action Name="" ID="{17AD745E-6D51-4898-B1FA-9E4356007377}" ShortID="802912426">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="rock_fall" ID="{3B8EC0FD-FFD3-4975-A88A-FF57D73AD0A4}" WorkUnitID="{702988FB-4A56-44EE-941C-588512765CD5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="rock_land" ID="{0D8E8A21-73C4-4623-8CD0-5A7D792C00D0}">
+					<ChildrenList>
+						<Action Name="" ID="{693A53B4-043A-4B75-BA3D-3BB79316885B}" ShortID="668106628">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="rock_land1_2" ID="{C86EDC77-2D99-4304-960F-5C0B3B170A32}" WorkUnitID="{702988FB-4A56-44EE-941C-588512765CD5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

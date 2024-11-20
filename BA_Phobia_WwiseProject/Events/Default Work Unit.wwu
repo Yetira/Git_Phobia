@@ -25,6 +25,18 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="lullaby_event" ID="{8988514B-9A22-4179-9D52-D1101588B153}">
+					<ChildrenList>
+						<Action Name="" ID="{3C40AC8A-F12C-4350-BECF-ECD012DA5D03}" ShortID="553383591">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="lullaby" ID="{5672310C-91B8-4B5E-860B-3D045330F51C}" WorkUnitID="{C3AA22BB-1B07-445D-8462-CFD7B079ED45}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<WorkUnit Name="Schacht" ID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

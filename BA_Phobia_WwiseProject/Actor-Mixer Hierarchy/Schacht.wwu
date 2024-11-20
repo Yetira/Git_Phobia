@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{702988FB-4A56-44EE-941C-588512765CD5}" SchemaVersion="119">
+	<AudioObjects>
+		<WorkUnit Name="Schacht" ID="{702988FB-4A56-44EE-941C-588512765CD5}" PersistMode="Standalone">
+			<ChildrenList>
+				<RandomSequenceContainer Name="rock_fall" ID="{3B8EC0FD-FFD3-4975-A88A-FF57D73AD0A4}" ShortID="428068032">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="rockFall" ID="{C3352CCD-936E-4D67-8F97-D497B1A5F319}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="rock_land1_1" ID="{D579E8E9-3888-4C8B-9A9D-E9B888DB2CA2}" ShortID="706574923">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="rock_land1_1" ID="{C54FB79F-BBA1-4C58-AD1C-C59ADE673E08}">
+									<Language>SFX</Language>
+									<AudioFile>rock_land1.1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="181027316"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="rock_land1_1" ID="{C54FB79F-BBA1-4C58-AD1C-C59ADE673E08}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="rock_fall_noise" ID="{530278E2-9DD5-4D24-9228-D110C626D357}" ShortID="720235096">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="rock_fall_noise" ID="{4F79554B-165F-4B27-AB45-C0BB5F654EE9}">
+									<Language>SFX</Language>
+									<AudioFile>rock_fall_noise.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="279319453"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{E310EFEE-BC70-444A-95AC-682249AFE420}" ShortID="985209568">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Pitch"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="rock_fall" ID="{9845D6B1-2ED0-4943-A5CE-90054A61FC6B}" WorkUnitID="{1DA3DB97-63A7-416A-B8D9-EB328C42A8C0}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{0F04015C-B35E-4549-8AF0-724E7C41AE1A}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-56</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>30.61002</XPos>
+																		<YPos>1470</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>49.999</XPos>
+																		<YPos>1522</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>50</XPos>
+																		<YPos>840</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="rock_fall_noise" ID="{4F79554B-165F-4B27-AB45-C0BB5F654EE9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="rock_land1_3" ID="{D69258F4-599B-4F20-9D29-85005A19B95C}" ShortID="115148488">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>17</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="rock_land1_3" ID="{8375A6A2-DED3-407B-A14F-1AB1036E2C20}">
+									<Language>SFX</Language>
+									<AudioFile>rock_land1.3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="156846198"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="rock_land1_3" ID="{8375A6A2-DED3-407B-A14F-1AB1036E2C20}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Playlist">
+							<Reference>
+								<ObjectRef Name="rock_land1_1" ID="{D579E8E9-3888-4C8B-9A9D-E9B888DB2CA2}" WorkUnitID="{702988FB-4A56-44EE-941C-588512765CD5}"/>
+							</Reference>
+							<Reference>
+								<ObjectRef Name="rock_land1_3" ID="{D69258F4-599B-4F20-9D29-85005A19B95C}" WorkUnitID="{702988FB-4A56-44EE-941C-588512765CD5}"/>
+							</Reference>
+							<Reference>
+								<ObjectRef Name="rock_fall_noise" ID="{530278E2-9DD5-4D24-9228-D110C626D357}" WorkUnitID="{702988FB-4A56-44EE-941C-588512765CD5}"/>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</RandomSequenceContainer>
+				<Sound Name="rock_land1_2" ID="{C86EDC77-2D99-4304-960F-5C0B3B170A32}" ShortID="104932376">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Attenuation_test" ID="{A3CFFE80-4E86-49E6-A57E-1EFF5B9035B6}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="rock_land1_2" ID="{B0A9B360-79EC-4494-BE2E-BE2C65D29ACA}">
+							<Language>SFX</Language>
+							<AudioFile>rock_land1.2.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="313438146"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="rock_land1_2" ID="{B0A9B360-79EC-4494-BE2E-BE2C65D29ACA}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

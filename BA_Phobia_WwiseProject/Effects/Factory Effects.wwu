@@ -884,7 +884,7 @@
 										<Property Name="Quality" Type="int32" Value="14"/>
 										<Property Name="ReverbLevel" Type="Real32" Value="-21"/>
 										<Property Name="RoomShape" Type="Real32" Value="55"/>
-										<Property Name="RoomSize" Type="Real32" Value="45"/>
+										<Property Name="RoomSize" Type="Real32" Value="38"/>
 									</PropertyList>
 								</Effect>
 								<Effect Name="Hall_Large" ID="{6D154498-FF6D-4823-96FC-56841B70E079}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
@@ -984,18 +984,20 @@
 								</Effect>
 								<Effect Name="Hall_Conversation" ID="{E2C3BD70-E5E4-46A5-BDA6-99A92FAAC1AC}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 									<PropertyList>
-										<Property Name="DecayTime" Type="Real32" Value="4.3"/>
-										<Property Name="Density" Type="Real32" Value="70"/>
+										<Property Name="DecayTime" Type="Real32" Value="2.5"/>
+										<Property Name="Density" Type="Real32" Value="24"/>
+										<Property Name="Diffusion" Type="Real32" Value="82"/>
 										<Property Name="ERLevel" Type="Real32" Value="-23"/>
 										<Property Name="ERPattern" Type="int32" Value="16"/>
+										<Property Name="EnableEarlyReflections" Type="bool" Value="False"/>
 										<Property Name="Filter1Freq" Type="Real32" Value="490"/>
 										<Property Name="Filter1Gain" Type="Real32" Value="-0.5"/>
 										<Property Name="Filter3Freq" Type="Real32" Value="11000"/>
 										<Property Name="Filter3Gain" Type="Real32" Value="-4.5"/>
-										<Property Name="HFDamping" Type="Real32" Value="4.1"/>
-										<Property Name="PreDelay" Type="Real32" Value="58"/>
+										<Property Name="HFDamping" Type="Real32" Value="1.55"/>
+										<Property Name="PreDelay" Type="Real32" Value="62"/>
 										<Property Name="Quality" Type="int32" Value="14"/>
-										<Property Name="ReverbLevel" Type="Real32" Value="-23"/>
+										<Property Name="ReverbLevel" Type="Real32" Value="-18"/>
 										<Property Name="RoomShape" Type="Real32" Value="55"/>
 										<Property Name="RoomSize" Type="Real32" Value="34"/>
 									</PropertyList>

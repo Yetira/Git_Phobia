@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 3e860730979601429f3a22904a750a2e
     GuidInternal: 
-    m_lastTime: -8584698389039184296
+    m_lastTime: -8584694804402885461
     List:
     - name: Cathedral
       guid: 5303bcca0afb1342a2ccb0b9f9b540f9
@@ -370,6 +370,23 @@ MonoBehaviour:
         ObjectType: 1
         guid: 98fabb0d2278d944b90038c3fdb0bbe0
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Room3
+    - name: Schacht
+      guid: 9c39e6cd5f861840bd15f88115be90c8
+      id: 2761991509
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3e860730979601429f3a22904a750a2e
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Schacht
+        ObjectType: 1
+        guid: 9c39e6cd5f861840bd15f88115be90c8
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Schacht
     - name: Tunnel
       guid: 3b726cdcac12684e9866a0ccb1f0e65f
       id: 3059984139
@@ -399,7 +416,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5b7d3d6d0746124ab1d6166bb3175237
     GuidInternal: 
-    m_lastTime: -8584699038788676088
+    m_lastTime: -8584694918773528853
     List:
     - name: Main_test
       guid: f4bfb48e9ef48e4883081f357e8cb44a
@@ -427,7 +444,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 199508fe3d34424d9564a328ccca3022
     GuidInternal: 
-    m_lastTime: -8584698589433418831
+    m_lastTime: -8584694942274650907
     List:
     - name: footstep_event
       guid: 0acf0ada71aeba449d708bd59292face
@@ -446,6 +463,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.7190703
       minDuration: 0.42451248
+    - name: lullaby_event
+      guid: 4b518889229a79419d52d1101588b153
+      id: 2466003463
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: lullaby_event
+        ObjectType: 3
+        guid: 4b518889229a79419d52d1101588b153
+      Path: Events\Default Work Unit\lullaby_event
+      maxAttenuation: 100
+      maxDuration: -1
+      minDuration: -1
     - name: play_testmelody
       guid: 645bc0db7ecf5242aeac8f37d62bf77b
       id: 1542721370
@@ -463,6 +497,62 @@ MonoBehaviour:
       maxAttenuation: 100
       maxDuration: -1
       minDuration: -1
+  - PhysicalPath: Events\Schacht.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 199508fe3d34424d9564a328ccca3022
+    - ElementName: Schacht
+      ObjectType: 12
+      guid: af502f23f2719c4da70873b37c56f205
+    ParentPath: Events\Default Work Unit\Schacht
+    guid: af502f23f2719c4da70873b37c56f205
+    GuidInternal: 
+    m_lastTime: -8584694942274360459
+    List:
+    - name: rock_fall
+      guid: 8b386ce1bac4de49b0ae415c5abccd0a
+      id: 3378404558
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: Schacht
+        ObjectType: 12
+        guid: af502f23f2719c4da70873b37c56f205
+      - ElementName: rock_fall
+        ObjectType: 3
+        guid: 8b386ce1bac4de49b0ae415c5abccd0a
+      Path: Events\Default Work Unit\Schacht\rock_fall
+      maxAttenuation: 100
+      maxDuration: -1
+      minDuration: -1
+    - name: rock_land
+      guid: 218a8e0dc47323468cd05a7d792c00d0
+      id: 119891818
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: Schacht
+        ObjectType: 12
+        guid: af502f23f2719c4da70873b37c56f205
+      - ElementName: rock_land
+        ObjectType: 3
+        guid: 218a8e0dc47323468cd05a7d792c00d0
+      Path: Events\Default Work Unit\Schacht\rock_land
+      maxAttenuation: 100
+      maxDuration: 0.6666667
+      minDuration: 0.6666667
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -475,8 +565,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 97dba31da7636a41b8d9eb328c42a8c0
     GuidInternal: 
-    m_lastTime: -8584705427111503352
-    List: []
+    m_lastTime: -8584694942274540736
+    List:
+    - name: rock_fall
+      guid: b1d64598d02e4349a5ce90054a61fc6b
+      id: 3378404558
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 97dba31da7636a41b8d9eb328c42a8c0
+      - ElementName: rock_fall
+        ObjectType: 13
+        guid: b1d64598d02e4349a5ce90054a61fc6b
+      Path: Game Parameters\Default Work Unit\rock_fall
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -570,7 +674,7 @@ MonoBehaviour:
     m_lastTime: -8584705427110042857
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000002000000030000000400000005000000060000000700000008000000090000000b0000000c0000000d000000120000001400000015000000ac000000ad0000004801000049010000
+  ExpandedWaapiItemIds: 0100000002000000030000000400000005000000060000000700000008000000090000000b0000000c0000000d0000001200000013000000140000001500000016000000370000003800000039000000ac000000ad0000004801000049010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
