@@ -10,7 +10,10 @@ public class AltFirstPersonController : MonoBehaviour
     public float rotationSpeed = 100.0f; // Control the rotation speed of the player
 
     [Header("References")]
+    
     public Transform vrCamera; // Reference to the VR Camera (usually the player's head)
+
+    public GameObject Feet;
 
     private CharacterController characterController;
     private PlayerInputActions playerInputActions;
@@ -99,7 +102,7 @@ public class AltFirstPersonController : MonoBehaviour
     private void PlayFootStepAudio()
     {
       
-        AkSoundEngine.PostEvent("footstep_event", gameObject);
+        AkSoundEngine.PostEvent("footstep_event", Feet);
 
     }
     private void MoveForward()

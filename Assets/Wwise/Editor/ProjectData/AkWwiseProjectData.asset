@@ -511,7 +511,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Schacht
     guid: af502f23f2719c4da70873b37c56f205
     GuidInternal: 
-    m_lastTime: -8584694942274360459
+    m_lastTime: -8584691638777369094
     List:
     - name: rock_fall
       guid: 8b386ce1bac4de49b0ae415c5abccd0a
@@ -530,7 +530,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 8b386ce1bac4de49b0ae415c5abccd0a
       Path: Events\Default Work Unit\Schacht\rock_fall
-      maxAttenuation: 100
+      maxAttenuation: 300
       maxDuration: -1
       minDuration: -1
     - name: rock_land
@@ -565,7 +565,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 97dba31da7636a41b8d9eb328c42a8c0
     GuidInternal: 
-    m_lastTime: -8584694942274540736
+    m_lastTime: -8584691638777444211
     List:
     - name: rock_fall
       guid: b1d64598d02e4349a5ce90054a61fc6b

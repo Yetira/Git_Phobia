@@ -18,16 +18,6 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>45.85153</XPos>
-											<YPos>-11.2896</YPos>
-											<Flags>0</Flags>
-										</Point>
-										<Point>
-											<XPos>73.36245</XPos>
-											<YPos>-19.07046</YPos>
-											<Flags>0</Flags>
-										</Point>
-										<Point>
 											<XPos>100</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
@@ -111,6 +101,9 @@
 					</CurveUsageInfoList>
 				</Attenuation>
 				<Attenuation Name="rockFall" ID="{C3352CCD-936E-4D67-8F97-D497B1A5F319}" ShortID="430776881">
+					<PropertyList>
+						<Property Name="RadiusMax" Type="Real64" Value="300"/>
+					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
@@ -125,32 +118,27 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>13.7881</XPos>
-											<YPos>-6.61222</YPos>
+											<XPos>65.7485</XPos>
+											<YPos>-6.10157</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>33.38171</XPos>
-											<YPos>-13.8413</YPos>
+											<XPos>136.52695</XPos>
+											<YPos>-13.65581</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>52.24964</XPos>
-											<YPos>-20.32197</YPos>
+											<XPos>199.65721</XPos>
+											<YPos>-24.05056</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>69.66618</XPos>
-											<YPos>-23.59493</YPos>
+											<XPos>254.09595</XPos>
+											<YPos>-31.70697</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>85.77649</XPos>
-											<YPos>-28.84604</YPos>
-											<Flags>0</Flags>
-										</Point>
-										<Point>
-											<XPos>100</XPos>
+											<XPos>300</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>

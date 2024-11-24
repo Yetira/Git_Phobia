@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{35F36FBF-FF61-1345-DC30-F9D3B8FD8F97}">
+		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{D3F860F2-A75A-6B2C-B4F3-CEFDCFBCC814}">
 			<ShortName>Main_test</ShortName>
 			<Path>Main_test.bnk</Path>
 			<Media>
@@ -102,11 +102,12 @@
 						<AuxBusRef Id="243379636" Name="Reflect"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="3378404558" Name="rock_fall" MaxAttenuation="100" DurationType="Infinite">
+				<Event Id="3378404558" Name="rock_fall" MaxAttenuation="300" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="156846198"/>
 						<MediaRef Id="181027316"/>
 						<MediaRef Id="279319453"/>
+						<MediaRef Id="313438146"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="119891818" Name="rock_land" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.6666667" DurationMax="0.6666667">
@@ -127,7 +128,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{CB65B3F7-BEDB-3C9D-1DEB-09F886648E40}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{BC8E977D-0420-A8C1-8751-4BECBBA98F47}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -326,5 +327,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6F641120-7DA5-D9B4-346E-6052A2763268}</FileHash>
+	<FileHash>{421154B3-8421-7A30-40F0-E303D92623ED}</FileHash>
 </SoundBanksInfo>

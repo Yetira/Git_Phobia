@@ -1,11 +1,12 @@
 # Unity-specific ignores
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
-[Ll]ogs/
-[Mm]emoryCaptures/
+Library\Artifacts\
+Library\PackageCache\
+[Tt]emp\
+[Oo]bj\
+[Bb]uild\
+[Bb]uilds\
+[Ll]ogs\
+[Mm]emoryCaptures\
 AssetStoreTools*
 .vscode/
 .idea/

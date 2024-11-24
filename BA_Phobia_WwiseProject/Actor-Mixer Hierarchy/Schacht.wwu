@@ -24,13 +24,6 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="rock_land1_1" ID="{D579E8E9-3888-4C8B-9A9D-E9B888DB2CA2}" ShortID="706574923">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>12</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
@@ -99,22 +92,12 @@
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>-56</YPos>
+																		<YPos>265</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>30.61002</XPos>
-																		<YPos>1470</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>49.999</XPos>
-																		<YPos>1522</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>50</XPos>
-																		<YPos>840</YPos>
+																		<XPos>200</XPos>
+																		<YPos>2375</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>
@@ -135,12 +118,7 @@
 							<PropertyList>
 								<Property Name="InitialDelay" Type="Real64">
 									<ValueList>
-										<Value>1</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>17</Value>
+										<Value>2</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -165,9 +143,42 @@
 								<ActiveSource Name="rock_land1_3" ID="{8375A6A2-DED3-407B-A14F-1AB1036E2C20}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="rock_land1_2" ID="{87BCAF74-D2EB-4DA3-B295-374C9542667D}" ShortID="357171466">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Attenuation_test" ID="{A3CFFE80-4E86-49E6-A57E-1EFF5B9035B6}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="rock_land1_2" ID="{D1DEEFBD-5382-43DE-969E-1F62D855191A}">
+									<Language>SFX</Language>
+									<AudioFile>rock_land1.2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="313438146"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="rock_land1_2" ID="{D1DEEFBD-5382-43DE-969E-1F62D855191A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<ObjectLists>
 						<ObjectList Name="Playlist">
+							<Reference>
+								<ObjectRef Name="rock_land1_2" ID="{87BCAF74-D2EB-4DA3-B295-374C9542667D}" WorkUnitID="{702988FB-4A56-44EE-941C-588512765CD5}"/>
+							</Reference>
 							<Reference>
 								<ObjectRef Name="rock_land1_1" ID="{D579E8E9-3888-4C8B-9A9D-E9B888DB2CA2}" WorkUnitID="{702988FB-4A56-44EE-941C-588512765CD5}"/>
 							</Reference>
@@ -180,7 +191,7 @@
 						</ObjectList>
 					</ObjectLists>
 				</RandomSequenceContainer>
-				<Sound Name="rock_land1_2" ID="{C86EDC77-2D99-4304-960F-5C0B3B170A32}" ShortID="104932376">
+				<Sound Name="rock_land_FINAL" ID="{C86EDC77-2D99-4304-960F-5C0B3B170A32}" ShortID="104932376">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>

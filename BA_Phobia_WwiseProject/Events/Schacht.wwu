@@ -19,7 +19,7 @@
 						<Action Name="" ID="{693A53B4-043A-4B75-BA3D-3BB79316885B}" ShortID="668106628">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="rock_land1_2" ID="{C86EDC77-2D99-4304-960F-5C0B3B170A32}" WorkUnitID="{702988FB-4A56-44EE-941C-588512765CD5}"/>
+									<ObjectRef Name="rock_land_FINAL" ID="{C86EDC77-2D99-4304-960F-5C0B3B170A32}" WorkUnitID="{702988FB-4A56-44EE-941C-588512765CD5}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
