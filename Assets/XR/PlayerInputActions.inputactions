@@ -6,18 +6,9 @@
             "id": "5f55b000-0a12-44b5-b5d8-9e72376a72e2",
             "actions": [
                 {
-                    "name": "MoveForward",
-                    "type": "Button",
-                    "id": "27e78b4d-52e1-400a-8807-cd942e994984",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Look",
+                    "name": "Move",
                     "type": "Value",
-                    "id": "ddec168a-2d24-473f-95cb-34f9f7f2bf00",
+                    "id": "27e78b4d-52e1-400a-8807-cd942e994984",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
@@ -31,28 +22,26 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Look",
+                    "type": "Value",
+                    "id": "4e9102a8-5e2b-47b6-be86-25c2ebac5eae",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
                 {
                     "name": "",
                     "id": "8d307ffe-c94f-4658-bf12-ecfc4b698a80",
-                    "path": "<Gamepad>/buttonSouth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MoveForward",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "675e468e-7ae0-42f4-808e-2c5ade86a08a",
                     "path": "<Gamepad>/leftStick",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Look",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -64,6 +53,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "ResetCube",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3aac31ab-7195-436c-8fe4-db73ca7046dc",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

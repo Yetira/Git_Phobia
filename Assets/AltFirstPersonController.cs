@@ -17,7 +17,7 @@ public class AltFirstPersonController : MonoBehaviour
 
     private CharacterController characterController;
     private PlayerInputActions playerInputActions;
-    private bool isMovingForward = false;
+    private Vector2 moveInput;
     private Vector2 lookInput;
 
     private float m_StepCycle = 0f;         // Tracks the current step cycle progress
@@ -29,12 +29,15 @@ public class AltFirstPersonController : MonoBehaviour
     {
         // Initialize the input actions and register the MoveForward and Look actions
         playerInputActions = new PlayerInputActions();
-        playerInputActions.Player.MoveForward.performed += OnMoveForwardPerformed;
-        playerInputActions.Player.MoveForward.canceled += OnMoveForwardCanceled;
+        
+        playerInputActions.Player.Move.performed += OnMovePerformed;
+        playerInputActions.Player.Move.canceled += OnMoveCanceled;
 
+       
         // Register the Look action for the left stick
         playerInputActions.Player.Look.performed += OnLookPerformed;
         playerInputActions.Player.Look.canceled += OnLookCanceled;
+        
     }
 
     void OnEnable()
@@ -63,11 +66,7 @@ public class AltFirstPersonController : MonoBehaviour
     void Update()
     {
         // Handle movement
-        if (isMovingForward)
-        {
-            MoveForward();
-   
-        }
+        Move();
 
         // Handle rotation based on left stick input
         RotatePlayer();
@@ -78,7 +77,7 @@ public class AltFirstPersonController : MonoBehaviour
     private void ProgressStepCycle()
     {
         // Check if character is moving
-        if (isMovingForward && characterController.velocity.sqrMagnitude > 0)
+        if (moveInput.sqrMagnitude > 0 && characterController.velocity.sqrMagnitude > 0)
         {
             // Increment step cycle by a fixed value (e.g., based on desired steps per second)
             m_StepCycle += Time.fixedDeltaTime * m_FixedSpeedFactor; // Set m_FixedSpeedFactor based on desired timing
@@ -105,15 +104,14 @@ public class AltFirstPersonController : MonoBehaviour
         AkSoundEngine.PostEvent("footstep_event", Feet);
 
     }
-    private void MoveForward()
+    private void Move()
     {
-        // Calculate the forward movement vector based on the VR Camera's forward direction
-        Vector3 forwardDirection = vrCamera.forward;
-        forwardDirection.y = 0; // Prevent vertical movement
-
-        // Move the player in the forward direction
-        Vector3 movement = forwardDirection.normalized * movementSpeed * Time.deltaTime;
-        characterController.Move(movement);
+        Vector3 moveDirection = new Vector3(moveInput.x, 0, moveInput.y);
+        moveDirection = transform.TransformDirection(moveDirection);
+        moveDirection *= movementSpeed * Time.deltaTime;
+        
+        characterController.Move(moveDirection);
+        
     }
 
     private void RotatePlayer()
@@ -127,16 +125,15 @@ public class AltFirstPersonController : MonoBehaviour
         }
     }
 
-    private void OnMoveForwardPerformed(InputAction.CallbackContext context)
+    private void OnMovePerformed(InputAction.CallbackContext context)
     {
-        // Called when the "A" button is pressed
-        isMovingForward = true;
+        moveInput = context.ReadValue<Vector2>();
     }
 
-    private void OnMoveForwardCanceled(InputAction.CallbackContext context)
+    private void OnMoveCanceled(InputAction.CallbackContext context)
     {
         // Called when the "A" button is released
-        isMovingForward = false;
+        moveInput = Vector2.zero;
     }
 
     private void OnLookPerformed(InputAction.CallbackContext context)
