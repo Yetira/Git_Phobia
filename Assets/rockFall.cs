@@ -8,6 +8,8 @@ public class rockFall : MonoBehaviour
 
     public int targetLayer;
 
+    public rat_kickoff rat;
+
     //public KeyCode resetKey = KeyCode.R;
     private PlayerInputActions playerInputActions;
 
@@ -60,6 +62,9 @@ public class rockFall : MonoBehaviour
             Debug.Log("rock has landed.");
 
             AkSoundEngine.StopPlayingID(rockFallId);
+
+            rat.Run();
+           
         }
     }
     private void ResetCube()
@@ -67,6 +72,7 @@ public class rockFall : MonoBehaviour
         transform.position = startPosition;
 
         RockFall();
+       
     }
 
 }

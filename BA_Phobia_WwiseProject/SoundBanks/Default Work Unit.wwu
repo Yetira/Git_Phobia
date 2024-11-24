@@ -8,7 +8,10 @@
 						<ObjectRef Name="lullaby_event" ID="{8988514B-9A22-4179-9D52-D1101588B153}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="play_testmelody" ID="{DBC05B64-CF7E-4252-AEAC-8F37D62BF77B}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="footstep_event" ID="{DA0ACF0A-AE71-44BA-9D70-8BD59292FACE}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="wind_howl" ID="{FC572F35-A093-45B6-B064-09DA893551F7}" WorkUnitID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="breath_slow" ID="{04234535-4445-45D4-8EC1-BCAB2C8E38DB}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="rock_land" ID="{0D8E8A21-73C4-4623-8CD0-5A7D792C00D0}" WorkUnitID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="rat_kickoff" ID="{5D7CA806-E58B-4742-B443-26B0989959EC}" WorkUnitID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="rock_fall" ID="{E16C388B-C4BA-49DE-B0AE-415C5ABCCD0A}" WorkUnitID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

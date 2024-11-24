@@ -25,6 +25,35 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="rat_kickoff" ID="{5D7CA806-E58B-4742-B443-26B0989959EC}">
+					<ChildrenList>
+						<Action Name="" ID="{EDEDD510-475D-475C-9608-B9AB930D4D28}" ShortID="506469863">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="rats_squeak" ID="{7DFA62D4-71B9-490C-8757-64E443C2457C}" WorkUnitID="{702988FB-4A56-44EE-941C-588512765CD5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{7E973C4A-F1AB-45A5-9796-EE2027CCCAB0}" ShortID="429673038">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="rats_run" ID="{223EF516-AC3F-4513-B45E-7E1C3D4075E9}" WorkUnitID="{702988FB-4A56-44EE-941C-588512765CD5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="wind_howl" ID="{FC572F35-A093-45B6-B064-09DA893551F7}">
+					<ChildrenList>
+						<Action Name="" ID="{8027E523-278F-465C-AE87-CC485E587652}" ShortID="992619422">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="wind_howl_soft" ID="{256DC20B-3B4D-445E-A077-1D0878AA3FD0}" WorkUnitID="{702988FB-4A56-44EE-941C-588512765CD5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

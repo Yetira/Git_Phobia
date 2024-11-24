@@ -416,7 +416,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5b7d3d6d0746124ab1d6166bb3175237
     GuidInternal: 
-    m_lastTime: -8584694918773528853
+    m_lastTime: -8584691375283219481
     List:
     - name: Main_test
       guid: f4bfb48e9ef48e4883081f357e8cb44a
@@ -444,8 +444,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 199508fe3d34424d9564a328ccca3022
     GuidInternal: 
-    m_lastTime: -8584694942274650907
+    m_lastTime: -8584691375283324641
     List:
+    - name: breath_slow
+      guid: 354523044544d4458ec1bcab2c8e38db
+      id: 2686168833
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: breath_slow
+        ObjectType: 3
+        guid: 354523044544d4458ec1bcab2c8e38db
+      Path: Events\Default Work Unit\breath_slow
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: footstep_event
       guid: 0acf0ada71aeba449d708bd59292face
       id: 116178158
@@ -494,7 +511,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 645bc0db7ecf5242aeac8f37d62bf77b
       Path: Events\Default Work Unit\play_testmelody
-      maxAttenuation: 100
+      maxAttenuation: 300
       maxDuration: -1
       minDuration: -1
   - PhysicalPath: Events\Schacht.wwu
@@ -511,8 +528,28 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Schacht
     guid: af502f23f2719c4da70873b37c56f205
     GuidInternal: 
-    m_lastTime: -8584691638777369094
+    m_lastTime: -8584691375866882658
     List:
+    - name: rat_kickoff
+      guid: 06a87c5d8be54247b44326b0989959ec
+      id: 1107904574
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: Schacht
+        ObjectType: 12
+        guid: af502f23f2719c4da70873b37c56f205
+      - ElementName: rat_kickoff
+        ObjectType: 3
+        guid: 06a87c5d8be54247b44326b0989959ec
+      Path: Events\Default Work Unit\Schacht\rat_kickoff
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: rock_fall
       guid: 8b386ce1bac4de49b0ae415c5abccd0a
       id: 3378404558
@@ -550,9 +587,29 @@ MonoBehaviour:
         ObjectType: 3
         guid: 218a8e0dc47323468cd05a7d792c00d0
       Path: Events\Default Work Unit\Schacht\rock_land
-      maxAttenuation: 100
+      maxAttenuation: 300
       maxDuration: 0.6666667
       minDuration: 0.6666667
+    - name: wind_howl
+      guid: 352f57fc93a0b645b06409da893551f7
+      id: 652692592
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: Schacht
+        ObjectType: 12
+        guid: af502f23f2719c4da70873b37c56f205
+      - ElementName: wind_howl
+        ObjectType: 3
+        guid: 352f57fc93a0b645b06409da893551f7
+      Path: Events\Default Work Unit\Schacht\wind_howl
+      maxAttenuation: 300
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -674,7 +731,7 @@ MonoBehaviour:
     m_lastTime: -8584705427110042857
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000002000000030000000400000005000000060000000700000008000000090000000b0000000c0000000d0000001200000013000000140000001500000016000000370000003800000039000000ac000000ad0000004801000049010000
+  ExpandedWaapiItemIds: 0100000002000000030000000400000005000000060000000700000008000000090000000b0000000c0000000d0000001200000013000000140000001500000016000000370000003800000039000000ac000000ad000000fb000000fc0000004801000049010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

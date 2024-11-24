@@ -37,6 +37,17 @@
 					</ChildrenList>
 				</Event>
 				<WorkUnit Name="Schacht" ID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" PersistMode="Reference"/>
+				<Event Name="breath_slow" ID="{04234535-4445-45D4-8EC1-BCAB2C8E38DB}">
+					<ChildrenList>
+						<Action Name="" ID="{A72D0A9E-D633-49D5-9639-1469B0F49D0E}" ShortID="911039439">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="breath_slow" ID="{4EBF7596-99C8-41A1-B2E1-5A70A8EE0BE4}" WorkUnitID="{B6DD193C-9BE9-44D1-9F22-7C3429AACC3D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

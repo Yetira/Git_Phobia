@@ -57,6 +57,8 @@ public class AltFirstPersonController : MonoBehaviour
         // Get the CharacterController component attached to this GameObject
         characterController = GetComponent<CharacterController>();
 
+        AkSoundEngine.PostEvent("breath_slow", gameObject);
+
         if (vrCamera == null)
         {
             Debug.LogError("VR Camera is not assigned. Please assign the VR camera (usually the Main Camera).");
