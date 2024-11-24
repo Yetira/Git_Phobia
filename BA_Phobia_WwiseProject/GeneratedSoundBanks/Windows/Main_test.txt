@@ -7,6 +7,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2466003463	lullaby_event			\Default Work Unit\lullaby_event	
 	2686168833	breath_slow			\Default Work Unit\breath_slow	
 	3378404558	rock_fall			\Default Work Unit\Schacht\rock_fall	
+	3853114527	water_drips			\Default Work Unit\Tunnel\water_drips	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	2385628198	Footsteps			\Default Work Unit\Footsteps	
@@ -30,6 +31,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	290785594	rat_squeak2	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rat_squeak2_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rats_kickoff\rats_squeak\rat_squeak2		132396
 	307152786	FS_Concrete_03	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\FS_Concrete_03_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\concrete\FS_Concrete_03		63518
 	313438146	rock_land1_2	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rock_land1.2_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rock_fall\rock_fall\rock_land1_2		117696
+	359400834	drip4	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\drip4_818F3B66.wem		\Actor-Mixer Hierarchy\Cathedral\water_drips\drip4		176496
 	360007009	breath_slow2	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\breath_slow2_818F3B66.wem		\Actor-Mixer Hierarchy\Player\breath_slow\breath_slow2		940896
 	371138762	rat_run2	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rat_run2_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rats_kickoff\rats_run\rat_run2		426396
 	435254687	test_sound	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\test_melody_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\test_sound		2345568
@@ -40,8 +42,11 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	776517462	lullaby	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\lullaby_FBC78EF0.wem		\Actor-Mixer Hierarchy\Cathedral\lullaby		15758496
 	802854533	FS_Concrete_01	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\FS_Concrete_01_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\concrete\FS_Concrete_01		42952
 	809135877	breath_slow1	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\breath_slow1_818F3B66.wem		\Actor-Mixer Hierarchy\Player\breath_slow\breath_slow1		940896
+	817649428	drip1	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\drip1_818F3B66.wem		\Actor-Mixer Hierarchy\Cathedral\water_drips\drip1		117696
 	826582764	FS_Concrete_02	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\FS_Concrete_02_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\concrete\FS_Concrete_02		55048
+	857919443	drip2	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\drip2_818F3B66.wem		\Actor-Mixer Hierarchy\Cathedral\water_drips\drip2		176496
 	863629646	rat_squeak5	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rat_squeak5_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rats_kickoff\rats_squeak\rat_squeak5		205896
 	956928053	FS_Tile_01	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\FS_Tile_01_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\tile\FS_Tile_01		37538
+	998505593	drip3	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\drip3_818F3B66.wem		\Actor-Mixer Hierarchy\Cathedral\water_drips\drip3		117696
 	1038212346	rat_squeak1	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rat_squeak1_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rats_kickoff\rats_squeak\rat_squeak1		308796
 

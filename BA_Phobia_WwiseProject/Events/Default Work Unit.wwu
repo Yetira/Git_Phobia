@@ -48,6 +48,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<WorkUnit Name="Tunnel" ID="{71D003F0-866B-4C31-A330-E3E913374BAC}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

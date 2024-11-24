@@ -23,9 +23,24 @@
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 								</Reference>
+								<Reference Name="ReflectionsAuxSend">
+									<ObjectRef Name="Reflect" ID="{32F40114-197C-4E2E-87F1-D24A3C7DDA4E}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="rock_land1_1" ID="{D579E8E9-3888-4C8B-9A9D-E9B888DB2CA2}" ShortID="706574923">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>1.5</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-20</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
@@ -52,7 +67,7 @@
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>5</Value>
+												<Value>-10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -94,12 +109,12 @@
 																		<PointList>
 																			<Point>
 																				<XPos>0</XPos>
-																				<YPos>265</YPos>
+																				<YPos>1026</YPos>
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
 																				<XPos>200</XPos>
-																				<YPos>2375</YPos>
+																				<YPos>3003</YPos>
 																				<Flags>37</Flags>
 																			</Point>
 																		</PointList>
@@ -118,9 +133,9 @@
 								</Sound>
 								<Sound Name="rock_land1_3" ID="{D69258F4-599B-4F20-9D29-85005A19B95C}" ShortID="115148488">
 									<PropertyList>
-										<Property Name="InitialDelay" Type="Real64">
+										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>2</Value>
+												<Value>-25</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -150,6 +165,11 @@
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-30</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -182,10 +202,10 @@
 										<ObjectRef Name="rock_land1_2" ID="{87BCAF74-D2EB-4DA3-B295-374C9542667D}" WorkUnitID="{702988FB-4A56-44EE-941C-588512765CD5}"/>
 									</Reference>
 									<Reference>
-										<ObjectRef Name="rock_land1_1" ID="{D579E8E9-3888-4C8B-9A9D-E9B888DB2CA2}" WorkUnitID="{702988FB-4A56-44EE-941C-588512765CD5}"/>
+										<ObjectRef Name="rock_land1_3" ID="{D69258F4-599B-4F20-9D29-85005A19B95C}" WorkUnitID="{702988FB-4A56-44EE-941C-588512765CD5}"/>
 									</Reference>
 									<Reference>
-										<ObjectRef Name="rock_land1_3" ID="{D69258F4-599B-4F20-9D29-85005A19B95C}" WorkUnitID="{702988FB-4A56-44EE-941C-588512765CD5}"/>
+										<ObjectRef Name="rock_land1_1" ID="{D579E8E9-3888-4C8B-9A9D-E9B888DB2CA2}" WorkUnitID="{702988FB-4A56-44EE-941C-588512765CD5}"/>
 									</Reference>
 									<Reference>
 										<ObjectRef Name="rock_fall_noise" ID="{530278E2-9DD5-4D24-9228-D110C626D357}" WorkUnitID="{702988FB-4A56-44EE-941C-588512765CD5}"/>
@@ -198,6 +218,11 @@
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -208,6 +233,9 @@
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+								</Reference>
+								<Reference Name="ReflectionsAuxSend">
+									<ObjectRef Name="Reflect" ID="{32F40114-197C-4E2E-87F1-D24A3C7DDA4E}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -229,16 +257,25 @@
 					<ChildrenList>
 						<RandomSequenceContainer Name="rats_run" ID="{223EF516-AC3F-4513-B45E-7E1C3D4075E9}" ShortID="575347170">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="rats" ID="{E100F4A9-45B4-4961-9EF4-458B37A2DEB8}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+								</Reference>
+								<Reference Name="ReflectionsAuxSend">
+									<ObjectRef Name="Reflect" ID="{32F40114-197C-4E2E-87F1-D24A3C7DDA4E}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -347,6 +384,8 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="rats_squeak" ID="{7DFA62D4-71B9-490C-8757-64E443C2457C}" ShortID="873976986">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
@@ -363,13 +402,20 @@
 									</ModifierList>
 								</Property>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="rats" ID="{E100F4A9-45B4-4961-9EF4-458B37A2DEB8}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+								</Reference>
+								<Reference Name="ReflectionsAuxSend">
+									<ObjectRef Name="Reflect" ID="{32F40114-197C-4E2E-87F1-D24A3C7DDA4E}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -508,6 +554,9 @@
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+						</Reference>
+						<Reference Name="ReflectionsAuxSend">
+							<ObjectRef Name="Reflect" ID="{32F40114-197C-4E2E-87F1-D24A3C7DDA4E}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

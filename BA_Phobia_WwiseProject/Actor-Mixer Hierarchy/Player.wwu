@@ -353,14 +353,17 @@
 				</SwitchContainer>
 				<RandomSequenceContainer Name="breath_slow" ID="{4EBF7596-99C8-41A1-B2E1-5A70A8EE0BE4}" ShortID="772807197">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
 						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2"/>
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-12</Value>
+								<Value>-25</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -370,6 +373,9 @@
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+						</Reference>
+						<Reference Name="ReflectionsAuxSend">
+							<ObjectRef Name="Reflect" ID="{32F40114-197C-4E2E-87F1-D24A3C7DDA4E}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

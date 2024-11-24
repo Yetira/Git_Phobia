@@ -416,7 +416,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5b7d3d6d0746124ab1d6166bb3175237
     GuidInternal: 
-    m_lastTime: -8584691375283219481
+    m_lastTime: -8584691340143214816
     List:
     - name: Main_test
       guid: f4bfb48e9ef48e4883081f357e8cb44a
@@ -444,7 +444,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 199508fe3d34424d9564a328ccca3022
     GuidInternal: 
-    m_lastTime: -8584691375283324641
+    m_lastTime: -8584691340143314973
     List:
     - name: breath_slow
       guid: 354523044544d4458ec1bcab2c8e38db
@@ -547,7 +547,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 06a87c5d8be54247b44326b0989959ec
       Path: Events\Default Work Unit\Schacht\rat_kickoff
-      maxAttenuation: 0
+      maxAttenuation: 100
       maxDuration: -1
       minDuration: -1
     - name: rock_fall
@@ -607,6 +607,42 @@ MonoBehaviour:
         ObjectType: 3
         guid: 352f57fc93a0b645b06409da893551f7
       Path: Events\Default Work Unit\Schacht\wind_howl
+      maxAttenuation: 300
+      maxDuration: -1
+      minDuration: -1
+  - PhysicalPath: Events\Tunnel.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 199508fe3d34424d9564a328ccca3022
+    - ElementName: Tunnel
+      ObjectType: 12
+      guid: f003d0716b86314ca330e3e913374bac
+    ParentPath: Events\Default Work Unit\Tunnel
+    guid: f003d0716b86314ca330e3e913374bac
+    GuidInternal: 
+    m_lastTime: -8584691340142834238
+    List:
+    - name: water_drips
+      guid: 7b71f01018121a468c1a9c00851cf004
+      id: 3853114527
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: Tunnel
+        ObjectType: 12
+        guid: f003d0716b86314ca330e3e913374bac
+      - ElementName: water_drips
+        ObjectType: 3
+        guid: 7b71f01018121a468c1a9c00851cf004
+      Path: Events\Default Work Unit\Tunnel\water_drips
       maxAttenuation: 300
       maxDuration: -1
       minDuration: -1

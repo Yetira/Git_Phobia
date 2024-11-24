@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{1CAC36E7-2CDA-4DCE-F0A1-D6069FA8D533}">
+		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{AA695522-387C-48FD-7E05-EACC7153DD7B}">
 			<ShortName>Main_test</ShortName>
 			<Path>Main_test.bnk</Path>
 			<Media>
@@ -57,6 +57,10 @@
 					<ShortName>rock_land1.2.wav</ShortName>
 					<CachePath>SFX/rock_land1.2_818F3B66.wem</CachePath>
 				</File>
+				<File Id="359400834" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>drip4.wav</ShortName>
+					<CachePath>SFX/drip4_818F3B66.wem</CachePath>
+				</File>
 				<File Id="360007009" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>breath_slow2.wav</ShortName>
 					<CachePath>SFX/breath_slow2_818F3B66.wem</CachePath>
@@ -97,9 +101,17 @@
 					<ShortName>breath_slow1.wav</ShortName>
 					<CachePath>SFX/breath_slow1_818F3B66.wem</CachePath>
 				</File>
+				<File Id="817649428" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>drip1.wav</ShortName>
+					<CachePath>SFX/drip1_818F3B66.wem</CachePath>
+				</File>
 				<File Id="826582764" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FS_Concrete_02.wav</ShortName>
 					<CachePath>SFX/FS_Concrete_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="857919443" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>drip2.wav</ShortName>
+					<CachePath>SFX/drip2_818F3B66.wem</CachePath>
 				</File>
 				<File Id="863629646" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>rat_squeak5.wav</ShortName>
@@ -108,6 +120,10 @@
 				<File Id="956928053" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FS_Tile_01.wav</ShortName>
 					<CachePath>SFX/FS_Tile_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="998505593" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>drip3.wav</ShortName>
+					<CachePath>SFX/drip3_818F3B66.wem</CachePath>
 				</File>
 				<File Id="1038212346" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>rat_squeak1.wav</ShortName>
@@ -121,6 +137,9 @@
 						<MediaRef Id="360007009"/>
 						<MediaRef Id="809135877"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="243379636" Name="Reflect"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="116178158" Name="footstep_event" DurationType="OneShot" DurationMin="0.42451248" DurationMax="0.7190703">
 					<AuxBusRefs>
@@ -161,7 +180,7 @@
 						<AuxBusRef Id="243379636" Name="Reflect"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="1107904574" Name="rat_kickoff" DurationType="Infinite">
+				<Event Id="1107904574" Name="rat_kickoff" MaxAttenuation="120" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="52648787"/>
 						<MediaRef Id="99444650"/>
@@ -173,6 +192,9 @@
 						<MediaRef Id="863629646"/>
 						<MediaRef Id="1038212346"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="243379636" Name="Reflect"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="3378404558" Name="rock_fall" MaxAttenuation="300" DurationType="Infinite">
 					<MediaRefs>
@@ -181,16 +203,36 @@
 						<MediaRef Id="279319453"/>
 						<MediaRef Id="313438146"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="243379636" Name="Reflect"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="119891818" Name="rock_land" MaxAttenuation="300" DurationType="OneShot" DurationMin="0.6666667" DurationMax="0.6666667">
 					<MediaRefs>
 						<MediaRef Id="313438146"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="243379636" Name="Reflect"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="3853114527" Name="water_drips" MaxAttenuation="300" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="359400834"/>
+						<MediaRef Id="817649428"/>
+						<MediaRef Id="857919443"/>
+						<MediaRef Id="998505593"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="243379636" Name="Reflect"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="652692592" Name="wind_howl" MaxAttenuation="300" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="488724425"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="243379636" Name="Reflect"/>
+					</AuxBusRefs>
 				</Event>
 			</Events>
 			<GameParameters>
@@ -205,7 +247,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{78D9C319-DE5F-8E28-87DD-DEAA39DAFAD8}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{736D7EE1-08BD-72AC-5628-C26D9BF6B53E}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -404,5 +446,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F55CC89E-E7B3-A2CE-C44C-9F3D9959B4DA}</FileHash>
+	<FileHash>{8CEB8ACD-2501-8978-A64F-5DAAE35AFDB2}</FileHash>
 </SoundBanksInfo>

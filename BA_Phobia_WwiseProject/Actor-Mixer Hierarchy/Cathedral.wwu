@@ -44,27 +44,31 @@
 				</Sound>
 				<RandomSequenceContainer Name="water_drips" ID="{DF6AB88B-8A00-4B3C-8499-901EA506EC05}" ShortID="739298610">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2"/>
+						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3"/>
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>12</Value>
-							</ValueList>
-						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Attenuation_test" ID="{A3CFFE80-4E86-49E6-A57E-1EFF5B9035B6}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 						</Reference>
+						<Reference Name="ReflectionsAuxSend">
+							<ObjectRef Name="Reflect" ID="{32F40114-197C-4E2E-87F1-D24A3C7DDA4E}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="drip1" ID="{4E13126A-61EA-4A11-8147-8D05AF1122EF}" ShortID="315658716">
+						<Sound Name="drip1" ID="{C57C87CA-74D7-4492-B192-F99AA1091E7E}" ShortID="703648749">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
@@ -74,7 +78,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="drip1" ID="{007F8BB4-8E49-444D-96C0-72C99E687115}">
+								<AudioFileSource Name="drip1" ID="{E680D537-9235-43DF-B429-8193DDFA1411}">
 									<Language>SFX</Language>
 									<AudioFile>drip1.wav</AudioFile>
 									<MediaIDList>
@@ -83,10 +87,10 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="drip1" ID="{007F8BB4-8E49-444D-96C0-72C99E687115}" Platform="Linked"/>
+								<ActiveSource Name="drip1" ID="{E680D537-9235-43DF-B429-8193DDFA1411}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="drip2" ID="{C40DD990-E655-4A89-9CDB-F7D42C4B18E8}" ShortID="368305161">
+						<Sound Name="drip2" ID="{C78B5D6A-F83D-4242-96DF-CC5AEA17E9A3}" ShortID="1016772254">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
@@ -96,7 +100,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="drip2" ID="{BFBF7D2C-CE60-42D4-88D9-F1EA0FF16AF8}">
+								<AudioFileSource Name="drip2" ID="{D23D8ED7-0971-4221-8E7E-8B49656B2C50}">
 									<Language>SFX</Language>
 									<AudioFile>drip2.wav</AudioFile>
 									<MediaIDList>
@@ -105,10 +109,10 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="drip2" ID="{BFBF7D2C-CE60-42D4-88D9-F1EA0FF16AF8}" Platform="Linked"/>
+								<ActiveSource Name="drip2" ID="{D23D8ED7-0971-4221-8E7E-8B49656B2C50}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="drip4" ID="{0A8ED746-FE0E-4C65-A98E-5963D4D55454}" ShortID="897565843">
+						<Sound Name="drip3" ID="{76A1CD81-492F-4912-B159-7266804EE100}" ShortID="110608716">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
@@ -118,29 +122,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="drip4" ID="{C3ABACB6-B3C3-4417-8F68-471B27A99147}">
-									<Language>SFX</Language>
-									<AudioFile>drip4.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="359400834"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="drip4" ID="{C3ABACB6-B3C3-4417-8F68-471B27A99147}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="drip3" ID="{C3934EB3-46C3-4FAA-8DD0-91312A121F94}" ShortID="884093366">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="drip3" ID="{0726F4FC-09F2-41D7-9332-64507D8FAC91}">
+								<AudioFileSource Name="drip3" ID="{04F0A00C-6BA6-4B3D-A427-CD17F4B0A7AF}">
 									<Language>SFX</Language>
 									<AudioFile>drip3.wav</AudioFile>
 									<MediaIDList>
@@ -149,7 +131,29 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="drip3" ID="{0726F4FC-09F2-41D7-9332-64507D8FAC91}" Platform="Linked"/>
+								<ActiveSource Name="drip3" ID="{04F0A00C-6BA6-4B3D-A427-CD17F4B0A7AF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="drip4" ID="{D9E73B02-0F49-4C50-8FAA-F917B600CD0A}" ShortID="296720157">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="drip4" ID="{F4FD6DFA-BE7D-47E3-A646-FB227A1154D9}">
+									<Language>SFX</Language>
+									<AudioFile>drip4.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="359400834"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="drip4" ID="{F4FD6DFA-BE7D-47E3-A646-FB227A1154D9}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

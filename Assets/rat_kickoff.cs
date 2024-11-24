@@ -10,6 +10,7 @@ public class rat_kickoff : MonoBehaviour
     void Start()
     {
         ratAnim = GetComponent<Animation>();
+        AkSoundEngine.PostEvent("rat_kickoff", gameObject);
     }
 
     public void Run()

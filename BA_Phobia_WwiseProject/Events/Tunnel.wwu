@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{71D003F0-866B-4C31-A330-E3E913374BAC}" SchemaVersion="119" RootDocumentID="{FE089519-343D-4D42-9564-A328CCCA3022}" ParentDocumentID="{FE089519-343D-4D42-9564-A328CCCA3022}">
+	<Events>
+		<WorkUnit Name="Tunnel" ID="{71D003F0-866B-4C31-A330-E3E913374BAC}" OwnerID="{FE089519-343D-4D42-9564-A328CCCA3022}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="water_drips" ID="{10F0717B-1218-461A-8C1A-9C00851CF004}">
+					<ChildrenList>
+						<Action Name="" ID="{CBBC8429-4A0A-4BB9-8204-B8A1A220C73D}" ShortID="458522420">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="water_drips" ID="{DF6AB88B-8A00-4B3C-8499-901EA506EC05}" WorkUnitID="{C3AA22BB-1B07-445D-8462-CFD7B079ED45}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
