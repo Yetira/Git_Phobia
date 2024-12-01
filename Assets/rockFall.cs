@@ -6,7 +6,7 @@ using UnityEngine;
 public class rockFall : MonoBehaviour
 {
 
-    public int targetLayer;
+    public int groundLayer;
 
     public rat_kickoff rat;
 
@@ -56,14 +56,14 @@ public class rockFall : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.layer == targetLayer)
+        if (other.gameObject.layer == groundLayer)
         {
             AkSoundEngine.PostEvent("rock_land", gameObject);
             Debug.Log("rock has landed.");
 
             AkSoundEngine.StopPlayingID(rockFallId);
 
-            rat.Run();
+            rat.ratRun();
            
         }
     }

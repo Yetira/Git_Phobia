@@ -15,22 +15,14 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="play_testmelody" ID="{DBC05B64-CF7E-4252-AEAC-8F37D62BF77B}">
+					<PropertyList>
+						<Property Name="Inclusion" Type="bool" Value="False"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{CAFA0DFD-1469-48FB-9C32-39E2B34FAF24}" ShortID="541922769">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="test_sound" ID="{7783EC61-F516-44C8-A282-3F0DC53E0C85}" WorkUnitID="{FAD97F9B-AFBF-4D04-83D1-6C87A63C4AD8}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="lullaby_event" ID="{8988514B-9A22-4179-9D52-D1101588B153}">
-					<ChildrenList>
-						<Action Name="" ID="{3C40AC8A-F12C-4350-BECF-ECD012DA5D03}" ShortID="553383591">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="lullaby" ID="{5672310C-91B8-4B5E-860B-3D045330F51C}" WorkUnitID="{C3AA22BB-1B07-445D-8462-CFD7B079ED45}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -49,6 +41,7 @@
 					</ChildrenList>
 				</Event>
 				<WorkUnit Name="Tunnel" ID="{71D003F0-866B-4C31-A330-E3E913374BAC}" PersistMode="Reference"/>
+				<WorkUnit Name="Cave" ID="{83F8F8B2-3880-41F3-9975-C575370FFBDC}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

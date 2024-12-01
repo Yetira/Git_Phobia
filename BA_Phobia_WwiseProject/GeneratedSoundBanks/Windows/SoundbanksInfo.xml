@@ -9,10 +9,14 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{AA695522-387C-48FD-7E05-EACC7153DD7B}">
+		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{A44C38C3-AAEF-BAC9-64AA-99707146F478}">
 			<ShortName>Main_test</ShortName>
 			<Path>Main_test.bnk</Path>
 			<Media>
+				<File Id="29330794" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>chuckle_2_long.wav</ShortName>
+					<CachePath>SFX/chuckle_2_long_818F3B66.wem</CachePath>
+				</File>
 				<File Id="52648787" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>rat_squeak3.wav</ShortName>
 					<CachePath>SFX/rat_squeak3_818F3B66.wem</CachePath>
@@ -37,9 +41,17 @@
 					<ShortName>rock_land1.3.wav</ShortName>
 					<CachePath>SFX/rock_land1.3_818F3B66.wem</CachePath>
 				</File>
+				<File Id="164609370" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>chuckle_3.wav</ShortName>
+					<CachePath>SFX/chuckle_3_818F3B66.wem</CachePath>
+				</File>
 				<File Id="181027316" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>rock_land1.1.wav</ShortName>
 					<CachePath>SFX/rock_land1.1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="221785100" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footstep_rock2.wav</ShortName>
+					<CachePath>SFX/footstep_rock2_818F3B66.wem</CachePath>
 				</File>
 				<File Id="279319453" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>rock_fall_noise.wav</ShortName>
@@ -49,6 +61,10 @@
 					<ShortName>rat_squeak2.wav</ShortName>
 					<CachePath>SFX/rat_squeak2_818F3B66.wem</CachePath>
 				</File>
+				<File Id="298612156" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footstep_rock1.wav</ShortName>
+					<CachePath>SFX/footstep_rock1_818F3B66.wem</CachePath>
+				</File>
 				<File Id="307152786" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FS_Concrete_03.wav</ShortName>
 					<CachePath>SFX/FS_Concrete_03_818F3B66.wem</CachePath>
@@ -56,6 +72,14 @@
 				<File Id="313438146" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>rock_land1.2.wav</ShortName>
 					<CachePath>SFX/rock_land1.2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="344706494" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footstep_rock6.wav</ShortName>
+					<CachePath>SFX/footstep_rock6_818F3B66.wem</CachePath>
+				</File>
+				<File Id="359392364" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>girl_running_cut2.wav</ShortName>
+					<CachePath>SFX/girl_running_cut2_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="359400834" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>drip4.wav</ShortName>
@@ -69,9 +93,9 @@
 					<ShortName>rat_run2.wav</ShortName>
 					<CachePath>SFX/rat_run2_818F3B66.wem</CachePath>
 				</File>
-				<File Id="435254687" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>test_melody.wav</ShortName>
-					<CachePath>SFX/test_melody_FBC78EF0.wem</CachePath>
+				<File Id="419015160" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footstep_rock8.wav</ShortName>
+					<CachePath>SFX/footstep_rock8_818F3B66.wem</CachePath>
 				</File>
 				<File Id="482811910" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>rat_run1.wav</ShortName>
@@ -81,6 +105,14 @@
 					<ShortName>wind_howl_soft.wav</ShortName>
 					<CachePath>SFX/wind_howl_soft_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="515772139" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footstep_rock4.wav</ShortName>
+					<CachePath>SFX/footstep_rock4_818F3B66.wem</CachePath>
+				</File>
+				<File Id="528712061" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footstep_rock7.wav</ShortName>
+					<CachePath>SFX/footstep_rock7_818F3B66.wem</CachePath>
+				</File>
 				<File Id="613318558" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FS_Tile_02.wav</ShortName>
 					<CachePath>SFX/FS_Tile_02_818F3B66.wem</CachePath>
@@ -88,6 +120,10 @@
 				<File Id="638166327" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>rat_squeak4.wav</ShortName>
 					<CachePath>SFX/rat_squeak4_818F3B66.wem</CachePath>
+				</File>
+				<File Id="761451570" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footstep_rock3.wav</ShortName>
+					<CachePath>SFX/footstep_rock3_818F3B66.wem</CachePath>
 				</File>
 				<File Id="776517462" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>lullaby.wav</ShortName>
@@ -101,6 +137,10 @@
 					<ShortName>breath_slow1.wav</ShortName>
 					<CachePath>SFX/breath_slow1_818F3B66.wem</CachePath>
 				</File>
+				<File Id="811281197" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>chuckle_4_short.wav</ShortName>
+					<CachePath>SFX/chuckle_4_short_818F3B66.wem</CachePath>
+				</File>
 				<File Id="817649428" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>drip1.wav</ShortName>
 					<CachePath>SFX/drip1_818F3B66.wem</CachePath>
@@ -108,6 +148,10 @@
 				<File Id="826582764" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FS_Concrete_02.wav</ShortName>
 					<CachePath>SFX/FS_Concrete_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="854779166" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>chuckle1.wav</ShortName>
+					<CachePath>SFX/chuckle1_818F3B66.wem</CachePath>
 				</File>
 				<File Id="857919443" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>drip2.wav</ShortName>
@@ -120,6 +164,10 @@
 				<File Id="956928053" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FS_Tile_01.wav</ShortName>
 					<CachePath>SFX/FS_Tile_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="996077848" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>chuckle_5.wav</ShortName>
+					<CachePath>SFX/chuckle_5_818F3B66.wem</CachePath>
 				</File>
 				<File Id="998505593" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>drip3.wav</ShortName>
@@ -155,26 +203,43 @@
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="841620460" Default="true"/>
+							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="841620460"/>
 							<MediaRefs>
 								<MediaRef Id="307152786"/>
 								<MediaRef Id="802854533"/>
 								<MediaRef Id="826582764"/>
 							</MediaRefs>
 						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="2144363834" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="221785100"/>
+								<MediaRef Id="298612156"/>
+								<MediaRef Id="344706494"/>
+								<MediaRef Id="419015160"/>
+								<MediaRef Id="515772139"/>
+								<MediaRef Id="528712061"/>
+								<MediaRef Id="761451570"/>
+							</MediaRefs>
+						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="2466003463" Name="lullaby_event" MaxAttenuation="100" DurationType="Infinite">
+				<Event Id="3413758005" Name="girl_run" MaxAttenuation="38" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="776517462"/>
+						<MediaRef Id="29330794"/>
+						<MediaRef Id="164609370"/>
+						<MediaRef Id="359392364"/>
+						<MediaRef Id="811281197"/>
+						<MediaRef Id="854779166"/>
+						<MediaRef Id="996077848"/>
 					</MediaRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="243379636" Name="Reflect"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="1542721370" Name="play_testmelody" MaxAttenuation="300" DurationType="Infinite">
+				<Event Id="2466003463" Name="lullaby_event" MaxAttenuation="50" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="435254687"/>
+						<MediaRef Id="776517462"/>
 					</MediaRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="243379636" Name="Reflect"/>
@@ -215,7 +280,7 @@
 						<AuxBusRef Id="243379636" Name="Reflect"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="3853114527" Name="water_drips" MaxAttenuation="300" DurationType="Infinite">
+				<Event Id="3853114527" Name="water_drips" MaxAttenuation="120" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="359400834"/>
 						<MediaRef Id="817649428"/>
@@ -226,7 +291,7 @@
 						<AuxBusRef Id="243379636" Name="Reflect"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="652692592" Name="wind_howl" MaxAttenuation="300" DurationType="Infinite">
+				<Event Id="652692592" Name="wind_howl" MaxAttenuation="30" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="488724425"/>
 					</MediaRefs>
@@ -242,12 +307,13 @@
 				<SwitchGroup Id="2385628198" Name="Footsteps">
 					<Switches>
 						<Switch Id="841620460" Name="Concrete"/>
+						<Switch Id="2144363834" Name="Rock"/>
 						<Switch Id="2637588553" Name="Tile"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{736D7EE1-08BD-72AC-5628-C26D9BF6B53E}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F4DF3C98-2ABF-4E4C-68D9-D925A781364E}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -312,6 +378,7 @@
 				<SwitchGroup Id="2385628198" Name="Footsteps">
 					<Switches>
 						<Switch Id="841620460" Name="Concrete"/>
+						<Switch Id="2144363834" Name="Rock"/>
 						<Switch Id="2637588553" Name="Tile"/>
 					</Switches>
 				</SwitchGroup>
@@ -446,5 +513,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{8CEB8ACD-2501-8978-A64F-5DAAE35AFDB2}</FileHash>
+	<FileHash>{8EC3672F-4298-B5ED-9FA0-5B0271BF1037}</FileHash>
 </SoundBanksInfo>

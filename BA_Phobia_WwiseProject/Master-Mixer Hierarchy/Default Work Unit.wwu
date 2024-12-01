@@ -5,6 +5,11 @@
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
 					<PropertyList>
+						<Property Name="BusVolume" Type="Real64">
+							<ValueList>
+								<Value>10</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Color" Type="int16" Value="18"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
@@ -115,11 +120,15 @@
 										<Value>16641</Value>
 									</ValueList>
 								</Property>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+								</Property>
 								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
-							<ReferenceList/>
 							<ObjectLists>
 								<ObjectList Name="Effects">
 									<Reference>

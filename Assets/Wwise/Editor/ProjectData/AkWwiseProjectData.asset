@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 3e860730979601429f3a22904a750a2e
     GuidInternal: 
-    m_lastTime: -8584694804402885461
+    m_lastTime: -8584687217114916703
     List:
     - name: Cathedral
       guid: 5303bcca0afb1342a2ccb0b9f9b540f9
@@ -416,7 +416,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5b7d3d6d0746124ab1d6166bb3175237
     GuidInternal: 
-    m_lastTime: -8584691340143214816
+    m_lastTime: -8584685556621852732
     List:
     - name: Main_test
       guid: f4bfb48e9ef48e4883081f357e8cb44a
@@ -433,6 +433,62 @@ MonoBehaviour:
         guid: f4bfb48e9ef48e4883081f357e8cb44a
       Path: SoundBanks\Default Work Unit\Main_test
   EventWwu:
+  - PhysicalPath: Events\Cave.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 199508fe3d34424d9564a328ccca3022
+    - ElementName: Cave
+      ObjectType: 12
+      guid: b2f8f8838038f3419975c575370ffbdc
+    ParentPath: Events\Default Work Unit\Cave
+    guid: b2f8f8838038f3419975c575370ffbdc
+    GuidInternal: 
+    m_lastTime: -8584685556622043028
+    List:
+    - name: girl_run
+      guid: 8585ffd7e3a8bf4b8d01dc725d3c010b
+      id: 3413758005
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: Cave
+        ObjectType: 12
+        guid: b2f8f8838038f3419975c575370ffbdc
+      - ElementName: girl_run
+        ObjectType: 3
+        guid: 8585ffd7e3a8bf4b8d01dc725d3c010b
+      Path: Events\Default Work Unit\Cave\girl_run
+      maxAttenuation: 38
+      maxDuration: -1
+      minDuration: -1
+    - name: lullaby_event
+      guid: 4b518889229a79419d52d1101588b153
+      id: 2466003463
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: Cave
+        ObjectType: 12
+        guid: b2f8f8838038f3419975c575370ffbdc
+      - ElementName: lullaby_event
+        ObjectType: 3
+        guid: 4b518889229a79419d52d1101588b153
+      Path: Events\Default Work Unit\Cave\lullaby_event
+      maxAttenuation: 50
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Events
@@ -444,7 +500,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 199508fe3d34424d9564a328ccca3022
     GuidInternal: 
-    m_lastTime: -8584691340143314973
+    m_lastTime: -8584686370056057988
     List:
     - name: breath_slow
       guid: 354523044544d4458ec1bcab2c8e38db
@@ -480,23 +536,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.7190703
       minDuration: 0.42451248
-    - name: lullaby_event
-      guid: 4b518889229a79419d52d1101588b153
-      id: 2466003463
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 199508fe3d34424d9564a328ccca3022
-      - ElementName: lullaby_event
-        ObjectType: 3
-        guid: 4b518889229a79419d52d1101588b153
-      Path: Events\Default Work Unit\lullaby_event
-      maxAttenuation: 100
-      maxDuration: -1
-      minDuration: -1
     - name: play_testmelody
       guid: 645bc0db7ecf5242aeac8f37d62bf77b
       id: 1542721370
@@ -547,7 +586,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 06a87c5d8be54247b44326b0989959ec
       Path: Events\Default Work Unit\Schacht\rat_kickoff
-      maxAttenuation: 100
+      maxAttenuation: 120
       maxDuration: -1
       minDuration: -1
     - name: rock_fall
@@ -607,7 +646,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 352f57fc93a0b645b06409da893551f7
       Path: Events\Default Work Unit\Schacht\wind_howl
-      maxAttenuation: 300
+      maxAttenuation: 30
       maxDuration: -1
       minDuration: -1
   - PhysicalPath: Events\Tunnel.wwu
@@ -643,7 +682,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 7b71f01018121a468c1a9c00851cf004
       Path: Events\Default Work Unit\Tunnel\water_drips
-      maxAttenuation: 300
+      maxAttenuation: 120
       maxDuration: -1
       minDuration: -1
   RtpcWwu:
@@ -700,7 +739,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: e5d7232acd96ac48b5e661cd6c28eb44
     GuidInternal: 
-    m_lastTime: -8584699061523073647
+    m_lastTime: -8584686370058266379
     List:
     - name: Footsteps
       guid: efc889578262544a9c178fac347e9d89
@@ -733,6 +772,22 @@ MonoBehaviour:
         - ElementName: Concrete
           ObjectType: 10
           guid: 49b0824ffccaa84f84050998cb93ca0c
+      - name: Rock
+        guid: 6541490073514e4098cce5b68862a08e
+        id: 2144363834
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: e5d7232acd96ac48b5e661cd6c28eb44
+        - ElementName: Footsteps
+          ObjectType: 11
+          guid: efc889578262544a9c178fac347e9d89
+        - ElementName: Rock
+          ObjectType: 10
+          guid: 6541490073514e4098cce5b68862a08e
       - name: Tile
         guid: 0f2f76fb8a3c9345a172632698d9619b
         id: 2637588553

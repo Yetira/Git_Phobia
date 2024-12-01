@@ -7,6 +7,7 @@
 					<ChildrenList>
 						<Switch Name="Concrete" ID="{4F82B049-CAFC-4FA8-8405-0998CB93CA0C}"/>
 						<Switch Name="Tile" ID="{FB762F0F-3C8A-4593-A172-632698D9619B}"/>
+						<Switch Name="Rock" ID="{00494165-5173-404E-98CC-E5B68862A08E}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

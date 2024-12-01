@@ -41,7 +41,7 @@ MonoBehaviour:
     m_SpatialAudioSettings:
       m_MaxSoundPropagationDepth: 8
       m_MovementThreshold: 1
-      m_NumberOfPrimaryRays: 50
+      m_NumberOfPrimaryRays: 100
       m_MaxReflectionOrder: 2
       m_MaxDiffractionOrder: 4
       m_DiffractionOnReflectionsOrder: 2

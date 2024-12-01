@@ -7,10 +7,8 @@ public class AltFirstPersonController : MonoBehaviour
 {
     [Header("Movement Settings")]
     public float movementSpeed = 2.0f; // Control the movement speed of the player
-    public float rotationSpeed = 100.0f; // Control the rotation speed of the player
 
     [Header("References")]
-    
     public Transform vrCamera; // Reference to the VR Camera (usually the player's head)
 
     public GameObject Feet;
@@ -18,7 +16,6 @@ public class AltFirstPersonController : MonoBehaviour
     private CharacterController characterController;
     private PlayerInputActions playerInputActions;
     private Vector2 moveInput;
-    private Vector2 lookInput;
 
     private float m_StepCycle = 0f;         // Tracks the current step cycle progress
     private float m_NextStep = 0f;          // Threshold for the next footstep sound
@@ -27,17 +24,11 @@ public class AltFirstPersonController : MonoBehaviour
 
     void Awake()
     {
-        // Initialize the input actions and register the MoveForward and Look actions
+        // Initialize the input actions and register the Move action
         playerInputActions = new PlayerInputActions();
-        
+
         playerInputActions.Player.Move.performed += OnMovePerformed;
         playerInputActions.Player.Move.canceled += OnMoveCanceled;
-
-       
-        // Register the Look action for the left stick
-        playerInputActions.Player.Look.performed += OnLookPerformed;
-        playerInputActions.Player.Look.canceled += OnLookCanceled;
-        
     }
 
     void OnEnable()
@@ -70,9 +61,7 @@ public class AltFirstPersonController : MonoBehaviour
         // Handle movement
         Move();
 
-        // Handle rotation based on left stick input
-        RotatePlayer();
-
+        // Update step cycle for footstep sounds
         ProgressStepCycle();
     }
 
@@ -88,13 +77,13 @@ public class AltFirstPersonController : MonoBehaviour
             if (m_StepCycle > m_NextStep)
             {
                 m_NextStep = m_StepCycle + m_StepInterval;
-                
+
                 PlayFootStepAudio();
             }
         }
         else
         {
-            //reset cycle when stop moving
+            // Reset cycle when stop moving
             m_StepCycle = 0f;
             m_NextStep = m_StepInterval;
         }
@@ -102,51 +91,38 @@ public class AltFirstPersonController : MonoBehaviour
 
     private void PlayFootStepAudio()
     {
-      
         AkSoundEngine.PostEvent("footstep_event", Feet);
-
     }
+
     private void Move()
     {
-        Vector3 moveDirection = new Vector3(moveInput.x, 0, moveInput.y);
-        moveDirection = transform.TransformDirection(moveDirection);
-        moveDirection *= movementSpeed * Time.deltaTime;
-        
-        characterController.Move(moveDirection);
-        
-    }
+        // Use the VR camera's forward direction for movement alignment
+        Vector3 forward = vrCamera.forward;
+        Vector3 right = vrCamera.right;
 
-    private void RotatePlayer()
-    {
-        // Only rotate if there is look input (from the left stick)
-        if (lookInput.sqrMagnitude > 0.01f)
-        {
-            // Rotate the player based on the horizontal input
-            float horizontalRotation = lookInput.x * rotationSpeed * Time.deltaTime;
-            transform.Rotate(0, horizontalRotation, 0);
-        }
+        // Flatten the vectors to prevent vertical movement
+        forward.y = 0;
+        right.y = 0;
+
+        forward.Normalize();
+        right.Normalize();
+
+        // Compute the movement direction based on the left stick input
+        Vector3 moveDirection = (forward * moveInput.y + right * moveInput.x) * movementSpeed * Time.deltaTime;
+
+        // Apply the movement to the character controller
+        characterController.Move(moveDirection);
     }
 
     private void OnMovePerformed(InputAction.CallbackContext context)
     {
+        // Read the movement vector from the input system
         moveInput = context.ReadValue<Vector2>();
     }
 
     private void OnMoveCanceled(InputAction.CallbackContext context)
     {
-        // Called when the "A" button is released
+        // Reset the movement vector when the input is released
         moveInput = Vector2.zero;
-    }
-
-    private void OnLookPerformed(InputAction.CallbackContext context)
-    {
-        // Called when the left stick is moved
-        lookInput = context.ReadValue<Vector2>();
-    }
-
-    private void OnLookCanceled(InputAction.CallbackContext context)
-    {
-        // Called when the left stick is released
-        lookInput = Vector2.zero;
     }
 }

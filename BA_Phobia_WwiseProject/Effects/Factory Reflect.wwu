@@ -6,7 +6,6 @@
 				<Effect Name="Reflect" ID="{37779A87-4754-4420-8175-3236FA46AA12}" PluginName="Wwise Reflect" CompanyID="0" PluginID="171" PluginType="3">
 					<PropertyList>
 						<Property Name="CurveUsageMask" Type="Uint32" Value="127"/>
-						<Property Name="SpeedOfSound" Type="Real32" Value="450"/>
 					</PropertyList>
 					<PluginData>
 	<ReflectData>
