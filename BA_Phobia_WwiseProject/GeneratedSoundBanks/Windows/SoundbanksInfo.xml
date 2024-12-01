@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{A44C38C3-AAEF-BAC9-64AA-99707146F478}">
+		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{DC528E0D-6194-E4EC-92A9-BD3CE82C7141}">
 			<ShortName>Main_test</ShortName>
 			<Path>Main_test.bnk</Path>
 			<Media>
@@ -313,11 +313,12 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F4DF3C98-2ABF-4E4C-68D9-D925A781364E}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B46975B7-FE4D-8327-DFD8-59AFCE4A3870}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
 				<Custom>
+					<Plugin Id="52925816" Name="Auro Headphone (Custom)" LibName="Auro Headphone" LibId="72093811"/>
 					<Plugin Id="430185970" Name="Room_Large (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</Custom>
 				<ShareSets>
@@ -332,6 +333,13 @@
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="2857125394" Name="AURO-3D">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="52925816"/>
+						</Custom>
+					</PluginRefs>
+				</Bus>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 			<AuxBusses>
@@ -513,5 +521,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{8EC3672F-4298-B5ED-9FA0-5B0271BF1037}</FileHash>
+	<FileHash>{8E61A0F4-E146-946C-595D-B96DABD3937F}</FileHash>
 </SoundBanksInfo>

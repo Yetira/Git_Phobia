@@ -303,8 +303,25 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 3e860730979601429f3a22904a750a2e
     GuidInternal: 
-    m_lastTime: -8584687217114916703
+    m_lastTime: -8584685438609321858
     List:
+    - name: AURO-3D
+      guid: 9e3201dc27c92a4fb863d279a8472221
+      id: 2857125394
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3e860730979601429f3a22904a750a2e
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AURO-3D
+        ObjectType: 2
+        guid: 9e3201dc27c92a4fb863d279a8472221
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AURO-3D
     - name: Cathedral
       guid: 5303bcca0afb1342a2ccb0b9f9b540f9
       id: 1024696295
@@ -416,7 +433,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5b7d3d6d0746124ab1d6166bb3175237
     GuidInternal: 
-    m_lastTime: -8584685556621852732
+    m_lastTime: -8584685497067649645
     List:
     - name: Main_test
       guid: f4bfb48e9ef48e4883081f357e8cb44a
@@ -447,7 +464,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Cave
     guid: b2f8f8838038f3419975c575370ffbdc
     GuidInternal: 
-    m_lastTime: -8584685556622043028
+    m_lastTime: -8584685497071816713
     List:
     - name: girl_run
       guid: 8585ffd7e3a8bf4b8d01dc725d3c010b
@@ -500,7 +517,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 199508fe3d34424d9564a328ccca3022
     GuidInternal: 
-    m_lastTime: -8584686370056057988
+    m_lastTime: -8584685497071806708
     List:
     - name: breath_slow
       guid: 354523044544d4458ec1bcab2c8e38db
@@ -550,7 +567,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 645bc0db7ecf5242aeac8f37d62bf77b
       Path: Events\Default Work Unit\play_testmelody
-      maxAttenuation: 300
+      maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
   - PhysicalPath: Events\Schacht.wwu
@@ -567,7 +584,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Schacht
     guid: af502f23f2719c4da70873b37c56f205
     GuidInternal: 
-    m_lastTime: -8584691375866882658
+    m_lastTime: -8584685497071806708
     List:
     - name: rat_kickoff
       guid: 06a87c5d8be54247b44326b0989959ec
@@ -663,7 +680,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Tunnel
     guid: f003d0716b86314ca330e3e913374bac
     GuidInternal: 
-    m_lastTime: -8584691340142834238
+    m_lastTime: -8584685497071796707
     List:
     - name: water_drips
       guid: 7b71f01018121a468c1a9c00851cf004
@@ -697,7 +714,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 97dba31da7636a41b8d9eb328c42a8c0
     GuidInternal: 
-    m_lastTime: -8584691638777444211
+    m_lastTime: -8584685497071796707
     List:
     - name: rock_fall
       guid: b1d64598d02e4349a5ce90054a61fc6b
@@ -739,7 +756,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: e5d7232acd96ac48b5e661cd6c28eb44
     GuidInternal: 
-    m_lastTime: -8584686370058266379
+    m_lastTime: -8584685497067649645
     List:
     - name: Footsteps
       guid: efc889578262544a9c178fac347e9d89

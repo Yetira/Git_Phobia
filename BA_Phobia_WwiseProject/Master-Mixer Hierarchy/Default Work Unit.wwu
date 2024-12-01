@@ -168,6 +168,32 @@
 								</ObjectList>
 							</ObjectLists>
 						</AuxBus>
+						<Bus Name="AURO-3D" ID="{DC01329E-C927-4F2A-B863-D279A8472221}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>803467534</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{EAB46C31-2E80-44AD-98C1-1144C593827A}" ShortID="1036741073">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Auro Headphone (Custom)" ID="{C77FC002-CCE9-4759-945D-9933558F43D7}" ShortID="52925816" PluginName="Auro Headphone" CompanyID="263" PluginID="1100" PluginType="3"/>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

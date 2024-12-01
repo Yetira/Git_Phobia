@@ -5,6 +5,7 @@
 		<PluginLib LibName="Wwise Reflect" LibId="11206659" Type="Effect" DLL="AkReflect" StaticLib="AkReflectFX"/>
 		<PluginLib LibName="System" LibId="11403271" Type="AudioDevice"/>
 		<PluginLib LibName="No Output" LibId="11862023" Type="AudioDevice"/>
+		<PluginLib LibName="Auro Headphone" LibId="72093811" Type="Effect" DLL="Auro" StaticLib="AuroHeadphoneFX"/>
 	</PluginLibs>
-	<FileHash>{D35DA512-D0D8-A86E-97B5-5D46CC044C1C}</FileHash>
+	<FileHash>{C957740A-A42F-5A27-E2F4-FCD2207D4B61}</FileHash>
 </PluginInfo>

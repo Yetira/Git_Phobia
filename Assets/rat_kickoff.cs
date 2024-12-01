@@ -12,6 +12,7 @@ public class rat_kickoff : MonoBehaviour
     void Start()
     {
         animComponent = GetComponent<Animation>();
+        animComponent.enabled = false;
     }
 
     public void ratRun()
@@ -31,7 +32,7 @@ public class rat_kickoff : MonoBehaviour
     private IEnumerator DisableAnimationAfterPlay()
     {
         yield return new WaitForSeconds(animComponent["rat_animation"].length);
-        animComponent.enabled = false;
+  
 
         AkSoundEngine.StopPlayingID(ratAudioId);
         
