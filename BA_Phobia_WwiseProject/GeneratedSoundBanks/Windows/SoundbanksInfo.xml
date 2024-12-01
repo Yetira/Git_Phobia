@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{DC528E0D-6194-E4EC-92A9-BD3CE82C7141}">
+		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{FD0F3FB5-2501-CD88-539C-F263C006F92A}">
 			<ShortName>Main_test</ShortName>
 			<Path>Main_test.bnk</Path>
 			<Media>
@@ -237,7 +237,7 @@
 						<AuxBusRef Id="243379636" Name="Reflect"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="2466003463" Name="lullaby_event" MaxAttenuation="50" DurationType="Infinite">
+				<Event Id="2466003463" Name="lullaby_event" MaxAttenuation="80" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="776517462"/>
 					</MediaRefs>
@@ -521,5 +521,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{8E61A0F4-E146-946C-595D-B96DABD3937F}</FileHash>
+	<FileHash>{47C2F955-4499-C1A9-0178-22E103D4B337}</FileHash>
 </SoundBanksInfo>

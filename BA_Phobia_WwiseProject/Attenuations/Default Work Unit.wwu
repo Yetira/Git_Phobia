@@ -212,7 +212,7 @@
 				</Attenuation>
 				<Attenuation Name="lullaby" ID="{1E151F2E-5741-45DE-846F-C002B7C54F63}" ShortID="285883329">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="50"/>
+						<Property Name="RadiusMax" Type="Real64" Value="80"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -228,7 +228,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>50</XPos>
+											<XPos>80</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
