@@ -17767,6 +17767,7 @@ MonoBehaviour:
   doorCloseDelay: 3
   dingDelay: 1.5
   rideDuration: 28
+  playerAlreadyChecked: 0
 --- !u!4 &1375200124
 Transform:
   m_ObjectHideFlags: 0
@@ -17832,7 +17833,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!1 &1378700017
 GameObject:
   m_ObjectHideFlags: 0
@@ -22437,7 +22438,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1785865482
 Transform:
   m_ObjectHideFlags: 0
@@ -22447,8 +22448,8 @@ Transform:
   m_GameObject: {fileID: 1785865481}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.10999966, y: 0.46, z: 2.26}
-  m_LocalScale: {x: 6.098665, y: 5.203329, z: 4.530876}
+  m_LocalPosition: {x: -0.10999966, y: 0.46, z: 3.39}
+  m_LocalScale: {x: 6.098665, y: 5.203329, z: 3.114615}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 682755874}
@@ -22466,6 +22467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameStateManager: {fileID: 1878111551}
+  elevator: {fileID: 1375200123}
 --- !u!65 &1785865484
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -1,0 +1,30 @@
+
+# Unity-specific ignores
+/Library
+/Temp
+
+/obj
+/Build
+/Builds
+/Logs
+/MemoryCaptures
+AssetStoreTools*
+.vscode/
+.idea/
+*.csproj
+*.sln
+*.userprefs
+
+
+# Wwise-specific ignores
+Wwise/Cache/
+Wwise/GeneratedSoundBanks/
+Wwise/ProjectSave/
+Wwise/Settings/
+
+# General ignores
+*.tmp
+*.temp
+*.log
+*.zip
+

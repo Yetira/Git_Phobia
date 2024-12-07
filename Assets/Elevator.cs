@@ -11,6 +11,8 @@ public class Elevator : MonoBehaviour
     public GameObject bellSoundSource;
     public GameObject rideSoundSource;
 
+    //public GameObject liftTriggerZone;
+
     public doorAnim doorAnim;
 
     public bool doorClosed;
@@ -20,14 +22,14 @@ public class Elevator : MonoBehaviour
 
     public float rideDuration;
 
-    private bool playerAlreadyChecked;
+    public bool playerAlreadyChecked;
 
     private void Start()
     {
         doorClosed = false;
     }
 
-    private void Close()
+    public void Close()
     {
         Debug.Log("Door Closing");
 
@@ -35,14 +37,16 @@ public class Elevator : MonoBehaviour
         AkSoundEngine.PostEvent("lift_close", doorSoundSourceLift);
         //AkSoundEngine.PostEvent("lift_close", doorSoundSourceLevel);
 
-        StartCoroutine(WaitForDoorClose());
+        StartCoroutine(Wait());
+
+        doorClosed = true;
 
     }
 
-    private IEnumerator WaitForDoorClose()
+    public IEnumerator Wait()
     {
         yield return new WaitForSeconds(doorCloseDelay);
-        doorClosed = true;
+        //doorClosed = true;
 
     }
 
@@ -73,7 +77,7 @@ public class Elevator : MonoBehaviour
         doorClosed = false;
 
     }
-    private void OnTriggerEnter(Collider other)
+    /*private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player") && !playerAlreadyChecked)
         {
@@ -89,10 +93,19 @@ public class Elevator : MonoBehaviour
                 StartCoroutine(HandleElevatorSequence());
             }
         }
-    }
+    }*/
 
+    /*private void OnTriggerExit(Collider other)
+    {
+        if(other.CompareTag("Player") && gameStateManager.insideLift)
+        {
+            gameStateManager.insideLift = false;
+            StartCoroutine(Wait());
+            Close();
+        }
+    }*/
 
-    private IEnumerator HandleElevatorSequence()
+    public  IEnumerator HandleElevatorSequence()
     {
         yield return new WaitForSeconds(doorCloseDelay);
 
