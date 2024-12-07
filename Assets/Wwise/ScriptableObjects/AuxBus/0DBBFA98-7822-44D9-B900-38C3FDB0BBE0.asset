@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dad54a909eb91c240aa4f6d9e7ac712e, type: 3}
   m_Name: 0DBBFA98-7822-44D9-B900-38C3FDB0BBE0
   m_EditorClassIdentifier: 
-  objectName: Room3
-  id: 1359360139
+  objectName: Elevator
+  id: 3705378287
   guid: 0DBBFA98-7822-44D9-B900-38C3FDB0BBE0

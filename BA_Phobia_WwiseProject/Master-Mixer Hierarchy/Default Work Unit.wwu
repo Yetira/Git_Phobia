@@ -7,7 +7,7 @@
 					<PropertyList>
 						<Property Name="BusVolume" Type="Real64">
 							<ValueList>
-								<Value>10</Value>
+								<Value>15</Value>
 							</ValueList>
 						</Property>
 						<Property Name="Color" Type="int16" Value="18"/>
@@ -65,7 +65,7 @@
 								</ObjectList>
 							</ObjectLists>
 						</AuxBus>
-						<AuxBus Name="Room3" ID="{0DBBFA98-7822-44D9-B900-38C3FDB0BBE0}">
+						<AuxBus Name="Elevator" ID="{0DBBFA98-7822-44D9-B900-38C3FDB0BBE0}">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
@@ -83,28 +83,8 @@
 										<Local>
 											<EffectSlot Name="" ID="{75E31175-4DF0-41E8-8FD6-6820DDFAB205}" ShortID="124998967">
 												<ReferenceList>
-													<Reference Name="Effect">
-														<Custom CreatedFrom="{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}">
-															<Effect Name="Room_Large (Custom)" ID="{A498BE1D-98A7-4A53-96DC-771922E79494}" ShortID="430185970" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-																<PropertyList>
-																	<Property Name="DecayTime" Type="Real32" Value="1.8"/>
-																	<Property Name="Density" Type="Real32" Value="70"/>
-																	<Property Name="Diffusion" Type="Real32" Value="46"/>
-																	<Property Name="ERLevel" Type="Real32" Value="-23"/>
-																	<Property Name="ERPattern" Type="int32" Value="9"/>
-																	<Property Name="Filter1Freq" Type="Real32" Value="590"/>
-																	<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
-																	<Property Name="Filter3Gain" Type="Real32" Value="-4.5"/>
-																	<Property Name="HFDamping" Type="Real32" Value="2.7"/>
-																	<Property Name="PreDelay" Type="Real32" Value="35"/>
-																	<Property Name="Quality" Type="int32" Value="12"/>
-																	<Property Name="ReverbLevel" Type="Real32" Value="-23"/>
-																	<Property Name="RoomShape" Type="Real32" Value="55"/>
-																	<Property Name="RoomSize" Type="Real32" Value="89"/>
-																	<Property Name="StereoWidth" Type="Real32" Value="140"/>
-																</PropertyList>
-															</Effect>
-														</Custom>
+													<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+														<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 													</Reference>
 												</ReferenceList>
 											</EffectSlot>

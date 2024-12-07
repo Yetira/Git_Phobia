@@ -42,6 +42,7 @@
 				</Event>
 				<WorkUnit Name="Tunnel" ID="{71D003F0-866B-4C31-A330-E3E913374BAC}" PersistMode="Reference"/>
 				<WorkUnit Name="Cave" ID="{83F8F8B2-3880-41F3-9975-C575370FFBDC}" PersistMode="Reference"/>
+				<WorkUnit Name="Elevator" ID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

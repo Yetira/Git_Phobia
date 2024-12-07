@@ -14,7 +14,6 @@ public class triggerGirl : MonoBehaviour
         if(other.gameObject.layer == player)
         {
             girl.girlRun();
-            Debug.Log("triggered girl to run");
         }
     }
 }

@@ -62,9 +62,13 @@
     <Compile Include="Assets\Mobile\Scripts\VirtualInputs\UIVirtualButton.cs" />
     <Compile Include="Assets\girlBehavior.cs" />
     <Compile Include="Assets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
+    <Compile Include="Assets\Elevator.cs" />
+    <Compile Include="Assets\LiftTriggerZone.cs" />
     <Compile Include="Assets\rockFall.cs" />
+    <Compile Include="Assets\doorAnim.cs" />
     <Compile Include="Assets\rat_kickoff.cs" />
     <Compile Include="Assets\AltFirstPersonController.cs" />
+    <Compile Include="Assets\GameStateManager.cs" />
     <Compile Include="Assets\triggerGirl.cs" />
     <Compile Include="Assets\Scripts\BasicRigidBodyPush.cs" />
     <Compile Include="Assets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
@@ -72,6 +76,7 @@
     <Compile Include="Assets\InputSystem\StarterAssetsInputs.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\FirstPersonController.cs" />
+    <Compile Include="Assets\triggerLift.cs" />
     <Compile Include="Assets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs" />
     <Compile Include="Assets\XR\PlayerInputActions.cs" />
   </ItemGroup>

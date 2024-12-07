@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{FD0F3FB5-2501-CD88-539C-F263C006F92A}">
+		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{0B84CC3C-0FF9-257F-2549-A187D4AE784D}">
 			<ShortName>Main_test</ShortName>
 			<Path>Main_test.bnk</Path>
 			<Media>
@@ -93,6 +93,10 @@
 					<ShortName>rat_run2.wav</ShortName>
 					<CachePath>SFX/rat_run2_818F3B66.wem</CachePath>
 				</File>
+				<File Id="400462141" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>lift_ride.wav</ShortName>
+					<CachePath>SFX/lift_ride_818F3B66.wem</CachePath>
+				</File>
 				<File Id="419015160" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footstep_rock8.wav</ShortName>
 					<CachePath>SFX/footstep_rock8_818F3B66.wem</CachePath>
@@ -124,6 +128,10 @@
 				<File Id="761451570" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footstep_rock3.wav</ShortName>
 					<CachePath>SFX/footstep_rock3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="764325810" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>lift_door_close.wav</ShortName>
+					<CachePath>SFX/lift_door_close_818F3B66.wem</CachePath>
 				</File>
 				<File Id="776517462" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>lullaby.wav</ShortName>
@@ -165,9 +173,17 @@
 					<ShortName>FS_Tile_01.wav</ShortName>
 					<CachePath>SFX/FS_Tile_01_818F3B66.wem</CachePath>
 				</File>
+				<File Id="963847480" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>lift_door_open.wav</ShortName>
+					<CachePath>SFX/lift_door_open_818F3B66.wem</CachePath>
+				</File>
 				<File Id="996077848" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>chuckle_5.wav</ShortName>
 					<CachePath>SFX/chuckle_5_818F3B66.wem</CachePath>
+				</File>
+				<File Id="996188309" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>lift_ding.wav</ShortName>
+					<CachePath>SFX/lift_ding_818F3B66.wem</CachePath>
 				</File>
 				<File Id="998505593" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>drip3.wav</ShortName>
@@ -236,6 +252,35 @@
 					<AuxBusRefs>
 						<AuxBusRef Id="243379636" Name="Reflect"/>
 					</AuxBusRefs>
+				</Event>
+				<Event Id="449767583" Name="lift_close" DurationType="OneShot" DurationMin="3.3333333" DurationMax="3.3333333">
+					<MediaRefs>
+						<MediaRef Id="764325810"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="243379636" Name="Reflect"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="1570936365" Name="lift_ding" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="996188309"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="243379636" Name="Reflect"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="2206583097" Name="lift_open" DurationType="OneShot" DurationMin="2.1666667" DurationMax="2.1666667">
+					<MediaRefs>
+						<MediaRef Id="963847480"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="243379636" Name="Reflect"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="1630071255" Name="lift_ride" DurationType="OneShot" DurationMin="27.833334" DurationMax="27.833334">
+					<MediaRefs>
+						<MediaRef Id="400462141"/>
+					</MediaRefs>
 				</Event>
 				<Event Id="2466003463" Name="lullaby_event" MaxAttenuation="80" DurationType="Infinite">
 					<MediaRefs>
@@ -313,16 +358,16 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B46975B7-FE4D-8327-DFD8-59AFCE4A3870}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{51220400-3359-CC4C-333B-A9AC4D8AF311}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
 				<Custom>
 					<Plugin Id="52925816" Name="Auro Headphone (Custom)" LibName="Auro Headphone" LibId="72093811"/>
-					<Plugin Id="430185970" Name="Room_Large (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</Custom>
 				<ShareSets>
 					<Plugin Id="243379636" Name="Reflect" LibName="Wwise Reflect" LibId="11206659"/>
+					<Plugin Id="2995775460" Name="Room_Small" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="3164629247" Name="Holy" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="3451596814" Name="Hall_Medium" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="4113267698" Name="Hall_Guns" LibName="Wwise RoomVerb" LibId="7733251"/>
@@ -357,13 +402,6 @@
 						</ShareSets>
 					</PluginRefs>
 				</AuxBus>
-				<AuxBus Id="1359360139" Name="Room3" MaxAttenuation="300">
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="430185970"/>
-						</Custom>
-					</PluginRefs>
-				</AuxBus>
 				<AuxBus Id="2761991509" Name="Schacht">
 					<PluginRefs>
 						<ShareSets>
@@ -375,6 +413,13 @@
 					<PluginRefs>
 						<ShareSets>
 							<PluginRef Id="3451596814"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="3705378287" Name="Elevator" MaxAttenuation="300">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2995775460"/>
 						</ShareSets>
 					</PluginRefs>
 				</AuxBus>
@@ -521,5 +566,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{47C2F955-4499-C1A9-0178-22E103D4B337}</FileHash>
+	<FileHash>{E7FE7638-1325-03E6-840E-4D600E59338A}</FileHash>
 </SoundBanksInfo>

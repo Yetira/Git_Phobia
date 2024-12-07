@@ -4,6 +4,32 @@
 		<WorkUnit Name="Default Work Unit" ID="{3CCE90C4-C1CC-429A-AFFA-E4C48D1C0D24}" PersistMode="Standalone">
 			<ChildrenList>
 				<Effect Name="New_Parametric_EQ" ID="{6E1AD84F-68DE-46F9-8C0A-C64C691ECD4D}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3"/>
+				<Effect Name="New_AK_Convolution_Reverb" ID="{97150F0C-3D5F-435D-940E-848C5E3451F5}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">					<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

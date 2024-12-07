@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" SchemaVersion="119" RootDocumentID="{FE089519-343D-4D42-9564-A328CCCA3022}" ParentDocumentID="{FE089519-343D-4D42-9564-A328CCCA3022}">
+	<Events>
+		<WorkUnit Name="Elevator" ID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" OwnerID="{FE089519-343D-4D42-9564-A328CCCA3022}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="lift_ride" ID="{545C8EC2-6BF9-4CF7-B89D-808AE2DE964F}">
+					<ChildrenList>
+						<Action Name="" ID="{12C18505-7FA2-4065-9516-A16D7E3BFC25}" ShortID="195929194">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="lift_ride" ID="{18D1602C-0CA4-480B-826A-43B1C8E8919B}" WorkUnitID="{A9476F65-4DAD-4770-81F4-5F0BDB0B9BC8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="lift_open" ID="{B234858E-1810-475C-9CC7-C4F8E6936301}">
+					<ChildrenList>
+						<Action Name="" ID="{E04E38FD-64EC-44AB-A574-07C75D0190CA}" ShortID="881397180">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="lift_door_open" ID="{F1B59715-8021-420B-9CC7-791B8CE89B8D}" WorkUnitID="{A9476F65-4DAD-4770-81F4-5F0BDB0B9BC8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="lift_close" ID="{A47F1AAF-EEF9-4A78-8813-3CA24AAC8C76}">
+					<ChildrenList>
+						<Action Name="" ID="{AA8BDFE9-55F2-4B35-B673-3D75F37687FB}" ShortID="916939951">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="lift_door_close" ID="{03B40A78-6ED6-44CF-A060-6CF626E6E6C6}" WorkUnitID="{A9476F65-4DAD-4770-81F4-5F0BDB0B9BC8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="lift_ding" ID="{6B5A9D0D-8181-4B11-A1AE-D47E2A1079F4}">
+					<ChildrenList>
+						<Action Name="" ID="{4AAEF9D3-E221-44FD-B7CB-9780E086E329}" ShortID="661732203">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="lift_ding" ID="{322B70CA-38EF-48E5-8FA3-D6A26DE24CD2}" WorkUnitID="{A9476F65-4DAD-4770-81F4-5F0BDB0B9BC8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

@@ -21,14 +21,14 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	243379636	Reflect			\Default Work Unit\Master Audio Bus\Reflect	
 	1024696295	Cathedral			\Default Work Unit\Master Audio Bus\Cathedral	
-	1359360139	Room3			\Default Work Unit\Master Audio Bus\Room3	
 	2761991509	Schacht			\Default Work Unit\Master Audio Bus\Schacht	
 	3059984139	Tunnel			\Default Work Unit\Master Audio Bus\Tunnel	
+	3705378287	Elevator			\Default Work Unit\Master Audio Bus\Elevator	
 
 Effect plug-ins	ID	Name	Type				Notes
 	52925816	Auro Headphone (Custom)	Auro Headphone			
 	243379636	Reflect	Wwise Reflect			
-	430185970	Room_Large (Custom)	Wwise RoomVerb			
+	2995775460	Room_Small	Wwise RoomVerb			
 	3164629247	Holy	Wwise RoomVerb			
 	3451596814	Hall_Medium	Wwise RoomVerb			
 	4113267698	Hall_Guns	Wwise RoomVerb			
