@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{0B84CC3C-0FF9-257F-2549-A187D4AE784D}">
+		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{27BA7E37-D3AA-DE37-E3A9-4F9E5492AD71}">
 			<ShortName>Main_test</ShortName>
 			<Path>Main_test.bnk</Path>
 			<Media>
@@ -49,9 +49,17 @@
 					<ShortName>rock_land1.1.wav</ShortName>
 					<CachePath>SFX/rock_land1.1_818F3B66.wem</CachePath>
 				</File>
+				<File Id="205827511" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_MetalV1_Walk_01.wav</ShortName>
+					<CachePath>SFX/Footsteps_MetalV1_Walk_01_818F3B66.wem</CachePath>
+				</File>
 				<File Id="221785100" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footstep_rock2.wav</ShortName>
 					<CachePath>SFX/footstep_rock2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="261547176" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_MetalV1_Walk_04.wav</ShortName>
+					<CachePath>SFX/Footsteps_MetalV1_Walk_04_818F3B66.wem</CachePath>
 				</File>
 				<File Id="279319453" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>rock_fall_noise.wav</ShortName>
@@ -113,6 +121,10 @@
 					<ShortName>footstep_rock4.wav</ShortName>
 					<CachePath>SFX/footstep_rock4_818F3B66.wem</CachePath>
 				</File>
+				<File Id="521313346" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_MetalV1_Walk_06.wav</ShortName>
+					<CachePath>SFX/Footsteps_MetalV1_Walk_06_818F3B66.wem</CachePath>
+				</File>
 				<File Id="528712061" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footstep_rock7.wav</ShortName>
 					<CachePath>SFX/footstep_rock7_818F3B66.wem</CachePath>
@@ -124,6 +136,14 @@
 				<File Id="638166327" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>rat_squeak4.wav</ShortName>
 					<CachePath>SFX/rat_squeak4_818F3B66.wem</CachePath>
+				</File>
+				<File Id="692034825" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_MetalV1_Walk_03.wav</ShortName>
+					<CachePath>SFX/Footsteps_MetalV1_Walk_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="721109381" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_MetalV1_Walk_05.wav</ShortName>
+					<CachePath>SFX/Footsteps_MetalV1_Walk_05_818F3B66.wem</CachePath>
 				</File>
 				<File Id="761451570" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footstep_rock3.wav</ShortName>
@@ -177,6 +197,10 @@
 					<ShortName>lift_door_open.wav</ShortName>
 					<CachePath>SFX/lift_door_open_818F3B66.wem</CachePath>
 				</File>
+				<File Id="973843115" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps_MetalV1_Walk_02.wav</ShortName>
+					<CachePath>SFX/Footsteps_MetalV1_Walk_02_818F3B66.wem</CachePath>
+				</File>
 				<File Id="996077848" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>chuckle_5.wav</ShortName>
 					<CachePath>SFX/chuckle_5_818F3B66.wem</CachePath>
@@ -216,6 +240,17 @@
 								<MediaRef Id="78759439"/>
 								<MediaRef Id="613318558"/>
 								<MediaRef Id="956928053"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="2473969246"/>
+							<MediaRefs>
+								<MediaRef Id="205827511"/>
+								<MediaRef Id="261547176"/>
+								<MediaRef Id="521313346"/>
+								<MediaRef Id="692034825"/>
+								<MediaRef Id="721109381"/>
+								<MediaRef Id="973843115"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -353,6 +388,7 @@
 					<Switches>
 						<Switch Id="841620460" Name="Concrete"/>
 						<Switch Id="2144363834" Name="Rock"/>
+						<Switch Id="2473969246" Name="Metal"/>
 						<Switch Id="2637588553" Name="Tile"/>
 					</Switches>
 				</SwitchGroup>
@@ -432,6 +468,7 @@
 					<Switches>
 						<Switch Id="841620460" Name="Concrete"/>
 						<Switch Id="2144363834" Name="Rock"/>
+						<Switch Id="2473969246" Name="Metal"/>
 						<Switch Id="2637588553" Name="Tile"/>
 					</Switches>
 				</SwitchGroup>
@@ -566,5 +603,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E7FE7638-1325-03E6-840E-4D600E59338A}</FileHash>
+	<FileHash>{B9CA767B-6D7B-7919-3769-4FF70F63EAE5}</FileHash>
 </SoundBanksInfo>

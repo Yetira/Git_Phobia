@@ -19,6 +19,7 @@ Switch Group	ID	Name			Wwise Object Path	Notes
 Switch	ID	Name	Switch Group			Notes
 	841620460	Concrete	Footsteps			
 	2144363834	Rock	Footsteps			
+	2473969246	Metal	Footsteps			
 	2637588553	Tile	Footsteps			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
@@ -34,7 +35,9 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	156846198	rock_land1_3	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rock_land1.3_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rock_fall\rock_fall\rock_land1_3		117696
 	164609370	chuckle_3	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\chuckle_3_818F3B66.wem		\Actor-Mixer Hierarchy\Cathedral\girl\girl_chuckles\chuckle_3		235296
 	181027316	rock_land1_1	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rock_land1.1_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rock_fall\rock_fall\rock_land1_1		117696
+	205827511	Footsteps_MetalV1_Walk_01	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\Footsteps_MetalV1_Walk_01_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\metal\Footsteps_MetalV1_Walk_01		50778
 	221785100	footstep_rock2	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\footstep_rock2_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\rock\footstep_rock2		117696
+	261547176	Footsteps_MetalV1_Walk_04	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\Footsteps_MetalV1_Walk_04_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\metal\Footsteps_MetalV1_Walk_04		50558
 	279319453	rock_fall_noise	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rock_fall_noise_FBC78EF0.wem		\Actor-Mixer Hierarchy\Schacht\rock_fall\rock_fall\rock_fall_noise		940896
 	290785594	rat_squeak2	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rat_squeak2_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rats_kickoff\rats_squeak\rat_squeak2		132396
 	298612156	footstep_rock1	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\footstep_rock1_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\rock\footstep_rock1		117696
@@ -50,9 +53,12 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	482811910	rat_run1	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rat_run1_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rats_kickoff\rats_run\rat_run1		338196
 	488724425	wind_howl_soft	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\wind_howl_soft_FBC78EF0.wem		\Actor-Mixer Hierarchy\Schacht\wind_howl_soft		6294624
 	515772139	footstep_rock4	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\footstep_rock4_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\rock\footstep_rock4		117696
+	521313346	Footsteps_MetalV1_Walk_06	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\Footsteps_MetalV1_Walk_06_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\metal\Footsteps_MetalV1_Walk_06		50450
 	528712061	footstep_rock7	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\footstep_rock7_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\rock\footstep_rock7		117696
 	613318558	FS_Tile_02	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\FS_Tile_02_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\tile\FS_Tile_02		53700
 	638166327	rat_squeak4	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rat_squeak4_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rats_kickoff\rats_squeak\rat_squeak4		338196
+	692034825	Footsteps_MetalV1_Walk_03	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\Footsteps_MetalV1_Walk_03_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\metal\Footsteps_MetalV1_Walk_03		51932
+	721109381	Footsteps_MetalV1_Walk_05	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\Footsteps_MetalV1_Walk_05_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\metal\Footsteps_MetalV1_Walk_05		47214
 	761451570	footstep_rock3	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\footstep_rock3_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\rock\footstep_rock3		117696
 	764325810	lift_door_close	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\lift_door_close_818F3B66.wem		\Actor-Mixer Hierarchy\Elevator\lift_door_close		588096
 	776517462	lullaby	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\lullaby_FBC78EF0.wem		\Actor-Mixer Hierarchy\Cathedral\girl\lullaby		15758496
@@ -66,6 +72,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	863629646	rat_squeak5	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rat_squeak5_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rats_kickoff\rats_squeak\rat_squeak5		205896
 	956928053	FS_Tile_01	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\FS_Tile_01_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\tile\FS_Tile_01		37538
 	963847480	lift_door_open	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\lift_door_open_818F3B66.wem		\Actor-Mixer Hierarchy\Elevator\lift_door_open		382296
+	973843115	Footsteps_MetalV1_Walk_02	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\Footsteps_MetalV1_Walk_02_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\metal\Footsteps_MetalV1_Walk_02		48274
 	996077848	chuckle_5	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\chuckle_5_818F3B66.wem		\Actor-Mixer Hierarchy\Cathedral\girl\girl_chuckles\chuckle_5		235296
 	996188309	lift_ding	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\lift_ding_818F3B66.wem		\Actor-Mixer Hierarchy\Elevator\lift_ding		352896
 	998505593	drip3	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\drip3_818F3B66.wem		\Actor-Mixer Hierarchy\Cathedral\water_drips\drip3		117696

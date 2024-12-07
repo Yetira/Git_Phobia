@@ -852,7 +852,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: e5d7232acd96ac48b5e661cd6c28eb44
     GuidInternal: 
-    m_lastTime: -8584685497067649645
+    m_lastTime: -8584680166311995625
     List:
     - name: Footsteps
       guid: efc889578262544a9c178fac347e9d89
@@ -885,6 +885,22 @@ MonoBehaviour:
         - ElementName: Concrete
           ObjectType: 10
           guid: 49b0824ffccaa84f84050998cb93ca0c
+      - name: Metal
+        guid: 32ec42c9b781f94eb76b470f0c07d660
+        id: 2473969246
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: e5d7232acd96ac48b5e661cd6c28eb44
+        - ElementName: Footsteps
+          ObjectType: 11
+          guid: efc889578262544a9c178fac347e9d89
+        - ElementName: Metal
+          ObjectType: 10
+          guid: 32ec42c9b781f94eb76b470f0c07d660
       - name: Rock
         guid: 6541490073514e4098cce5b68862a08e
         id: 2144363834
