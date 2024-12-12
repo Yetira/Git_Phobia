@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ElevatorTriggerZone : MonoBehaviour
+public class LiftTriggerZone : MonoBehaviour
 {
     public GameStateManager gameStateManager;
     public Elevator elevator;
@@ -20,7 +20,7 @@ public class ElevatorTriggerZone : MonoBehaviour
             {
                 Debug.Log("Current Level is Complete");
 
-               StartCoroutine(elevator.HandleElevatorSequence());
+               StartCoroutine(elevator.ElevatorSequence());
             }
         }
     }

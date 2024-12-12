@@ -10,6 +10,7 @@ public class Elevator : MonoBehaviour
     public GameObject doorSoundSourceLevel;
     public GameObject bellSoundSource;
     public GameObject rideSoundSource;
+    public GameObject arrivalSoundSource;
 
     //public GameObject liftTriggerZone;
 
@@ -67,6 +68,12 @@ public class Elevator : MonoBehaviour
 
     }
 
+    public void Arrive()
+    {
+        Debug.Log("Lift arriving.");
+        AkSoundEngine.PostEvent("lift_arrive", arrivalSoundSource);
+
+    }
     private IEnumerator DelayAfterDing()
     {
         yield return new WaitForSeconds(dingDelay);
@@ -77,62 +84,44 @@ public class Elevator : MonoBehaviour
         doorClosed = false;
 
     }
-    /*private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player") && !playerAlreadyChecked)
-        {
-            playerAlreadyChecked = true;
 
-            gameStateManager.insideLift = true;
-            Debug.Log("Player is inside Lift.");
 
-            if (gameStateManager.currentLevelComplete)
-            {
-                Debug.Log("Current Level is Complete");
-
-                StartCoroutine(HandleElevatorSequence());
-            }
-        }
-    }*/
-
-    /*private void OnTriggerExit(Collider other)
-    {
-        if(other.CompareTag("Player") && gameStateManager.insideLift)
-        {
-            gameStateManager.insideLift = false;
-            StartCoroutine(Wait());
-            Close();
-        }
-    }*/
-
-    public  IEnumerator HandleElevatorSequence()
+    public  IEnumerator ElevatorSequence()
     {
         yield return new WaitForSeconds(doorCloseDelay);
 
         Debug.Log("Start Elevator Sequence");
 
         // Close the door
-        Debug.Log("Closing the Door");
+        Debug.Log("Wait for Door.");
         Close(); 
         yield return new WaitForSeconds(doorCloseDelay); // Wait for the door-closing duration
 
-        Debug.Log("Door Closed");
+        Debug.Log("Door Closed.");
 
         // Start the ride after the door is fully closed
         Debug.Log("Start Ride.");
-        Ride(); 
+        Ride();
 
 
+        if (gameStateManager.currentLevelIndex < gameStateManager.level.Count - 1)
+        {
+            gameStateManager.TriggerLevelChange();
+            
+            Debug.Log("Wait for Ride to End.");
+            yield return new WaitForSeconds(rideDuration);
 
-        gameStateManager.TriggerLevelChange();
-        Debug.Log("Wait for Ride to End.");
-        yield return new WaitForSeconds(rideDuration);
 
-      
-        Debug.Log("Open Door.");
-        Open();
+            Debug.Log("Open Door.");
+            Open();
 
-        playerAlreadyChecked = false; // Reset the flag to allow reuse
+            playerAlreadyChecked = false; // Reset the flag to allow reuse
+        }
+        else
+        {
+            Debug.Log("Now plays the Elevator Ending Sequence!");
+            //add music, thank for playing, fade out
+        }
     }
 
 }

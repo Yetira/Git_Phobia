@@ -47,6 +47,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="lift_arrive" ID="{FCE812C6-D4BF-4C63-A0E9-19A7AF58B5B4}">
+					<ChildrenList>
+						<Action Name="" ID="{181B4340-20E5-4A14-81DF-5D80D97D8EEE}" ShortID="607652025">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="lift_arrive" ID="{0FFA02C5-7655-4A61-BB0E-7B9FFCECBEE1}" WorkUnitID="{A9476F65-4DAD-4770-81F4-5F0BDB0B9BC8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

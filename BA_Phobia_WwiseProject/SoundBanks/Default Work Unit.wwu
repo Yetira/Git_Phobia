@@ -18,6 +18,7 @@
 						<ObjectRef Name="lift_close" ID="{A47F1AAF-EEF9-4A78-8813-3CA24AAC8C76}" WorkUnitID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="lift_ding" ID="{6B5A9D0D-8181-4B11-A1AE-D47E2A1079F4}" WorkUnitID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="girl_run" ID="{D7FF8585-A8E3-4BBF-8D01-DC725D3C010B}" WorkUnitID="{83F8F8B2-3880-41F3-9975-C575370FFBDC}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="lift_arrive" ID="{FCE812C6-D4BF-4C63-A0E9-19A7AF58B5B4}" WorkUnitID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="lift_ride" ID="{545C8EC2-6BF9-4CF7-B89D-808AE2DE964F}" WorkUnitID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

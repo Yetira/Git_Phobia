@@ -5,7 +5,7 @@ public class GameStateManager : MonoBehaviour
 {
 
     public List<GameObject> level;
-    private int currentLevelIndex = 0;
+    public int currentLevelIndex = 0;
 
     public bool currentLevelComplete;
 

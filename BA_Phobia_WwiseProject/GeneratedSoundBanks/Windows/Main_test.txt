@@ -12,6 +12,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3378404558	rock_fall			\Default Work Unit\Schacht\rock_fall	
 	3413758005	girl_run			\Default Work Unit\Cave\girl_run	
 	3853114527	water_drips			\Default Work Unit\Tunnel\water_drips	
+	4192888116	lift_arrive			\Default Work Unit\Elevator\lift_arrive	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	2385628198	Footsteps			\Default Work Unit\Footsteps	
@@ -59,6 +60,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	638166327	rat_squeak4	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rat_squeak4_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rats_kickoff\rats_squeak\rat_squeak4		338196
 	692034825	Footsteps_MetalV1_Walk_03	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\Footsteps_MetalV1_Walk_03_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\metal\Footsteps_MetalV1_Walk_03		51932
 	721109381	Footsteps_MetalV1_Walk_05	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\Footsteps_MetalV1_Walk_05_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\metal\Footsteps_MetalV1_Walk_05		47214
+	730650120	lift_arrive	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\lift_arrive_818F3B66.wem		\Actor-Mixer Hierarchy\Elevator\lift_arrive		2822496
 	761451570	footstep_rock3	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\footstep_rock3_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\rock\footstep_rock3		117696
 	764325810	lift_door_close	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\lift_door_close_818F3B66.wem		\Actor-Mixer Hierarchy\Elevator\lift_door_close		588096
 	776517462	lullaby	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\lullaby_FBC78EF0.wem		\Actor-Mixer Hierarchy\Cathedral\girl\lullaby		15758496

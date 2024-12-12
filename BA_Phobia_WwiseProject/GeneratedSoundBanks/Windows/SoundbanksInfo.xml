@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{27BA7E37-D3AA-DE37-E3A9-4F9E5492AD71}">
+		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{4CD827E3-A1A5-FC29-397C-BCA8AD9EC524}">
 			<ShortName>Main_test</ShortName>
 			<Path>Main_test.bnk</Path>
 			<Media>
@@ -144,6 +144,10 @@
 				<File Id="721109381" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_MetalV1_Walk_05.wav</ShortName>
 					<CachePath>SFX/Footsteps_MetalV1_Walk_05_818F3B66.wem</CachePath>
+				</File>
+				<File Id="730650120" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>lift_arrive.wav</ShortName>
+					<CachePath>SFX/lift_arrive_818F3B66.wem</CachePath>
 				</File>
 				<File Id="761451570" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footstep_rock3.wav</ShortName>
@@ -283,6 +287,14 @@
 						<MediaRef Id="811281197"/>
 						<MediaRef Id="854779166"/>
 						<MediaRef Id="996077848"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="243379636" Name="Reflect"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="4192888116" Name="lift_arrive" MaxAttenuation="38" DurationType="OneShot" DurationMin="16" DurationMax="16">
+					<MediaRefs>
+						<MediaRef Id="730650120"/>
 					</MediaRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="243379636" Name="Reflect"/>
@@ -603,5 +615,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B9CA767B-6D7B-7919-3769-4FF70F63EAE5}</FileHash>
+	<FileHash>{9FD17C9C-02E3-D8C1-996F-6F3D77F28860}</FileHash>
 </SoundBanksInfo>

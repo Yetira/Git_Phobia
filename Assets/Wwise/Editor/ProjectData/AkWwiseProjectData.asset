@@ -433,7 +433,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5b7d3d6d0746124ab1d6166bb3175237
     GuidInternal: 
-    m_lastTime: -8584681040594783647
+    m_lastTime: -8584675888538526835
     List:
     - name: Main_test
       guid: f4bfb48e9ef48e4883081f357e8cb44a
@@ -584,8 +584,28 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Elevator
     guid: 1c8d5089a6e54240a7386c7b74797c4f
     GuidInternal: 
-    m_lastTime: -8584681251372398249
+    m_lastTime: -8584676039222296322
     List:
+    - name: lift_arrive
+      guid: c612e8fcbfd4634ca0e919a7af58b5b4
+      id: 4192888116
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: Elevator
+        ObjectType: 12
+        guid: 1c8d5089a6e54240a7386c7b74797c4f
+      - ElementName: lift_arrive
+        ObjectType: 3
+        guid: c612e8fcbfd4634ca0e919a7af58b5b4
+      Path: Events\Default Work Unit\Elevator\lift_arrive
+      maxAttenuation: 38
+      maxDuration: 16
+      minDuration: 16
     - name: lift_close
       guid: af1a7fa4f9ee784a88133ca24aac8c76
       id: 449767583
