@@ -433,7 +433,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5b7d3d6d0746124ab1d6166bb3175237
     GuidInternal: 
-    m_lastTime: -8584675888538526835
+    m_lastTime: -8584674971486573208
     List:
     - name: Main_test
       guid: f4bfb48e9ef48e4883081f357e8cb44a
@@ -584,7 +584,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Elevator
     guid: 1c8d5089a6e54240a7386c7b74797c4f
     GuidInternal: 
-    m_lastTime: -8584676039222296322
+    m_lastTime: -8584674971490288897
     List:
     - name: lift_arrive
       guid: c612e8fcbfd4634ca0e919a7af58b5b4
@@ -646,6 +646,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2
       minDuration: 2
+    - name: lift_music
+      guid: f4130a954bb91440a8dc62b803b9909d
+      id: 621005966
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: Elevator
+        ObjectType: 12
+        guid: 1c8d5089a6e54240a7386c7b74797c4f
+      - ElementName: lift_music
+        ObjectType: 3
+        guid: f4130a954bb91440a8dc62b803b9909d
+      Path: Events\Default Work Unit\Elevator\lift_music
+      maxAttenuation: 80
+      maxDuration: -1
+      minDuration: -1
     - name: lift_open
       guid: 8e8534b210185c479cc7c4f8e6936301
       id: 2206583097
@@ -700,11 +720,11 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Schacht
     guid: af502f23f2719c4da70873b37c56f205
     GuidInternal: 
-    m_lastTime: -8584685497071806708
+    m_lastTime: -8584674971487414495
     List:
-    - name: rat_kickoff
+    - name: Play_Rat
       guid: 06a87c5d8be54247b44326b0989959ec
-      id: 1107904574
+      id: 2620876451
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -715,10 +735,10 @@ MonoBehaviour:
       - ElementName: Schacht
         ObjectType: 12
         guid: af502f23f2719c4da70873b37c56f205
-      - ElementName: rat_kickoff
+      - ElementName: Play_Rat
         ObjectType: 3
         guid: 06a87c5d8be54247b44326b0989959ec
-      Path: Events\Default Work Unit\Schacht\rat_kickoff
+      Path: Events\Default Work Unit\Schacht\Play_Rat
       maxAttenuation: 120
       maxDuration: -1
       minDuration: -1
@@ -762,6 +782,26 @@ MonoBehaviour:
       maxAttenuation: 300
       maxDuration: 0.6666667
       minDuration: 0.6666667
+    - name: Stop_Rat
+      guid: fd84f38390f6804cab9ebedcd1fc5563
+      id: 639911593
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: Schacht
+        ObjectType: 12
+        guid: af502f23f2719c4da70873b37c56f205
+      - ElementName: Stop_Rat
+        ObjectType: 3
+        guid: fd84f38390f6804cab9ebedcd1fc5563
+      Path: Events\Default Work Unit\Schacht\Stop_Rat
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: wind_howl
       guid: 352f57fc93a0b645b06409da893551f7
       id: 652692592
@@ -830,7 +870,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 97dba31da7636a41b8d9eb328c42a8c0
     GuidInternal: 
-    m_lastTime: -8584685497071796707
+    m_lastTime: -8584674971488090527
     List:
     - name: rock_fall
       guid: b1d64598d02e4349a5ce90054a61fc6b
@@ -846,6 +886,20 @@ MonoBehaviour:
         ObjectType: 13
         guid: b1d64598d02e4349a5ce90054a61fc6b
       Path: Game Parameters\Default Work Unit\rock_fall
+    - name: test
+      guid: 77a63ba75250164f82a5a143afade4af
+      id: 3157003241
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 97dba31da7636a41b8d9eb328c42a8c0
+      - ElementName: test
+        ObjectType: 13
+        guid: 77a63ba75250164f82a5a143afade4af
+      Path: Game Parameters\Default Work Unit\test
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -858,7 +912,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: e0bcd1d105689b449d2f0d7ea197e658
     GuidInternal: 
-    m_lastTime: -8584705427110042857
+    m_lastTime: -8584674971487324345
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -872,7 +926,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: e5d7232acd96ac48b5e661cd6c28eb44
     GuidInternal: 
-    m_lastTime: -8584680166311995625
+    m_lastTime: -8584674971488546227
     List:
     - name: Footsteps
       guid: efc889578262544a9c178fac347e9d89
@@ -956,6 +1010,56 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: Intros
+      guid: 2ae88e046cfa1e42bc11adf2451e2f00
+      id: 3293087224
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e5d7232acd96ac48b5e661cd6c28eb44
+      - ElementName: Intros
+        ObjectType: 11
+        guid: 2ae88e046cfa1e42bc11adf2451e2f00
+      Path: Switches\Default Work Unit\Intros
+      values:
+      - name: Level_1
+        guid: 512e796253137e4ba3f6049d629cda4f
+        id: 1290008369
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: e5d7232acd96ac48b5e661cd6c28eb44
+        - ElementName: Intros
+          ObjectType: 11
+          guid: 2ae88e046cfa1e42bc11adf2451e2f00
+        - ElementName: Level_1
+          ObjectType: 10
+          guid: 512e796253137e4ba3f6049d629cda4f
+      - name: Level_2
+        guid: b7ed2510f458ac46830ecddd891e6a45
+        id: 1290008370
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: e5d7232acd96ac48b5e661cd6c28eb44
+        - ElementName: Intros
+          ObjectType: 11
+          guid: 2ae88e046cfa1e42bc11adf2451e2f00
+        - ElementName: Level_2
+          ObjectType: 10
+          guid: b7ed2510f458ac46830ecddd891e6a45
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -971,7 +1075,7 @@ MonoBehaviour:
     m_lastTime: -8584705427110042857
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000002000000030000000400000005000000060000000700000008000000090000000b0000000c0000000d0000001200000013000000140000001500000016000000370000003800000039000000ac000000ad000000fb000000fc0000004801000049010000
+  ExpandedWaapiItemIds: 0100000002000000030000000400000005000000060000000700000008000000090000000b0000000c0000000d0000000e00000012000000130000001400000016000000370000003800000039000000ac000000ad000000fb000000fc0000004801000049010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

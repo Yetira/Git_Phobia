@@ -58,6 +58,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="lift_music" ID="{950A13F4-B94B-4014-A8DC-62B803B9909D}">
+					<ChildrenList>
+						<Action Name="" ID="{DBC9BEF8-F02F-44D1-9795-7075CD55A55C}" ShortID="863326568">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="lift_music-1" ID="{F1070E4C-5F37-464B-9591-A0C7A88DDCB8}" WorkUnitID="{A9476F65-4DAD-4770-81F4-5F0BDB0B9BC8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

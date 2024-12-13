@@ -2,12 +2,14 @@ Event	ID	Name			Wwise Object Path	Notes
 	116178158	footstep_event			\Default Work Unit\footstep_event	
 	119891818	rock_land			\Default Work Unit\Schacht\rock_land	
 	449767583	lift_close			\Default Work Unit\Elevator\lift_close	
+	621005966	lift_music			\Default Work Unit\Elevator\lift_music	
+	639911593	Stop_Rat			\Default Work Unit\Schacht\Stop_Rat	
 	652692592	wind_howl			\Default Work Unit\Schacht\wind_howl	
-	1107904574	rat_kickoff			\Default Work Unit\Schacht\rat_kickoff	
 	1570936365	lift_ding			\Default Work Unit\Elevator\lift_ding	
 	1630071255	lift_ride			\Default Work Unit\Elevator\lift_ride	
 	2206583097	lift_open			\Default Work Unit\Elevator\lift_open	
 	2466003463	lullaby_event			\Default Work Unit\Cave\lullaby_event	
+	2620876451	Play_Rat			\Default Work Unit\Schacht\Play_Rat	
 	2686168833	breath_slow			\Default Work Unit\breath_slow	
 	3378404558	rock_fall			\Default Work Unit\Schacht\rock_fall	
 	3413758005	girl_run			\Default Work Unit\Cave\girl_run	
@@ -49,6 +51,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	359400834	drip4	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\drip4_818F3B66.wem		\Actor-Mixer Hierarchy\Cathedral\water_drips\drip4		176496
 	360007009	breath_slow2	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\breath_slow2_818F3B66.wem		\Actor-Mixer Hierarchy\Player\breath_slow\breath_slow2		940896
 	371138762	rat_run2	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rat_run2_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rats_kickoff\rats_run\rat_run2		426396
+	372560001	lift_music-1	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\lift_music-1_FBC78EF0.wem		\Actor-Mixer Hierarchy\Elevator\lift_music-1		15523296
 	400462141	lift_ride	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\lift_ride_818F3B66.wem		\Actor-Mixer Hierarchy\Elevator\lift_ride		4909896
 	419015160	footstep_rock8	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\footstep_rock8_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\rock\footstep_rock8		117696
 	482811910	rat_run1	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rat_run1_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rats_kickoff\rats_run\rat_run1		338196

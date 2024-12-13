@@ -8,17 +8,19 @@ public class rockFall : MonoBehaviour
 
     public int groundLayer;
 
-    public rat_kickoff rat;
+    public Rat rat;
 
     //public KeyCode resetKey = KeyCode.R;
     private PlayerInputActions playerInputActions;
 
-    private Rigidbody rb;
+    private Rigidbody rbRock;
     private Vector3 startPosition;
-    
+
     uint rockFallId;
 
- 
+    private bool rockLanded;
+
+
     private void Awake()
     {
         playerInputActions = new PlayerInputActions();
@@ -29,12 +31,14 @@ public class rockFall : MonoBehaviour
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        rbRock = GetComponent<Rigidbody>();
 
         startPosition = transform.position;
 
-        rb.useGravity = false;
-        rb.isKinematic = true;
+        rbRock.useGravity = false;
+        rbRock.isKinematic = true;
+
+        rockLanded = false;
 
     }
 
@@ -46,25 +50,30 @@ public class rockFall : MonoBehaviour
         }
     }
 
-    private void RockFall()
+    public void RockFall()
     {
-        rb.useGravity = true;
-        rb.isKinematic = false;
+        if (rockLanded == false)
+        {
+            rbRock.useGravity = true;
+            rbRock.isKinematic = false;
 
-        rockFallId = AkSoundEngine.PostEvent("rock_fall", gameObject);
-        Debug.Log("rock is falling.");
+            rockFallId = AkSoundEngine.PostEvent("rock_fall", gameObject);
+            Debug.Log("rock is falling.");
+        }
     }
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.layer == groundLayer)
+        if (other.gameObject.layer == groundLayer && !rockLanded)
         {
+            rockLanded = true;
+
             AkSoundEngine.PostEvent("rock_land", gameObject);
             Debug.Log("rock has landed.");
 
             AkSoundEngine.StopPlayingID(rockFallId);
 
             rat.ratRun();
-           
+
         }
     }
     private void ResetCube()
@@ -72,8 +81,15 @@ public class rockFall : MonoBehaviour
         transform.position = startPosition;
 
         RockFall();
-       
+
     }
 
+    private IEnumerator WaitToDisableRock()
+    {
+        yield return new WaitForSeconds(2);
+
+        gameObject.SetActive(false);
+    }
+    
 }
 

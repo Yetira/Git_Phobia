@@ -25,27 +25,7 @@
 						<Value Platform="Mac">GeneratedSoundBanks\Mac</Value>
 					</ValueList>
 				</Property>
-				<Property Name="LicenseKey" Type="string" Value="PHByb2plY3QgaWQ9IjE4OTU0IiBtYXNrPSJQWVFNNjI4NCIgZW5jPSIwIj48bGlj
-ZW5zZSBpZD0iMSIgbmFtZT0iV3dpc2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0iMTAi
-IGV4cGlyZXM9IjIwMjUtMDYtMDEiICAvPjxsaWNlbnNlIGlkPSIyMSIgbmFtZT0i
-TWFpbnRlbmFuY2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0iMTAiIGV4cGlyZXM9IjIw
-MjUtMDYtMDEiICAvPjxsaWNlbnNlIGlkPSI3MCIgbmFtZT0iSW5kaWUgTGljZW5z
-ZSIgdHlwZT0iMyIgcGxhdGZvcm1zPSIxMCIgZXhwaXJlcz0iMjAyNS0wNi0wMSIg
-IC8+PGxpY2Vuc2UgaWQ9IjYiIG5hbWU9Ild3aXNlIENvbnZvbHV0aW9uIFJldmVy
-YiIgdHlwZT0iMyIgcGxhdGZvcm1zPSIxMCIgZXhwaXJlcz0iMjAyNS0wNi0wMSIg
-IC8+PGxpY2Vuc2UgaWQ9IjQ5IiBuYW1lPSJXd2lzZSBSZWZsZWN0IiB0eXBlPSIz
-IiBwbGF0Zm9ybXM9IjEwIiBleHBpcmVzPSIyMDI1LTA2LTAxIiAgLz48bGljZW5z
-ZSBpZD0iNDMiIG5hbWU9IkF1cm8tSGVhZHBob25lIiB0eXBlPSIxIiBwbGF0Zm9y
-bXM9IjEwIiBleHBpcmVzPSIyMDI1LTAxLTMwIiAgLz48cGx1Z2luIGlkPSI4MzIz
-MDc1IiBuYW1lPSJXd2lzZSBDb252b2x1dGlvbiBSZXZlcmIiIGxpY2Vuc2U9IjYi
-IC8+PHBsdWdpbiBpZD0iNzIwOTM4MTEiIG5hbWU9IkF1cm8tSGVhZHBob25lIiBs
-aWNlbnNlPSI0MyIgLz48L3Byb2plY3Q+|EYwsGwZ1w4QLEYHFFNip5Ig05xYpHk6
-s81NZ8S16WWO/8mKUOtyPF2JDLlaM1DFBWFx65Mv0QGGwUEhXO2gYtLkxzW/d+IW
-j16mzhzjbpX2TpOsV6waEx09Lk8ksM9edFUHE6sE72O6ydRSYGUNMTtzoJ3QVXRZ
-gI9gDU11laJfgw3+wIIf9wPTpAUZmRa+FUzciKfXXPNgTsiYaBRa4ESoMnBCo507
-y+eBXWlvcLKZgFPlIb9EksST66mdEDcWxpBNcvJFaPrkOnvm3c7HG8tILh3EXWbN
-0XwdZnCGNHlTWUQ73vqHsfB4H8u+Kn5c9UvI32BpZH+KSDuVYEma5TQ==
-"/>
+				<Property Name="LicenseKey" Type="string" Value="PHByb2plY3QgaWQ9IjE4OTU0IiBtYXNrPSJQWVFNNjI4NCIgZW5jPSIwIj48bGlj ZW5zZSBpZD0iMSIgbmFtZT0iV3dpc2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0iMTAi IGV4cGlyZXM9IjIwMjUtMDYtMDEiICAvPjxsaWNlbnNlIGlkPSIyMSIgbmFtZT0i TWFpbnRlbmFuY2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0iMTAiIGV4cGlyZXM9IjIw MjUtMDYtMDEiICAvPjxsaWNlbnNlIGlkPSI3MCIgbmFtZT0iSW5kaWUgTGljZW5z ZSIgdHlwZT0iMyIgcGxhdGZvcm1zPSIxMCIgZXhwaXJlcz0iMjAyNS0wNi0wMSIg IC8+PGxpY2Vuc2UgaWQ9IjYiIG5hbWU9Ild3aXNlIENvbnZvbHV0aW9uIFJldmVy YiIgdHlwZT0iMyIgcGxhdGZvcm1zPSIxMCIgZXhwaXJlcz0iMjAyNS0wNi0wMSIg IC8+PGxpY2Vuc2UgaWQ9IjQ5IiBuYW1lPSJXd2lzZSBSZWZsZWN0IiB0eXBlPSIz IiBwbGF0Zm9ybXM9IjEwIiBleHBpcmVzPSIyMDI1LTA2LTAxIiAgLz48bGljZW5z ZSBpZD0iNDMiIG5hbWU9IkF1cm8tSGVhZHBob25lIiB0eXBlPSIxIiBwbGF0Zm9y bXM9IjEwIiBleHBpcmVzPSIyMDI1LTAxLTMwIiAgLz48cGx1Z2luIGlkPSI4MzIz MDc1IiBuYW1lPSJXd2lzZSBDb252b2x1dGlvbiBSZXZlcmIiIGxpY2Vuc2U9IjYi IC8+PHBsdWdpbiBpZD0iNzIwOTM4MTEiIG5hbWU9IkF1cm8tSGVhZHBob25lIiBs aWNlbnNlPSI0MyIgLz48L3Byb2plY3Q+|EYwsGwZ1w4QLEYHFFNip5Ig05xYpHk6 s81NZ8S16WWO/8mKUOtyPF2JDLlaM1DFBWFx65Mv0QGGwUEhXO2gYtLkxzW/d+IW j16mzhzjbpX2TpOsV6waEx09Lk8ksM9edFUHE6sE72O6ydRSYGUNMTtzoJ3QVXRZ gI9gDU11laJfgw3+wIIf9wPTpAUZmRa+FUzciKfXXPNgTsiYaBRa4ESoMnBCo507 y+eBXWlvcLKZgFPlIb9EksST66mdEDcWxpBNcvJFaPrkOnvm3c7HG8tILh3EXWbN 0XwdZnCGNHlTWUQ73vqHsfB4H8u+Kn5c9UvI32BpZH+KSDuVYEma5TQ== "/>
 				<Property Name="SoundBankGenerateEstimatedDuration" Type="bool" Value="True"/>
 				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True"/>
 				<Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True"/>
@@ -10577,6 +10557,12 @@ y+eBXWlvcLKZgFPlIb9EksST66mdEDcWxpBNcvJFaPrkOnvm3c7HG8tILh3EXWbN
 			<PhysicalFolderList>
 				<PhysicalFolder Path="Actor-Mixer Hierarchy">
 					<WorkUnit Name="Actor-Mixer Hierarchy" ID="{5EA7BBF8-64C0-4A50-8821-A07E8BE21D68}" PersistMode="Standalone"/>
+				</PhysicalFolder>
+				<PhysicalFolder Path="Actor-Mixer Hierarchy\CAVE_LVL">
+					<WorkUnit Name="CAVE_LVL" ID="{E400F224-EBA1-4AFC-8026-432EC6368635}" PersistMode="Standalone"/>
+				</PhysicalFolder>
+				<PhysicalFolder Path="Actor-Mixer Hierarchy\LEVEL_1">
+					<WorkUnit Name="LEVEL_1" ID="{752BC2DC-312E-4AEA-A3EA-C00AEA4239C9}" PersistMode="Standalone"/>
 				</PhysicalFolder>
 				<PhysicalFolder Path="Attenuations">
 					<WorkUnit Name="Attenuations" ID="{017BDDA0-1BB1-4CE1-8077-79594EC4585C}" PersistMode="Standalone"/>

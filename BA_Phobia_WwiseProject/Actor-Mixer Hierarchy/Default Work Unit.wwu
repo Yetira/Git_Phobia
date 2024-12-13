@@ -42,6 +42,23 @@
 						<ActiveSource Name="test_melody" ID="{CDA48F58-D745-4FCC-B472-152E50E7BC94}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<SwitchContainer Name="Intros" ID="{BA605F62-A8F7-4233-927D-0C7C5F72F351}" ShortID="663170470">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Level_1" ID="{62792E51-1353-4B7E-A3F6-049D629CDA4F}" WorkUnitID="{2A23D7E5-96CD-48AC-B5E6-61CD6C28EB44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="Intros" ID="{048EE82A-FA6C-421E-BC11-ADF2451E2F00}" WorkUnitID="{2A23D7E5-96CD-48AC-B5E6-61CD6C28EB44}"/>
+						</Reference>
+					</ReferenceList>
+					<GroupingInfo/>
+				</SwitchContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

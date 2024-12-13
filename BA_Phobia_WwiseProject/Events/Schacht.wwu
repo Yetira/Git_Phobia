@@ -25,7 +25,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="rat_kickoff" ID="{5D7CA806-E58B-4742-B443-26B0989959EC}">
+				<Event Name="Play_Rat" ID="{5D7CA806-E58B-4742-B443-26B0989959EC}">
 					<ChildrenList>
 						<Action Name="" ID="{EDEDD510-475D-475C-9608-B9AB930D4D28}" ShortID="506469863">
 							<ReferenceList>
@@ -49,6 +49,30 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="wind_howl_soft" ID="{256DC20B-3B4D-445E-A077-1D0878AA3FD0}" WorkUnitID="{702988FB-4A56-44EE-941C-588512765CD5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Rat" ID="{83F384FD-F690-4C80-AB9E-BEDCD1FC5563}">
+					<ChildrenList>
+						<Action Name="" ID="{AEA7C797-3DCC-4513-9189-F5CFEB64D211}" ShortID="674598348">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="rats_run" ID="{223EF516-AC3F-4513-B45E-7E1C3D4075E9}" WorkUnitID="{702988FB-4A56-44EE-941C-588512765CD5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4D20B089-BF1F-4DB1-A22D-6EB5293405EA}" ShortID="7839321">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="rats_squeak" ID="{7DFA62D4-71B9-490C-8757-64E443C2457C}" WorkUnitID="{702988FB-4A56-44EE-941C-588512765CD5}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

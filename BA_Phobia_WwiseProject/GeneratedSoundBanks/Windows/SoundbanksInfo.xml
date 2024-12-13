@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{4CD827E3-A1A5-FC29-397C-BCA8AD9EC524}">
+		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{127085D9-7197-ACAB-FB0E-1C0A461F9DA0}">
 			<ShortName>Main_test</ShortName>
 			<Path>Main_test.bnk</Path>
 			<Media>
@@ -100,6 +100,10 @@
 				<File Id="371138762" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>rat_run2.wav</ShortName>
 					<CachePath>SFX/rat_run2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="372560001" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>lift_music-1.wav</ShortName>
+					<CachePath>SFX/lift_music-1_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="400462141" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>lift_ride.wav</ShortName>
@@ -316,6 +320,14 @@
 						<AuxBusRef Id="243379636" Name="Reflect"/>
 					</AuxBusRefs>
 				</Event>
+				<Event Id="621005966" Name="lift_music" MaxAttenuation="80" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="372560001"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="243379636" Name="Reflect"/>
+					</AuxBusRefs>
+				</Event>
 				<Event Id="2206583097" Name="lift_open" DurationType="OneShot" DurationMin="2.1666667" DurationMax="2.1666667">
 					<MediaRefs>
 						<MediaRef Id="963847480"/>
@@ -337,7 +349,7 @@
 						<AuxBusRef Id="243379636" Name="Reflect"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="1107904574" Name="rat_kickoff" MaxAttenuation="120" DurationType="Infinite">
+				<Event Id="2620876451" Name="Play_Rat" MaxAttenuation="120" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="52648787"/>
 						<MediaRef Id="99444650"/>
@@ -372,6 +384,7 @@
 						<AuxBusRef Id="243379636" Name="Reflect"/>
 					</AuxBusRefs>
 				</Event>
+				<Event Id="639911593" Name="Stop_Rat" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3853114527" Name="water_drips" MaxAttenuation="120" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="359400834"/>
@@ -406,7 +419,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{51220400-3359-CC4C-333B-A9AC4D8AF311}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{91BC1570-00E6-01F7-F1B8-B23DD7B4263D}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -615,5 +628,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9FD17C9C-02E3-D8C1-996F-6F3D77F28860}</FileHash>
+	<FileHash>{DCCC0CFA-B30E-79C4-1F64-32F73A90BF98}</FileHash>
 </SoundBanksInfo>
