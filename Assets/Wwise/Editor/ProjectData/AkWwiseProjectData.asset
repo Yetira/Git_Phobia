@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 3e860730979601429f3a22904a750a2e
     GuidInternal: 
-    m_lastTime: -8584680224580754491
+    m_lastTime: -8584674251145513810
     List:
     - name: AURO-3D
       guid: 9e3201dc27c92a4fb863d279a8472221
@@ -433,7 +433,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5b7d3d6d0746124ab1d6166bb3175237
     GuidInternal: 
-    m_lastTime: -8584674971486573208
+    m_lastTime: -8584674223743977396
     List:
     - name: Main_test
       guid: f4bfb48e9ef48e4883081f357e8cb44a
@@ -517,7 +517,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 199508fe3d34424d9564a328ccca3022
     GuidInternal: 
-    m_lastTime: -8584681263823470576
+    m_lastTime: -8584674147173579060
     List:
     - name: breath_slow
       guid: 354523044544d4458ec1bcab2c8e38db
@@ -553,6 +553,46 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.7190703
       minDuration: 0.42451248
+    - name: Level_Intro
+      guid: 54c6f2d8056f6e4e99ced38dc3f90635
+      id: 1324475830
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: Voicelines
+        ObjectType: 4
+        guid: 42e77304505bb5418131999b40e884d5
+      - ElementName: Level_Intro
+        ObjectType: 3
+        guid: 54c6f2d8056f6e4e99ced38dc3f90635
+      Path: Events\Default Work Unit\Voicelines\Level_Intro
+      maxAttenuation: 0
+      maxDuration: 5.3333335
+      minDuration: 5.3333335
+    - name: Level_Outro
+      guid: e1e606055c16a842863524031cfce0bc
+      id: 2308461549
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: Voicelines
+        ObjectType: 4
+        guid: 42e77304505bb5418131999b40e884d5
+      - ElementName: Level_Outro
+        ObjectType: 3
+        guid: e1e606055c16a842863524031cfce0bc
+      Path: Events\Default Work Unit\Voicelines\Level_Outro
+      maxAttenuation: 0
+      maxDuration: 3.3333333
+      minDuration: 3.3333333
     - name: play_testmelody
       guid: 645bc0db7ecf5242aeac8f37d62bf77b
       id: 1542721370
@@ -567,6 +607,43 @@ MonoBehaviour:
         ObjectType: 3
         guid: 645bc0db7ecf5242aeac8f37d62bf77b
       Path: Events\Default Work Unit\play_testmelody
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Target_Hit
+      guid: 79537db8cd11ab42bc8240e5d589480b
+      id: 316379624
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: Voicelines
+        ObjectType: 4
+        guid: 42e77304505bb5418131999b40e884d5
+      - ElementName: Target_Hit
+        ObjectType: 3
+        guid: 79537db8cd11ab42bc8240e5d589480b
+      Path: Events\Default Work Unit\Voicelines\Target_Hit
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Voicelines
+      guid: 42e77304505bb5418131999b40e884d5
+      id: 2292057722
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: Voicelines
+        ObjectType: 4
+        guid: 42e77304505bb5418131999b40e884d5
+      Path: Events\Default Work Unit\Voicelines
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -926,8 +1003,74 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: e5d7232acd96ac48b5e661cd6c28eb44
     GuidInternal: 
-    m_lastTime: -8584674971488546227
+    m_lastTime: -8584674223744057518
     List:
+    - name: activeLevel
+      guid: 2ae88e046cfa1e42bc11adf2451e2f00
+      id: 195311475
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e5d7232acd96ac48b5e661cd6c28eb44
+      - ElementName: activeLevel
+        ObjectType: 11
+        guid: 2ae88e046cfa1e42bc11adf2451e2f00
+      Path: Switches\Default Work Unit\activeLevel
+      values:
+      - name: Level_1
+        guid: 512e796253137e4ba3f6049d629cda4f
+        id: 1290008369
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: e5d7232acd96ac48b5e661cd6c28eb44
+        - ElementName: activeLevel
+          ObjectType: 11
+          guid: 2ae88e046cfa1e42bc11adf2451e2f00
+        - ElementName: Level_1
+          ObjectType: 10
+          guid: 512e796253137e4ba3f6049d629cda4f
+      - name: Level_2
+        guid: b7ed2510f458ac46830ecddd891e6a45
+        id: 1290008370
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: e5d7232acd96ac48b5e661cd6c28eb44
+        - ElementName: activeLevel
+          ObjectType: 11
+          guid: 2ae88e046cfa1e42bc11adf2451e2f00
+        - ElementName: Level_2
+          ObjectType: 10
+          guid: b7ed2510f458ac46830ecddd891e6a45
+      - name: Level_3
+        guid: 59aaa03f1b35b343bb9e92329cc2c40f
+        id: 1290008371
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: e5d7232acd96ac48b5e661cd6c28eb44
+        - ElementName: activeLevel
+          ObjectType: 11
+          guid: 2ae88e046cfa1e42bc11adf2451e2f00
+        - ElementName: Level_3
+          ObjectType: 10
+          guid: 59aaa03f1b35b343bb9e92329cc2c40f
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: Footsteps
       guid: efc889578262544a9c178fac347e9d89
       id: 2385628198
@@ -1010,9 +1153,9 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
-    - name: Intros
-      guid: 2ae88e046cfa1e42bc11adf2451e2f00
-      id: 3293087224
+    - name: Outros
+      guid: 367b03806a50de4f8538b044d5d2780b
+      id: 1603406577
       PathAndIcons:
       - ElementName: Switches
         ObjectType: 5
@@ -1020,13 +1163,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: e5d7232acd96ac48b5e661cd6c28eb44
-      - ElementName: Intros
+      - ElementName: Outros
         ObjectType: 11
-        guid: 2ae88e046cfa1e42bc11adf2451e2f00
-      Path: Switches\Default Work Unit\Intros
+        guid: 367b03806a50de4f8538b044d5d2780b
+      Path: Switches\Default Work Unit\Outros
       values:
       - name: Level_1
-        guid: 512e796253137e4ba3f6049d629cda4f
+        guid: d2c70a6ff17f6844a2bdd341f97877ac
         id: 1290008369
         PathAndIcons:
         - ElementName: Switches
@@ -1035,14 +1178,14 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: e5d7232acd96ac48b5e661cd6c28eb44
-        - ElementName: Intros
+        - ElementName: Outros
           ObjectType: 11
-          guid: 2ae88e046cfa1e42bc11adf2451e2f00
+          guid: 367b03806a50de4f8538b044d5d2780b
         - ElementName: Level_1
           ObjectType: 10
-          guid: 512e796253137e4ba3f6049d629cda4f
+          guid: d2c70a6ff17f6844a2bdd341f97877ac
       - name: Level_2
-        guid: b7ed2510f458ac46830ecddd891e6a45
+        guid: d9a0168b428dbf41a9c30a2e59a17f6a
         id: 1290008370
         PathAndIcons:
         - ElementName: Switches
@@ -1051,12 +1194,28 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: e5d7232acd96ac48b5e661cd6c28eb44
-        - ElementName: Intros
+        - ElementName: Outros
           ObjectType: 11
-          guid: 2ae88e046cfa1e42bc11adf2451e2f00
+          guid: 367b03806a50de4f8538b044d5d2780b
         - ElementName: Level_2
           ObjectType: 10
-          guid: b7ed2510f458ac46830ecddd891e6a45
+          guid: d9a0168b428dbf41a9c30a2e59a17f6a
+      - name: Level_3
+        guid: c575674926416944978954fc5c505d71
+        id: 1290008371
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: e5d7232acd96ac48b5e661cd6c28eb44
+        - ElementName: Outros
+          ObjectType: 11
+          guid: 367b03806a50de4f8538b044d5d2780b
+        - ElementName: Level_3
+          ObjectType: 10
+          guid: c575674926416944978954fc5c505d71
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -1075,7 +1234,7 @@ MonoBehaviour:
     m_lastTime: -8584705427110042857
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000002000000030000000400000005000000060000000700000008000000090000000b0000000c0000000d0000000e00000012000000130000001400000016000000370000003800000039000000ac000000ad000000fb000000fc0000004801000049010000
+  ExpandedWaapiItemIds: 0100000002000000030000000400000005000000060000000700000008000000090000000b0000000c0000000d0000000e00000012000000130000001400000016000000370000003800000039000000ac000000ad000000fb000000fc0000004801000049010000c7010000c8010000ca010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

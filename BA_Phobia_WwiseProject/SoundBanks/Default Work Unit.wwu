@@ -8,6 +8,8 @@
 						<ObjectRef Name="lift_music" ID="{950A13F4-B94B-4014-A8DC-62B803B9909D}" WorkUnitID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="lullaby_event" ID="{8988514B-9A22-4179-9D52-D1101588B153}" WorkUnitID="{83F8F8B2-3880-41F3-9975-C575370FFBDC}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="play_testmelody" ID="{DBC05B64-CF7E-4252-AEAC-8F37D62BF77B}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Level_Outro" ID="{0506E6E1-165C-42A8-8635-24031CFCE0BC}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Target_Hit" ID="{B87D5379-11CD-42AB-BC82-40E5D589480B}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="footstep_event" ID="{DA0ACF0A-AE71-44BA-9D70-8BD59292FACE}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="wind_howl" ID="{FC572F35-A093-45B6-B064-09DA893551F7}" WorkUnitID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="breath_slow" ID="{04234535-4445-45D4-8EC1-BCAB2C8E38DB}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
@@ -22,6 +24,7 @@
 						<ObjectRef Name="lift_arrive" ID="{FCE812C6-D4BF-4C63-A0E9-19A7AF58B5B4}" WorkUnitID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Rat" ID="{83F384FD-F690-4C80-AB9E-BEDCD1FC5563}" WorkUnitID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="lift_ride" ID="{545C8EC2-6BF9-4CF7-B89D-808AE2DE964F}" WorkUnitID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Level_Intro" ID="{D8F2C654-6F05-4E6E-99CE-D38DC3F90635}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

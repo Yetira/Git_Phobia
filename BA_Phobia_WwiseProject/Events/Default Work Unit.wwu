@@ -43,6 +43,43 @@
 				<WorkUnit Name="Tunnel" ID="{71D003F0-866B-4C31-A330-E3E913374BAC}" PersistMode="Reference"/>
 				<WorkUnit Name="Cave" ID="{83F8F8B2-3880-41F3-9975-C575370FFBDC}" PersistMode="Reference"/>
 				<WorkUnit Name="Elevator" ID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" PersistMode="Reference"/>
+				<Folder Name="Voicelines" ID="{0473E742-5B50-41B5-8131-999B40E884D5}" ShortID="596192619">
+					<ChildrenList>
+						<Event Name="Level_Intro" ID="{D8F2C654-6F05-4E6E-99CE-D38DC3F90635}">
+							<ChildrenList>
+								<Action Name="" ID="{5FDFE3E2-15C6-4980-A9A0-BDA8B471A852}" ShortID="482506331">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Level_Intro" ID="{C14C10FE-2993-4465-B11A-09AF97FF1164}" WorkUnitID="{B45F632D-8992-4305-AAB8-D9639597D5E5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Level_Outro" ID="{0506E6E1-165C-42A8-8635-24031CFCE0BC}">
+							<ChildrenList>
+								<Action Name="" ID="{57099E67-825F-4832-A591-C82A287601AB}" ShortID="881121569">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Level_Outro" ID="{97F64828-0834-4078-A361-A9961FCF493F}" WorkUnitID="{B45F632D-8992-4305-AAB8-D9639597D5E5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Target_Hit" ID="{B87D5379-11CD-42AB-BC82-40E5D589480B}">
+							<ChildrenList>
+								<Action Name="" ID="{6C72B628-7941-495E-8BFA-2A72EDC0B744}" ShortID="892969003">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Task_Feedback" ID="{749AEBA4-10E2-4A09-B343-D511748A0695}" WorkUnitID="{B45F632D-8992-4305-AAB8-D9639597D5E5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

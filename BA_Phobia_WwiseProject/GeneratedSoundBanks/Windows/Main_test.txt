@@ -1,13 +1,16 @@
 Event	ID	Name			Wwise Object Path	Notes
 	116178158	footstep_event			\Default Work Unit\footstep_event	
 	119891818	rock_land			\Default Work Unit\Schacht\rock_land	
+	316379624	Target_Hit			\Default Work Unit\Voicelines\Target_Hit	
 	449767583	lift_close			\Default Work Unit\Elevator\lift_close	
 	621005966	lift_music			\Default Work Unit\Elevator\lift_music	
 	639911593	Stop_Rat			\Default Work Unit\Schacht\Stop_Rat	
 	652692592	wind_howl			\Default Work Unit\Schacht\wind_howl	
+	1324475830	Level_Intro			\Default Work Unit\Voicelines\Level_Intro	
 	1570936365	lift_ding			\Default Work Unit\Elevator\lift_ding	
 	1630071255	lift_ride			\Default Work Unit\Elevator\lift_ride	
 	2206583097	lift_open			\Default Work Unit\Elevator\lift_open	
+	2308461549	Level_Outro			\Default Work Unit\Voicelines\Level_Outro	
 	2466003463	lullaby_event			\Default Work Unit\Cave\lullaby_event	
 	2620876451	Play_Rat			\Default Work Unit\Schacht\Play_Rat	
 	2686168833	breath_slow			\Default Work Unit\breath_slow	
@@ -17,9 +20,13 @@ Event	ID	Name			Wwise Object Path	Notes
 	4192888116	lift_arrive			\Default Work Unit\Elevator\lift_arrive	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
+	195311475	activeLevel			\Default Work Unit\activeLevel	
 	2385628198	Footsteps			\Default Work Unit\Footsteps	
 
 Switch	ID	Name	Switch Group			Notes
+	1290008369	Level_1	activeLevel			
+	1290008370	Level_2	activeLevel			
+	1290008371	Level_3	activeLevel			
 	841620460	Concrete	Footsteps			
 	2144363834	Rock	Footsteps			
 	2473969246	Metal	Footsteps			
@@ -29,7 +36,9 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	3378404558	rock_fall			\Default Work Unit\rock_fall	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	1784301	done_ding	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\done_ding_818F3B66.wem		\Actor-Mixer Hierarchy\Voicelines\Task_Feedback\Level_1_TaskFeedback\Yay_3\done_ding		59360
 	29330794	chuckle_2_long	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\chuckle_2_long_818F3B66.wem		\Actor-Mixer Hierarchy\Cathedral\girl\girl_chuckles\chuckle_2_long		588096
+	32551948	Outro_Lvl_3	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\Outro_Lvl_3_818F3B66.wem		\Actor-Mixer Hierarchy\Voicelines\Level_Outro\Outro_Lvl_3		588096
 	52648787	rat_squeak3	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rat_squeak3_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rats_kickoff\rats_squeak\rat_squeak3		132396
 	78759439	FS_Tile_03	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\FS_Tile_03_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\tile\FS_Tile_03		58572
 	99444650	rat_run4	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rat_run4_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rats_kickoff\rats_run\rat_run4		499896
@@ -37,12 +46,15 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	142286536	breath_slow3	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\breath_slow3_818F3B66.wem		\Actor-Mixer Hierarchy\Player\breath_slow\breath_slow3		940896
 	156846198	rock_land1_3	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rock_land1.3_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rock_fall\rock_fall\rock_land1_3		117696
 	164609370	chuckle_3	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\chuckle_3_818F3B66.wem		\Actor-Mixer Hierarchy\Cathedral\girl\girl_chuckles\chuckle_3		235296
+	172957149	Outro_Lvl_2	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\Outro_Lvl_2_818F3B66.wem		\Actor-Mixer Hierarchy\Voicelines\Level_Outro\Outro_Lvl_2		588096
 	181027316	rock_land1_1	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rock_land1.1_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rock_fall\rock_fall\rock_land1_1		117696
 	205827511	Footsteps_MetalV1_Walk_01	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\Footsteps_MetalV1_Walk_01_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\metal\Footsteps_MetalV1_Walk_01		50778
 	221785100	footstep_rock2	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\footstep_rock2_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\rock\footstep_rock2		117696
+	247374992	Outro_Lvl_1	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\Outro_Lvl_1_818F3B66.wem		\Actor-Mixer Hierarchy\Voicelines\Level_Outro\Outro_Lvl_1		588096
 	261547176	Footsteps_MetalV1_Walk_04	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\Footsteps_MetalV1_Walk_04_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\metal\Footsteps_MetalV1_Walk_04		50558
 	279319453	rock_fall_noise	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rock_fall_noise_FBC78EF0.wem		\Actor-Mixer Hierarchy\Schacht\rock_fall\rock_fall\rock_fall_noise		940896
 	290785594	rat_squeak2	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rat_squeak2_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rats_kickoff\rats_squeak\rat_squeak2		132396
+	296478825	Intro_Lvl_1	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\Intro_Lvl_1_818F3B66.wem		\Actor-Mixer Hierarchy\Voicelines\Level_Intro\Intro_Lvl_1		940896
 	298612156	footstep_rock1	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\footstep_rock1_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\rock\footstep_rock1		117696
 	307152786	FS_Concrete_03	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\FS_Concrete_03_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\concrete\FS_Concrete_03		63518
 	313438146	rock_land1_2	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rock_land1.2_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rock_fall\rock_fall\rock_land1_2		117696
@@ -54,13 +66,18 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	372560001	lift_music-1	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\lift_music-1_FBC78EF0.wem		\Actor-Mixer Hierarchy\Elevator\lift_music-1		15523296
 	400462141	lift_ride	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\lift_ride_818F3B66.wem		\Actor-Mixer Hierarchy\Elevator\lift_ride		4909896
 	419015160	footstep_rock8	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\footstep_rock8_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\rock\footstep_rock8		117696
+	447669470	Yay_1_3	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\Yay_1_3_818F3B66.wem		\Actor-Mixer Hierarchy\Voicelines\Task_Feedback\Level_1_TaskFeedback\Yay_3\Yay_1_3		896796
 	482811910	rat_run1	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rat_run1_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rats_kickoff\rats_run\rat_run1		338196
 	488724425	wind_howl_soft	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\wind_howl_soft_FBC78EF0.wem		\Actor-Mixer Hierarchy\Schacht\wind_howl_soft		6294624
 	515772139	footstep_rock4	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\footstep_rock4_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\rock\footstep_rock4		117696
+	520307010	Intro_Lvl_2	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\Intro_Lvl_2_818F3B66.wem		\Actor-Mixer Hierarchy\Voicelines\Level_Intro\Intro_Lvl_2		940896
 	521313346	Footsteps_MetalV1_Walk_06	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\Footsteps_MetalV1_Walk_06_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\metal\Footsteps_MetalV1_Walk_06		50450
+	526734103	Yay_1_2	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\Yay_1_2_818F3B66.wem		\Actor-Mixer Hierarchy\Voicelines\Task_Feedback\Level_1_TaskFeedback\Yay_2\Yay_1_2		896796
 	528712061	footstep_rock7	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\footstep_rock7_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\rock\footstep_rock7		117696
+	583434318	Intro_Lvl_3	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\Intro_Lvl_3_818F3B66.wem		\Actor-Mixer Hierarchy\Voicelines\Level_Intro\Intro_Lvl_3		940896
 	613318558	FS_Tile_02	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\FS_Tile_02_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\tile\FS_Tile_02		53700
 	638166327	rat_squeak4	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rat_squeak4_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rats_kickoff\rats_squeak\rat_squeak4		338196
+	642975622	Yay_1_1	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\Yay_1_1_B61BD694.wem		\Actor-Mixer Hierarchy\Voicelines\Task_Feedback\Level_1_TaskFeedback\Yay_1\Yay_1_1		896796
 	692034825	Footsteps_MetalV1_Walk_03	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\Footsteps_MetalV1_Walk_03_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\metal\Footsteps_MetalV1_Walk_03		51932
 	721109381	Footsteps_MetalV1_Walk_05	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\Footsteps_MetalV1_Walk_05_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Footsteps\metal\Footsteps_MetalV1_Walk_05		47214
 	730650120	lift_arrive	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\lift_arrive_818F3B66.wem		\Actor-Mixer Hierarchy\Elevator\lift_arrive		2822496
