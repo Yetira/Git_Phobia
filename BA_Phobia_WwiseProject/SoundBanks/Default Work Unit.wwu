@@ -7,7 +7,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="lift_music" ID="{950A13F4-B94B-4014-A8DC-62B803B9909D}" WorkUnitID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="lullaby_event" ID="{8988514B-9A22-4179-9D52-D1101588B153}" WorkUnitID="{83F8F8B2-3880-41F3-9975-C575370FFBDC}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="play_testmelody" ID="{DBC05B64-CF7E-4252-AEAC-8F37D62BF77B}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_radio" ID="{31BD0854-E0B7-419B-A98B-1E5BEC115E7A}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Level_Outro" ID="{0506E6E1-165C-42A8-8635-24031CFCE0BC}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Target_Hit" ID="{B87D5379-11CD-42AB-BC82-40E5D589480B}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="footstep_event" ID="{DA0ACF0A-AE71-44BA-9D70-8BD59292FACE}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
@@ -20,6 +20,7 @@
 						<ObjectRef Name="rock_fall" ID="{E16C388B-C4BA-49DE-B0AE-415C5ABCCD0A}" WorkUnitID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="lift_close" ID="{A47F1AAF-EEF9-4A78-8813-3CA24AAC8C76}" WorkUnitID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="lift_ding" ID="{6B5A9D0D-8181-4B11-A1AE-D47E2A1079F4}" WorkUnitID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_radio" ID="{DCF76D29-6188-4B29-A7F3-EE2FBE50E534}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="girl_run" ID="{D7FF8585-A8E3-4BBF-8D01-DC725D3C010B}" WorkUnitID="{83F8F8B2-3880-41F3-9975-C575370FFBDC}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="lift_arrive" ID="{FCE812C6-D4BF-4C63-A0E9-19A7AF58B5B4}" WorkUnitID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Rat" ID="{83F384FD-F690-4C80-AB9E-BEDCD1FC5563}" WorkUnitID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" Origin="Manual" Filter="7"/>

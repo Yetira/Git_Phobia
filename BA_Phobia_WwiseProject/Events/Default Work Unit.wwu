@@ -14,20 +14,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="play_testmelody" ID="{DBC05B64-CF7E-4252-AEAC-8F37D62BF77B}">
-					<PropertyList>
-						<Property Name="Inclusion" Type="bool" Value="False"/>
-					</PropertyList>
-					<ChildrenList>
-						<Action Name="" ID="{CAFA0DFD-1469-48FB-9C32-39E2B34FAF24}" ShortID="541922769">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="test_sound" ID="{7783EC61-F516-44C8-A282-3F0DC53E0C85}" WorkUnitID="{FAD97F9B-AFBF-4D04-83D1-6C87A63C4AD8}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<WorkUnit Name="Schacht" ID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" PersistMode="Reference"/>
 				<Event Name="breath_slow" ID="{04234535-4445-45D4-8EC1-BCAB2C8E38DB}">
 					<ChildrenList>
@@ -73,6 +59,35 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Task_Feedback" ID="{749AEBA4-10E2-4A09-B343-D511748A0695}" WorkUnitID="{B45F632D-8992-4305-AAB8-D9639597D5E5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Tutorial SFX" ID="{5AD2CAED-A18C-4409-A36A-F06178E781D4}" ShortID="961234888">
+					<ChildrenList>
+						<Event Name="Stop_radio" ID="{31BD0854-E0B7-419B-A98B-1E5BEC115E7A}">
+							<ChildrenList>
+								<Action Name="" ID="{329745D3-296C-4D19-B3CE-C45899889C49}" ShortID="461689485">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="132bpm_4" ID="{F6A47B62-7BF0-432C-8ADF-ADBAD71A3550}" WorkUnitID="{FAD97F9B-AFBF-4D04-83D1-6C87A63C4AD8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_radio" ID="{DCF76D29-6188-4B29-A7F3-EE2FBE50E534}">
+							<ChildrenList>
+								<Action Name="" ID="{F125C90E-6B23-4C53-B81B-647CC399F695}" ShortID="108413261">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="132bpm_4" ID="{F6A47B62-7BF0-432C-8ADF-ADBAD71A3550}" WorkUnitID="{FAD97F9B-AFBF-4D04-83D1-6C87A63C4AD8}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

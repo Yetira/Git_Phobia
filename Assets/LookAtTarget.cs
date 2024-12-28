@@ -4,57 +4,92 @@ using UnityEngine;
 
 public class LookAtTarget : MonoBehaviour
 {
+    public radio radio;
+    public AltFirstPersonController playerController;
+
     public Camera playerCamera;
 
     public string targetTag;
 
     public float detectionRange;
 
-    public GameObject[] targets;
-
-    public float switchDelay;
+    public List<Vector3> targetPositions;
 
     private int currentTargetIndex = 0;
 
     private bool isProcessing = false;
 
+    public Collider targetCollider;
+
+    private HashSet<int> processedTargets = new HashSet<int>(); // Track processed targets
+
+    public float targetDelay; // Delay before moving the target
+
+
+    private void Start()
+    {
+        currentTargetIndex = 0;
+        radio.transform.localPosition = targetPositions[currentTargetIndex];
+    }
+
     void Update()
     {
+        if (isProcessing) return;
+
         Ray ray = new(playerCamera.transform.position, playerCamera.transform.forward);
         RaycastHit hit;
 
-        if(Physics.Raycast(ray, out hit, detectionRange))
+        if (Physics.Raycast(ray, out hit, detectionRange))
         {
-            if(hit.collider.CompareTag(targetTag) && !isProcessing)
+            if (hit.collider.CompareTag(targetTag) && !processedTargets.Contains(currentTargetIndex))
             {
+                isProcessing = true;
+
                 Debug.Log("Target in view!");
+
+                processedTargets.Add(currentTargetIndex); // Mark as processed
+
+                if (targetCollider != null)
+                    targetCollider.enabled = false;
 
                 AkSoundEngine.PostEvent("Target_Hit", gameObject);
 
-                StartCoroutine(SwitchTargetWithDelay());
+                // Start a Coroutine for the delay before moving the target
+                StartCoroutine(HandleTargetDelay());
             }
         }
 
         Debug.DrawRay(playerCamera.transform.position, playerCamera.transform.forward * detectionRange, Color.red);
 
-        
+        if(processedTargets.Contains(2))
+        {
+            playerController.canMove = true;
+        }
     }
 
-    private IEnumerator SwitchTargetWithDelay()
+    private IEnumerator HandleTargetDelay()
     {
-        isProcessing = true;
+        // Wait for the specified delay before moving the target
+        yield return new WaitForSeconds(targetDelay);
 
-        yield return new WaitForSeconds(switchDelay);
+        radio.StopPlay();
 
-        targets[currentTargetIndex].SetActive(false);
+        ChangeTargetPosition();
 
-        currentTargetIndex++;
-        if(currentTargetIndex < targets.Length)
-        {
-            targets[currentTargetIndex].SetActive(true);
-        }
+        if (targetCollider != null)
+            targetCollider.enabled = true;
 
         isProcessing = false;
+        Debug.Log("Delay complete. Target moved. Ready for next detection.");
+    }
 
+    private void ChangeTargetPosition()
+    {
+        if (currentTargetIndex < targetPositions.Count - 1)
+        {
+            currentTargetIndex++;
+            radio.transform.localPosition = targetPositions[currentTargetIndex];
+            radio.StartPlay();
+        }
     }
 }

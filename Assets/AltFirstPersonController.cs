@@ -22,8 +22,12 @@ public class AltFirstPersonController : MonoBehaviour
     public float m_StepInterval = 0.5f;     // Time interval between footsteps
     public float m_FixedSpeedFactor = 1.0f; // Factor to control footstep timing rate
 
+    public bool canMove;
+
     void Awake()
     {
+        canMove = false;
+
         // Initialize the input actions and register the Move action
         playerInputActions = new PlayerInputActions();
 
@@ -96,6 +100,8 @@ public class AltFirstPersonController : MonoBehaviour
 
     private void Move()
     {
+        if (!canMove) return;
+
         // Use the VR camera's forward direction for movement alignment
         Vector3 forward = vrCamera.forward;
         Vector3 right = vrCamera.right;

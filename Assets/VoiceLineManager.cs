@@ -28,4 +28,12 @@ public class VoiceLineManager : MonoBehaviour
 
         AkSoundEngine.PostEvent("Level_Intro", gameObject);
     }
+
+    /*private IEnumerator WaitForOutro()
+    {
+        //yield return new WaitForSeconds(voiceLineDelay);
+
+       //AkSoundEngine.PostEvent("Level_Intro", gameObject);
+    }
+    */
 }

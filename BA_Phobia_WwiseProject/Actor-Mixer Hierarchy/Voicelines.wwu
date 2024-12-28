@@ -253,7 +253,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<RandomSequenceContainer Name="Level_1_TaskFeedback" ID="{F4574581-3A54-4C50-A523-F759BA6651D5}" ShortID="614555940">
+						<RandomSequenceContainer Name="Level_1" ID="{F4574581-3A54-4C50-A523-F759BA6651D5}" ShortID="614555940">
 							<PropertyList>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 							</PropertyList>
@@ -503,6 +503,19 @@
 									</ObjectLists>
 								</RandomSequenceContainer>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Playlist">
+									<Reference>
+										<ObjectRef Name="Yay_1" ID="{927A4DB8-F241-4759-AA02-A31F5BAA6082}" WorkUnitID="{B45F632D-8992-4305-AAB8-D9639597D5E5}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="Yay_2" ID="{C5B41D20-58BC-481B-BAF5-6D6D8945BD31}" WorkUnitID="{B45F632D-8992-4305-AAB8-D9639597D5E5}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="Yay_3" ID="{C6FE2D18-AD47-4F76-82EB-27FB091675B3}" WorkUnitID="{B45F632D-8992-4305-AAB8-D9639597D5E5}"/>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Level_2" ID="{6EDCDEF6-AB38-41A2-ADE0-56AF7939F779}" ShortID="639597046">
 							<PropertyList>
@@ -534,7 +547,7 @@
 					<GroupingInfo>
 						<GroupingBehaviorList>
 							<GroupingBehavior>
-								<ItemRef Name="Level_1_TaskFeedback" ID="{F4574581-3A54-4C50-A523-F759BA6651D5}"/>
+								<ItemRef Name="Level_1" ID="{F4574581-3A54-4C50-A523-F759BA6651D5}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="Level_3" ID="{9DB717CB-6011-4AC0-A44E-B105A700B44A}"/>
@@ -547,7 +560,19 @@
 							<Grouping>
 								<SwitchRef Name="Level_1" ID="{62792E51-1353-4B7E-A3F6-049D629CDA4F}"/>
 								<ItemList>
-									<ItemRef Name="Level_1_TaskFeedback" ID="{F4574581-3A54-4C50-A523-F759BA6651D5}"/>
+									<ItemRef Name="Level_1" ID="{F4574581-3A54-4C50-A523-F759BA6651D5}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Level_3" ID="{3FA0AA59-351B-43B3-BB9E-92329CC2C40F}"/>
+								<ItemList>
+									<ItemRef Name="Level_3" ID="{9DB717CB-6011-4AC0-A44E-B105A700B44A}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Level_2" ID="{1025EDB7-58F4-46AC-830E-CDDD891E6A45}"/>
+								<ItemList>
+									<ItemRef Name="Level_2" ID="{6EDCDEF6-AB38-41A2-ADE0-56AF7939F779}"/>
 								</ItemList>
 							</Grouping>
 						</GroupingList>

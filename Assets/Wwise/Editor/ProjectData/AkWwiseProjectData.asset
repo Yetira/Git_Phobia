@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 3e860730979601429f3a22904a750a2e
     GuidInternal: 
-    m_lastTime: -8584674251145513810
+    m_lastTime: -8584663775093978892
     List:
     - name: AURO-3D
       guid: 9e3201dc27c92a4fb863d279a8472221
@@ -421,6 +421,23 @@ MonoBehaviour:
         ObjectType: 1
         guid: 3b726cdcac12684e9866a0ccb1f0e65f
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Tunnel
+    - name: Tutorial_Room
+      guid: fb3575cbeb343d4b9ddb58de88c72415
+      id: 2016556987
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3e860730979601429f3a22904a750a2e
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Tutorial_Room
+        ObjectType: 1
+        guid: fb3575cbeb343d4b9ddb58de88c72415
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Tutorial_Room
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -433,7 +450,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5b7d3d6d0746124ab1d6166bb3175237
     GuidInternal: 
-    m_lastTime: -8584674223743977396
+    m_lastTime: -8584663909585203981
     List:
     - name: Main_test
       guid: f4bfb48e9ef48e4883081f357e8cb44a
@@ -464,7 +481,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Cave
     guid: b2f8f8838038f3419975c575370ffbdc
     GuidInternal: 
-    m_lastTime: -8584685497071816713
+    m_lastTime: -8584663909585103828
     List:
     - name: girl_run
       guid: 8585ffd7e3a8bf4b8d01dc725d3c010b
@@ -517,7 +534,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 199508fe3d34424d9564a328ccca3022
     GuidInternal: 
-    m_lastTime: -8584674147173579060
+    m_lastTime: -8584663909584893503
     List:
     - name: breath_slow
       guid: 354523044544d4458ec1bcab2c8e38db
@@ -593,9 +610,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 3.3333333
       minDuration: 3.3333333
-    - name: play_testmelody
-      guid: 645bc0db7ecf5242aeac8f37d62bf77b
-      id: 1542721370
+    - name: Play_radio
+      guid: 296df7dc8861294ba7f3ee2fbe50e534
+      id: 2953849999
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -603,13 +620,36 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 199508fe3d34424d9564a328ccca3022
-      - ElementName: play_testmelody
+      - ElementName: Tutorial SFX
+        ObjectType: 4
+        guid: edcad25a8ca10944a36af06178e781d4
+      - ElementName: Play_radio
         ObjectType: 3
-        guid: 645bc0db7ecf5242aeac8f37d62bf77b
-      Path: Events\Default Work Unit\play_testmelody
+        guid: 296df7dc8861294ba7f3ee2fbe50e534
+      Path: Events\Default Work Unit\Tutorial SFX\Play_radio
+      maxAttenuation: 80
+      maxDuration: 156.36365
+      minDuration: 156.36365
+    - name: Stop_radio
+      guid: 5408bd31b7e09b41a98b1e5bec115e7a
+      id: 151474297
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: Tutorial SFX
+        ObjectType: 4
+        guid: edcad25a8ca10944a36af06178e781d4
+      - ElementName: Stop_radio
+        ObjectType: 3
+        guid: 5408bd31b7e09b41a98b1e5bec115e7a
+      Path: Events\Default Work Unit\Tutorial SFX\Stop_radio
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Target_Hit
       guid: 79537db8cd11ab42bc8240e5d589480b
       id: 316379624
@@ -628,8 +668,25 @@ MonoBehaviour:
         guid: 79537db8cd11ab42bc8240e5d589480b
       Path: Events\Default Work Unit\Voicelines\Target_Hit
       maxAttenuation: 0
-      maxDuration: 0
+      maxDuration: 5.755261
       minDuration: 0
+    - name: Tutorial SFX
+      guid: edcad25a8ca10944a36af06178e781d4
+      id: 283837410
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: Tutorial SFX
+        ObjectType: 4
+        guid: edcad25a8ca10944a36af06178e781d4
+      Path: Events\Default Work Unit\Tutorial SFX
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Voicelines
       guid: 42e77304505bb5418131999b40e884d5
       id: 2292057722
@@ -1231,10 +1288,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: d3242326f7b05b49ab775cec015c9fc8
     GuidInternal: 
-    m_lastTime: -8584705427110042857
+    m_lastTime: -8584663919773364773
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000002000000030000000400000005000000060000000700000008000000090000000b0000000c0000000d0000000e00000012000000130000001400000016000000370000003800000039000000ac000000ad000000fb000000fc0000004801000049010000c7010000c8010000ca010000
+  ExpandedWaapiItemIds: 01000000020000000300000004000000050000000600000007000000080000000b0000000c0000000e0000000f00000012000000130000001400000015000000160000001700000018000000370000003800000039000000ac000000ad000000fb000000fc0000004801000049010000c7010000c8010000ca010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{A9B98DAA-1B8D-16BA-456D-4DB50EA0E44B}">
+		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{3D7D384F-02CC-73A5-FC89-B5E7226CC02D}">
 			<ShortName>Main_test</ShortName>
 			<Path>Main_test.bnk</Path>
 			<Media>
@@ -179,7 +179,7 @@
 				</File>
 				<File Id="642975622" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Yay_1_1.wav</ShortName>
-					<CachePath>SFX/Yay_1_1_B61BD694.wem</CachePath>
+					<CachePath>SFX/Yay_1_1_5FC6FF61.wem</CachePath>
 				</File>
 				<File Id="692034825" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_MetalV1_Walk_03.wav</ShortName>
@@ -192,6 +192,10 @@
 				<File Id="730650120" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>lift_arrive.wav</ShortName>
 					<CachePath>SFX/lift_arrive_818F3B66.wem</CachePath>
+				</File>
+				<File Id="753955261" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>132bpm.4.wav</ShortName>
+					<CachePath>SFX/132bpm.4_818F3B66.wem</CachePath>
 				</File>
 				<File Id="761451570" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footstep_rock3.wav</ShortName>
@@ -433,6 +437,14 @@
 						<AuxBusRef Id="243379636" Name="Reflect"/>
 					</AuxBusRefs>
 				</Event>
+				<Event Id="2953849999" Name="Play_radio" MaxAttenuation="80" DurationType="OneShot" DurationMin="156.36365" DurationMax="156.36365">
+					<MediaRefs>
+						<MediaRef Id="753955261"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="243379636" Name="Reflect"/>
+					</AuxBusRefs>
+				</Event>
 				<Event Id="2620876451" Name="Play_Rat" MaxAttenuation="120" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="52648787"/>
@@ -468,8 +480,9 @@
 						<AuxBusRef Id="243379636" Name="Reflect"/>
 					</AuxBusRefs>
 				</Event>
+				<Event Id="151474297" Name="Stop_radio" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="639911593" Name="Stop_Rat" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="316379624" Name="Target_Hit" DurationType="OneShot" DurationMin="0" DurationMax="0">
+				<Event Id="316379624" Name="Target_Hit" DurationType="OneShot" DurationMin="0" DurationMax="5.755261">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="195311475" Id="1290008369" Default="true"/>
@@ -523,7 +536,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{1B331620-1B6B-C633-8306-14A68F02121B}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{E78473C2-5BE8-20F5-F8D7-F915271F40BC}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -532,6 +545,7 @@
 				</Custom>
 				<ShareSets>
 					<Plugin Id="243379636" Name="Reflect" LibName="Wwise Reflect" LibId="11206659"/>
+					<Plugin Id="1990128658" Name="Room_Medium" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="2995775460" Name="Room_Small" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="3164629247" Name="Holy" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="3451596814" Name="Hall_Medium" LibName="Wwise RoomVerb" LibId="7733251"/>
@@ -564,6 +578,13 @@
 					<PluginRefs>
 						<ShareSets>
 							<PluginRef Id="3164629247"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="2016556987" Name="Tutorial_Room">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1990128658"/>
 						</ShareSets>
 					</PluginRefs>
 				</AuxBus>
@@ -747,5 +768,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9F52D1BC-B8F4-D1E8-6A37-F441673381C0}</FileHash>
+	<FileHash>{83D18BAC-449B-5FAE-97F5-F2C3EDEE6907}</FileHash>
 </SoundBanksInfo>

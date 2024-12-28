@@ -75,11 +75,13 @@
     <Compile Include="Assets\Scripts\BasicRigidBodyPush.cs" />
     <Compile Include="Assets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
     <Compile Include="Assets\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs" />
+    <Compile Include="Assets\radio.cs" />
     <Compile Include="Assets\InputSystem\StarterAssetsInputs.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\triggerRock.cs" />
     <Compile Include="Assets\triggerLiftMusic.cs" />
     <Compile Include="Assets\LookAtTarget.cs" />
+    <Compile Include="Assets\MoveToTarget.cs" />
     <Compile Include="Assets\Scripts\FirstPersonController.cs" />
     <Compile Include="Assets\triggerLift.cs" />
     <Compile Include="Assets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs" />
