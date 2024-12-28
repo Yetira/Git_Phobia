@@ -4,17 +4,36 @@ using UnityEngine;
 
 public class MoveToTarget : MonoBehaviour
 {
+    public radio radio;
 
+    public List<Vector3> targetPositions;
 
-    // Start is called before the first frame update
-    void Start()
+    private int currentTargetIndex = -1;
+
+    private bool isProcessing = false;
+
+    public void ChangeTargetPosition()
     {
-        
+        if (currentTargetIndex <= targetPositions.Count -1 && !isProcessing)
+        {
+            isProcessing = true;
+
+            AkSoundEngine.PostEvent("Target_Hit", gameObject);
+            StartCoroutine(HandleTargetDelay());
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private IEnumerator HandleTargetDelay()
     {
+        yield return new WaitForSeconds(3);
+
+        currentTargetIndex++;
+
+        radio.StopPlay();
         
+        radio.transform.localPosition = targetPositions[currentTargetIndex];
+        radio.StartPlay();
+        
+        isProcessing = false;
     }
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class radio : MonoBehaviour
 {
+    public MoveToTarget moveToTarget;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +29,7 @@ public class radio : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            AkSoundEngine.PostEvent("Target_Hit", gameObject);
+            moveToTarget.ChangeTargetPosition();
         }
     }
 }

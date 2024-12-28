@@ -1802,7 +1802,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radio: {fileID: 709264319}
-  playerController: {fileID: 0}
+  playerController: {fileID: 135756641613574988}
+  moveToTarget: {fileID: 117795778}
   playerCamera: {fileID: 1988112184}
   targetTag: radioTarget
   detectionRange: 30
@@ -1811,7 +1812,7 @@ MonoBehaviour:
   - {x: -1.6100001, y: -1.31, z: 5.970001}
   - {x: 17.02, y: -1.31, z: 24.699997}
   targetCollider: {fileID: 709264314}
-  targetDelay: 3
+  positionSwitchDelay: 3
 --- !u!114 &117795778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1824,6 +1825,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33c0bb71b5decac44baeded2c1e6f06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  radio: {fileID: 709264319}
+  targetPositions:
+  - {x: -0.21000004, y: -1.31, z: 0.5299988}
+  - {x: 17.79, y: -1.31, z: 10.529999}
+  - {x: -1.6100001, y: -1.31, z: 22.439999}
 --- !u!1 &125702487
 GameObject:
   m_ObjectHideFlags: 0
@@ -6215,6 +6221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0562ff34447d1d04c89fea40d587c3f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveToTarget: {fileID: 0}
 --- !u!1 &495314862
 GameObject:
   m_ObjectHideFlags: 0
@@ -9716,6 +9723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0562ff34447d1d04c89fea40d587c3f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveToTarget: {fileID: 117795778}
 --- !u!43 &718209963
 Mesh:
   m_ObjectHideFlags: 0
@@ -28189,6 +28197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0562ff34447d1d04c89fea40d587c3f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveToTarget: {fileID: 0}
 --- !u!1 &1914651885
 GameObject:
   m_ObjectHideFlags: 0

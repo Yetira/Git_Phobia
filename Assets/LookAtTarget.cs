@@ -6,6 +6,7 @@ public class LookAtTarget : MonoBehaviour
 {
     public radio radio;
     public AltFirstPersonController playerController;
+    public MoveToTarget moveToTarget;
 
     public Camera playerCamera;
 
@@ -19,11 +20,13 @@ public class LookAtTarget : MonoBehaviour
 
     private bool isProcessing = false;
 
+    private bool lastLookedAt = false;
+
     public Collider targetCollider;
 
     private HashSet<int> processedTargets = new HashSet<int>(); // Track processed targets
 
-    public float targetDelay; // Delay before moving the target
+    public float positionSwitchDelay; // Delay before moving the target
 
 
     private void Start()
@@ -61,8 +64,11 @@ public class LookAtTarget : MonoBehaviour
 
         Debug.DrawRay(playerCamera.transform.position, playerCamera.transform.forward * detectionRange, Color.red);
 
-        if(processedTargets.Contains(2))
+        if(processedTargets.Contains(2) && !lastLookedAt)
         {
+            lastLookedAt = true;
+
+            Debug.Log("Player can move now!");
             playerController.canMove = true;
         }
     }
@@ -70,7 +76,7 @@ public class LookAtTarget : MonoBehaviour
     private IEnumerator HandleTargetDelay()
     {
         // Wait for the specified delay before moving the target
-        yield return new WaitForSeconds(targetDelay);
+        yield return new WaitForSeconds(positionSwitchDelay);
 
         radio.StopPlay();
 
@@ -85,7 +91,7 @@ public class LookAtTarget : MonoBehaviour
 
     private void ChangeTargetPosition()
     {
-        if (currentTargetIndex < targetPositions.Count - 1)
+        if (currentTargetIndex < 2)
         {
             currentTargetIndex++;
             radio.transform.localPosition = targetPositions[currentTargetIndex];
