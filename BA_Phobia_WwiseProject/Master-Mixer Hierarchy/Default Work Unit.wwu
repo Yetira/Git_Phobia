@@ -159,7 +159,12 @@
 												<ReferenceList>
 													<Reference Name="Effect">
 														<Custom>
-															<Effect Name="Auro Headphone (Custom)" ID="{C77FC002-CCE9-4759-945D-9933558F43D7}" ShortID="52925816" PluginName="Auro Headphone" CompanyID="263" PluginID="1100" PluginType="3"/>
+															<Effect Name="Auro Headphone (Custom)" ID="{C77FC002-CCE9-4759-945D-9933558F43D7}" ShortID="52925816" PluginName="Auro Headphone" CompanyID="263" PluginID="1100" PluginType="3">
+																<PropertyList>
+																	<Property Name="Bypass" Type="bool" Value="True"/>
+																	<Property Name="Reverb" Type="bool" Value="False"/>
+																</PropertyList>
+															</Effect>
 														</Custom>
 													</Reference>
 												</ReferenceList>
@@ -181,6 +186,34 @@
 												<ReferenceList>
 													<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 														<ObjectRef Name="Room_Medium" ID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
+						<AuxBus Name="Cabin" ID="{71C4D18D-0BB7-48F8-9BA5-19E94E41988C}">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Attenuation_test" ID="{A3CFFE80-4E86-49E6-A57E-1EFF5B9035B6}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{B4275E0F-1EA5-4A41-97AA-C9B3A958013A}" ShortID="161270948">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+														<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 													</Reference>
 												</ReferenceList>
 											</EffectSlot>

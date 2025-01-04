@@ -95,6 +95,54 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="5_Cabin" ID="{8BEABC2B-7866-4C8F-8912-6F34D5D5E3ED}" ShortID="292901806">
+					<ChildrenList>
+						<Event Name="fire_crackling" ID="{85A8B58C-BF0B-42C1-96F2-5079D44D56D3}">
+							<ChildrenList>
+								<Action Name="" ID="{F9A394CA-5DEC-4F8A-8FE6-47A4141F5BE3}" ShortID="813201596">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="fire_crackling" ID="{28723ED3-8941-4AF9-BE74-114267A3C542}" WorkUnitID="{6E5FA8A8-1154-45BF-9934-DB0DCEB04F0B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="floor_creak" ID="{DDC850F0-1851-46D6-9E07-CBE1B9AFF2C1}">
+							<ChildrenList>
+								<Action Name="" ID="{3023819C-F073-47CD-B1A7-83A1434B4214}" ShortID="169357533">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="wood_creaks" ID="{E49283A5-36E9-42DF-A061-E3DDCDF28D59}" WorkUnitID="{6E5FA8A8-1154-45BF-9934-DB0DCEB04F0B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="cabin_wind" ID="{EC04C779-1F8C-4673-8A78-0F635DB5EECB}">
+							<ChildrenList>
+								<Action Name="" ID="{1658F73E-BD1B-4276-851E-2CF78BFF8189}" ShortID="546094316">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="wind_howl_soft" ID="{256DC20B-3B4D-445E-A077-1D0878AA3FD0}" WorkUnitID="{702988FB-4A56-44EE-941C-588512765CD5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="old_tv" ID="{1C9440D0-E15C-4B96-9BAD-76C1D2D927B2}">
+							<ChildrenList>
+								<Action Name="" ID="{ADE1C388-7AB0-46EF-8B2F-10C30B050C9C}" ShortID="431133417">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="old_tv_program" ID="{340CE970-33D7-4281-A125-C929AA51EF6B}" WorkUnitID="{6E5FA8A8-1154-45BF-9934-DB0DCEB04F0B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -9,6 +9,7 @@
 						<Switch Name="Tile" ID="{FB762F0F-3C8A-4593-A172-632698D9619B}"/>
 						<Switch Name="Rock" ID="{00494165-5173-404E-98CC-E5B68862A08E}"/>
 						<Switch Name="Metal" ID="{C942EC32-81B7-4EF9-B76B-470F0C07D660}"/>
+						<Switch Name="wood" ID="{DE990453-8657-494A-ADDE-750C8B185CFB}"/>
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="activeLevel" ID="{048EE82A-FA6C-421E-BC11-ADF2451E2F00}">

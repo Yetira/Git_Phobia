@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 3e860730979601429f3a22904a750a2e
     GuidInternal: 
-    m_lastTime: -8584662210247990975
+    m_lastTime: -8584655981674476197
     List:
     - name: AURO-3D
       guid: 9e3201dc27c92a4fb863d279a8472221
@@ -322,6 +322,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: 9e3201dc27c92a4fb863d279a8472221
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AURO-3D
+    - name: Cabin
+      guid: 8dd1c471b70bf8489ba519e94e41988c
+      id: 680291572
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3e860730979601429f3a22904a750a2e
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Cabin
+        ObjectType: 1
+        guid: 8dd1c471b70bf8489ba519e94e41988c
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Cabin
     - name: Cathedral
       guid: 5303bcca0afb1342a2ccb0b9f9b540f9
       id: 1024696295
@@ -534,8 +551,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 199508fe3d34424d9564a328ccca3022
     GuidInternal: 
-    m_lastTime: -8584662210256724359
+    m_lastTime: -8584655981671845302
     List:
+    - name: 5_Cabin
+      guid: 2bbcea8b66788f4c89126f34d5d5e3ed
+      id: 2149976544
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: 5_Cabin
+        ObjectType: 4
+        guid: 2bbcea8b66788f4c89126f34d5d5e3ed
+      Path: Events\Default Work Unit\5_Cabin
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: breath_slow
       guid: 354523044544d4458ec1bcab2c8e38db
       id: 2686168833
@@ -550,6 +584,66 @@ MonoBehaviour:
         ObjectType: 3
         guid: 354523044544d4458ec1bcab2c8e38db
       Path: Events\Default Work Unit\breath_slow
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: cabin_wind
+      guid: 79c704ec8c1f73468a780f635db5eecb
+      id: 2710023793
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: 5_Cabin
+        ObjectType: 4
+        guid: 2bbcea8b66788f4c89126f34d5d5e3ed
+      - ElementName: cabin_wind
+        ObjectType: 3
+        guid: 79c704ec8c1f73468a780f635db5eecb
+      Path: Events\Default Work Unit\5_Cabin\cabin_wind
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: fire_crackling
+      guid: 8cb5a8850bbfc14296f25079d44d56d3
+      id: 2109043066
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: 5_Cabin
+        ObjectType: 4
+        guid: 2bbcea8b66788f4c89126f34d5d5e3ed
+      - ElementName: fire_crackling
+        ObjectType: 3
+        guid: 8cb5a8850bbfc14296f25079d44d56d3
+      Path: Events\Default Work Unit\5_Cabin\fire_crackling
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: floor_creak
+      guid: f050c8dd5118d6469e07cbe1b9aff2c1
+      id: 2811188008
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: 5_Cabin
+        ObjectType: 4
+        guid: 2bbcea8b66788f4c89126f34d5d5e3ed
+      - ElementName: floor_creak
+        ObjectType: 3
+        guid: f050c8dd5118d6469e07cbe1b9aff2c1
+      Path: Events\Default Work Unit\5_Cabin\floor_creak
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1060,7 +1154,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: e5d7232acd96ac48b5e661cd6c28eb44
     GuidInternal: 
-    m_lastTime: -8584656982751977586
+    m_lastTime: -8584655981671695251
     List:
     - name: activeLevel
       guid: 2ae88e046cfa1e42bc11adf2451e2f00
@@ -1271,6 +1365,22 @@ MonoBehaviour:
         - ElementName: Tile
           ObjectType: 10
           guid: 0f2f76fb8a3c9345a172632698d9619b
+      - name: wood
+        guid: 530499de57864a49adde750c8b185cfb
+        id: 2058049674
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: e5d7232acd96ac48b5e661cd6c28eb44
+        - ElementName: Footsteps
+          ObjectType: 11
+          guid: efc889578262544a9c178fac347e9d89
+        - ElementName: wood
+          ObjectType: 10
+          guid: 530499de57864a49adde750c8b185cfb
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -1355,7 +1465,7 @@ MonoBehaviour:
     m_lastTime: -8584663919773364773
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000002000000040000000500000007000000080000000b0000000f00000012000000130000001400000015000000160000001700000018000000370000003800000039000000ac000000ad000000fb000000fc0000004801000049010000c7010000c8010000ca010000
+  ExpandedWaapiItemIds: 010000000200000004000000050000000600000007000000080000000b0000000f00000012000000130000001400000015000000160000001700000018000000370000003800000039000000ac000000ad000000b0000000b1000000b2000000fb000000fc0000004801000049010000c7010000c8010000ca010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

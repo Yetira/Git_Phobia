@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{3D7D384F-02CC-73A5-FC89-B5E7226CC02D}">
+		<SoundBank Id="812327917" Type="User" Language="SFX" Hash="{D4C53ABA-1FC0-14D0-6A60-B8A954591968}">
 			<ShortName>Main_test</ShortName>
 			<Path>Main_test.bnk</Path>
 			<Media>
@@ -81,6 +81,10 @@
 					<ShortName>rock_fall_noise.wav</ShortName>
 					<CachePath>SFX/rock_fall_noise_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="288402798" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footstep4.wav</ShortName>
+					<CachePath>SFX/footstep4_81207E56.wem</CachePath>
+				</File>
 				<File Id="290785594" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>rat_squeak2.wav</ShortName>
 					<CachePath>SFX/rat_squeak2_818F3B66.wem</CachePath>
@@ -100,6 +104,10 @@
 				<File Id="313438146" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>rock_land1.2.wav</ShortName>
 					<CachePath>SFX/rock_land1.2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="327318127" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footstep3.wav</ShortName>
+					<CachePath>SFX/footstep3_B48CB93B.wem</CachePath>
 				</File>
 				<File Id="344706494" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footstep_rock6.wav</ShortName>
@@ -145,6 +153,10 @@
 					<ShortName>wind_howl_soft.wav</ShortName>
 					<CachePath>SFX/wind_howl_soft_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="510402734" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footstep2.wav</ShortName>
+					<CachePath>SFX/footstep2_818F3B66.wem</CachePath>
+				</File>
 				<File Id="515772139" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>footstep_rock4.wav</ShortName>
 					<CachePath>SFX/footstep_rock4_818F3B66.wem</CachePath>
@@ -180,6 +192,10 @@
 				<File Id="642975622" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Yay_1_1.wav</ShortName>
 					<CachePath>SFX/Yay_1_1_5FC6FF61.wem</CachePath>
+				</File>
+				<File Id="664176381" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footstep1.wav</ShortName>
+					<CachePath>SFX/footstep1_29C92A00.wem</CachePath>
 				</File>
 				<File Id="692034825" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps_MetalV1_Walk_03.wav</ShortName>
@@ -281,7 +297,7 @@
 						<AuxBusRef Id="243379636" Name="Reflect"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="116178158" Name="footstep_event" DurationType="OneShot" DurationMin="0.42451248" DurationMax="0.7190703">
+				<Event Id="116178158" Name="footstep_event" DurationType="OneShot" DurationMin="0.28129032" DurationMax="0.7190703">
 					<AuxBusRefs>
 						<AuxBusRef Id="243379636" Name="Reflect"/>
 					</AuxBusRefs>
@@ -311,6 +327,15 @@
 								<MediaRef Id="307152786"/>
 								<MediaRef Id="802854533"/>
 								<MediaRef Id="826582764"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="2058049674"/>
+							<MediaRefs>
+								<MediaRef Id="288402798"/>
+								<MediaRef Id="327318127"/>
+								<MediaRef Id="510402734"/>
+								<MediaRef Id="664176381"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -441,9 +466,6 @@
 					<MediaRefs>
 						<MediaRef Id="753955261"/>
 					</MediaRefs>
-					<AuxBusRefs>
-						<AuxBusRef Id="243379636" Name="Reflect"/>
-					</AuxBusRefs>
 				</Event>
 				<Event Id="2620876451" Name="Play_Rat" MaxAttenuation="120" DurationType="Infinite">
 					<MediaRefs>
@@ -524,11 +546,16 @@
 						<Switch Id="1290008369" Name="Level_1"/>
 						<Switch Id="1290008370" Name="Level_2"/>
 						<Switch Id="1290008371" Name="Level_3"/>
+						<Switch Id="1290008372" Name="Level_4"/>
+						<Switch Id="1290008373" Name="Level_5"/>
+						<Switch Id="1290008374" Name="Level_6"/>
+						<Switch Id="1290008375" Name="Level_7"/>
 					</Switches>
 				</SwitchGroup>
 				<SwitchGroup Id="2385628198" Name="Footsteps">
 					<Switches>
 						<Switch Id="841620460" Name="Concrete"/>
+						<Switch Id="2058049674" Name="wood"/>
 						<Switch Id="2144363834" Name="Rock"/>
 						<Switch Id="2473969246" Name="Metal"/>
 						<Switch Id="2637588553" Name="Tile"/>
@@ -536,7 +563,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{E78473C2-5BE8-20F5-F8D7-F915271F40BC}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{56F1D047-9A3A-4998-B026-95028C4938E1}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -571,6 +598,13 @@
 					<PluginRefs>
 						<ShareSets>
 							<PluginRef Id="243379636"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="680291572" Name="Cabin" MaxAttenuation="300">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2995775460"/>
 						</ShareSets>
 					</PluginRefs>
 				</AuxBus>
@@ -620,6 +654,10 @@
 						<Switch Id="1290008369" Name="Level_1"/>
 						<Switch Id="1290008370" Name="Level_2"/>
 						<Switch Id="1290008371" Name="Level_3"/>
+						<Switch Id="1290008372" Name="Level_4"/>
+						<Switch Id="1290008373" Name="Level_5"/>
+						<Switch Id="1290008374" Name="Level_6"/>
+						<Switch Id="1290008375" Name="Level_7"/>
 					</Switches>
 				</SwitchGroup>
 				<SwitchGroup Id="1603406577" Name="Outros">
@@ -632,6 +670,7 @@
 				<SwitchGroup Id="2385628198" Name="Footsteps">
 					<Switches>
 						<Switch Id="841620460" Name="Concrete"/>
+						<Switch Id="2058049674" Name="wood"/>
 						<Switch Id="2144363834" Name="Rock"/>
 						<Switch Id="2473969246" Name="Metal"/>
 						<Switch Id="2637588553" Name="Tile"/>
@@ -768,5 +807,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{83D18BAC-449B-5FAE-97F5-F2C3EDEE6907}</FileHash>
+	<FileHash>{D679B230-7BB9-2FD4-AA66-71061F4A960A}</FileHash>
 </SoundBanksInfo>

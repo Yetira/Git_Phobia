@@ -84,6 +84,7 @@
     <Compile Include="Assets\MoveToTarget.cs" />
     <Compile Include="Assets\Scripts\FirstPersonController.cs" />
     <Compile Include="Assets\triggerLift.cs" />
+    <Compile Include="Assets\creakZone.cs" />
     <Compile Include="Assets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs" />
     <Compile Include="Assets\XR\PlayerInputActions.cs" />
     <Compile Include="Assets\Rat.cs" />

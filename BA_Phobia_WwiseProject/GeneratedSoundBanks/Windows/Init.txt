@@ -20,6 +20,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	243379636	Reflect			\Default Work Unit\Master Audio Bus\Reflect	
+	680291572	Cabin			\Default Work Unit\Master Audio Bus\Cabin	
 	1024696295	Cathedral			\Default Work Unit\Master Audio Bus\Cathedral	
 	2016556987	Tutorial_Room			\Default Work Unit\Master Audio Bus\Tutorial_Room	
 	2761991509	Schacht			\Default Work Unit\Master Audio Bus\Schacht	
