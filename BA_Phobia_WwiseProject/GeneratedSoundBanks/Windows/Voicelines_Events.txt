@@ -1,0 +1,59 @@
+Event	ID	Name			Wwise Object Path	Notes
+	119891818	rock_land			\Default Work Unit\Schacht\rock_land	
+	151474297	Stop_radio			\Default Work Unit\Tutorial SFX\Stop_radio	
+	316379624	Target_Hit			\Default Work Unit\Voicelines\Target_Hit	
+	639911593	Stop_Rat			\Default Work Unit\Schacht\Stop_Rat	
+	1324475830	Level_Intro			\Default Work Unit\Voicelines\Level_Intro	
+	2308461549	Level_Outro			\Default Work Unit\Voicelines\Level_Outro	
+	2620876451	Play_Rat			\Default Work Unit\Schacht\Play_Rat	
+	2953849999	Play_radio			\Default Work Unit\Tutorial SFX\Play_radio	
+	3378404558	rock_fall			\Default Work Unit\Schacht\rock_fall	
+	3413758005	girl_run			\Default Work Unit\Cave\girl_run	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	195311475	activeLevel			\Default Work Unit\activeLevel	
+
+Switch	ID	Name	Switch Group			Notes
+	1290008369	Level_1	activeLevel			
+	1290008370	Level_2	activeLevel			
+	1290008371	Level_3	activeLevel			
+	1290008372	Level_4	activeLevel			
+	1290008373	Level_5	activeLevel			
+	1290008374	Level_6	activeLevel			
+	1290008375	Level_7	activeLevel			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3378404558	rock_fall			\Default Work Unit\rock_fall	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	1784301	done_ding	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\done_ding_818F3B66.wem		\Actor-Mixer Hierarchy\Voicelines\Task_Feedback\Level_1\Yay_3\done_ding		59360
+	29330794	chuckle_2_long	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\chuckle_2_long_818F3B66.wem		\Actor-Mixer Hierarchy\Cathedral\girl\girl_chuckles\chuckle_2_long		588096
+	32551948	Outro_Lvl_3	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\Outro_Lvl_3_818F3B66.wem		\Actor-Mixer Hierarchy\Voicelines\Level_Outro\Outro_Lvl_3		588096
+	52648787	rat_squeak3	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rat_squeak3_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rats_kickoff\rats_squeak\rat_squeak3		132396
+	99444650	rat_run4	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rat_run4_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rats_kickoff\rats_run\rat_run4		499896
+	136278897	rat_run3	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rat_run3_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rats_kickoff\rats_run\rat_run3		499896
+	156846198	rock_land1_3	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rock_land1.3_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rock_fall\rock_fall\rock_land1_3		117696
+	164609370	chuckle_3	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\chuckle_3_818F3B66.wem		\Actor-Mixer Hierarchy\Cathedral\girl\girl_chuckles\chuckle_3		235296
+	172957149	Outro_Lvl_2	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\Outro_Lvl_2_818F3B66.wem		\Actor-Mixer Hierarchy\Voicelines\Level_Outro\Outro_Lvl_2		588096
+	181027316	rock_land1_1	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rock_land1.1_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rock_fall\rock_fall\rock_land1_1		117696
+	247374992	Outro_Lvl_1	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\Outro_Lvl_1_818F3B66.wem		\Actor-Mixer Hierarchy\Voicelines\Level_Outro\Outro_Lvl_1		588096
+	279319453	rock_fall_noise	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rock_fall_noise_FBC78EF0.wem		\Actor-Mixer Hierarchy\Schacht\rock_fall\rock_fall\rock_fall_noise		940896
+	290785594	rat_squeak2	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rat_squeak2_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rats_kickoff\rats_squeak\rat_squeak2		132396
+	296478825	Intro_Lvl_1	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\Intro_Lvl_1_818F3B66.wem		\Actor-Mixer Hierarchy\Voicelines\Level_Intro\Intro_Lvl_1		940896
+	313438146	rock_land1_2	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rock_land1.2_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rock_fall\rock_fall\rock_land1_2		117696
+	359392364	girl_running_cut2	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\girl_running_cut2_FBC78EF0.wem		\Actor-Mixer Hierarchy\Cathedral\girl\girl_running_cut2		2315348
+	371138762	rat_run2	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rat_run2_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rats_kickoff\rats_run\rat_run2		426396
+	447669470	Yay_1_3	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\Yay_1_3_818F3B66.wem		\Actor-Mixer Hierarchy\Voicelines\Task_Feedback\Level_1\Yay_3\Yay_1_3		896796
+	482811910	rat_run1	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rat_run1_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rats_kickoff\rats_run\rat_run1		338196
+	520307010	Intro_Lvl_2	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\Intro_Lvl_2_818F3B66.wem		\Actor-Mixer Hierarchy\Voicelines\Level_Intro\Intro_Lvl_2		940896
+	526734103	Yay_1_2	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\Yay_1_2_818F3B66.wem		\Actor-Mixer Hierarchy\Voicelines\Task_Feedback\Level_1\Yay_2\Yay_1_2		896796
+	583434318	Intro_Lvl_3	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\Intro_Lvl_3_818F3B66.wem		\Actor-Mixer Hierarchy\Voicelines\Level_Intro\Intro_Lvl_3		940896
+	638166327	rat_squeak4	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rat_squeak4_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rats_kickoff\rats_squeak\rat_squeak4		338196
+	642975622	Yay_1_1	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\Yay_1_1_5FC6FF61.wem		\Actor-Mixer Hierarchy\Voicelines\Task_Feedback\Level_1\Yay_1\Yay_1_1		896796
+	753955261	132bpm_4	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\132bpm.4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\132bpm_4		27582644
+	811281197	chuckle_4_short	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\chuckle_4_short_818F3B66.wem		\Actor-Mixer Hierarchy\Cathedral\girl\girl_chuckles\chuckle_4_short		117696
+	854779166	chuckle1	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\chuckle1_818F3B66.wem		\Actor-Mixer Hierarchy\Cathedral\girl\girl_chuckles\chuckle1		352896
+	863629646	rat_squeak5	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rat_squeak5_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rats_kickoff\rats_squeak\rat_squeak5		205896
+	996077848	chuckle_5	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\chuckle_5_818F3B66.wem		\Actor-Mixer Hierarchy\Cathedral\girl\girl_chuckles\chuckle_5		235296
+	1038212346	rat_squeak1	D:\Git_Phobia\BA_Phobia_WwiseProject\.cache\Windows\SFX\rat_squeak1_818F3B66.wem		\Actor-Mixer Hierarchy\Schacht\rats_kickoff\rats_squeak\rat_squeak1		308796
+

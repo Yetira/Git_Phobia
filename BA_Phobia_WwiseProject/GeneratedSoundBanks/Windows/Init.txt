@@ -30,6 +30,7 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 Effect plug-ins	ID	Name	Type				Notes
 	52925816	Auro Headphone (Custom)	Auro Headphone			
 	243379636	Reflect	Wwise Reflect			
+	999724263	Wwise_RoomVerb_(Custom)	Wwise RoomVerb			
 	1990128658	Room_Medium	Wwise RoomVerb			
 	2995775460	Room_Small	Wwise RoomVerb			
 	3164629247	Holy	Wwise RoomVerb			

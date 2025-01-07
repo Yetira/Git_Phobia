@@ -6,25 +6,35 @@
 				<SoundBank Name="Main_test" ID="{8EB4BFF4-F49E-488E-8308-1F357E8CB44A}">
 					<ObjectInclusionList>
 						<ObjectRef Name="lift_music" ID="{950A13F4-B94B-4014-A8DC-62B803B9909D}" WorkUnitID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="lullaby_event" ID="{8988514B-9A22-4179-9D52-D1101588B153}" WorkUnitID="{83F8F8B2-3880-41F3-9975-C575370FFBDC}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Stop_radio" ID="{31BD0854-E0B7-419B-A98B-1E5BEC115E7A}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Level_Outro" ID="{0506E6E1-165C-42A8-8635-24031CFCE0BC}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Target_Hit" ID="{B87D5379-11CD-42AB-BC82-40E5D589480B}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="footstep_event" ID="{DA0ACF0A-AE71-44BA-9D70-8BD59292FACE}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="fire_crackling" ID="{85A8B58C-BF0B-42C1-96F2-5079D44D56D3}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="footsteps" ID="{DA0ACF0A-AE71-44BA-9D70-8BD59292FACE}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="wind_howl" ID="{FC572F35-A093-45B6-B064-09DA893551F7}" WorkUnitID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="breath_slow" ID="{04234535-4445-45D4-8EC1-BCAB2C8E38DB}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="water_drips" ID="{10F0717B-1218-461A-8C1A-9C00851CF004}" WorkUnitID="{71D003F0-866B-4C31-A330-E3E913374BAC}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="rock_land" ID="{0D8E8A21-73C4-4623-8CD0-5A7D792C00D0}" WorkUnitID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Rat" ID="{5D7CA806-E58B-4742-B443-26B0989959EC}" WorkUnitID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="cabin_wind" ID="{EC04C779-1F8C-4673-8A78-0F635DB5EECB}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="floor_creak" ID="{DDC850F0-1851-46D6-9E07-CBE1B9AFF2C1}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="lift_open" ID="{B234858E-1810-475C-9CC7-C4F8E6936301}" WorkUnitID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="rock_fall" ID="{E16C388B-C4BA-49DE-B0AE-415C5ABCCD0A}" WorkUnitID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="lift_close" ID="{A47F1AAF-EEF9-4A78-8813-3CA24AAC8C76}" WorkUnitID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="lift_ding" ID="{6B5A9D0D-8181-4B11-A1AE-D47E2A1079F4}" WorkUnitID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="old_tv" ID="{1C9440D0-E15C-4B96-9BAD-76C1D2D927B2}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="lift_arrive" ID="{FCE812C6-D4BF-4C63-A0E9-19A7AF58B5B4}" WorkUnitID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="lift_ride" ID="{545C8EC2-6BF9-4CF7-B89D-808AE2DE964F}" WorkUnitID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Voicelines_Events" ID="{3C9EDD8B-F97B-4CCD-8C3C-6AFC8706517C}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Stop_radio" ID="{31BD0854-E0B7-419B-A98B-1E5BEC115E7A}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Voicelines" ID="{0473E742-5B50-41B5-8131-999B40E884D5}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Level_Outro" ID="{0506E6E1-165C-42A8-8635-24031CFCE0BC}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Target_Hit" ID="{B87D5379-11CD-42AB-BC82-40E5D589480B}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="rock_land" ID="{0D8E8A21-73C4-4623-8CD0-5A7D792C00D0}" WorkUnitID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Rat" ID="{5D7CA806-E58B-4742-B443-26B0989959EC}" WorkUnitID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="rock_fall" ID="{E16C388B-C4BA-49DE-B0AE-415C5ABCCD0A}" WorkUnitID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_radio" ID="{DCF76D29-6188-4B29-A7F3-EE2FBE50E534}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="girl_run" ID="{D7FF8585-A8E3-4BBF-8D01-DC725D3C010B}" WorkUnitID="{83F8F8B2-3880-41F3-9975-C575370FFBDC}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="lift_arrive" ID="{FCE812C6-D4BF-4C63-A0E9-19A7AF58B5B4}" WorkUnitID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Rat" ID="{83F384FD-F690-4C80-AB9E-BEDCD1FC5563}" WorkUnitID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="lift_ride" ID="{545C8EC2-6BF9-4CF7-B89D-808AE2DE964F}" WorkUnitID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Level_Intro" ID="{D8F2C654-6F05-4E6E-99CE-D38DC3F90635}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

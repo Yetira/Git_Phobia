@@ -3,7 +3,7 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{FE089519-343D-4D42-9564-A328CCCA3022}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="footstep_event" ID="{DA0ACF0A-AE71-44BA-9D70-8BD59292FACE}">
+				<Event Name="footsteps" ID="{DA0ACF0A-AE71-44BA-9D70-8BD59292FACE}">
 					<ChildrenList>
 						<Action Name="" ID="{CFDF0F3E-BDDF-4CF7-9562-B7870640D483}" ShortID="20709250">
 							<ReferenceList>

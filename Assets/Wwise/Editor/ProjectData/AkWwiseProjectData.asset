@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 3e860730979601429f3a22904a750a2e
     GuidInternal: 
-    m_lastTime: -8584655981674476197
+    m_lastTime: -8584653592263845631
     List:
     - name: AURO-3D
       guid: 9e3201dc27c92a4fb863d279a8472221
@@ -467,7 +467,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5b7d3d6d0746124ab1d6166bb3175237
     GuidInternal: 
-    m_lastTime: -8584662210240209050
+    m_lastTime: -8584653639894446811
     List:
     - name: Main_test
       guid: f4bfb48e9ef48e4883081f357e8cb44a
@@ -551,7 +551,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 199508fe3d34424d9564a328ccca3022
     GuidInternal: 
-    m_lastTime: -8584655981671845302
+    m_lastTime: -8584655970242386631
     List:
     - name: 5_Cabin
       guid: 2bbcea8b66788f4c89126f34d5d5e3ed
@@ -604,7 +604,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 79c704ec8c1f73468a780f635db5eecb
       Path: Events\Default Work Unit\5_Cabin\cabin_wind
-      maxAttenuation: 0
+      maxAttenuation: 30
       maxDuration: -1
       minDuration: -1
     - name: fire_crackling
@@ -624,9 +624,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 8cb5a8850bbfc14296f25079d44d56d3
       Path: Events\Default Work Unit\5_Cabin\fire_crackling
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 30
+      maxDuration: 12.725542
+      minDuration: 12.725542
     - name: floor_creak
       guid: f050c8dd5118d6469e07cbe1b9aff2c1
       id: 2811188008
@@ -644,9 +644,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: f050c8dd5118d6469e07cbe1b9aff2c1
       Path: Events\Default Work Unit\5_Cabin\floor_creak
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 30
+      maxDuration: 1.6052917
+      minDuration: 0.6666667
     - name: footstep_event
       guid: 0acf0ada71aeba449d708bd59292face
       id: 116178158
@@ -663,7 +663,7 @@ MonoBehaviour:
       Path: Events\Default Work Unit\footstep_event
       maxAttenuation: 0
       maxDuration: 0.7190703
-      minDuration: 0.42451248
+      minDuration: 0.28129032
     - name: Level_Intro
       guid: 54c6f2d8056f6e4e99ced38dc3f90635
       id: 1324475830
@@ -704,6 +704,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 3.3333333
       minDuration: 3.3333333
+    - name: old_tv
+      guid: d040941c5ce1964b9bad76c1d2d927b2
+      id: 1802401821
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: 5_Cabin
+        ObjectType: 4
+        guid: 2bbcea8b66788f4c89126f34d5d5e3ed
+      - ElementName: old_tv
+        ObjectType: 3
+        guid: d040941c5ce1964b9bad76c1d2d927b2
+      Path: Events\Default Work Unit\5_Cabin\old_tv
+      maxAttenuation: 30
+      maxDuration: 882.1551
+      minDuration: 882.1551
     - name: Play_radio
       guid: 296df7dc8861294ba7f3ee2fbe50e534
       id: 2953849999

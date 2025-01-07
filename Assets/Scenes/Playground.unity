@@ -37538,9 +37538,9 @@ MonoBehaviour:
   movementSpeed: 2
   vrCamera: {fileID: 1988112171}
   Feet: {fileID: 172558243}
-  m_StepInterval: 2
+  m_StepInterval: 2.5
   m_FixedSpeedFactor: 1
-  canMove: 0
+  canMove: 1
 --- !u!114 &135756641613574994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37848,7 +37848,7 @@ PrefabInstance:
     - target: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -85.28
+      value: -67.33
       objectReference: {fileID: 0}
     - target: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
