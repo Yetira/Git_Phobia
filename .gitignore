@@ -15,17 +15,6 @@ AssetStoreTools*
 *.sln
 *.userprefs
 
-
-# Wwise-specific ignores
-.backup*
-.cache*
-*.akd
-*.prof
-*.validationcache
-*.wsettings
-IncrementalSoundBankData.xml
-/GeneratedSoundBanks
-
 # General ignores
 *.tmp
 *.temp
