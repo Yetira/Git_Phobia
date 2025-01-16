@@ -32,6 +32,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="cave_tone1" ID="{79F1DAE4-054B-4B3F-8251-511C1515B77B}">
+					<ChildrenList>
+						<Action Name="" ID="{F63E7D8A-4BE9-475C-BB46-B99FF1A65328}" ShortID="883815914">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambiance_Cave_Dark_Loop_Stereo" ID="{3FC4C49C-75F2-4DAF-9481-58FA23559F53}" WorkUnitID="{C3AA22BB-1B07-445D-8462-CFD7B079ED45}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="cave_tone2" ID="{2011F105-F2CB-4A36-9B4D-51DF8861A4AC}">
+					<ChildrenList>
+						<Action Name="" ID="{A6B557D3-DD3A-4306-ACB7-A389094325A5}" ShortID="556287099">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambiance_Cave_Deep_Loop_Stereo" ID="{417301B1-5E46-4D1B-9A79-06CBEDE3F4A2}" WorkUnitID="{C3AA22BB-1B07-445D-8462-CFD7B079ED45}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

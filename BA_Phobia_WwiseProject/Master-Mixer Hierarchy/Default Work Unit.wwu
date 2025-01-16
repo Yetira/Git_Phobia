@@ -19,7 +19,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AuxBus Name="Tunnel" ID="{DC6C723B-12AC-4E68-9866-A0CCB1F0E65F}">
+						<AuxBus Name="Tunnel_6" ID="{DC6C723B-12AC-4E68-9866-A0CCB1F0E65F}">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
@@ -42,7 +42,7 @@
 								</ObjectList>
 							</ObjectLists>
 						</AuxBus>
-						<AuxBus Name="Cathedral" ID="{CABC0353-FB0A-4213-A2CC-B0B9F9B540F9}">
+						<AuxBus Name="Cathedral_6" ID="{CABC0353-FB0A-4213-A2CC-B0B9F9B540F9}">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
@@ -65,14 +65,13 @@
 								</ObjectList>
 							</ObjectLists>
 						</AuxBus>
-						<AuxBus Name="Elevator" ID="{0DBBFA98-7822-44D9-B900-38C3FDB0BBE0}">
+						<AuxBus Name="Elevator_0" ID="{0DBBFA98-7822-44D9-B900-38C3FDB0BBE0}">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
-							<ReferenceList/>
 							<ObjectLists>
 								<ObjectList Name="Effects">
 									<Reference>
@@ -121,7 +120,7 @@
 								</ObjectList>
 							</ObjectLists>
 						</AuxBus>
-						<AuxBus Name="Schacht" ID="{CDE6399C-865F-4018-BD15-F88115BE90C8}">
+						<AuxBus Name="Schacht_6" ID="{CDE6399C-865F-4018-BD15-F88115BE90C8}">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
@@ -175,7 +174,7 @@
 								</ObjectList>
 							</ObjectLists>
 						</Bus>
-						<AuxBus Name="Tutorial_Room" ID="{CB7535FB-34EB-4B3D-9DDB-58DE88C72415}">
+						<AuxBus Name="Tutorial_Room_1" ID="{CB7535FB-34EB-4B3D-9DDB-58DE88C72415}">
 							<PropertyList>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
@@ -195,14 +194,13 @@
 								</ObjectList>
 							</ObjectLists>
 						</AuxBus>
-						<AuxBus Name="Cabin" ID="{71C4D18D-0BB7-48F8-9BA5-19E94E41988C}">
+						<AuxBus Name="Cabin_5" ID="{71C4D18D-0BB7-48F8-9BA5-19E94E41988C}">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
-							<ReferenceList/>
 							<ObjectLists>
 								<ObjectList Name="Effects">
 									<Reference>
@@ -213,6 +211,75 @@
 														<Custom>
 															<Effect Name="Wwise_RoomVerb_(Custom)" ID="{BE3DE7C9-40D4-40A4-BDBE-2FF51ADF4C77}" ShortID="999724263" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3"/>
 														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
+						<AuxBus Name="Small_2" ID="{E15B9E77-BE54-4785-96C9-0BED391F09D3}">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{74B14501-93F6-4249-B501-1C0F05EF6170}" ShortID="639164098">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+														<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
+						<AuxBus Name="Big_02" ID="{BBD1DDC5-EB29-4A92-A4ED-7F2C548C650A}">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{6366AE1A-341B-406F-B326-1B736FFBB503}" ShortID="865186572">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+														<ObjectRef Name="Room_Medium" ID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
+						<AuxBus Name="Hall_3" ID="{539C49DA-071D-4213-93CA-B694C908C1E4}">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{98EEA96D-AEA4-4911-A7F4-2E96EB1E9725}" ShortID="989427324">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+														<ObjectRef Name="Hall_Small" ID="{D65B5F04-B83B-412C-9434-34A13A477E24}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 													</Reference>
 												</ReferenceList>
 											</EffectSlot>

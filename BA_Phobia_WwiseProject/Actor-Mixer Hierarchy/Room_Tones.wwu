@@ -12,7 +12,7 @@
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 						</Reference>
 						<Reference Name="ReflectionsAuxSend">
-							<ObjectRef Name="Cathedral" ID="{CABC0353-FB0A-4213-A2CC-B0B9F9B540F9}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+							<ObjectRef Name="Cathedral_6" ID="{CABC0353-FB0A-4213-A2CC-B0B9F9B540F9}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

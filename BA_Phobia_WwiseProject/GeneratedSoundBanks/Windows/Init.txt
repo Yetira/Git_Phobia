@@ -19,13 +19,15 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	107126646	Elevator_0			\Default Work Unit\Master Audio Bus\Elevator_0	
 	243379636	Reflect			\Default Work Unit\Master Audio Bus\Reflect	
-	680291572	Cabin			\Default Work Unit\Master Audio Bus\Cabin	
-	1024696295	Cathedral			\Default Work Unit\Master Audio Bus\Cathedral	
-	2016556987	Tutorial_Room			\Default Work Unit\Master Audio Bus\Tutorial_Room	
-	2761991509	Schacht			\Default Work Unit\Master Audio Bus\Schacht	
-	3059984139	Tunnel			\Default Work Unit\Master Audio Bus\Tunnel	
-	3705378287	Elevator			\Default Work Unit\Master Audio Bus\Elevator	
+	1175400888	Cathedral_6			\Default Work Unit\Master Audio Bus\Cathedral_6	
+	1235075755	Tutorial_Room_1			\Default Work Unit\Master Audio Bus\Tutorial_Room_1	
+	1948235665	Small_2			\Default Work Unit\Master Audio Bus\Small_2	
+	3193433734	Schacht_6			\Default Work Unit\Master Audio Bus\Schacht_6	
+	3329045836	Cabin_5			\Default Work Unit\Master Audio Bus\Cabin_5	
+	3623781482	Big_02			\Default Work Unit\Master Audio Bus\Big_02	
+	4186986556	Tunnel_6			\Default Work Unit\Master Audio Bus\Tunnel_6	
 
 Effect plug-ins	ID	Name	Type				Notes
 	52925816	Auro Headphone (Custom)	Auro Headphone			

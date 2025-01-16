@@ -369,7 +369,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{BC8DDF00-7969-EEA4-A1E4-387EBA9D8A04}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{642F13F1-3F46-822B-6044-8F114B6DB4DF}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -401,6 +401,13 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 			<AuxBusses>
+				<AuxBus Id="107126646" Name="Elevator_0">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2995775460"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
 				<AuxBus Id="243379636" Name="Reflect">
 					<PluginRefs>
 						<ShareSets>
@@ -408,45 +415,52 @@
 						</ShareSets>
 					</PluginRefs>
 				</AuxBus>
-				<AuxBus Id="680291572" Name="Cabin">
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="999724263"/>
-						</Custom>
-					</PluginRefs>
-				</AuxBus>
-				<AuxBus Id="1024696295" Name="Cathedral">
+				<AuxBus Id="1175400888" Name="Cathedral_6">
 					<PluginRefs>
 						<ShareSets>
 							<PluginRef Id="3164629247"/>
 						</ShareSets>
 					</PluginRefs>
 				</AuxBus>
-				<AuxBus Id="2016556987" Name="Tutorial_Room">
+				<AuxBus Id="1235075755" Name="Tutorial_Room_1">
 					<PluginRefs>
 						<ShareSets>
 							<PluginRef Id="1990128658"/>
 						</ShareSets>
 					</PluginRefs>
 				</AuxBus>
-				<AuxBus Id="2761991509" Name="Schacht">
+				<AuxBus Id="1948235665" Name="Small_2">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2995775460"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="3193433734" Name="Schacht_6">
 					<PluginRefs>
 						<ShareSets>
 							<PluginRef Id="4113267698"/>
 						</ShareSets>
 					</PluginRefs>
 				</AuxBus>
-				<AuxBus Id="3059984139" Name="Tunnel">
+				<AuxBus Id="3329045836" Name="Cabin_5">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="999724263"/>
+						</Custom>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="3623781482" Name="Big_02">
 					<PluginRefs>
 						<ShareSets>
-							<PluginRef Id="3451596814"/>
+							<PluginRef Id="1990128658"/>
 						</ShareSets>
 					</PluginRefs>
 				</AuxBus>
-				<AuxBus Id="3705378287" Name="Elevator">
+				<AuxBus Id="4186986556" Name="Tunnel_6">
 					<PluginRefs>
 						<ShareSets>
-							<PluginRef Id="2995775460"/>
+							<PluginRef Id="3451596814"/>
 						</ShareSets>
 					</PluginRefs>
 				</AuxBus>
@@ -870,5 +884,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5220B36D-A5F4-FE71-0B84-922D7692A42A}</FileHash>
+	<FileHash>{10E06B0A-1517-120D-0B67-D67E2E8C363E}</FileHash>
 </SoundBanksInfo>

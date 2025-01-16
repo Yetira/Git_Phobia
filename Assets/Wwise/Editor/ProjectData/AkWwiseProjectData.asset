@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 3e860730979601429f3a22904a750a2e
     GuidInternal: 
-    m_lastTime: -8584653592263845631
+    m_lastTime: -8584647426277163401
     List:
     - name: AURO-3D
       guid: 9e3201dc27c92a4fb863d279a8472221
@@ -322,9 +322,9 @@ MonoBehaviour:
         ObjectType: 2
         guid: 9e3201dc27c92a4fb863d279a8472221
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AURO-3D
-    - name: Cabin
-      guid: 8dd1c471b70bf8489ba519e94e41988c
-      id: 680291572
+    - name: Big_02
+      guid: c5ddd1bb29eb924aa4ed7f2c548c650a
+      id: 3623781482
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -335,13 +335,30 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Cabin
+      - ElementName: Big_02
+        ObjectType: 1
+        guid: c5ddd1bb29eb924aa4ed7f2c548c650a
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Big_02
+    - name: Cabin_5
+      guid: 8dd1c471b70bf8489ba519e94e41988c
+      id: 3329045836
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3e860730979601429f3a22904a750a2e
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Cabin_5
         ObjectType: 1
         guid: 8dd1c471b70bf8489ba519e94e41988c
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Cabin
-    - name: Cathedral
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Cabin_5
+    - name: Cathedral_6
       guid: 5303bcca0afb1342a2ccb0b9f9b540f9
-      id: 1024696295
+      id: 1175400888
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -352,13 +369,13 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Cathedral
+      - ElementName: Cathedral_6
         ObjectType: 1
         guid: 5303bcca0afb1342a2ccb0b9f9b540f9
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Cathedral
-    - name: Elevator
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Cathedral_6
+    - name: Elevator_0
       guid: 98fabb0d2278d944b90038c3fdb0bbe0
-      id: 3705378287
+      id: 107126646
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -369,10 +386,27 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Elevator
+      - ElementName: Elevator_0
         ObjectType: 1
         guid: 98fabb0d2278d944b90038c3fdb0bbe0
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Elevator
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Elevator_0
+    - name: Hall_3
+      guid: da499c531d07134293cab694c908c1e4
+      id: 3819518786
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3e860730979601429f3a22904a750a2e
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Hall_3
+        ObjectType: 1
+        guid: da499c531d07134293cab694c908c1e4
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Hall_3
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -404,9 +438,9 @@ MonoBehaviour:
         ObjectType: 1
         guid: 1401f4327c192e4e87f1d24a3c7dda4e
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reflect
-    - name: Schacht
+    - name: Schacht_6
       guid: 9c39e6cd5f861840bd15f88115be90c8
-      id: 2761991509
+      id: 3193433734
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -417,13 +451,13 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Schacht
+      - ElementName: Schacht_6
         ObjectType: 1
         guid: 9c39e6cd5f861840bd15f88115be90c8
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Schacht
-    - name: Tunnel
-      guid: 3b726cdcac12684e9866a0ccb1f0e65f
-      id: 3059984139
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Schacht_6
+    - name: Small_2
+      guid: 779e5be154be854796c90bed391f09d3
+      id: 1948235665
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -434,13 +468,30 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Tunnel
+      - ElementName: Small_2
+        ObjectType: 1
+        guid: 779e5be154be854796c90bed391f09d3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Small_2
+    - name: Tunnel_6
+      guid: 3b726cdcac12684e9866a0ccb1f0e65f
+      id: 4186986556
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3e860730979601429f3a22904a750a2e
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Tunnel_6
         ObjectType: 1
         guid: 3b726cdcac12684e9866a0ccb1f0e65f
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Tunnel
-    - name: Tutorial_Room
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Tunnel_6
+    - name: Tutorial_Room_1
       guid: fb3575cbeb343d4b9ddb58de88c72415
-      id: 2016556987
+      id: 1235075755
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -451,10 +502,10 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Tutorial_Room
+      - ElementName: Tutorial_Room_1
         ObjectType: 1
         guid: fb3575cbeb343d4b9ddb58de88c72415
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Tutorial_Room
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Tutorial_Room_1
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -467,7 +518,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5b7d3d6d0746124ab1d6166bb3175237
     GuidInternal: 
-    m_lastTime: -8584653639894446811
+    m_lastTime: -8584647426277048220
     List:
     - name: Main_test
       guid: f4bfb48e9ef48e4883081f357e8cb44a
@@ -483,6 +534,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: f4bfb48e9ef48e4883081f357e8cb44a
       Path: SoundBanks\Default Work Unit\Main_test
+    - name: Voicelines_Events
+      guid: 8bdd9e3c7bf9cd4c8c3c6afc8706517c
+      id: 2351733634
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5b7d3d6d0746124ab1d6166bb3175237
+      - ElementName: Voicelines_Events
+        ObjectType: 7
+        guid: 8bdd9e3c7bf9cd4c8c3c6afc8706517c
+      Path: SoundBanks\Default Work Unit\Voicelines_Events
   EventWwu:
   - PhysicalPath: Events\Cave.wwu
     PathAndIcons:
@@ -498,8 +563,48 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Cave
     guid: b2f8f8838038f3419975c575370ffbdc
     GuidInternal: 
-    m_lastTime: -8584663909585103828
+    m_lastTime: -8584647426276647605
     List:
+    - name: cave_tone1
+      guid: e4daf1794b053f4b8251511c1515b77b
+      id: 2937454218
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: Cave
+        ObjectType: 12
+        guid: b2f8f8838038f3419975c575370ffbdc
+      - ElementName: cave_tone1
+        ObjectType: 3
+        guid: e4daf1794b053f4b8251511c1515b77b
+      Path: Events\Default Work Unit\Cave\cave_tone1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: cave_tone2
+      guid: 05f11120cbf2364a9b4d51df8861a4ac
+      id: 2937454217
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: Cave
+        ObjectType: 12
+        guid: b2f8f8838038f3419975c575370ffbdc
+      - ElementName: cave_tone2
+        ObjectType: 3
+        guid: 05f11120cbf2364a9b4d51df8861a4ac
+      Path: Events\Default Work Unit\Cave\cave_tone2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: girl_run
       guid: 8585ffd7e3a8bf4b8d01dc725d3c010b
       id: 3413758005
@@ -537,7 +642,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 4b518889229a79419d52d1101588b153
       Path: Events\Default Work Unit\Cave\lullaby_event
-      maxAttenuation: 80
+      maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
   - PhysicalPath: Events\Default Work Unit.wwu
@@ -551,7 +656,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 199508fe3d34424d9564a328ccca3022
     GuidInternal: 
-    m_lastTime: -8584655970242386631
+    m_lastTime: -8584647426276732737
     List:
     - name: 5_Cabin
       guid: 2bbcea8b66788f4c89126f34d5d5e3ed
@@ -584,6 +689,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: 354523044544d4458ec1bcab2c8e38db
       Path: Events\Default Work Unit\breath_slow
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: cabin_tone
+      guid: 89cb718e57bb594abc4bb47efee5248d
+      id: 282656567
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: 5_Cabin
+        ObjectType: 4
+        guid: 2bbcea8b66788f4c89126f34d5d5e3ed
+      - ElementName: cabin_tone
+        ObjectType: 3
+        guid: 89cb718e57bb594abc4bb47efee5248d
+      Path: Events\Default Work Unit\5_Cabin\cabin_tone
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -625,8 +750,8 @@ MonoBehaviour:
         guid: 8cb5a8850bbfc14296f25079d44d56d3
       Path: Events\Default Work Unit\5_Cabin\fire_crackling
       maxAttenuation: 30
-      maxDuration: 12.725542
-      minDuration: 12.725542
+      maxDuration: -1
+      minDuration: -1
     - name: floor_creak
       guid: f050c8dd5118d6469e07cbe1b9aff2c1
       id: 2811188008
@@ -647,9 +772,9 @@ MonoBehaviour:
       maxAttenuation: 30
       maxDuration: 1.6052917
       minDuration: 0.6666667
-    - name: footstep_event
+    - name: footsteps
       guid: 0acf0ada71aeba449d708bd59292face
-      id: 116178158
+      id: 2385628198
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -657,13 +782,30 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 199508fe3d34424d9564a328ccca3022
-      - ElementName: footstep_event
+      - ElementName: footsteps
         ObjectType: 3
         guid: 0acf0ada71aeba449d708bd59292face
-      Path: Events\Default Work Unit\footstep_event
+      Path: Events\Default Work Unit\footsteps
       maxAttenuation: 0
       maxDuration: 0.7190703
       minDuration: 0.28129032
+    - name: Hall
+      guid: d9eb78ffc5174c46bd5b57c4ab9cbdd7
+      id: 3633416828
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: Hall
+        ObjectType: 4
+        guid: d9eb78ffc5174c46bd5b57c4ab9cbdd7
+      Path: Events\Default Work Unit\Hall
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Level_Intro
       guid: 54c6f2d8056f6e4e99ced38dc3f90635
       id: 1324475830
@@ -724,6 +866,26 @@ MonoBehaviour:
       maxAttenuation: 30
       maxDuration: 882.1551
       minDuration: 882.1551
+    - name: outside_tone
+      guid: 0143d8a26abc1548a2bb5498b6a8cb52
+      id: 3247370201
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: Hall
+        ObjectType: 4
+        guid: d9eb78ffc5174c46bd5b57c4ab9cbdd7
+      - ElementName: outside_tone
+        ObjectType: 3
+        guid: 0143d8a26abc1548a2bb5498b6a8cb52
+      Path: Events\Default Work Unit\Hall\outside_tone
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_radio
       guid: 296df7dc8861294ba7f3ee2fbe50e534
       id: 2953849999
@@ -1485,7 +1647,7 @@ MonoBehaviour:
     m_lastTime: -8584663919773364773
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000200000004000000050000000600000007000000080000000b0000000f00000012000000130000001400000015000000160000001700000018000000370000003800000039000000ac000000ad000000b0000000b1000000b2000000fb000000fc0000004801000049010000c7010000c8010000ca010000
+  ExpandedWaapiItemIds: 01000000020000000300000004000000050000000600000007000000080000000b0000000f000000120000001300000014000000150000001600000017000000180000001b0000001d0000001e000000370000003800000039000000ac000000ad000000b0000000b1000000b2000000fb000000fc0000004801000049010000c7010000c8010000ca010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

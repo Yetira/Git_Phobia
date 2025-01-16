@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{869E843F-E7E3-4202-84DA-07F48F07613F}" SchemaVersion="119">
+	<AudioObjects>
+		<WorkUnit Name="Hall" ID="{869E843F-E7E3-4202-84DA-07F48F07613F}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="outside_birds" ID="{4D924651-ED19-437D-B749-008DA02E4C39}" ShortID="102553283">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="outside" ID="{1216033F-24F4-4F51-A0A9-FFE1282CF10E}">
+							<Language>SFX</Language>
+							<AudioFile>outside.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="47004647"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="outside" ID="{1216033F-24F4-4F51-A0A9-FFE1282CF10E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="neon_lightbuzz" ID="{3AE93893-0C67-4AF5-8788-7E595C7D07BF}" ShortID="681582946">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>35</Value>
+							</ValueList>
+						</Property>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-24</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="lightbuzz" ID="{0BA8B124-FAE8-4817-9127-D5333438A2EC}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="neon_lightbuzz" ID="{622FB03D-C392-434E-9EAD-B848FF7498B3}">
+							<Language>SFX</Language>
+							<AudioFile>neon_lightbuzz.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="549093706"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="neon_lightbuzz" ID="{622FB03D-C392-434E-9EAD-B848FF7498B3}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="office_phone" ID="{E04B5DE8-B438-464B-91F0-2BACD0391116}" ShortID="184577448">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="office_phone" ID="{25DA48E9-AFD6-49F2-B746-036BEEE344A7}">
+							<Language>SFX</Language>
+							<AudioFile>office_phone.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="23220520"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="office_phone" ID="{25DA48E9-AFD6-49F2-B746-036BEEE344A7}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dad54a909eb91c240aa4f6d9e7ac712e, type: 3}
   m_Name: CABC0353-FB0A-4213-A2CC-B0B9F9B540F9
   m_EditorClassIdentifier: 
-  objectName: Cathedral
-  id: 1024696295
+  objectName: Cathedral_6
+  id: 1175400888
   guid: CABC0353-FB0A-4213-A2CC-B0B9F9B540F9

@@ -124,7 +124,7 @@
 								<Action Name="" ID="{1658F73E-BD1B-4276-851E-2CF78BFF8189}" ShortID="546094316">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="wind_howl_soft" ID="{256DC20B-3B4D-445E-A077-1D0878AA3FD0}" WorkUnitID="{702988FB-4A56-44EE-941C-588512765CD5}"/>
+											<ObjectRef Name="wind_howl_soft_cabin" ID="{4A1D5EA7-2435-4E17-9653-0D89B4019B78}" WorkUnitID="{6E5FA8A8-1154-45BF-9934-DB0DCEB04F0B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -136,6 +136,32 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="old_tv_program" ID="{340CE970-33D7-4281-A125-C929AA51EF6B}" WorkUnitID="{6E5FA8A8-1154-45BF-9934-DB0DCEB04F0B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="cabin_tone" ID="{8E71CB89-BB57-4A59-BC4B-B47EFEE5248D}">
+							<ChildrenList>
+								<Action Name="" ID="{CD3856FC-9627-424E-ACDF-08BA62019306}" ShortID="705530358">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambiance_Rain_Calm_Loop_Stereo" ID="{A28E9798-63AF-4226-A741-EF4426B72B82}" WorkUnitID="{6E5FA8A8-1154-45BF-9934-DB0DCEB04F0B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Hall" ID="{FF78EBD9-17C5-464C-BD5B-57C4AB9CBDD7}" ShortID="580005792">
+					<ChildrenList>
+						<Event Name="outside_tone" ID="{A2D84301-BC6A-4815-A2BB-5498B6A8CB52}">
+							<ChildrenList>
+								<Action Name="" ID="{BE057D6C-F4EE-467F-BF9B-1F5EBF9F9D89}" ShortID="863884751">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="outside_birds" ID="{4D924651-ED19-437D-B749-008DA02E4C39}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

@@ -95,7 +95,7 @@ public class AltFirstPersonController : MonoBehaviour
 
     private void PlayFootStepAudio()
     {
-        AkSoundEngine.PostEvent("footstep_event", Feet);
+        AkSoundEngine.PostEvent("footsteps", Feet);
     }
 
     private void Move()

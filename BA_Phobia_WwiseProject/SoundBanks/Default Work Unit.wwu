@@ -14,8 +14,12 @@
 						<ObjectRef Name="cabin_wind" ID="{EC04C779-1F8C-4673-8A78-0F635DB5EECB}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="floor_creak" ID="{DDC850F0-1851-46D6-9E07-CBE1B9AFF2C1}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="lift_open" ID="{B234858E-1810-475C-9CC7-C4F8E6936301}" WorkUnitID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="outside_tone" ID="{A2D84301-BC6A-4815-A2BB-5498B6A8CB52}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="cave_tone2" ID="{2011F105-F2CB-4A36-9B4D-51DF8861A4AC}" WorkUnitID="{83F8F8B2-3880-41F3-9975-C575370FFBDC}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="cabin_tone" ID="{8E71CB89-BB57-4A59-BC4B-B47EFEE5248D}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="lift_close" ID="{A47F1AAF-EEF9-4A78-8813-3CA24AAC8C76}" WorkUnitID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="lift_ding" ID="{6B5A9D0D-8181-4B11-A1AE-D47E2A1079F4}" WorkUnitID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="cave_tone1" ID="{79F1DAE4-054B-4B3F-8251-511C1515B77B}" WorkUnitID="{83F8F8B2-3880-41F3-9975-C575370FFBDC}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="old_tv" ID="{1C9440D0-E15C-4B96-9BAD-76C1D2D927B2}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="lift_arrive" ID="{FCE812C6-D4BF-4C63-A0E9-19A7AF58B5B4}" WorkUnitID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="lift_ride" ID="{545C8EC2-6BF9-4CF7-B89D-808AE2DE964F}" WorkUnitID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" Origin="Manual" Filter="7"/>
