@@ -41,6 +41,7 @@
 				<Sound Name="lift_ride" ID="{18D1602C-0CA4-480B-826A-43B1C8E8919B}" ShortID="193547861">
 					<PropertyList>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-15</Value>

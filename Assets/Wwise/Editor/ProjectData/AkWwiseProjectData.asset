@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 3e860730979601429f3a22904a750a2e
     GuidInternal: 
-    m_lastTime: -8584647426277163401
+    m_lastTime: -8584645891796888245
     List:
     - name: AURO-3D
       guid: 9e3201dc27c92a4fb863d279a8472221
@@ -518,7 +518,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5b7d3d6d0746124ab1d6166bb3175237
     GuidInternal: 
-    m_lastTime: -8584647426277048220
+    m_lastTime: -8584645716902672449
     List:
     - name: Main_test
       guid: f4bfb48e9ef48e4883081f357e8cb44a
@@ -563,7 +563,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Cave
     guid: b2f8f8838038f3419975c575370ffbdc
     GuidInternal: 
-    m_lastTime: -8584647426276647605
+    m_lastTime: -8584645891806591536
     List:
     - name: cave_tone1
       guid: e4daf1794b053f4b8251511c1515b77b
@@ -642,7 +642,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 4b518889229a79419d52d1101588b153
       Path: Events\Default Work Unit\Cave\lullaby_event
-      maxAttenuation: 0
+      maxAttenuation: 100
       maxDuration: -1
       minDuration: -1
   - PhysicalPath: Events\Default Work Unit.wwu
@@ -656,7 +656,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 199508fe3d34424d9564a328ccca3022
     GuidInternal: 
-    m_lastTime: -8584647426276732737
+    m_lastTime: -8584645722554173026
     List:
     - name: 5_Cabin
       guid: 2bbcea8b66788f4c89126f34d5d5e3ed
@@ -729,7 +729,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 79c704ec8c1f73468a780f635db5eecb
       Path: Events\Default Work Unit\5_Cabin\cabin_wind
-      maxAttenuation: 30
+      maxAttenuation: 10
       maxDuration: -1
       minDuration: -1
     - name: fire_crackling
@@ -749,7 +749,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 8cb5a8850bbfc14296f25079d44d56d3
       Path: Events\Default Work Unit\5_Cabin\fire_crackling
-      maxAttenuation: 30
+      maxAttenuation: 20
       maxDuration: -1
       minDuration: -1
     - name: floor_creak
@@ -846,6 +846,46 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 3.3333333
       minDuration: 3.3333333
+    - name: neon_lightbuzz
+      guid: b60744952d03c24bb03590936e268969
+      id: 2028048627
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: Hall
+        ObjectType: 4
+        guid: d9eb78ffc5174c46bd5b57c4ab9cbdd7
+      - ElementName: neon_lightbuzz
+        ObjectType: 3
+        guid: b60744952d03c24bb03590936e268969
+      Path: Events\Default Work Unit\Hall\neon_lightbuzz
+      maxAttenuation: 6
+      maxDuration: -1
+      minDuration: -1
+    - name: office_tone
+      guid: e1d5d1e341a6734489698a843f5b70e7
+      id: 1783871532
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: Hall
+        ObjectType: 4
+        guid: d9eb78ffc5174c46bd5b57c4ab9cbdd7
+      - ElementName: office_tone
+        ObjectType: 3
+        guid: e1d5d1e341a6734489698a843f5b70e7
+      Path: Events\Default Work Unit\Hall\office_tone
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: old_tv
       guid: d040941c5ce1964b9bad76c1d2d927b2
       id: 1802401821
@@ -903,7 +943,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 296df7dc8861294ba7f3ee2fbe50e534
       Path: Events\Default Work Unit\Tutorial SFX\Play_radio
-      maxAttenuation: 80
+      maxAttenuation: 100
       maxDuration: 156.36365
       minDuration: 156.36365
     - name: Stop_radio
@@ -1073,7 +1113,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: f4130a954bb91440a8dc62b803b9909d
       Path: Events\Default Work Unit\Elevator\lift_music
-      maxAttenuation: 80
+      maxAttenuation: 100
       maxDuration: -1
       minDuration: -1
     - name: lift_open
@@ -1336,7 +1376,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: e5d7232acd96ac48b5e661cd6c28eb44
     GuidInternal: 
-    m_lastTime: -8584655981671695251
+    m_lastTime: -8584645662573945083
     List:
     - name: activeLevel
       guid: 2ae88e046cfa1e42bc11adf2451e2f00
@@ -1499,6 +1539,22 @@ MonoBehaviour:
         - ElementName: Concrete
           ObjectType: 10
           guid: 49b0824ffccaa84f84050998cb93ca0c
+      - name: grass
+        guid: 5df735eff076c6409b5974a650b31108
+        id: 4248645337
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: e5d7232acd96ac48b5e661cd6c28eb44
+        - ElementName: Footsteps
+          ObjectType: 11
+          guid: efc889578262544a9c178fac347e9d89
+        - ElementName: grass
+          ObjectType: 10
+          guid: 5df735eff076c6409b5974a650b31108
       - name: Metal
         guid: 32ec42c9b781f94eb76b470f0c07d660
         id: 2473969246
@@ -1647,7 +1703,7 @@ MonoBehaviour:
     m_lastTime: -8584663919773364773
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000020000000300000004000000050000000600000007000000080000000b0000000f000000120000001300000014000000150000001600000017000000180000001b0000001d0000001e000000370000003800000039000000ac000000ad000000b0000000b1000000b2000000fb000000fc0000004801000049010000c7010000c8010000ca010000
+  ExpandedWaapiItemIds: 0100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000f000000120000001300000014000000150000001600000017000000180000001b0000001d0000001e000000370000003800000039000000ac000000ad000000b0000000b1000000b2000000fb000000fc0000004801000049010000c7010000c8010000ca010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

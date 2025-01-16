@@ -808,6 +808,135 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="grass" ID="{F7F96C6B-13A1-45DB-BD4F-608528F8D507}" ShortID="687845984">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Footsteps_Walk_Grass_Mono_14" ID="{0A0FE82C-68DE-424E-95F8-4D1702D5E5AC}" ShortID="257997388">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footsteps_Walk_Grass_Mono_14" ID="{FA663B05-47C6-4B0C-9EE2-C3BE378000D4}">
+											<Language>SFX</Language>
+											<AudioFile>Footsteps_Walk_Grass_Mono_14.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="260883577"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footsteps_Walk_Grass_Mono_14" ID="{FA663B05-47C6-4B0C-9EE2-C3BE378000D4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footsteps_Walk_Grass_Mono_15" ID="{70DB7555-5312-426A-AC08-B86315CD1A34}" ShortID="198243309">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footsteps_Walk_Grass_Mono_15" ID="{B7BC10B0-2E2F-40CA-9736-7A0A4CEEA342}">
+											<Language>SFX</Language>
+											<AudioFile>Footsteps_Walk_Grass_Mono_15.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="198709270"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footsteps_Walk_Grass_Mono_15" ID="{B7BC10B0-2E2F-40CA-9736-7A0A4CEEA342}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footsteps_Walk_Grass_Mono_16" ID="{A5666163-9240-4C9E-8DF9-7B9A875551FA}" ShortID="212208989">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footsteps_Walk_Grass_Mono_16" ID="{396DF57F-DC64-4531-9B5F-1426FE3CC3F0}">
+											<Language>SFX</Language>
+											<AudioFile>Footsteps_Walk_Grass_Mono_16.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="965986515"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footsteps_Walk_Grass_Mono_16" ID="{396DF57F-DC64-4531-9B5F-1426FE3CC3F0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footsteps_Walk_Grass_Mono_17" ID="{1AB3F0D9-887A-4E13-9A37-59407DCBAB29}" ShortID="12216652">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footsteps_Walk_Grass_Mono_17" ID="{5771FAA9-57B0-4735-9EF3-4E5BB778FF24}">
+											<Language>SFX</Language>
+											<AudioFile>Footsteps_Walk_Grass_Mono_17.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="797335320"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footsteps_Walk_Grass_Mono_17" ID="{5771FAA9-57B0-4735-9EF3-4E5BB778FF24}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footsteps_Walk_Grass_Mono_18" ID="{E95B5A98-38D0-4F89-99A8-9CB0B0203761}" ShortID="579120940">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footsteps_Walk_Grass_Mono_18" ID="{2AB0A228-66C3-47B8-BAF4-23D8A80693D2}">
+											<Language>SFX</Language>
+											<AudioFile>Footsteps_Walk_Grass_Mono_18.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="687897955"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footsteps_Walk_Grass_Mono_18" ID="{2AB0A228-66C3-47B8-BAF4-23D8A80693D2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 					<GroupingInfo>
 						<GroupingBehaviorList>
@@ -822,6 +951,9 @@
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="concrete" ID="{615FD45F-A1D4-4FA0-A759-CA9DE5BD704B}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="grass" ID="{F7F96C6B-13A1-45DB-BD4F-608528F8D507}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="wood" ID="{C2D7029D-3AA2-4399-AA9E-624419110172}"/>
@@ -853,6 +985,12 @@
 								<SwitchRef Name="wood" ID="{DE990453-8657-494A-ADDE-750C8B185CFB}"/>
 								<ItemList>
 									<ItemRef Name="wood_paneling" ID="{1CEF0013-D73A-4893-B482-3AC7E25221AA}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="grass" ID="{EF35F75D-76F0-40C6-9B59-74A650B31108}"/>
+								<ItemList>
+									<ItemRef Name="grass" ID="{F7F96C6B-13A1-45DB-BD4F-608528F8D507}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>

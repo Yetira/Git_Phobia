@@ -5,19 +5,25 @@
 			<ChildrenList>
 				<Sound Name="outside_birds" ID="{4D924651-ED19-437D-B749-008DA02E4C39}" ShortID="102553283">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-10</Value>
+								<Value>-20</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="office" ID="{8C955D73-67A4-46BB-8BEC-1B4B6BACEDC4}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+							<ObjectRef Name="AURO-3D" ID="{DC01329E-C927-4F2A-B863-D279A8472221}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -43,9 +49,10 @@
 							</ValueList>
 						</Property>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-24</Value>
+								<Value>-35</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -57,7 +64,10 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+							<ObjectRef Name="AURO-3D" ID="{DC01329E-C927-4F2A-B863-D279A8472221}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+						</Reference>
+						<Reference Name="ReflectionsAuxSend">
+							<ObjectRef Name="Reflect" ID="{32F40114-197C-4E2E-87F1-D24A3C7DDA4E}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -73,28 +83,376 @@
 						<ActiveSource Name="neon_lightbuzz" ID="{622FB03D-C392-434E-9EAD-B848FF7498B3}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="office_phone" ID="{E04B5DE8-B438-464B-91F0-2BACD0391116}" ShortID="184577448">
+				<RandomSequenceContainer Name="office_phone" ID="{212DADC9-A02B-4207-8F07-8CCA8A65DC4A}" ShortID="457197014">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>59</Value>
+							</ValueList>
+						</Property>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{650740D7-14B7-4C2D-A4E5-72F54342AA7B}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="15"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-18</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+							<ObjectRef Name="AURO-3D" ID="{DC01329E-C927-4F2A-B863-D279A8472221}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="office_phone" ID="{25DA48E9-AFD6-49F2-B746-036BEEE344A7}">
-							<Language>SFX</Language>
-							<AudioFile>office_phone.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="23220520"/>
-							</MediaIDList>
-						</AudioFileSource>
+						<Sound Name="office_phone" ID="{E04B5DE8-B438-464B-91F0-2BACD0391116}" ShortID="184577448">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="office_phone" ID="{25DA48E9-AFD6-49F2-B746-036BEEE344A7}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="2.73044814340588"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>office_phone.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="23220520"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="office_phone" ID="{25DA48E9-AFD6-49F2-B746-036BEEE344A7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="office_phone" ID="{25DA48E9-AFD6-49F2-B746-036BEEE344A7}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="typewriter" ID="{DDCF7066-7C5F-4A5E-9902-A146B80713BC}" ShortID="612468512">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>50</Value>
+							</ValueList>
+						</Property>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-33</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="office" ID="{8C955D73-67A4-46BB-8BEC-1B4B6BACEDC4}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="AURO-3D" ID="{DC01329E-C927-4F2A-B863-D279A8472221}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="typerwriter_bell" ID="{0BEB904E-7616-4055-8D89-DC456ECC7340}" ShortID="428191843">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="typerwriter_bell" ID="{96462895-6F55-4FC0-ADC9-831BBAB4FF04}">
+									<Language>SFX</Language>
+									<AudioFile>typerwriter_bell.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="895348287"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="typerwriter_bell" ID="{96462895-6F55-4FC0-ADC9-831BBAB4FF04}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="typerwriter_typing" ID="{8FC1C12E-86CF-4837-AF27-139D745F25DB}" ShortID="345905881">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="typerwriter_typing" ID="{A4BF6E31-7AA8-48B2-AC3A-42DA22A322FE}">
+									<Language>SFX</Language>
+									<AudioFile>typerwriter_typing.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="941317651"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="typerwriter_typing" ID="{A4BF6E31-7AA8-48B2-AC3A-42DA22A322FE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="typewriter_typing2" ID="{FCBA2574-52EA-4E9D-9E01-4F4F426687B4}" ShortID="11794694">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="typewriter_typing2" ID="{D843751A-4E3F-4911-B2F0-0A87E7AED469}">
+									<Language>SFX</Language>
+									<AudioFile>typewriter_typing2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="751208531"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="typewriter_typing2" ID="{D843751A-4E3F-4911-B2F0-0A87E7AED469}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Playlist">
+							<Reference>
+								<ObjectRef Name="typewriter_typing2" ID="{FCBA2574-52EA-4E9D-9E01-4F4F426687B4}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
+							</Reference>
+							<Reference>
+								<ObjectRef Name="typerwriter_bell" ID="{0BEB904E-7616-4055-8D89-DC456ECC7340}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
+							</Reference>
+							<Reference>
+								<ObjectRef Name="typerwriter_typing" ID="{8FC1C12E-86CF-4837-AF27-139D745F25DB}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
+							</Reference>
+							<Reference>
+								<ObjectRef Name="typewriter_typing2" ID="{FCBA2574-52EA-4E9D-9E01-4F4F426687B4}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
+							</Reference>
+							<Reference>
+								<ObjectRef Name="typerwriter_bell" ID="{0BEB904E-7616-4055-8D89-DC456ECC7340}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="car_driveby" ID="{18411708-ABB7-4F86-A089-AEC4D02CFFD3}" ShortID="836814881">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{A8013A63-2867-4AAA-AC61-7741B89A82A4}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="15"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-25</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="AURO-3D" ID="{DC01329E-C927-4F2A-B863-D279A8472221}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="car_driveby_00" ID="{5340A900-4EA0-4217-B46C-2FC47E479758}" ShortID="638471016">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="car_driveby" ID="{F4B093EA-B6CB-4A31-8E2A-CB9618BD7053}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.657888817755015"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.96049967989757"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="18.7498313060179"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>car_driveby.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="95806369"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="car_driveby" ID="{F4B093EA-B6CB-4A31-8E2A-CB9618BD7053}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="car_driveby_01" ID="{809E7448-45AE-4AC7-9B98-1602C6B2E8A7}" ShortID="117498312">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="car_driveby" ID="{CB38E2DA-7DE4-44D7-90AB-AFE75AAEFD0F}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.822361022193768"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.96049967989757"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="18.7498313060179"/>
+										<Property Name="TrimEnd" Type="Real64" Value="25.0820111769099"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>car_driveby.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="628289990"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="car_driveby" ID="{CB38E2DA-7DE4-44D7-90AB-AFE75AAEFD0F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="car_driveby_02" ID="{29219BE1-C35A-41BA-9D01-D7A03756400C}" ShortID="15968491">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="car_driveby" ID="{C441266E-03CF-4B28-969E-AFFF85AB6447}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="1.0690693288519"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.96049967989757"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="28.0425108568075"/>
+										<Property Name="TrimEnd" Type="Real64" Value="37.3351904075971"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>car_driveby.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="881878512"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="car_driveby" ID="{C441266E-03CF-4B28-969E-AFFF85AB6447}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="car_driveby_03" ID="{5E4A6CA3-CA7D-4FB8-9704-B869F9CE1265}" ShortID="926712666">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="car_driveby" ID="{4FF22C35-39D9-4473-9A9D-773A0B2E4FD5}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="1.0690693288519"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.96049967989757"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="40.6246344963722"/>
+										<Property Name="TrimEnd" Type="Real64" Value="47.9436475938967"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>car_driveby.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="565972693"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="car_driveby" ID="{4FF22C35-39D9-4473-9A9D-773A0B2E4FD5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="car_driveby_04" ID="{E85C9A93-621D-4EEF-9EBA-691F5BFA36F9}" ShortID="268933685">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="car_driveby" ID="{990F8CA6-342B-462F-A25D-696DD6AD3CBE}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="1.80919424882629"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.96049967989757"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="52.8778137270593"/>
+										<Property Name="TrimEnd" Type="Real64" Value="62.4994376867264"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>car_driveby.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="283352888"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="car_driveby" ID="{990F8CA6-342B-462F-A25D-696DD6AD3CBE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

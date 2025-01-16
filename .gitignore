@@ -17,10 +17,14 @@ AssetStoreTools*
 
 
 # Wwise-specific ignores
-Wwise/Cache/
-Wwise/GeneratedSoundBanks/
-Wwise/ProjectSave/
-Wwise/Settings/
+.backup*
+.cache*
+*.akd
+*.prof
+*.validationcache
+*.wsettings
+IncrementalSoundBankData.xml
+/GeneratedSoundBanks
 
 # General ignores
 *.tmp

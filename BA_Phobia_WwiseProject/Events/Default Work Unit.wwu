@@ -3,29 +3,7 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{FE089519-343D-4D42-9564-A328CCCA3022}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="footsteps" ID="{DA0ACF0A-AE71-44BA-9D70-8BD59292FACE}">
-					<ChildrenList>
-						<Action Name="" ID="{CFDF0F3E-BDDF-4CF7-9562-B7870640D483}" ShortID="20709250">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Footsteps" ID="{08D9EED9-A01C-4A92-AC20-9D654B114B01}" WorkUnitID="{B6DD193C-9BE9-44D1-9F22-7C3429AACC3D}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<WorkUnit Name="Schacht" ID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" PersistMode="Reference"/>
-				<Event Name="breath_slow" ID="{04234535-4445-45D4-8EC1-BCAB2C8E38DB}">
-					<ChildrenList>
-						<Action Name="" ID="{A72D0A9E-D633-49D5-9639-1469B0F49D0E}" ShortID="911039439">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="breath_slow" ID="{4EBF7596-99C8-41A1-B2E1-5A70A8EE0BE4}" WorkUnitID="{B6DD193C-9BE9-44D1-9F22-7C3429AACC3D}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<WorkUnit Name="Tunnel" ID="{71D003F0-866B-4C31-A330-E3E913374BAC}" PersistMode="Reference"/>
 				<WorkUnit Name="Cave" ID="{83F8F8B2-3880-41F3-9975-C575370FFBDC}" PersistMode="Reference"/>
 				<WorkUnit Name="Elevator" ID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" PersistMode="Reference"/>
@@ -156,12 +134,89 @@
 				</Folder>
 				<Folder Name="Hall" ID="{FF78EBD9-17C5-464C-BD5B-57C4AB9CBDD7}" ShortID="580005792">
 					<ChildrenList>
-						<Event Name="outside_tone" ID="{A2D84301-BC6A-4815-A2BB-5498B6A8CB52}">
+						<Event Name="hall_outside_tone" ID="{A2D84301-BC6A-4815-A2BB-5498B6A8CB52}">
 							<ChildrenList>
 								<Action Name="" ID="{BE057D6C-F4EE-467F-BF9B-1F5EBF9F9D89}" ShortID="863884751">
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="outside_birds" ID="{4D924651-ED19-437D-B749-008DA02E4C39}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{019F3982-D360-47AA-A509-2D5FCC0F1671}" ShortID="931103151">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="car_driveby" ID="{18411708-ABB7-4F86-A089-AEC4D02CFFD3}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="neon_lightbuzz" ID="{954407B6-032D-4BC2-B035-90936E268969}">
+							<ChildrenList>
+								<Action Name="" ID="{93F309C3-45C2-43D6-AFA1-AA806091119D}" ShortID="401408668">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="neon_lightbuzz" ID="{3AE93893-0C67-4AF5-8788-7E595C7D07BF}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="office_tone" ID="{E3D1D5E1-A641-4473-8969-8A843F5B70E7}">
+							<ChildrenList>
+								<Action Name="" ID="{5EB6CB94-A5E4-45EB-9744-9A1F482766DC}" ShortID="64848467">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="office_phone" ID="{E04B5DE8-B438-464B-91F0-2BACD0391116}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{4BBABCFD-72DC-455D-9DF3-4542B3F2371F}" ShortID="64236283">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="typewriter" ID="{DDCF7066-7C5F-4A5E-9902-A146B80713BC}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="player" ID="{F6B7CD59-D389-48CE-AD94-E66A43E53B76}" ShortID="101825083">
+					<ChildrenList>
+						<Event Name="footsteps" ID="{DA0ACF0A-AE71-44BA-9D70-8BD59292FACE}">
+							<ChildrenList>
+								<Action Name="" ID="{CFDF0F3E-BDDF-4CF7-9562-B7870640D483}" ShortID="20709250">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps" ID="{08D9EED9-A01C-4A92-AC20-9D654B114B01}" WorkUnitID="{B6DD193C-9BE9-44D1-9F22-7C3429AACC3D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="breath_slow" ID="{04234535-4445-45D4-8EC1-BCAB2C8E38DB}">
+							<ChildrenList>
+								<Action Name="" ID="{A72D0A9E-D633-49D5-9639-1469B0F49D0E}" ShortID="911039439">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="breath_slow" ID="{4EBF7596-99C8-41A1-B2E1-5A70A8EE0BE4}" WorkUnitID="{B6DD193C-9BE9-44D1-9F22-7C3429AACC3D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="End_Outside" ID="{E8B03F73-E41E-4D13-BF71-7A3F8855B2AB}" ShortID="89371827">
+					<ChildrenList>
+						<Event Name="end_tone" ID="{A9916FFF-8EF0-41EB-B0EC-222CDC41E55F}">
+							<ChildrenList>
+								<Action Name="" ID="{52ECAFCD-90D0-4174-8810-5ADD8C4ED90D}" ShortID="777350165">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="outside_tone" ID="{F10ADBE2-7EA8-4486-8013-CA4B05CF781B}" WorkUnitID="{C59E54EE-8189-423C-B2FA-9535BFF11B5C}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

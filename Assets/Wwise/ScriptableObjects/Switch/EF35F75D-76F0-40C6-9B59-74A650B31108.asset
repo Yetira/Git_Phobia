@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75395bb0d269f5459d6da24ee9d3b8b, type: 3}
+  m_Name: EF35F75D-76F0-40C6-9B59-74A650B31108
+  m_EditorClassIdentifier: 
+  objectName: grass
+  id: 4248645337
+  guid: EF35F75D-76F0-40C6-9B59-74A650B31108
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 06b0570aa5e64a74cbe21b79939bdc7c,
+    type: 2}

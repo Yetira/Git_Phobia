@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C59E54EE-8189-423C-B2FA-9535BFF11B5C}" SchemaVersion="119">
+	<AudioObjects>
+		<WorkUnit Name="End_Outside" ID="{C59E54EE-8189-423C-B2FA-9535BFF11B5C}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="outside_tone" ID="{F10ADBE2-7EA8-4486-8013-CA4B05CF781B}" ShortID="115987694">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="outside_tone" ID="{19ED3D1D-90DB-4E59-BE6B-4DE53BD79DA2}">
+							<Language>SFX</Language>
+							<AudioFile>outside_tone.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="747196483"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="outside_tone" ID="{19ED3D1D-90DB-4E59-BE6B-4DE53BD79DA2}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
