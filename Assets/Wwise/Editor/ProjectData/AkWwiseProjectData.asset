@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 3e860730979601429f3a22904a750a2e
     GuidInternal: 
-    m_lastTime: -8584645891796888245
+    m_lastTime: -8584644954599485930
     List:
     - name: AURO-3D
       guid: 9e3201dc27c92a4fb863d279a8472221
@@ -407,6 +407,23 @@ MonoBehaviour:
         ObjectType: 1
         guid: da499c531d07134293cab694c908c1e4
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Hall_3
+    - name: Hall_Outside_3
+      guid: 98574ebe010b4f4dab5b3fd1b566f6c3
+      id: 2715282542
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3e860730979601429f3a22904a750a2e
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Hall_Outside_3
+        ObjectType: 1
+        guid: 98574ebe010b4f4dab5b3fd1b566f6c3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Hall_Outside_3
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -518,7 +535,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5b7d3d6d0746124ab1d6166bb3175237
     GuidInternal: 
-    m_lastTime: -8584645716902672449
+    m_lastTime: -8584644940571846850
     List:
     - name: Main_test
       guid: f4bfb48e9ef48e4883081f357e8cb44a
@@ -656,7 +673,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 199508fe3d34424d9564a328ccca3022
     GuidInternal: 
-    m_lastTime: -8584645722554173026
+    m_lastTime: -8584644940571941994
     List:
     - name: 5_Cabin
       guid: 2bbcea8b66788f4c89126f34d5d5e3ed
@@ -685,10 +702,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: player
+        ObjectType: 4
+        guid: 59cdb7f689d3ce48ad94e66a43e53b76
       - ElementName: breath_slow
         ObjectType: 3
         guid: 354523044544d4458ec1bcab2c8e38db
-      Path: Events\Default Work Unit\breath_slow
+      Path: Events\Default Work Unit\player\breath_slow
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -732,6 +752,43 @@ MonoBehaviour:
       maxAttenuation: 10
       maxDuration: -1
       minDuration: -1
+    - name: End_Outside
+      guid: 733fb0e81ee4134dbf717a3f8855b2ab
+      id: 2427934152
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: End_Outside
+        ObjectType: 4
+        guid: 733fb0e81ee4134dbf717a3f8855b2ab
+      Path: Events\Default Work Unit\End_Outside
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: end_tone
+      guid: ff6f91a9f08eeb41b0ec222cdc41e55f
+      id: 1065358247
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: End_Outside
+        ObjectType: 4
+        guid: 733fb0e81ee4134dbf717a3f8855b2ab
+      - ElementName: end_tone
+        ObjectType: 3
+        guid: ff6f91a9f08eeb41b0ec222cdc41e55f
+      Path: Events\Default Work Unit\End_Outside\end_tone
+      maxAttenuation: 0
+      maxDuration: 29.921791
+      minDuration: 29.921791
     - name: fire_crackling
       guid: 8cb5a8850bbfc14296f25079d44d56d3
       id: 2109043066
@@ -782,10 +839,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: player
+        ObjectType: 4
+        guid: 59cdb7f689d3ce48ad94e66a43e53b76
       - ElementName: footsteps
         ObjectType: 3
         guid: 0acf0ada71aeba449d708bd59292face
-      Path: Events\Default Work Unit\footsteps
+      Path: Events\Default Work Unit\player\footsteps
       maxAttenuation: 0
       maxDuration: 0.7190703
       minDuration: 0.28129032
@@ -804,6 +864,26 @@ MonoBehaviour:
         guid: d9eb78ffc5174c46bd5b57c4ab9cbdd7
       Path: Events\Default Work Unit\Hall
       maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: hall_outside_tone
+      guid: 0143d8a26abc1548a2bb5498b6a8cb52
+      id: 1276428995
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: Hall
+        ObjectType: 4
+        guid: d9eb78ffc5174c46bd5b57c4ab9cbdd7
+      - ElementName: hall_outside_tone
+        ObjectType: 3
+        guid: 0143d8a26abc1548a2bb5498b6a8cb52
+      Path: Events\Default Work Unit\Hall\hall_outside_tone
+      maxAttenuation: 50
       maxDuration: -1
       minDuration: -1
     - name: Level_Intro
@@ -906,26 +986,6 @@ MonoBehaviour:
       maxAttenuation: 30
       maxDuration: 882.1551
       minDuration: 882.1551
-    - name: outside_tone
-      guid: 0143d8a26abc1548a2bb5498b6a8cb52
-      id: 3247370201
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 199508fe3d34424d9564a328ccca3022
-      - ElementName: Hall
-        ObjectType: 4
-        guid: d9eb78ffc5174c46bd5b57c4ab9cbdd7
-      - ElementName: outside_tone
-        ObjectType: 3
-        guid: 0143d8a26abc1548a2bb5498b6a8cb52
-      Path: Events\Default Work Unit\Hall\outside_tone
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Play_radio
       guid: 296df7dc8861294ba7f3ee2fbe50e534
       id: 2953849999
@@ -946,6 +1006,23 @@ MonoBehaviour:
       maxAttenuation: 100
       maxDuration: 156.36365
       minDuration: 156.36365
+    - name: player
+      guid: 59cdb7f689d3ce48ad94e66a43e53b76
+      id: 1069431850
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: player
+        ObjectType: 4
+        guid: 59cdb7f689d3ce48ad94e66a43e53b76
+      Path: Events\Default Work Unit\player
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_radio
       guid: 5408bd31b7e09b41a98b1e5bec115e7a
       id: 151474297
@@ -1020,6 +1097,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: window_close
+      guid: 1ad5c4ed1d28f847a6fb4659a6cdbdce
+      id: 3146991628
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: Hall
+        ObjectType: 4
+        guid: d9eb78ffc5174c46bd5b57c4ab9cbdd7
+      - ElementName: window_close
+        ObjectType: 3
+        guid: 1ad5c4ed1d28f847a6fb4659a6cdbdce
+      Path: Events\Default Work Unit\Hall\window_close
+      maxAttenuation: 20
+      maxDuration: 2.956573
+      minDuration: 2.956573
   - PhysicalPath: Events\Elevator.wwu
     PathAndIcons:
     - ElementName: Events
@@ -1703,7 +1800,7 @@ MonoBehaviour:
     m_lastTime: -8584663919773364773
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000f000000120000001300000014000000150000001600000017000000180000001b0000001d0000001e000000370000003800000039000000ac000000ad000000b0000000b1000000b2000000fb000000fc0000004801000049010000c7010000c8010000ca010000
+  ExpandedWaapiItemIds: 0100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000f000000120000001300000014000000150000001600000017000000180000001b0000001d0000001e000000370000003800000039000000a0000000a1000000a2000000ac000000ad000000b0000000b1000000b2000000fb000000fc0000004801000049010000c7010000c8010000ca010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

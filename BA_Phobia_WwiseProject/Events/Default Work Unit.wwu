@@ -181,6 +181,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="window_close" ID="{EDC4D51A-281D-47F8-A6FB-4659A6CDBDCE}">
+							<ChildrenList>
+								<Action Name="" ID="{F1DD1761-81A0-42E7-B8BE-C818DA4D84F3}" ShortID="456326322">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="window_close" ID="{07069A0C-C8ED-469C-B84F-AD193BFCBC18}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="player" ID="{F6B7CD59-D389-48CE-AD94-E66A43E53B76}" ShortID="101825083">

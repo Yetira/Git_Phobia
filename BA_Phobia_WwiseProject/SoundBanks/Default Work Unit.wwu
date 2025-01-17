@@ -39,6 +39,7 @@
 						<ObjectRef Name="Target_Hit" ID="{B87D5379-11CD-42AB-BC82-40E5D589480B}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="rock_land" ID="{0D8E8A21-73C4-4623-8CD0-5A7D792C00D0}" WorkUnitID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Rat" ID="{5D7CA806-E58B-4742-B443-26B0989959EC}" WorkUnitID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="window_close" ID="{EDC4D51A-281D-47F8-A6FB-4659A6CDBDCE}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="rock_fall" ID="{E16C388B-C4BA-49DE-B0AE-415C5ABCCD0A}" WorkUnitID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_radio" ID="{DCF76D29-6188-4B29-A7F3-EE2FBE50E534}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="girl_run" ID="{D7FF8585-A8E3-4BBF-8D01-DC725D3C010B}" WorkUnitID="{83F8F8B2-3880-41F3-9975-C575370FFBDC}" Origin="Manual" Filter="7"/>

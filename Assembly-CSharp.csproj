@@ -66,6 +66,7 @@
     <Compile Include="Assets\Elevator.cs" />
     <Compile Include="Assets\LiftTriggerZone.cs" />
     <Compile Include="Assets\rockFall.cs" />
+    <Compile Include="Assets\windowNotice.cs" />
     <Compile Include="Assets\doorAnim.cs" />
     <Compile Include="Assets\VoiceLineManager.cs" />
     <Compile Include="Assets\triggerRat.cs" />
@@ -76,12 +77,14 @@
     <Compile Include="Assets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
     <Compile Include="Assets\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs" />
     <Compile Include="Assets\radio.cs" />
+    <Compile Include="Assets\closeWindow.cs" />
     <Compile Include="Assets\InputSystem\StarterAssetsInputs.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\triggerRock.cs" />
     <Compile Include="Assets\triggerLiftMusic.cs" />
     <Compile Include="Assets\LookAtTarget.cs" />
     <Compile Include="Assets\MoveToTarget.cs" />
+    <Compile Include="Assets\officeTrigger.cs" />
     <Compile Include="Assets\Scripts\FirstPersonController.cs" />
     <Compile Include="Assets\triggerLift.cs" />
     <Compile Include="Assets\creakZone.cs" />

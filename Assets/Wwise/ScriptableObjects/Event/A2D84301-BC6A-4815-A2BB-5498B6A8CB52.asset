@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eed664dff49413a4983d2092ac0e03e8, type: 3}
   m_Name: A2D84301-BC6A-4815-A2BB-5498B6A8CB52
   m_EditorClassIdentifier: 
-  objectName: outside_tone
-  id: 3247370201
+  objectName: hall_outside_tone
+  id: 1276428995
   guid: A2D84301-BC6A-4815-A2BB-5498B6A8CB52
