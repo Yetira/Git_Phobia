@@ -11,6 +11,7 @@ public class Elevator : MonoBehaviour
     public GameObject bellSoundSource;
     public GameObject rideSoundSource;
     public GameObject arrivalSoundSource;
+    public GameObject liftIntercom;
 
     //public GameObject liftTriggerZone;
 
@@ -72,7 +73,13 @@ public class Elevator : MonoBehaviour
     {
         Debug.Log("Lift arriving.");
         AkSoundEngine.PostEvent("lift_arrive", arrivalSoundSource);
+        StartCoroutine(WaitForArrive());
+    }
 
+    private IEnumerator WaitForArrive()
+    {
+        yield return new WaitForSeconds(16);
+        Open();
     }
     private IEnumerator DelayAfterDing()
     {
@@ -80,9 +87,16 @@ public class Elevator : MonoBehaviour
 
         doorAnim.DoorOpen();
         AkSoundEngine.PostEvent("lift_open", doorSoundSourceLift);
-        //AkSoundEngine.PostEvent("lift_open", doorSoundSourceLevel);
+
         doorClosed = false;
 
+        StartCoroutine(WaitForMusic());
+    }
+    private IEnumerator WaitForMusic()
+    {
+        yield return new WaitForSeconds(5);
+
+        AkSoundEngine.PostEvent("lift_music", liftIntercom);
     }
 
 
@@ -120,7 +134,7 @@ public class Elevator : MonoBehaviour
         else
         {
             Debug.Log("Now plays the Elevator Ending Sequence!");
-            //add music, thank for playing, fade out
+   
         }
     }
 

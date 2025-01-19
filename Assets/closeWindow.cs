@@ -5,6 +5,8 @@ using UnityEngine;
 public class closeWindow : MonoBehaviour
 
 {
+    public Elevator elevator;
+
     public GameObject window;                 
     public Vector3 windowClosedPosition;     
     public float speed = 5f;             
@@ -36,6 +38,8 @@ public class closeWindow : MonoBehaviour
             if (window.transform.localPosition == windowClosedPosition)
             {
                 isClosing = false;
+
+                elevator.Arrive();
             }
         }
     }

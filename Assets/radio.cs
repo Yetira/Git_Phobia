@@ -5,21 +5,17 @@ using UnityEngine;
 public class radio : MonoBehaviour
 {
     public MoveToTarget moveToTarget;
-    // Start is called before the first frame update
-    void Start()
+
+    private void Start()
     {
         StartPlay();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void StartPlay()
     {
         AkSoundEngine.PostEvent("Play_radio", gameObject);
     }
+
     public void StopPlay()
     {
         AkSoundEngine.PostEvent("Stop_radio", gameObject);
@@ -29,6 +25,9 @@ public class radio : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Debug.Log("Player entered radio collider.");
+
+            // Always call ChangeTargetPosition to handle both intermediate and final targets
             moveToTarget.ChangeTargetPosition();
         }
     }

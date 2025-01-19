@@ -5,6 +5,7 @@ using UnityEngine;
 public class MoveToTarget : MonoBehaviour
 {
     public radio radio;
+    public Elevator elevator;
 
     public List<Vector3> targetPositions;
 
@@ -14,12 +15,22 @@ public class MoveToTarget : MonoBehaviour
 
     public void ChangeTargetPosition()
     {
-        if (currentTargetIndex <= targetPositions.Count -1 && !isProcessing)
+        if (isProcessing) return;
+
+        if (currentTargetIndex < targetPositions.Count - 1)
         {
             isProcessing = true;
 
             AkSoundEngine.PostEvent("Target_Hit", gameObject);
             StartCoroutine(HandleTargetDelay());
+        }
+        else if (currentTargetIndex == targetPositions.Count - 1)
+        {
+            AkSoundEngine.PostEvent("Target_Hit", gameObject);
+            radio.StopPlay();
+
+            Debug.Log("Final target reached, triggering elevator.");
+            elevator.Arrive();
         }
     }
 
@@ -27,13 +38,20 @@ public class MoveToTarget : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
 
-        currentTargetIndex++;
+        if (currentTargetIndex < targetPositions.Count - 1)
+        {
+            currentTargetIndex++;
 
-        radio.StopPlay();
-        
-        radio.transform.localPosition = targetPositions[currentTargetIndex];
-        radio.StartPlay();
-        
-        isProcessing = false;
+            radio.StopPlay();
+
+            radio.transform.localPosition = targetPositions[currentTargetIndex];
+            radio.StartPlay();
+        }
+        else
+        {
+            Debug.Log("All targets completed");
+        }
+
+        isProcessing = false; 
     }
 }

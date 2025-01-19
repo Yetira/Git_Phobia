@@ -673,7 +673,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 199508fe3d34424d9564a328ccca3022
     GuidInternal: 
-    m_lastTime: -8584644940571941994
+    m_lastTime: -8584643799756999425
     List:
     - name: 5_Cabin
       guid: 2bbcea8b66788f4c89126f34d5d5e3ed
@@ -883,7 +883,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 0143d8a26abc1548a2bb5498b6a8cb52
       Path: Events\Default Work Unit\Hall\hall_outside_tone
-      maxAttenuation: 50
+      maxAttenuation: 150
       maxDuration: -1
       minDuration: -1
     - name: Level_Intro
@@ -1003,7 +1003,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 296df7dc8861294ba7f3ee2fbe50e534
       Path: Events\Default Work Unit\Tutorial SFX\Play_radio
-      maxAttenuation: 100
+      maxAttenuation: 300
       maxDuration: 156.36365
       minDuration: 156.36365
     - name: player
@@ -1115,8 +1115,8 @@ MonoBehaviour:
         guid: 1ad5c4ed1d28f847a6fb4659a6cdbdce
       Path: Events\Default Work Unit\Hall\window_close
       maxAttenuation: 20
-      maxDuration: 2.956573
-      minDuration: 2.956573
+      maxDuration: 1.958446
+      minDuration: 1.958446
   - PhysicalPath: Events\Elevator.wwu
     PathAndIcons:
     - ElementName: Events

@@ -11,10 +11,13 @@ public class AltFirstPersonController : MonoBehaviour
     [Header("References")]
     public Transform vrCamera; // Reference to the VR Camera (usually the player's head)
 
+    public GameStateManager gameStateManager;
+
     public GameObject Feet;
 
     private CharacterController characterController;
     private PlayerInputActions playerInputActions;
+
     private Vector2 moveInput;
 
     private float m_StepCycle = 0f;         // Tracks the current step cycle progress
@@ -52,7 +55,10 @@ public class AltFirstPersonController : MonoBehaviour
         // Get the CharacterController component attached to this GameObject
         characterController = GetComponent<CharacterController>();
 
-        AkSoundEngine.PostEvent("breath_slow", gameObject);
+        if (gameStateManager.currentLevelIndex == 3 && !gameStateManager.insideLift)
+        {
+            AkSoundEngine.PostEvent("breath_slow", gameObject);
+        }
 
         if (vrCamera == null)
         {
@@ -67,6 +73,13 @@ public class AltFirstPersonController : MonoBehaviour
 
         // Update step cycle for footstep sounds
         ProgressStepCycle();
+
+        /*
+        if(gameStateManager.currentLevelIndex > 3)
+        {
+            AkSoundEngine.PostEvent("stop_breathing", gameObject);
+        }
+        */
     }
 
     private void ProgressStepCycle()

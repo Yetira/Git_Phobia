@@ -54,7 +54,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="132bpm_4" ID="{F6A47B62-7BF0-432C-8ADF-ADBAD71A3550}" WorkUnitID="{FAD97F9B-AFBF-4D04-83D1-6C87A63C4AD8}"/>
+											<ObjectRef Name="tutorial_target" ID="{5DA55608-63BC-4423-833B-EA469871019C}" WorkUnitID="{FAD97F9B-AFBF-4D04-83D1-6C87A63C4AD8}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -65,7 +65,7 @@
 								<Action Name="" ID="{F125C90E-6B23-4C53-B81B-647CC399F695}" ShortID="108413261">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="132bpm_4" ID="{F6A47B62-7BF0-432C-8ADF-ADBAD71A3550}" WorkUnitID="{FAD97F9B-AFBF-4D04-83D1-6C87A63C4AD8}"/>
+											<ObjectRef Name="tutorial_target" ID="{5DA55608-63BC-4423-833B-EA469871019C}" WorkUnitID="{FAD97F9B-AFBF-4D04-83D1-6C87A63C4AD8}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

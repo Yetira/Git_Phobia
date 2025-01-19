@@ -16,6 +16,8 @@ public class LookAtTarget : MonoBehaviour
 
     public List<Vector3> targetPositions;
 
+    public float startDelay = 5.0f; // Delay before the tutorial starts, adjustable in the Inspector.
+
     private int currentTargetIndex = 0;
 
     private bool isProcessing = false;
@@ -24,20 +26,33 @@ public class LookAtTarget : MonoBehaviour
 
     public Collider targetCollider;
 
-    private HashSet<int> processedTargets = new HashSet<int>(); // Track processed targets
+    private HashSet<int> processedTargets = new HashSet<int>();
 
-    public float positionSwitchDelay; // Delay before moving the target
+    public float positionSwitchDelay;
 
+    private bool tutorialActive = false; // Flag to control when the tutorial starts.
 
     private void Start()
     {
         currentTargetIndex = 0;
         radio.transform.localPosition = targetPositions[currentTargetIndex];
+
+        // Start a coroutine to delay the tutorial logic.
+        StartCoroutine(StartTutorialAfterDelay());
+    }
+
+    private IEnumerator StartTutorialAfterDelay()
+    {
+        Debug.Log("Waiting for the tutorial to start...");
+        yield return new WaitForSeconds(startDelay);
+
+        tutorialActive = true; // Enable the tutorial logic.
+        Debug.Log("Tutorial started!");
     }
 
     void Update()
     {
-        if (isProcessing) return;
+        if (!tutorialActive || isProcessing) return; // Exit if tutorial hasn't started or is currently processing.
 
         Ray ray = new(playerCamera.transform.position, playerCamera.transform.forward);
         RaycastHit hit;
@@ -50,21 +65,20 @@ public class LookAtTarget : MonoBehaviour
 
                 Debug.Log("Target in view!");
 
-                processedTargets.Add(currentTargetIndex); // Mark as processed
+                processedTargets.Add(currentTargetIndex);
 
                 if (targetCollider != null)
                     targetCollider.enabled = false;
 
                 AkSoundEngine.PostEvent("Target_Hit", gameObject);
 
-                // Start a Coroutine for the delay before moving the target
                 StartCoroutine(HandleTargetDelay());
             }
         }
 
         Debug.DrawRay(playerCamera.transform.position, playerCamera.transform.forward * detectionRange, Color.red);
 
-        if(processedTargets.Contains(2) && !lastLookedAt)
+        if (processedTargets.Contains(2) && !lastLookedAt)
         {
             lastLookedAt = true;
 
@@ -75,10 +89,12 @@ public class LookAtTarget : MonoBehaviour
 
     private IEnumerator HandleTargetDelay()
     {
-        // Wait for the specified delay before moving the target
         yield return new WaitForSeconds(positionSwitchDelay);
 
-        radio.StopPlay();
+        if (currentTargetIndex < targetPositions.Count - 1)
+        {
+            radio.StopPlay();
+        }
 
         ChangeTargetPosition();
 
