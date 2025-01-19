@@ -238,7 +238,7 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-27</Value>
+								<Value>-30</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -550,6 +550,110 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="Ambiance_Rain_Calm_Loop_Stereo" ID="{5435A99A-3AB2-4308-B2AE-9E0119454B38}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="grandma_event2" ID="{9389C93E-30F3-4165-9BF9-BBC1EA22C623}" ShortID="704554090">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="fireplace" ID="{85786744-8786-40E4-B3C8-F2D9A8FE7CC4}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="AURO-3D" ID="{DC01329E-C927-4F2A-B863-D279A8472221}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="grandma_event2" ID="{C6D69CDD-6EE8-4781-95BB-77CF28160E87}">
+							<Language>SFX</Language>
+							<AudioFile>grandma_event2.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="112651257"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="grandma_event2" ID="{C6D69CDD-6EE8-4781-95BB-77CF28160E87}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="grandma_event" ID="{EA9A804E-3987-4BE2-9180-9036BC4BF7FA}" ShortID="227241689">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-7</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="fireplace" ID="{85786744-8786-40E4-B3C8-F2D9A8FE7CC4}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="AURO-3D" ID="{DC01329E-C927-4F2A-B863-D279A8472221}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="grandma_event" ID="{99FB10FB-35B9-46E5-A92D-AA789526A832}">
+							<Language>SFX</Language>
+							<AudioFile>grandma_event.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1073075809"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="grandma_event" ID="{99FB10FB-35B9-46E5-A92D-AA789526A832}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="chair_rock" ID="{633CCE14-09BF-4A04-AEFA-F35A1DB7F368}" ShortID="167596154">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="fireplace" ID="{85786744-8786-40E4-B3C8-F2D9A8FE7CC4}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="AURO-3D" ID="{DC01329E-C927-4F2A-B863-D279A8472221}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="chair_rock" ID="{6935F36D-CECF-48F9-B712-221D676B621C}">
+							<Language>SFX</Language>
+							<AudioFile>chair_rock.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="483144318"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="chair_rock" ID="{6935F36D-CECF-48F9-B712-221D676B621C}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

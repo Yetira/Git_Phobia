@@ -535,7 +535,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5b7d3d6d0746124ab1d6166bb3175237
     GuidInternal: 
-    m_lastTime: -8584644940571846850
+    m_lastTime: -8584643130845391951
     List:
     - name: Main_test
       guid: f4bfb48e9ef48e4883081f357e8cb44a
@@ -673,7 +673,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 199508fe3d34424d9564a328ccca3022
     GuidInternal: 
-    m_lastTime: -8584643799756999425
+    m_lastTime: -8584643128955589289
     List:
     - name: 5_Cabin
       guid: 2bbcea8b66788f4c89126f34d5d5e3ed
@@ -849,6 +849,46 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.7190703
       minDuration: 0.28129032
+    - name: granny_sleep
+      guid: 482e531e2f8c294cb89c958f2b7cf39c
+      id: 3017723580
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: 5_Cabin
+        ObjectType: 4
+        guid: 2bbcea8b66788f4c89126f34d5d5e3ed
+      - ElementName: granny_sleep
+        ObjectType: 3
+        guid: 482e531e2f8c294cb89c958f2b7cf39c
+      Path: Events\Default Work Unit\5_Cabin\granny_sleep
+      maxAttenuation: 20
+      maxDuration: -1
+      minDuration: -1
+    - name: granny_wakeup
+      guid: 8489d3668984fd4990e3a0366a638a55
+      id: 2095726772
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: 5_Cabin
+        ObjectType: 4
+        guid: 2bbcea8b66788f4c89126f34d5d5e3ed
+      - ElementName: granny_wakeup
+        ObjectType: 3
+        guid: 8489d3668984fd4990e3a0366a638a55
+      Path: Events\Default Work Unit\5_Cabin\granny_wakeup
+      maxAttenuation: 20
+      maxDuration: -1
+      minDuration: -1
     - name: Hall
       guid: d9eb78ffc5174c46bd5b57c4ab9cbdd7
       id: 3633416828
@@ -1004,8 +1044,8 @@ MonoBehaviour:
         guid: 296df7dc8861294ba7f3ee2fbe50e534
       Path: Events\Default Work Unit\Tutorial SFX\Play_radio
       maxAttenuation: 300
-      maxDuration: 156.36365
-      minDuration: 156.36365
+      maxDuration: -1
+      minDuration: -1
     - name: player
       guid: 59cdb7f689d3ce48ad94e66a43e53b76
       id: 1069431850
@@ -1023,6 +1063,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: stop_granny_sleep
+      guid: 6f4a7a095016d745adc6e17ec2a259c4
+      id: 2269248021
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: 5_Cabin
+        ObjectType: 4
+        guid: 2bbcea8b66788f4c89126f34d5d5e3ed
+      - ElementName: stop_granny_sleep
+        ObjectType: 3
+        guid: 6f4a7a095016d745adc6e17ec2a259c4
+      Path: Events\Default Work Unit\5_Cabin\stop_granny_sleep
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_radio
       guid: 5408bd31b7e09b41a98b1e5bec115e7a
       id: 151474297

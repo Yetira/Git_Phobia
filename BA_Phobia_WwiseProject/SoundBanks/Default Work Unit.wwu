@@ -37,12 +37,15 @@
 						<ObjectRef Name="Voicelines" ID="{0473E742-5B50-41B5-8131-999B40E884D5}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Level_Outro" ID="{0506E6E1-165C-42A8-8635-24031CFCE0BC}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Target_Hit" ID="{B87D5379-11CD-42AB-BC82-40E5D589480B}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="stop_granny_sleep" ID="{097A4A6F-1650-45D7-ADC6-E17EC2A259C4}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="rock_land" ID="{0D8E8A21-73C4-4623-8CD0-5A7D792C00D0}" WorkUnitID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Rat" ID="{5D7CA806-E58B-4742-B443-26B0989959EC}" WorkUnitID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="window_close" ID="{EDC4D51A-281D-47F8-A6FB-4659A6CDBDCE}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="rock_fall" ID="{E16C388B-C4BA-49DE-B0AE-415C5ABCCD0A}" WorkUnitID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="granny_wakeup" ID="{66D38984-8489-49FD-90E3-A0366A638A55}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_radio" ID="{DCF76D29-6188-4B29-A7F3-EE2FBE50E534}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="girl_run" ID="{D7FF8585-A8E3-4BBF-8D01-DC725D3C010B}" WorkUnitID="{83F8F8B2-3880-41F3-9975-C575370FFBDC}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="granny_sleep" ID="{1E532E48-8C2F-4C29-B89C-958F2B7CF39C}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Rat" ID="{83F384FD-F690-4C80-AB9E-BEDCD1FC5563}" WorkUnitID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Level_Intro" ID="{D8F2C654-6F05-4E6E-99CE-D38DC3F90635}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

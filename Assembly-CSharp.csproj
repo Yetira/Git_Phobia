@@ -71,6 +71,7 @@
     <Compile Include="Assets\VoiceLineManager.cs" />
     <Compile Include="Assets\triggerRat.cs" />
     <Compile Include="Assets\AltFirstPersonController.cs" />
+    <Compile Include="Assets\granny.cs" />
     <Compile Include="Assets\GameStateManager.cs" />
     <Compile Include="Assets\triggerGirl.cs" />
     <Compile Include="Assets\Scripts\BasicRigidBodyPush.cs" />

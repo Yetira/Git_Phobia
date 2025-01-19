@@ -130,6 +130,89 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="granny_sleep" ID="{1E532E48-8C2F-4C29-B89C-958F2B7CF39C}">
+							<ChildrenList>
+								<Action Name="" ID="{5A7989D3-7F5B-4093-A46A-95D51538397C}" ShortID="895468114">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="chair_rock" ID="{633CCE14-09BF-4A04-AEFA-F35A1DB7F368}" WorkUnitID="{6E5FA8A8-1154-45BF-9934-DB0DCEB04F0B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{5B23CEA2-482F-4040-B21D-DC7D74EEA0AF}" ShortID="74932789">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="grandma_event2" ID="{9389C93E-30F3-4165-9BF9-BBC1EA22C623}" WorkUnitID="{6E5FA8A8-1154-45BF-9934-DB0DCEB04F0B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="granny_wakeup" ID="{66D38984-8489-49FD-90E3-A0366A638A55}">
+							<ChildrenList>
+								<Action Name="" ID="{B1EC9F27-E09E-418B-9874-EA2390BCF660}" ShortID="803947843">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="7"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="chair_rock" ID="{633CCE14-09BF-4A04-AEFA-F35A1DB7F368}" WorkUnitID="{6E5FA8A8-1154-45BF-9934-DB0DCEB04F0B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{47FC18D0-9A16-4534-A22B-263B777E895D}" ShortID="862326302">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="grandma_event2" ID="{9389C93E-30F3-4165-9BF9-BBC1EA22C623}" WorkUnitID="{6E5FA8A8-1154-45BF-9934-DB0DCEB04F0B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C41D05CB-DD95-4A86-9626-8FA4CD0DC346}" ShortID="2793194">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="grandma_event" ID="{EA9A804E-3987-4BE2-9180-9036BC4BF7FA}" WorkUnitID="{6E5FA8A8-1154-45BF-9934-DB0DCEB04F0B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{715F9864-8505-4B90-B3D3-0D0DB5F4BD64}" ShortID="970655799">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="20"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="chair_rock" ID="{633CCE14-09BF-4A04-AEFA-F35A1DB7F368}" WorkUnitID="{6E5FA8A8-1154-45BF-9934-DB0DCEB04F0B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="stop_granny_sleep" ID="{097A4A6F-1650-45D7-ADC6-E17EC2A259C4}">
+							<ChildrenList>
+								<Action Name="" ID="{8DA697AA-E164-45A9-9451-B3990194C1BD}" ShortID="869279239">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="grandma_event2" ID="{9389C93E-30F3-4165-9BF9-BBC1EA22C623}" WorkUnitID="{6E5FA8A8-1154-45BF-9934-DB0DCEB04F0B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B9B2F535-8038-45D1-9753-074BF8738B27}" ShortID="497002095">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="chair_rock" ID="{633CCE14-09BF-4A04-AEFA-F35A1DB7F368}" WorkUnitID="{6E5FA8A8-1154-45BF-9934-DB0DCEB04F0B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Hall" ID="{FF78EBD9-17C5-464C-BD5B-57C4AB9CBDD7}" ShortID="580005792">
