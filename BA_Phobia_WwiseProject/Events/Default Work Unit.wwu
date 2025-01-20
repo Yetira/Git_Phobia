@@ -213,6 +213,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="cat" ID="{46C045C3-9B0F-4FFE-94FE-17B62D70775A}">
+							<ChildrenList>
+								<Action Name="" ID="{5100DA67-2512-49A9-ADF1-A2A5736F2E37}" ShortID="434564510">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="cat_mode" ID="{CA11775A-CA9B-42B0-AA22-DFF865928845}" WorkUnitID="{6E5FA8A8-1154-45BF-9934-DB0DCEB04F0B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Hall" ID="{FF78EBD9-17C5-464C-BD5B-57C4AB9CBDD7}" ShortID="580005792">

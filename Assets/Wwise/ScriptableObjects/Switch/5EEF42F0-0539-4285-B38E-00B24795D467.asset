@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75395bb0d269f5459d6da24ee9d3b8b, type: 3}
+  m_Name: 5EEF42F0-0539-4285-B38E-00B24795D467
+  m_EditorClassIdentifier: 
+  objectName: purr
+  id: 1741223660
+  guid: 5EEF42F0-0539-4285-B38E-00B24795D467
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: d49dac45e71c29d478c2bf62a8908a7f,
+    type: 2}

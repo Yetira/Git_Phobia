@@ -535,7 +535,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5b7d3d6d0746124ab1d6166bb3175237
     GuidInternal: 
-    m_lastTime: -8584643130845391951
+    m_lastTime: -8584642157352752145
     List:
     - name: Main_test
       guid: f4bfb48e9ef48e4883081f357e8cb44a
@@ -673,7 +673,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 199508fe3d34424d9564a328ccca3022
     GuidInternal: 
-    m_lastTime: -8584643128955589289
+    m_lastTime: -8584642157352542070
     List:
     - name: 5_Cabin
       guid: 2bbcea8b66788f4c89126f34d5d5e3ed
@@ -750,6 +750,26 @@ MonoBehaviour:
         guid: 79c704ec8c1f73468a780f635db5eecb
       Path: Events\Default Work Unit\5_Cabin\cabin_wind
       maxAttenuation: 10
+      maxDuration: -1
+      minDuration: -1
+    - name: cat
+      guid: c345c0460f9bfe4f94fe17b62d70775a
+      id: 983016379
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: 5_Cabin
+        ObjectType: 4
+        guid: 2bbcea8b66788f4c89126f34d5d5e3ed
+      - ElementName: cat
+        ObjectType: 3
+        guid: c345c0460f9bfe4f94fe17b62d70775a
+      Path: Events\Default Work Unit\5_Cabin\cat
+      maxAttenuation: 20
       maxDuration: -1
       minDuration: -1
     - name: End_Outside
@@ -1533,7 +1553,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: e5d7232acd96ac48b5e661cd6c28eb44
     GuidInternal: 
-    m_lastTime: -8584645662573945083
+    m_lastTime: -8584642164944907949
     List:
     - name: activeLevel
       guid: 2ae88e046cfa1e42bc11adf2451e2f00
@@ -1662,6 +1682,56 @@ MonoBehaviour:
         - ElementName: Level_7
           ObjectType: 10
           guid: 1f01f1d6e7ec7b4fb063c893ea2fd1c9
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: cat_mode
+      guid: ac77440fb19abc44ac68546460b12ea2
+      id: 1583805947
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e5d7232acd96ac48b5e661cd6c28eb44
+      - ElementName: cat_mode
+        ObjectType: 11
+        guid: ac77440fb19abc44ac68546460b12ea2
+      Path: Switches\Default Work Unit\cat_mode
+      values:
+      - name: meow
+        guid: d9e79b89f47cb14393b25ca47826bb4b
+        id: 2590778245
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: e5d7232acd96ac48b5e661cd6c28eb44
+        - ElementName: cat_mode
+          ObjectType: 11
+          guid: ac77440fb19abc44ac68546460b12ea2
+        - ElementName: meow
+          ObjectType: 10
+          guid: d9e79b89f47cb14393b25ca47826bb4b
+      - name: purr
+        guid: f042ef5e39058542b38e00b24795d467
+        id: 1741223660
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: e5d7232acd96ac48b5e661cd6c28eb44
+        - ElementName: cat_mode
+          ObjectType: 11
+          guid: ac77440fb19abc44ac68546460b12ea2
+        - ElementName: purr
+          ObjectType: 10
+          guid: f042ef5e39058542b38e00b24795d467
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -1860,7 +1930,7 @@ MonoBehaviour:
     m_lastTime: -8584663919773364773
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000f000000120000001300000014000000150000001600000017000000180000001b0000001d0000001e000000370000003800000039000000a0000000a1000000a2000000ac000000ad000000b0000000b1000000b2000000fb000000fc0000004801000049010000c7010000c8010000ca010000
+  ExpandedWaapiItemIds: 0100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000f000000120000001300000014000000150000001600000017000000180000001b0000001d0000001e000000370000003800000039000000a0000000a1000000a2000000ac000000ad000000b0000000b1000000b2000000fb000000fc0000004801000049010000b0010000b1010000b3010000c7010000c8010000ca010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

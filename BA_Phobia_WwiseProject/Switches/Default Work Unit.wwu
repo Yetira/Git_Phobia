@@ -31,6 +31,12 @@
 						<Switch Name="Level_3" ID="{496775C5-4126-4469-9789-54FC5C505D71}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="cat_mode" ID="{0F4477AC-9AB1-44BC-AC68-546460B12EA2}">
+					<ChildrenList>
+						<Switch Name="meow" ID="{899BE7D9-7CF4-43B1-93B2-5CA47826BB4B}"/>
+						<Switch Name="purr" ID="{5EEF42F0-0539-4285-B38E-00B24795D467}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>
