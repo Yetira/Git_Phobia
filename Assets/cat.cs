@@ -4,20 +4,25 @@ using UnityEngine;
 
 public class cat : MonoBehaviour
 {
+    private uint playingID; 
+
     private void Start()
     {
-        AkSoundEngine.SetSwitch("cat_mode","purr", gameObject);
-
-        AkSoundEngine.PostEvent("cat", gameObject);
+        playingID = AkSoundEngine.PostEvent("cat", gameObject);
+        AkSoundEngine.SetSwitch("cat_mode", "meow", gameObject);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
+            AkSoundEngine.StopPlayingID(playingID);
+
             AkSoundEngine.SetSwitch("cat_mode", "purr", gameObject);
 
-            Debug.Log("player in cat zone");
+            playingID = AkSoundEngine.PostEvent("cat", gameObject);
+
+            Debug.Log("Player in cat zone: Purring starts");
         }
     }
 
@@ -25,7 +30,13 @@ public class cat : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            AkSoundEngine.StopPlayingID(playingID);
+
             AkSoundEngine.SetSwitch("cat_mode", "meow", gameObject);
+
+            playingID = AkSoundEngine.PostEvent("cat", gameObject);
+
+            Debug.Log("Player out of cat zone: Meowing starts");
         }
     }
 }

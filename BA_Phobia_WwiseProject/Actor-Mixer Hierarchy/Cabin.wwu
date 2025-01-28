@@ -359,7 +359,7 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-25</Value>
+								<Value>-27</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -552,7 +552,7 @@
 						<ActiveSource Name="Ambiance_Rain_Calm_Loop_Stereo" ID="{5435A99A-3AB2-4308-B2AE-9E0119454B38}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="grandma_event2" ID="{9389C93E-30F3-4165-9BF9-BBC1EA22C623}" ShortID="704554090">
+				<Sound Name="granny_sleep" ID="{9389C93E-30F3-4165-9BF9-BBC1EA22C623}" ShortID="704554090">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
@@ -573,6 +573,9 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="AURO-3D" ID="{DC01329E-C927-4F2A-B863-D279A8472221}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 						</Reference>
+						<Reference Name="ReflectionsAuxSend">
+							<ObjectRef Name="Reflect" ID="{32F40114-197C-4E2E-87F1-D24A3C7DDA4E}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="grandma_event2" ID="{C6D69CDD-6EE8-4781-95BB-77CF28160E87}">
@@ -587,7 +590,7 @@
 						<ActiveSource Name="grandma_event2" ID="{C6D69CDD-6EE8-4781-95BB-77CF28160E87}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="grandma_event" ID="{EA9A804E-3987-4BE2-9180-9036BC4BF7FA}" ShortID="227241689">
+				<Sound Name="granny_wakeup" ID="{EA9A804E-3987-4BE2-9180-9036BC4BF7FA}" ShortID="227241689">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
@@ -606,6 +609,9 @@
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="AURO-3D" ID="{DC01329E-C927-4F2A-B863-D279A8472221}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+						</Reference>
+						<Reference Name="ReflectionsAuxSend">
+							<ObjectRef Name="Reflect" ID="{32F40114-197C-4E2E-87F1-D24A3C7DDA4E}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -642,6 +648,9 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="AURO-3D" ID="{DC01329E-C927-4F2A-B863-D279A8472221}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 						</Reference>
+						<Reference Name="ReflectionsAuxSend">
+							<ObjectRef Name="Reflect" ID="{32F40114-197C-4E2E-87F1-D24A3C7DDA4E}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="chair_rock" ID="{6935F36D-CECF-48F9-B712-221D676B621C}">
@@ -670,7 +679,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
 						</Reference>
 						<Reference Name="DefaultSwitchOrState">
-							<ObjectRef Name="purr" ID="{5EEF42F0-0539-4285-B38E-00B24795D467}" WorkUnitID="{2A23D7E5-96CD-48AC-B5E6-61CD6C28EB44}"/>
+							<ObjectRef Name="meow" ID="{899BE7D9-7CF4-43B1-93B2-5CA47826BB4B}" WorkUnitID="{2A23D7E5-96CD-48AC-B5E6-61CD6C28EB44}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="AURO-3D" ID="{DC01329E-C927-4F2A-B863-D279A8472221}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
@@ -703,7 +712,7 @@
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-5</Value>
+										<Value>-7</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -826,12 +835,12 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<Sound Name="cat_purr-1" ID="{5264512C-3A7B-4495-913D-D1BA9F65CA9D}" ShortID="828622731">
+						<Sound Name="cat_purr" ID="{5264512C-3A7B-4495-913D-D1BA9F65CA9D}" ShortID="828622731">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-15</Value>
+										<Value>-20</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -865,7 +874,7 @@
 					<GroupingInfo>
 						<GroupingBehaviorList>
 							<GroupingBehavior>
-								<ItemRef Name="cat_purr-1" ID="{5264512C-3A7B-4495-913D-D1BA9F65CA9D}"/>
+								<ItemRef Name="cat_purr" ID="{5264512C-3A7B-4495-913D-D1BA9F65CA9D}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="cat_meows" ID="{6A351254-57CD-4E10-BF38-94364E3D48F1}"/>
@@ -881,7 +890,7 @@
 							<Grouping>
 								<SwitchRef Name="purr" ID="{5EEF42F0-0539-4285-B38E-00B24795D467}"/>
 								<ItemList>
-									<ItemRef Name="cat_purr-1" ID="{5264512C-3A7B-4495-913D-D1BA9F65CA9D}"/>
+									<ItemRef Name="cat_purr" ID="{5264512C-3A7B-4495-913D-D1BA9F65CA9D}"/>
 								</ItemList>
 							</Grouping>
 						</GroupingList>

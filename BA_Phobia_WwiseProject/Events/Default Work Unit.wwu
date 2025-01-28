@@ -31,12 +31,12 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Target_Hit" ID="{B87D5379-11CD-42AB-BC82-40E5D589480B}">
+						<Event Name="During_Level" ID="{B87D5379-11CD-42AB-BC82-40E5D589480B}">
 							<ChildrenList>
 								<Action Name="" ID="{6C72B628-7941-495E-8BFA-2A72EDC0B744}" ShortID="892969003">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Task_Feedback" ID="{749AEBA4-10E2-4A09-B343-D511748A0695}" WorkUnitID="{B45F632D-8992-4305-AAB8-D9639597D5E5}"/>
+											<ObjectRef Name="During_Level" ID="{749AEBA4-10E2-4A09-B343-D511748A0695}" WorkUnitID="{B45F632D-8992-4305-AAB8-D9639597D5E5}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -142,7 +142,7 @@
 								<Action Name="" ID="{5B23CEA2-482F-4040-B21D-DC7D74EEA0AF}" ShortID="74932789">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="grandma_event2" ID="{9389C93E-30F3-4165-9BF9-BBC1EA22C623}" WorkUnitID="{6E5FA8A8-1154-45BF-9934-DB0DCEB04F0B}"/>
+											<ObjectRef Name="granny_sleep" ID="{9389C93E-30F3-4165-9BF9-BBC1EA22C623}" WorkUnitID="{6E5FA8A8-1154-45BF-9934-DB0DCEB04F0B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -166,14 +166,14 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="grandma_event2" ID="{9389C93E-30F3-4165-9BF9-BBC1EA22C623}" WorkUnitID="{6E5FA8A8-1154-45BF-9934-DB0DCEB04F0B}"/>
+											<ObjectRef Name="granny_sleep" ID="{9389C93E-30F3-4165-9BF9-BBC1EA22C623}" WorkUnitID="{6E5FA8A8-1154-45BF-9934-DB0DCEB04F0B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 								<Action Name="" ID="{C41D05CB-DD95-4A86-9626-8FA4CD0DC346}" ShortID="2793194">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="grandma_event" ID="{EA9A804E-3987-4BE2-9180-9036BC4BF7FA}" WorkUnitID="{6E5FA8A8-1154-45BF-9934-DB0DCEB04F0B}"/>
+											<ObjectRef Name="granny_wakeup" ID="{EA9A804E-3987-4BE2-9180-9036BC4BF7FA}" WorkUnitID="{6E5FA8A8-1154-45BF-9934-DB0DCEB04F0B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -197,7 +197,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="grandma_event2" ID="{9389C93E-30F3-4165-9BF9-BBC1EA22C623}" WorkUnitID="{6E5FA8A8-1154-45BF-9934-DB0DCEB04F0B}"/>
+											<ObjectRef Name="granny_sleep" ID="{9389C93E-30F3-4165-9BF9-BBC1EA22C623}" WorkUnitID="{6E5FA8A8-1154-45BF-9934-DB0DCEB04F0B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

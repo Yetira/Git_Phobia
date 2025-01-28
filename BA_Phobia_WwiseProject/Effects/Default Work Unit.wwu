@@ -30,6 +30,12 @@
 	</ConvolutionData>
 </PluginData>
 				</Effect>
+				<Effect Name="test_recorder1" ID="{4F408ACD-F191-4DCA-99B4-52591012133B}" PluginName="Wwise Recorder" CompanyID="0" PluginID="132" PluginType="3">
+					<PropertyList>
+						<Property Name="AuthoringFilename" Type="string" Value="C:\Users\öä\Music\Record.wav"/>
+						<Property Name="GameFilename" Type="string" Value="Recordings\test_recording1.wav"/>
+					</PropertyList>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

@@ -171,6 +171,17 @@
 											</EffectSlot>
 										</Local>
 									</Reference>
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{719437D4-0EE1-436E-9A9C-6CF0A8A32A90}" ShortID="548184225">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Recorder" CompanyID="0" PluginID="132" PluginType="3">
+														<ObjectRef Name="test_recorder1" ID="{4F408ACD-F191-4DCA-99B4-52591012133B}" WorkUnitID="{3CCE90C4-C1CC-429A-AFFA-E4C48D1C0D24}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
 								</ObjectList>
 							</ObjectLists>
 						</Bus>
@@ -209,7 +220,13 @@
 												<ReferenceList>
 													<Reference Name="Effect">
 														<Custom>
-															<Effect Name="Wwise_RoomVerb_(Custom)" ID="{BE3DE7C9-40D4-40A4-BDBE-2FF51ADF4C77}" ShortID="999724263" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3"/>
+															<Effect Name="Wwise_RoomVerb_(Custom)" ID="{BE3DE7C9-40D4-40A4-BDBE-2FF51ADF4C77}" ShortID="999724263" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																<PropertyList>
+																	<Property Name="ERPattern" Type="int32" Value="22"/>
+																	<Property Name="EnableEarlyReflections" Type="bool" Value="False"/>
+																	<Property Name="ReverbLevel" Type="Real32" Value="-33"/>
+																</PropertyList>
+															</Effect>
 														</Custom>
 													</Reference>
 												</ReferenceList>
@@ -311,7 +328,47 @@
 								</ObjectList>
 							</ObjectLists>
 						</AuxBus>
+						<AuxBus Name="End_Outside" ID="{0FC2E2D3-1E82-4CAE-9077-BF5FA2F98519}">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{E39A4E3D-14FA-4806-8F13-303BC603DCF3}" ShortID="1068551926">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+														<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
 					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{382FD1A4-3EE0-4FBA-83C0-02E78ED8063D}" ShortID="616940010">
+										<ReferenceList>
+											<Reference Name="Effect">
+												<Custom>
+													<Effect Name="Recorder (Custom)" ID="{202AC890-C531-448B-B4BF-EAC2E9213294}" ShortID="702556579" PluginName="Wwise Recorder" CompanyID="0" PluginID="132" PluginType="3"/>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

@@ -4,36 +4,22 @@ using UnityEngine;
 
 public class VoiceLineManager : MonoBehaviour
 {
-    public float voiceLineDelay;
-
-    public roomCheckForPlayer room;
-
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        PlayIntro();
     }
-
-    private void Update()
+    public void PlayIntro()
     {
-        if(room.playerInsideRoom)
-        {
-            room.playerInsideRoom = false;
-            StartCoroutine(WaitForIntro());
-        }
-    }
-    private IEnumerator WaitForIntro()
-    {
-        yield return new WaitForSeconds(voiceLineDelay);
-
         AkSoundEngine.PostEvent("Level_Intro", gameObject);
     }
 
-    /*private IEnumerator WaitForOutro()
+    public void PlayOutro()
     {
-        //yield return new WaitForSeconds(voiceLineDelay);
-
-       //AkSoundEngine.PostEvent("Level_Intro", gameObject);
+        AkSoundEngine.PostEvent("Level_Outro", gameObject);
     }
-    */
+
+    public void PlayLevelVoiceline()
+    {
+        AkSoundEngine.PostEvent("During_Level", gameObject);
+    }
 }

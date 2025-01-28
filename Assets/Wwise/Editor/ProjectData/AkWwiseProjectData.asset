@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 3e860730979601429f3a22904a750a2e
     GuidInternal: 
-    m_lastTime: -8584644954599485930
+    m_lastTime: -8584635233750297140
     List:
     - name: AURO-3D
       guid: 9e3201dc27c92a4fb863d279a8472221
@@ -390,6 +390,23 @@ MonoBehaviour:
         ObjectType: 1
         guid: 98fabb0d2278d944b90038c3fdb0bbe0
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Elevator_0
+    - name: End_Outside
+      guid: d3e2c20f821eae4c9077bf5fa2f98519
+      id: 2427934152
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3e860730979601429f3a22904a750a2e
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: End_Outside
+        ObjectType: 1
+        guid: d3e2c20f821eae4c9077bf5fa2f98519
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\End_Outside
     - name: Hall_3
       guid: da499c531d07134293cab694c908c1e4
       id: 3819518786
@@ -535,7 +552,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5b7d3d6d0746124ab1d6166bb3175237
     GuidInternal: 
-    m_lastTime: -8584642157352752145
+    m_lastTime: -8584635346475645885
     List:
     - name: Main_test
       guid: f4bfb48e9ef48e4883081f357e8cb44a
@@ -673,7 +690,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 199508fe3d34424d9564a328ccca3022
     GuidInternal: 
-    m_lastTime: -8584642157352542070
+    m_lastTime: -8584635346475745917
     List:
     - name: 5_Cabin
       guid: 2bbcea8b66788f4c89126f34d5d5e3ed
@@ -772,6 +789,26 @@ MonoBehaviour:
       maxAttenuation: 20
       maxDuration: -1
       minDuration: -1
+    - name: During_Level
+      guid: 79537db8cd11ab42bc8240e5d589480b
+      id: 2818012169
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: Voicelines
+        ObjectType: 4
+        guid: 42e77304505bb5418131999b40e884d5
+      - ElementName: During_Level
+        ObjectType: 3
+        guid: 79537db8cd11ab42bc8240e5d589480b
+      Path: Events\Default Work Unit\Voicelines\During_Level
+      maxAttenuation: 0
+      maxDuration: 29.437506
+      minDuration: 0
     - name: End_Outside
       guid: 733fb0e81ee4134dbf717a3f8855b2ab
       id: 2427934152
@@ -964,8 +1001,8 @@ MonoBehaviour:
         guid: 54c6f2d8056f6e4e99ced38dc3f90635
       Path: Events\Default Work Unit\Voicelines\Level_Intro
       maxAttenuation: 0
-      maxDuration: 5.3333335
-      minDuration: 5.3333335
+      maxDuration: 74.25
+      minDuration: 7.75
     - name: Level_Outro
       guid: e1e606055c16a842863524031cfce0bc
       id: 2308461549
@@ -984,8 +1021,8 @@ MonoBehaviour:
         guid: e1e606055c16a842863524031cfce0bc
       Path: Events\Default Work Unit\Voicelines\Level_Outro
       maxAttenuation: 0
-      maxDuration: 3.3333333
-      minDuration: 3.3333333
+      maxDuration: 14
+      minDuration: 3.5
     - name: neon_lightbuzz
       guid: b60744952d03c24bb03590936e268969
       id: 2028048627
@@ -1122,26 +1159,6 @@ MonoBehaviour:
       Path: Events\Default Work Unit\Tutorial SFX\Stop_radio
       maxAttenuation: 0
       maxDuration: 0
-      minDuration: 0
-    - name: Target_Hit
-      guid: 79537db8cd11ab42bc8240e5d589480b
-      id: 316379624
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 199508fe3d34424d9564a328ccca3022
-      - ElementName: Voicelines
-        ObjectType: 4
-        guid: 42e77304505bb5418131999b40e884d5
-      - ElementName: Target_Hit
-        ObjectType: 3
-        guid: 79537db8cd11ab42bc8240e5d589480b
-      Path: Events\Default Work Unit\Voicelines\Target_Hit
-      maxAttenuation: 0
-      maxDuration: 5.755261
       minDuration: 0
     - name: Tutorial SFX
       guid: edcad25a8ca10944a36af06178e781d4
@@ -1553,7 +1570,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: e5d7232acd96ac48b5e661cd6c28eb44
     GuidInternal: 
-    m_lastTime: -8584642164944907949
+    m_lastTime: -8584635346973020615
     List:
     - name: activeLevel
       guid: 2ae88e046cfa1e42bc11adf2451e2f00
@@ -1650,38 +1667,6 @@ MonoBehaviour:
         - ElementName: Level_5
           ObjectType: 10
           guid: 23a8282eaeec214384538510f1faa60e
-      - name: Level_6
-        guid: 5b24791a5ee4ed4eabfb34e477ca9eb3
-        id: 1290008374
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: e5d7232acd96ac48b5e661cd6c28eb44
-        - ElementName: activeLevel
-          ObjectType: 11
-          guid: 2ae88e046cfa1e42bc11adf2451e2f00
-        - ElementName: Level_6
-          ObjectType: 10
-          guid: 5b24791a5ee4ed4eabfb34e477ca9eb3
-      - name: Level_7
-        guid: 1f01f1d6e7ec7b4fb063c893ea2fd1c9
-        id: 1290008375
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: e5d7232acd96ac48b5e661cd6c28eb44
-        - ElementName: activeLevel
-          ObjectType: 11
-          guid: 2ae88e046cfa1e42bc11adf2451e2f00
-        - ElementName: Level_7
-          ObjectType: 10
-          guid: 1f01f1d6e7ec7b4fb063c893ea2fd1c9
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -1849,72 +1834,6 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
-    - name: Outros
-      guid: 367b03806a50de4f8538b044d5d2780b
-      id: 1603406577
-      PathAndIcons:
-      - ElementName: Switches
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: e5d7232acd96ac48b5e661cd6c28eb44
-      - ElementName: Outros
-        ObjectType: 11
-        guid: 367b03806a50de4f8538b044d5d2780b
-      Path: Switches\Default Work Unit\Outros
-      values:
-      - name: Level_1
-        guid: d2c70a6ff17f6844a2bdd341f97877ac
-        id: 1290008369
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: e5d7232acd96ac48b5e661cd6c28eb44
-        - ElementName: Outros
-          ObjectType: 11
-          guid: 367b03806a50de4f8538b044d5d2780b
-        - ElementName: Level_1
-          ObjectType: 10
-          guid: d2c70a6ff17f6844a2bdd341f97877ac
-      - name: Level_2
-        guid: d9a0168b428dbf41a9c30a2e59a17f6a
-        id: 1290008370
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: e5d7232acd96ac48b5e661cd6c28eb44
-        - ElementName: Outros
-          ObjectType: 11
-          guid: 367b03806a50de4f8538b044d5d2780b
-        - ElementName: Level_2
-          ObjectType: 10
-          guid: d9a0168b428dbf41a9c30a2e59a17f6a
-      - name: Level_3
-        guid: c575674926416944978954fc5c505d71
-        id: 1290008371
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: e5d7232acd96ac48b5e661cd6c28eb44
-        - ElementName: Outros
-          ObjectType: 11
-          guid: 367b03806a50de4f8538b044d5d2780b
-        - ElementName: Level_3
-          ObjectType: 10
-          guid: c575674926416944978954fc5c505d71
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -1930,7 +1849,7 @@ MonoBehaviour:
     m_lastTime: -8584663919773364773
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000f000000120000001300000014000000150000001600000017000000180000001b0000001d0000001e000000370000003800000039000000a0000000a1000000a2000000ac000000ad000000b0000000b1000000b2000000fb000000fc0000004801000049010000b0010000b1010000b3010000c7010000c8010000ca010000
+  ExpandedWaapiItemIds: 01000000020000000300000004000000050000000600000007000000090000000a0000000b0000000c0000000d0000000f00000012000000130000001400000015000000160000001700000018000000190000001b0000001d0000001e000000370000003800000039000000a0000000a1000000a2000000ac000000ad000000b0000000b1000000b2000000fb000000fc0000004801000049010000b0010000b1010000b3010000c7010000c8010000ca010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

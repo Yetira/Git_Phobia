@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class girlBehavior : MonoBehaviour
 {
+    public VoiceLineManager VoiceLineManager;
 
     uint lullabyEventId;
     uint girlRunEventId;
@@ -41,6 +42,8 @@ public class girlBehavior : MonoBehaviour
     {
         yield return new WaitForSeconds(animComponent["girl_runAround"].length);
         animComponent.enabled = false;
+
+        VoiceLineManager.PlayOutro();
 
         AkSoundEngine.StopPlayingID(girlRunEventId);
         gameObject.SetActive(false);

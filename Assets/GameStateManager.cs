@@ -28,7 +28,7 @@ public class GameStateManager : MonoBehaviour
             level[i].SetActive(i == currentLevelIndex);
 
             //LATER SET TRUE MANUALLY DEPENDING ON LEVEL, SET FALSE HERE!!!
-            currentLevelComplete = true;
+            currentLevelComplete = false;
         }
     }
 

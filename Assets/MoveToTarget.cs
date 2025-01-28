@@ -6,6 +6,7 @@ public class MoveToTarget : MonoBehaviour
 {
     public radio radio;
     public Elevator elevator;
+    public GameStateManager stateManager;
 
     public List<Vector3> targetPositions;
 
@@ -21,15 +22,17 @@ public class MoveToTarget : MonoBehaviour
         {
             isProcessing = true;
 
-            AkSoundEngine.PostEvent("Target_Hit", gameObject);
+            AkSoundEngine.PostEvent("During_Level", gameObject);
             StartCoroutine(HandleTargetDelay());
         }
         else if (currentTargetIndex == targetPositions.Count - 1)
         {
-            AkSoundEngine.PostEvent("Target_Hit", gameObject);
+            AkSoundEngine.PostEvent("During_Level", gameObject);
             radio.StopPlay();
 
             Debug.Log("Final target reached, triggering elevator.");
+
+            stateManager.currentLevelComplete = true;
             elevator.Arrive();
         }
     }

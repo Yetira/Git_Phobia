@@ -6,6 +6,8 @@ public class closeWindow : MonoBehaviour
 
 {
     public Elevator elevator;
+    public VoiceLineManager VoiceLineManager;
+    public GameStateManager stateManager;
 
     public GameObject window;                 
     public Vector3 windowClosedPosition;     
@@ -39,6 +41,11 @@ public class closeWindow : MonoBehaviour
             {
                 isClosing = false;
 
+                VoiceLineManager.PlayOutro();
+
+                Debug.Log("Window Closed, Play Outro.");
+
+                stateManager.currentLevelComplete = true;
                 elevator.Arrive();
             }
         }

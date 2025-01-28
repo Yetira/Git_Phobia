@@ -7,6 +7,8 @@ public class LookAtTarget : MonoBehaviour
     public radio radio;
     public AltFirstPersonController playerController;
     public MoveToTarget moveToTarget;
+    public roomCheckForPlayer room;
+    public VoiceLineManager voiceLineManager;
 
     public Camera playerCamera;
 
@@ -32,8 +34,11 @@ public class LookAtTarget : MonoBehaviour
 
     private bool tutorialActive = false; // Flag to control when the tutorial starts.
 
+    public float IntroDelay;
+
     private void Start()
     {
+
         currentTargetIndex = 0;
         radio.transform.localPosition = targetPositions[currentTargetIndex];
 
@@ -52,6 +57,7 @@ public class LookAtTarget : MonoBehaviour
 
     void Update()
     {
+
         if (!tutorialActive || isProcessing) return; // Exit if tutorial hasn't started or is currently processing.
 
         Ray ray = new(playerCamera.transform.position, playerCamera.transform.forward);
@@ -70,7 +76,7 @@ public class LookAtTarget : MonoBehaviour
                 if (targetCollider != null)
                     targetCollider.enabled = false;
 
-                AkSoundEngine.PostEvent("Target_Hit", gameObject);
+                voiceLineManager.PlayLevelVoiceline();
 
                 StartCoroutine(HandleTargetDelay());
             }
@@ -114,4 +120,5 @@ public class LookAtTarget : MonoBehaviour
             radio.StartPlay();
         }
     }
+
 }

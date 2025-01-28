@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class triggerLift : MonoBehaviour
 {
+    public GameStateManager StateManager;
+
     public int player;
 
     public float arriveDuration;
@@ -14,6 +16,7 @@ public class triggerLift : MonoBehaviour
     {
         if (other.gameObject.layer == player)
         {
+            StateManager.currentLevelComplete = true;
             elevator.Arrive();
 
             StartCoroutine(WaitForLiftToArrive());

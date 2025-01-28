@@ -20,15 +20,6 @@
 						<Switch Name="Level_3" ID="{3FA0AA59-351B-43B3-BB9E-92329CC2C40F}"/>
 						<Switch Name="Level_4" ID="{E8520445-C4AE-4735-86E0-D79D3FDC163A}"/>
 						<Switch Name="Level_5" ID="{2E28A823-ECAE-4321-8453-8510F1FAA60E}"/>
-						<Switch Name="Level_6" ID="{1A79245B-E45E-4EED-ABFB-34E477CA9EB3}"/>
-						<Switch Name="Level_7" ID="{D6F1011F-ECE7-4F7B-B063-C893EA2FD1C9}"/>
-					</ChildrenList>
-				</SwitchGroup>
-				<SwitchGroup Name="Outros" ID="{80037B36-506A-4FDE-8538-B044D5D2780B}">
-					<ChildrenList>
-						<Switch Name="Level_1" ID="{6F0AC7D2-7FF1-4468-A2BD-D341F97877AC}"/>
-						<Switch Name="Level_2" ID="{8B16A0D9-8D42-41BF-A9C3-0A2E59A17F6A}"/>
-						<Switch Name="Level_3" ID="{496775C5-4126-4469-9789-54FC5C505D71}"/>
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="cat_mode" ID="{0F4477AC-9AB1-44BC-AC68-546460B12EA2}">

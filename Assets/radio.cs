@@ -6,8 +6,26 @@ public class radio : MonoBehaviour
 {
     public MoveToTarget moveToTarget;
 
-    private void Start()
+    private int enableCounter = 0; 
+    public float initialDelay = 3f; 
+
+    private void OnEnable()
     {
+        enableCounter++; 
+
+        if (enableCounter == 1)
+        {
+            StartCoroutine(DelayedStartPlay(initialDelay));
+        }
+        else
+        {
+            StartPlay();
+        }
+    }
+
+    private IEnumerator DelayedStartPlay(float delay)
+    {
+        yield return new WaitForSeconds(delay); 
         StartPlay();
     }
 
