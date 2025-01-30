@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 3e860730979601429f3a22904a750a2e
     GuidInternal: 
-    m_lastTime: -8584635233750297140
+    m_lastTime: -8584633377003998183
     List:
     - name: AURO-3D
       guid: 9e3201dc27c92a4fb863d279a8472221
@@ -552,7 +552,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5b7d3d6d0746124ab1d6166bb3175237
     GuidInternal: 
-    m_lastTime: -8584635346475645885
+    m_lastTime: -8584635221101175531
     List:
     - name: Main_test
       guid: f4bfb48e9ef48e4883081f357e8cb44a
@@ -690,7 +690,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 199508fe3d34424d9564a328ccca3022
     GuidInternal: 
-    m_lastTime: -8584635346475745917
+    m_lastTime: -8584635221116920872
     List:
     - name: 5_Cabin
       guid: 2bbcea8b66788f4c89126f34d5d5e3ed
@@ -807,7 +807,7 @@ MonoBehaviour:
         guid: 79537db8cd11ab42bc8240e5d589480b
       Path: Events\Default Work Unit\Voicelines\During_Level
       maxAttenuation: 0
-      maxDuration: 29.437506
+      maxDuration: 21.437506
       minDuration: 0
     - name: End_Outside
       guid: 733fb0e81ee4134dbf717a3f8855b2ab
@@ -843,7 +843,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: ff6f91a9f08eeb41b0ec222cdc41e55f
       Path: Events\Default Work Unit\End_Outside\end_tone
-      maxAttenuation: 0
+      maxAttenuation: 100
       maxDuration: 29.921791
       minDuration: 29.921791
     - name: fire_crackling
@@ -980,7 +980,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 0143d8a26abc1548a2bb5498b6a8cb52
       Path: Events\Default Work Unit\Hall\hall_outside_tone
-      maxAttenuation: 150
+      maxAttenuation: 50
       maxDuration: -1
       minDuration: -1
     - name: Level_Intro
@@ -1001,7 +1001,7 @@ MonoBehaviour:
         guid: 54c6f2d8056f6e4e99ced38dc3f90635
       Path: Events\Default Work Unit\Voicelines\Level_Intro
       maxAttenuation: 0
-      maxDuration: 74.25
+      maxDuration: 99.25
       minDuration: 7.75
     - name: Level_Outro
       guid: e1e606055c16a842863524031cfce0bc
@@ -1514,8 +1514,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 97dba31da7636a41b8d9eb328c42a8c0
     GuidInternal: 
-    m_lastTime: -8584662210256448932
+    m_lastTime: -8584633377002145345
     List:
+    - name: LPF_control
+      guid: 15388e6c24cc844083370d5b263b10f1
+      id: 3074830639
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 97dba31da7636a41b8d9eb328c42a8c0
+      - ElementName: LPF_control
+        ObjectType: 13
+        guid: 15388e6c24cc844083370d5b263b10f1
+      Path: Game Parameters\Default Work Unit\LPF_control
     - name: rock_fall
       guid: b1d64598d02e4349a5ce90054a61fc6b
       id: 3378404558
@@ -1570,7 +1584,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: e5d7232acd96ac48b5e661cd6c28eb44
     GuidInternal: 
-    m_lastTime: -8584635346973020615
+    m_lastTime: -8584635221101175531
     List:
     - name: activeLevel
       guid: 2ae88e046cfa1e42bc11adf2451e2f00
@@ -1849,7 +1863,7 @@ MonoBehaviour:
     m_lastTime: -8584663919773364773
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000020000000300000004000000050000000600000007000000090000000a0000000b0000000c0000000d0000000f00000012000000130000001400000015000000160000001700000018000000190000001b0000001d0000001e000000370000003800000039000000a0000000a1000000a2000000ac000000ad000000b0000000b1000000b2000000fb000000fc0000004801000049010000b0010000b1010000b3010000c7010000c8010000ca010000
+  ExpandedWaapiItemIds: 01000000020000000300000004000000050000000600000007000000090000000a0000000b0000000c0000000d0000000f00000012000000130000001400000015000000160000001700000018000000190000001b0000001d0000001e0000002300000024000000370000003800000039000000a0000000a1000000a2000000ac000000ad000000b0000000b1000000b2000000fb000000fc0000004801000049010000b0010000b1010000b3010000c7010000c8010000ca010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -7,7 +7,7 @@
 					<PropertyList>
 						<Property Name="BusVolume" Type="Real64">
 							<ValueList>
-								<Value>10</Value>
+								<Value>5</Value>
 							</ValueList>
 						</Property>
 						<Property Name="Color" Type="int16" Value="18"/>
@@ -72,6 +72,7 @@
 								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
+							<ReferenceList/>
 							<ObjectLists>
 								<ObjectList Name="Effects">
 									<Reference>
@@ -97,7 +98,7 @@
 								</Property>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
-										<Value>-15</Value>
+										<Value>-20</Value>
 									</ValueList>
 								</Property>
 								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
@@ -171,17 +172,6 @@
 											</EffectSlot>
 										</Local>
 									</Reference>
-									<Reference>
-										<Local>
-											<EffectSlot Name="" ID="{719437D4-0EE1-436E-9A9C-6CF0A8A32A90}" ShortID="548184225">
-												<ReferenceList>
-													<Reference Name="Effect" PluginName="Wwise Recorder" CompanyID="0" PluginID="132" PluginType="3">
-														<ObjectRef Name="test_recorder1" ID="{4F408ACD-F191-4DCA-99B4-52591012133B}" WorkUnitID="{3CCE90C4-C1CC-429A-AFFA-E4C48D1C0D24}"/>
-													</Reference>
-												</ReferenceList>
-											</EffectSlot>
-										</Local>
-									</Reference>
 								</ObjectList>
 							</ObjectLists>
 						</Bus>
@@ -212,6 +202,11 @@
 								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Cabin" ID="{F3406D1E-F462-4F28-AD35-C7198E3F93CE}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+								</Reference>
+							</ReferenceList>
 							<ObjectLists>
 								<ObjectList Name="Effects">
 									<Reference>
@@ -312,6 +307,7 @@
 								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
+							<ReferenceList/>
 							<ObjectLists>
 								<ObjectList Name="Effects">
 									<Reference>
@@ -323,6 +319,43 @@
 													</Reference>
 												</ReferenceList>
 											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{ACF7D449-DE32-4EF9-8865-CFB78C0DB879}" ShortID="400066258">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="OutputBusLowpass"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="LPF_control" ID="{6C8E3815-CC24-4084-8337-0D5B263B10F1}" WorkUnitID="{1DA3DB97-63A7-416A-B8D9-EB328C42A8C0}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{8E26596E-686C-4F98-9DAE-A3384AA7D3FD}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-100</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>100</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
 										</Local>
 									</Reference>
 								</ObjectList>
@@ -356,12 +389,10 @@
 						<ObjectList Name="Effects">
 							<Reference>
 								<Local>
-									<EffectSlot Name="" ID="{382FD1A4-3EE0-4FBA-83C0-02E78ED8063D}" ShortID="616940010">
+									<EffectSlot Name="" ID="{EF6B3965-4D98-45F8-A3BB-A9E90B2B2034}" ShortID="20533017">
 										<ReferenceList>
-											<Reference Name="Effect">
-												<Custom>
-													<Effect Name="Recorder (Custom)" ID="{202AC890-C531-448B-B4BF-EAC2E9213294}" ShortID="702556579" PluginName="Wwise Recorder" CompanyID="0" PluginID="132" PluginType="3"/>
-												</Custom>
+											<Reference Name="Effect" PluginName="Wwise Recorder" CompanyID="0" PluginID="132" PluginType="3">
+												<ObjectRef Name="test_recorder1" ID="{4F408ACD-F191-4DCA-99B4-52591012133B}" WorkUnitID="{3CCE90C4-C1CC-429A-AFFA-E4C48D1C0D24}"/>
 											</Reference>
 										</ReferenceList>
 									</EffectSlot>

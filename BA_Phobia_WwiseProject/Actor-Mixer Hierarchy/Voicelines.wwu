@@ -26,6 +26,11 @@
 										<Value>5</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -47,9 +52,16 @@
 										<MediaID ID="737478967"/>
 									</MediaIDList>
 								</AudioFileSource>
+								<AudioFileSource Name="Lvl_1_Intro_with_ambience" ID="{2FE79481-ED16-45D5-941B-D99C87EA1B0D}">
+									<Language>SFX</Language>
+									<AudioFile>Lvl_1_Intro_with_ambience.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="874730845"/>
+									</MediaIDList>
+								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Lvl_1_Intro" ID="{D6B13B89-531D-4C3A-ACBA-4DD76BDF2661}" Platform="Linked"/>
+								<ActiveSource Name="Lvl_1_Intro_with_ambience" ID="{2FE79481-ED16-45D5-941B-D99C87EA1B0D}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Lvl_2_Intro" ID="{BDF3F652-9ABE-4BF0-A0D9-35EB76E4A151}" ShortID="492292994">
@@ -209,28 +221,6 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Lvl_1_Outro" ID="{981F0A28-2AC3-4436-9216-28BC0F299BA4}" ShortID="449204984">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Lvl_1_Outro" ID="{AFE0E982-C811-45A9-BE3E-576B759C4A82}">
-									<Language>SFX</Language>
-									<AudioFile>Lvl_1_Outro.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="366238475"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Lvl_1_Outro" ID="{AFE0E982-C811-45A9-BE3E-576B759C4A82}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="Lvl_2_Outro" ID="{8F00721D-ABFA-48CF-917A-0A346C818204}" ShortID="972758952">
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -319,14 +309,123 @@
 								<ActiveSource Name="Lvl_5_Outro" ID="{CB39AF63-889A-427B-8BAF-DED7AC64E008}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<RandomSequenceContainer Name="Lvl_1_Outro" ID="{5DE37EF9-95A9-4C54-9944-799411AFA1CD}" ShortID="43473470">
+							<PropertyList>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Lvl_1_Outro_no_wonderful" ID="{981F0A28-2AC3-4436-9216-28BC0F299BA4}" ShortID="449204984">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Lvl_1_Outro" ID="{AFE0E982-C811-45A9-BE3E-576B759C4A82}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.223683971834348"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Lvl_1_Outro.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="366238475"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Lvl_1_Outro" ID="{AFE0E982-C811-45A9-BE3E-576B759C4A82}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="done_ding" ID="{54D122F4-9814-4AD0-B81F-05413FF27833}" ShortID="57875262">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-25</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="done_ding" ID="{8706320D-A328-4B4B-A507-46F3A12EAC63}">
+											<Language>SFX</Language>
+											<AudioFile>done_ding.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1784301"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="done_ding" ID="{8706320D-A328-4B4B-A507-46F3A12EAC63}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Lvl_1_7" ID="{8E843EAE-A1AC-43AF-812E-607FD2256F23}" ShortID="696045205">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Lvl_1_7" ID="{030EA855-46EE-4000-AF37-03602A7AAC2A}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0245614035087719"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Lvl_1_7.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="667808601"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Lvl_1_7" ID="{030EA855-46EE-4000-AF37-03602A7AAC2A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Playlist">
+									<Reference>
+										<ObjectRef Name="done_ding" ID="{54D122F4-9814-4AD0-B81F-05413FF27833}" WorkUnitID="{B45F632D-8992-4305-AAB8-D9639597D5E5}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="Lvl_1_7" ID="{8E843EAE-A1AC-43AF-812E-607FD2256F23}" WorkUnitID="{B45F632D-8992-4305-AAB8-D9639597D5E5}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="Lvl_1_Outro_no_wonderful" ID="{981F0A28-2AC3-4436-9216-28BC0F299BA4}" WorkUnitID="{B45F632D-8992-4305-AAB8-D9639597D5E5}"/>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</RandomSequenceContainer>
 					</ChildrenList>
 					<GroupingInfo>
 						<GroupingBehaviorList>
 							<GroupingBehavior>
 								<ItemRef Name="Lvl_2_Outro" ID="{8F00721D-ABFA-48CF-917A-0A346C818204}"/>
-							</GroupingBehavior>
-							<GroupingBehavior>
-								<ItemRef Name="Lvl_1_Outro" ID="{981F0A28-2AC3-4436-9216-28BC0F299BA4}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="Lvl_4_Outro" ID="{97BF5936-92BF-48CE-A481-5D9F35D24580}"/>
@@ -336,6 +435,9 @@
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="Lvl_3_Outro" ID="{80F00384-3C5B-4E91-815E-EAD22D2B8F68}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Lvl_1_Outro" ID="{5DE37EF9-95A9-4C54-9944-799411AFA1CD}"/>
 							</GroupingBehavior>
 						</GroupingBehaviorList>
 						<GroupingList>
@@ -354,7 +456,7 @@
 							<Grouping>
 								<SwitchRef Name="Level_1" ID="{62792E51-1353-4B7E-A3F6-049D629CDA4F}"/>
 								<ItemList>
-									<ItemRef Name="Lvl_1_Outro" ID="{981F0A28-2AC3-4436-9216-28BC0F299BA4}"/>
+									<ItemRef Name="Lvl_1_Outro" ID="{5DE37EF9-95A9-4C54-9944-799411AFA1CD}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>
@@ -373,6 +475,13 @@
 					</GroupingInfo>
 				</SwitchContainer>
 				<SwitchContainer Name="During_Level" ID="{749AEBA4-10E2-4A09-B343-D511748A0695}" ShortID="863855216">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
@@ -391,6 +500,11 @@
 						<RandomSequenceContainer Name="Level_1" ID="{F4574581-3A54-4C50-A523-F759BA6651D5}" ShortID="614555940">
 							<PropertyList>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -417,9 +531,10 @@
 									<ChildrenList>
 										<Sound Name="done_ding" ID="{3B448DA2-C264-474F-8347-0C3384F4612E}" ShortID="289792665">
 											<PropertyList>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-20</Value>
+														<Value>-30</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -428,7 +543,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+													<ObjectRef Name="AURO-3D" ID="{DC01329E-C927-4F2A-B863-D279A8472221}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -494,9 +609,10 @@
 									<ChildrenList>
 										<Sound Name="done_ding" ID="{AB5E654D-55E7-44E0-9A6D-F4DAD0BFEBD4}" ShortID="530593944">
 											<PropertyList>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-20</Value>
+														<Value>-30</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -505,7 +621,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+													<ObjectRef Name="AURO-3D" ID="{DC01329E-C927-4F2A-B863-D279A8472221}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -571,9 +687,10 @@
 									<ChildrenList>
 										<Sound Name="done_ding" ID="{82D4F333-CBFB-4312-BE30-B4C785213DDE}" ShortID="912367017">
 											<PropertyList>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-20</Value>
+														<Value>-30</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -582,7 +699,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+													<ObjectRef Name="AURO-3D" ID="{DC01329E-C927-4F2A-B863-D279A8472221}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -634,6 +751,7 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="1_4" ID="{7B9633BE-9FD5-4A45-A164-056E13F8697E}" ShortID="127394320">
 									<PropertyList>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
@@ -647,9 +765,10 @@
 									<ChildrenList>
 										<Sound Name="done_ding" ID="{BA16E559-DFB9-4605-9BC2-CE3846F545F0}" ShortID="125159403">
 											<PropertyList>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-20</Value>
+														<Value>-30</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -658,7 +777,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+													<ObjectRef Name="AURO-3D" ID="{DC01329E-C927-4F2A-B863-D279A8472221}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -710,6 +829,7 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="1_5" ID="{C667EC4B-BDD2-4C67-9B43-9A426A619619}" ShortID="125016286">
 									<PropertyList>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
@@ -723,9 +843,10 @@
 									<ChildrenList>
 										<Sound Name="done_ding" ID="{2062049F-0143-453D-A4FA-D706BE13A5BB}" ShortID="657053571">
 											<PropertyList>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-20</Value>
+														<Value>-30</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -734,7 +855,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+													<ObjectRef Name="AURO-3D" ID="{DC01329E-C927-4F2A-B863-D279A8472221}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -786,6 +907,7 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="1_6" ID="{3095DDED-7182-4941-860F-7A766850084A}" ShortID="65566962">
 									<PropertyList>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
@@ -799,9 +921,10 @@
 									<ChildrenList>
 										<Sound Name="done_ding" ID="{B9FF1552-7C75-4572-89F5-98C693DF8CBE}" ShortID="102001382">
 											<PropertyList>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-20</Value>
+														<Value>-30</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -810,7 +933,7 @@
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+													<ObjectRef Name="AURO-3D" ID="{DC01329E-C927-4F2A-B863-D279A8472221}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -860,82 +983,6 @@
 										</ObjectList>
 									</ObjectLists>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="1_7" ID="{5E02DFEF-DA7C-4688-8F39-8E0EDF1F106E}" ShortID="939956315">
-									<PropertyList>
-										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="done_ding" ID="{54D122F4-9814-4AD0-B81F-05413FF27833}" ShortID="57875262">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-20</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="done_ding" ID="{8706320D-A328-4B4B-A507-46F3A12EAC63}">
-													<Language>SFX</Language>
-													<AudioFile>done_ding.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="1784301"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="done_ding" ID="{8706320D-A328-4B4B-A507-46F3A12EAC63}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Lvl_1_7" ID="{8E843EAE-A1AC-43AF-812E-607FD2256F23}" ShortID="696045205">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Lvl_1_7" ID="{030EA855-46EE-4000-AF37-03602A7AAC2A}">
-													<Language>SFX</Language>
-													<AudioFile>Lvl_1_7.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="667808601"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Lvl_1_7" ID="{030EA855-46EE-4000-AF37-03602A7AAC2A}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Playlist">
-											<Reference>
-												<ObjectRef Name="done_ding" ID="{54D122F4-9814-4AD0-B81F-05413FF27833}" WorkUnitID="{B45F632D-8992-4305-AAB8-D9639597D5E5}"/>
-											</Reference>
-											<Reference>
-												<ObjectRef Name="Lvl_1_7" ID="{8E843EAE-A1AC-43AF-812E-607FD2256F23}" WorkUnitID="{B45F632D-8992-4305-AAB8-D9639597D5E5}"/>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-								</RandomSequenceContainer>
 							</ChildrenList>
 							<ObjectLists>
 								<ObjectList Name="Playlist">
@@ -957,15 +1004,17 @@
 									<Reference>
 										<ObjectRef Name="1_6" ID="{3095DDED-7182-4941-860F-7A766850084A}" WorkUnitID="{B45F632D-8992-4305-AAB8-D9639597D5E5}"/>
 									</Reference>
-									<Reference>
-										<ObjectRef Name="1_7" ID="{5E02DFEF-DA7C-4688-8F39-8E0EDF1F106E}" WorkUnitID="{B45F632D-8992-4305-AAB8-D9639597D5E5}"/>
-									</Reference>
 								</ObjectList>
 							</ObjectLists>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Level_2" ID="{6EDCDEF6-AB38-41A2-ADE0-56AF7939F779}" ShortID="639597046">
 							<PropertyList>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1017,6 +1066,11 @@
 						<RandomSequenceContainer Name="Level_3" ID="{9DB717CB-6011-4AC0-A44E-B105A700B44A}" ShortID="358392334">
 							<PropertyList>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1136,6 +1190,11 @@
 						<RandomSequenceContainer Name="Level_4" ID="{02A921EA-C58C-46C0-9620-2D9DD8111B8B}" ShortID="310096273">
 							<PropertyList>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">

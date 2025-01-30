@@ -25,6 +25,9 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="AURO-3D" ID="{DC01329E-C927-4F2A-B863-D279A8472221}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 						</Reference>
+						<Reference Name="ReflectionsAuxSend">
+							<ObjectRef Name="Reflect" ID="{32F40114-197C-4E2E-87F1-D24A3C7DDA4E}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="outside" ID="{1216033F-24F4-4F51-A0A9-FFE1282CF10E}">
@@ -35,6 +38,45 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{1D88006E-29FE-4818-95AF-E529C59453C6}" ShortID="208811949">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="LPF_control" ID="{6C8E3815-CC24-4084-8337-0D5B263B10F1}" WorkUnitID="{1DA3DB97-63A7-416A-B8D9-EB328C42A8C0}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{D36E3430-3703-4072-A50C-9575BE8B7914}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-100</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>100</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 					<ActiveSourceList>
 						<ActiveSource Name="outside" ID="{1216033F-24F4-4F51-A0A9-FFE1282CF10E}" Platform="Linked"/>
 					</ActiveSourceList>
@@ -52,7 +94,7 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-35</Value>
+								<Value>-30</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -101,7 +143,7 @@
 									<Modifier Name="" ID="{650740D7-14B7-4C2D-A4E5-72F54342AA7B}">
 										<PropertyList>
 											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Max" Type="Real64" Value="15"/>
+											<Property Name="Max" Type="Real64" Value="25"/>
 										</PropertyList>
 									</Modifier>
 								</ModifierInfo>
@@ -112,7 +154,7 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-18</Value>
+								<Value>-12</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -151,6 +193,59 @@
 								<ActiveSource Name="office_phone" ID="{25DA48E9-AFD6-49F2-B746-036BEEE344A7}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="office_phone_01" ID="{201F4099-4B94-4A76-B6B7-3C0DF1AFEE3D}" ShortID="403322952">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="office_phone" ID="{715700C6-813E-452F-915B-64DF300DAB3C}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="5.70809468374078"/>
+										<Property Name="TrimEnd" Type="Real64" Value="8.38787926486494"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>office_phone.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="612951961"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="office_phone" ID="{715700C6-813E-452F-915B-64DF300DAB3C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="office_phone_02" ID="{019182E3-8257-4267-BE7F-256D6204CC17}" ShortID="270694706">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="office_phone" ID="{FB2131C9-2F01-4108-994D-A14FCB461789}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="11.6526193247963"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>office_phone.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="884557084"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="office_phone" ID="{FB2131C9-2F01-4108-994D-A14FCB461789}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="typewriter" ID="{DDCF7066-7C5F-4A5E-9902-A146B80713BC}" ShortID="612468512">
@@ -168,7 +263,7 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-33</Value>
+								<Value>-29</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -307,6 +402,9 @@
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="AURO-3D" ID="{DC01329E-C927-4F2A-B863-D279A8472221}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+						</Reference>
+						<Reference Name="ReflectionsAuxSend">
+							<ObjectRef Name="Reflect" ID="{32F40114-197C-4E2E-87F1-D24A3C7DDA4E}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -455,6 +553,45 @@
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{82144880-4516-4B62-82F4-E20AEF817E9D}" ShortID="466281120">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="LPF_control" ID="{6C8E3815-CC24-4084-8337-0D5B263B10F1}" WorkUnitID="{1DA3DB97-63A7-416A-B8D9-EB328C42A8C0}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{570F95E6-E9E5-4904-A2EB-80876EB5696B}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-100</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>100</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 				</RandomSequenceContainer>
 				<Sound Name="window_close" ID="{07069A0C-C8ED-469C-B84F-AD193BFCBC18}" ShortID="128504166">
 					<PropertyList>

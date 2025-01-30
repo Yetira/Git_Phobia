@@ -8,6 +8,7 @@ public class closeWindow : MonoBehaviour
     public Elevator elevator;
     public VoiceLineManager VoiceLineManager;
     public GameStateManager stateManager;
+    public GameObject outsideRoom;
 
     public GameObject window;                 
     public Vector3 windowClosedPosition;     
@@ -35,6 +36,9 @@ public class closeWindow : MonoBehaviour
         {
             
             window.transform.localPosition = Vector3.MoveTowards(window.transform.localPosition, windowClosedPosition, speed * Time.deltaTime);
+
+            outsideRoom.GetComponent<RoomReverbLPFController>().ToggleMuffle(true);
+
 
 
             if (window.transform.localPosition == windowClosedPosition)

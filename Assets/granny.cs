@@ -9,10 +9,13 @@ public class granny : MonoBehaviour
     public roomCheckForPlayer room;
     public GameStateManager gameState;
 
+    private bool isProcessing;
+
     public float grannySleepTime;
     private void Start()
     {
-
+        isProcessing = false;
+        
         AkSoundEngine.PostEvent("granny_sleep", gameObject);
 
         StartCoroutine(WaitForGrannyWakeUp());
@@ -20,8 +23,9 @@ public class granny : MonoBehaviour
 
     private void Update()
     {
-        if(room.playerInsideRoom)
+        if(room.playerInsideRoom && !isProcessing)
         {
+            isProcessing = true;
             voiceLineManager.PlayLevelVoiceline();
         }
     }
@@ -38,7 +42,7 @@ public class granny : MonoBehaviour
 
     private IEnumerator WaitForElevator()
     {
-        yield return new WaitForSeconds(30);
+        yield return new WaitForSeconds(35);
 
         voiceLineManager.PlayOutro();
 

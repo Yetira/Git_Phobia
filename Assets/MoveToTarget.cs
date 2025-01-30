@@ -27,7 +27,8 @@ public class MoveToTarget : MonoBehaviour
         }
         else if (currentTargetIndex == targetPositions.Count - 1)
         {
-            AkSoundEngine.PostEvent("During_Level", gameObject);
+            AkSoundEngine.PostEvent("Level_Outro", gameObject);
+            
             radio.StopPlay();
 
             Debug.Log("Final target reached, triggering elevator.");

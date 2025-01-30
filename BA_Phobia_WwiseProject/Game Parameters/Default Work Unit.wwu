@@ -11,6 +11,7 @@
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="test" ID="{A73BA677-5052-4F16-82A5-A143AFADE4AF}"/>
+				<GameParameter Name="LPF_control" ID="{6C8E3815-CC24-4084-8337-0D5B263B10F1}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

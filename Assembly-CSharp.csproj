@@ -84,6 +84,7 @@
     <Compile Include="Assets\radio.cs" />
     <Compile Include="Assets\closeWindow.cs" />
     <Compile Include="Assets\InputSystem\StarterAssetsInputs.cs" />
+    <Compile Include="Assets\RoomReverbLPFController.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\triggerRock.cs" />
     <Compile Include="Assets\triggerLiftMusic.cs" />

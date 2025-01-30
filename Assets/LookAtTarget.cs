@@ -18,7 +18,7 @@ public class LookAtTarget : MonoBehaviour
 
     public List<Vector3> targetPositions;
 
-    public float startDelay = 5.0f; // Delay before the tutorial starts, adjustable in the Inspector.
+    public float startDelay; // Delay before the tutorial starts, adjustable in the Inspector.
 
     private int currentTargetIndex = 0;
 

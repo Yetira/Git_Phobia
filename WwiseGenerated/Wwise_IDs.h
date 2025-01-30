@@ -98,6 +98,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID LPF_CONTROL = 3074830639U;
         static const AkUniqueID ROCK_FALL = 3378404558U;
         static const AkUniqueID TEST = 3157003241U;
     } // namespace GAME_PARAMETERS
