@@ -404,15 +404,15 @@
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
-							<Custom CreatedFrom="{8C955D73-67A4-46BB-8BEC-1B4B6BACEDC4}">
-								<Attenuation Name="office (Custom)" ID="{34865ADB-5DAB-4854-B578-9C8A463752B7}" ShortID="990978745">
+							<Custom CreatedFrom="{85786744-8786-40E4-B3C8-F2D9A8FE7CC4}">
+								<Attenuation Name="fireplace (Custom)" ID="{C96E7A1E-B9B4-48E5-B424-CFDE2947C794}" ShortID="972077125">
 									<PropertyList>
-										<Property Name="RadiusMax" Type="Real64" Value="10"/>
+										<Property Name="RadiusMax" Type="Real64" Value="20"/>
 									</PropertyList>
 									<CurveUsageInfoList>
 										<VolumeDryUsage>
 											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="VolumeDry" ID="{DA9E2A16-E8C4-4436-99A7-E6649FAAD269}">
+												<Curve Name="VolumeDry" ID="{47478341-5F09-45F5-BD1E-595E64B77E55}">
 													<PropertyList>
 														<Property Name="Flags" Type="int32" Value="3"/>
 													</PropertyList>
@@ -423,7 +423,7 @@
 															<Flags>5</Flags>
 														</Point>
 														<Point>
-															<XPos>10</XPos>
+															<XPos>20</XPos>
 															<YPos>-200</YPos>
 															<Flags>37</Flags>
 														</Point>
@@ -477,10 +477,46 @@
 											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
 										</DiffractionHPFUsage>
 										<TransmissionVolumeUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="TransmissionVolume" ID="{76EACCE1-25FD-4EA9-BCA2-705CA2A8F5ED}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>100</XPos>
+															<YPos>-12.24884</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
 										</TransmissionVolumeUsage>
 										<TransmissionLPFUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="TransmissionLPF" ID="{2E17344E-D0A5-41D0-BB04-52AD00E43608}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="65537"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>100</XPos>
+															<YPos>100</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
 										</TransmissionLPFUsage>
 										<TransmissionHPFUsage>
 											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>

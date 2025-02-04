@@ -72,7 +72,6 @@
 								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
-							<ReferenceList/>
 							<ObjectLists>
 								<ObjectList Name="Effects">
 									<Reference>
@@ -307,7 +306,6 @@
 								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
-							<ReferenceList/>
 							<ObjectLists>
 								<ObjectList Name="Effects">
 									<Reference>
@@ -389,7 +387,7 @@
 						<ObjectList Name="Effects">
 							<Reference>
 								<Local>
-									<EffectSlot Name="" ID="{EF6B3965-4D98-45F8-A3BB-A9E90B2B2034}" ShortID="20533017">
+									<EffectSlot Name="" ID="{E2AAD5C5-9AAB-438E-879B-14F1BDB2BC43}" ShortID="53567259">
 										<ReferenceList>
 											<Reference Name="Effect" PluginName="Wwise Recorder" CompanyID="0" PluginID="132" PluginType="3">
 												<ObjectRef Name="test_recorder1" ID="{4F408ACD-F191-4DCA-99B4-52591012133B}" WorkUnitID="{3CCE90C4-C1CC-429A-AFFA-E4C48D1C0D24}"/>

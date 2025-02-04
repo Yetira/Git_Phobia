@@ -33,8 +33,6 @@ public class granny : MonoBehaviour
     {
         yield return new WaitForSeconds(grannySleepTime);
 
-        //AkSoundEngine.PostEvent("stop_granny_sleep", gameObject);
-
         AkSoundEngine.PostEvent("granny_wakeup", gameObject);
 
         StartCoroutine(WaitForElevator());

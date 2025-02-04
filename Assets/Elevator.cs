@@ -96,7 +96,7 @@ public class Elevator : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
 
-        AkSoundEngine.PostEvent("lift_music", liftIntercom);
+        //AkSoundEngine.PostEvent("lift_music", liftIntercom);
     }
 
 

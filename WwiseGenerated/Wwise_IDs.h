@@ -36,6 +36,7 @@ namespace AK
         static const AkUniqueID LIFT_MUSIC = 621005966U;
         static const AkUniqueID LIFT_OPEN = 2206583097U;
         static const AkUniqueID LIFT_RIDE = 1630071255U;
+        static const AkUniqueID LIFT_ROOMTONE = 3161236640U;
         static const AkUniqueID LULLABY_EVENT = 2466003463U;
         static const AkUniqueID NEON_LIGHTBUZZ = 2028048627U;
         static const AkUniqueID OFFICE_TONE = 1783871532U;

@@ -21,11 +21,6 @@
 					<ChildrenList>
 						<Sound Name="Lvl_1_Intro" ID="{41A4F568-E675-41C4-9EFA-59975D91A1F0}" ShortID="706964442">
 							<PropertyList>
-								<Property Name="InitialDelay" Type="Real64">
-									<ValueList>
-										<Value>5</Value>
-									</ValueList>
-								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>5</Value>
