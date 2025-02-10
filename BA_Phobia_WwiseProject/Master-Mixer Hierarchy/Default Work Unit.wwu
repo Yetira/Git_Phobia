@@ -7,7 +7,7 @@
 					<PropertyList>
 						<Property Name="BusVolume" Type="Real64">
 							<ValueList>
-								<Value>5</Value>
+								<Value>10</Value>
 							</ValueList>
 						</Property>
 						<Property Name="Color" Type="int16" Value="18"/>
@@ -53,10 +53,10 @@
 								<ObjectList Name="Effects">
 									<Reference>
 										<Local>
-											<EffectSlot Name="" ID="{8DB92987-536D-4391-A2C5-A8A9DB4515C9}" ShortID="1058110685">
+											<EffectSlot Name="" ID="{526D2D10-8A38-414E-BB0B-9BA93CEC156C}" ShortID="376887488">
 												<ReferenceList>
-													<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-														<ObjectRef Name="Holy" ID="{CC7B8638-C670-4AD5-B3FB-331EA81037F6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+														<ObjectRef Name="Dark_Cathedral_Stereo" ID="{5D107457-F392-439F-AF71-8D0235D9C0F8}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
 													</Reference>
 												</ReferenceList>
 											</EffectSlot>
@@ -210,18 +210,10 @@
 								<ObjectList Name="Effects">
 									<Reference>
 										<Local>
-											<EffectSlot Name="" ID="{E92AC9B1-B744-4DF0-B628-AFAF45C4E353}" ShortID="332583259">
+											<EffectSlot Name="" ID="{82AAAAF2-BBA5-4EA2-A872-B0A614A38D3E}" ShortID="866762063">
 												<ReferenceList>
-													<Reference Name="Effect">
-														<Custom>
-															<Effect Name="Wwise_RoomVerb_(Custom)" ID="{BE3DE7C9-40D4-40A4-BDBE-2FF51ADF4C77}" ShortID="999724263" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-																<PropertyList>
-																	<Property Name="ERPattern" Type="int32" Value="22"/>
-																	<Property Name="EnableEarlyReflections" Type="bool" Value="False"/>
-																	<Property Name="ReverbLevel" Type="Real32" Value="-33"/>
-																</PropertyList>
-															</Effect>
-														</Custom>
+													<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+														<ObjectRef Name="BlueNoise_Room_03_Org_Stereo" ID="{3E386021-45A2-45D7-BC77-F2550965DF14}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
 													</Reference>
 												</ReferenceList>
 											</EffectSlot>

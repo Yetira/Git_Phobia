@@ -107,6 +107,7 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID CONREV = 4205940638U;
         static const AkUniqueID MAIN_TEST = 812327917U;
         static const AkUniqueID VOICELINES_EVENTS = 2351733634U;
     } // namespace BANKS

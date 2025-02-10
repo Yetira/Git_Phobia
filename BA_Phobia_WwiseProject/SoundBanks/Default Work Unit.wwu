@@ -54,6 +54,15 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="ConRev" ID="{36189A7C-BCA7-4A9B-9DB9-994ED869C5E2}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Dark_Cathedral_Stereo" ID="{5D107457-F392-439F-AF71-8D0235D9C0F8}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="BlueNoise_Room_03_Org_Stereo" ID="{3E386021-45A2-45D7-BC77-F2550965DF14}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Hamburg_Karl_Schneider_Halle_Org_Stereo" ID="{2F7FFF44-D67F-4804-95CD-9D99B00A397F}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

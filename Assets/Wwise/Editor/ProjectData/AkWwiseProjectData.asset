@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 3e860730979601429f3a22904a750a2e
     GuidInternal: 
-    m_lastTime: -8584632704483889421
+    m_lastTime: -8584624965098838625
     List:
     - name: AURO-3D
       guid: 9e3201dc27c92a4fb863d279a8472221
@@ -552,8 +552,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5b7d3d6d0746124ab1d6166bb3175237
     GuidInternal: 
-    m_lastTime: -8584632731050842519
+    m_lastTime: -8584624965098443020
     List:
+    - name: ConRev
+      guid: 7c9a1836a7bc9b4a9db9994ed869c5e2
+      id: 4205940638
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5b7d3d6d0746124ab1d6166bb3175237
+      - ElementName: ConRev
+        ObjectType: 7
+        guid: 7c9a1836a7bc9b4a9db9994ed869c5e2
+      Path: SoundBanks\Default Work Unit\ConRev
     - name: Main_test
       guid: f4bfb48e9ef48e4883081f357e8cb44a
       id: 812327917
@@ -1001,7 +1015,7 @@ MonoBehaviour:
         guid: 54c6f2d8056f6e4e99ced38dc3f90635
       Path: Events\Default Work Unit\Voicelines\Level_Intro
       maxAttenuation: 0
-      maxDuration: 99.25
+      maxDuration: 94.25
       minDuration: 7.75
     - name: Level_Outro
       guid: e1e606055c16a842863524031cfce0bc
@@ -1100,7 +1114,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 296df7dc8861294ba7f3ee2fbe50e534
       Path: Events\Default Work Unit\Tutorial SFX\Play_radio
-      maxAttenuation: 30
+      maxAttenuation: 300
       maxDuration: -1
       minDuration: -1
     - name: player
