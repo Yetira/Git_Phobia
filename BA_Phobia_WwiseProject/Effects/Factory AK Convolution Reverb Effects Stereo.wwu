@@ -112,7 +112,6 @@ IR Pre-delay: 4ms
 								</Property>
 								<Property Name="IRLPFAutomate" Type="bool" Value="True"/>
 								<Property Name="IRLevel" Type="Real32" Value="-20"/>
-								<Property Name="IRStretch" Type="Real32" Value="97"/>
 								<Property Name="PreDelay" Type="Real32" Value="13"/>
 							</PropertyList>
 							<ChildrenList>
@@ -591,7 +590,7 @@ IR Pre-delay: 8ms
 									</ValueList>
 								</Property>
 								<Property Name="IRLevel" Type="Real32" Value="-25"/>
-								<Property Name="IRStretch" Type="Real32" Value="70"/>
+								<Property Name="IRStretch" Type="Real32" Value="80"/>
 								<Property Name="PreDelay" Type="Real32" Value="5"/>
 							</PropertyList>
 							<ChildrenList>
@@ -2245,7 +2244,7 @@ IR Pre-delay: 7ms
 				</Folder>
 				<Folder Name="Cathedrals and Churches" ID="{F4FB196F-C7A1-4C4A-B93F-4AA3AC5473A1}" ShortID="605653257">
 					<ChildrenList>
-						<Effect Name="Dark_Cathedral_Stereo" ID="{5D107457-F392-439F-AF71-8D0235D9C0F8}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+						<Effect Name="Dark_Cathedral_Stereo_Cave_6" ID="{5D107457-F392-439F-AF71-8D0235D9C0F8}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by Pinguin ing.büro
 © 2010 Pinguin ing.büro.  All rights reserved.
 IR Pre-delay: 20ms 
@@ -2261,7 +2260,7 @@ IR Pre-delay: 20ms
 								</Property>
 								<Property Name="IRLPFAutomate" Type="bool" Value="True"/>
 								<Property Name="IRLevel" Type="Real32" Value="-45"/>
-								<Property Name="IRStretch" Type="Real32" Value="150"/>
+								<Property Name="IRStretch" Type="Real32" Value="200"/>
 								<Property Name="PreDelay" Type="Real32" Value="64"/>
 							</PropertyList>
 							<ChildrenList>
@@ -2630,7 +2629,7 @@ IR Pre-delay: 5ms </Comment>
 								</Property>
 								<Property Name="IRLPFAutomate" Type="bool" Value="True"/>
 								<Property Name="IRLevel" Type="Real32" Value="-32"/>
-								<Property Name="IRStretch" Type="Real32" Value="68"/>
+								<Property Name="IRStretch" Type="Real32" Value="120"/>
 								<Property Name="PreDelay" Type="Real32" Value="22"/>
 							</PropertyList>
 							<ChildrenList>

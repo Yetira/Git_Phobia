@@ -7,7 +7,7 @@
 					<PropertyList>
 						<Property Name="BusVolume" Type="Real64">
 							<ValueList>
-								<Value>10</Value>
+								<Value>15</Value>
 							</ValueList>
 						</Property>
 						<Property Name="Color" Type="int16" Value="18"/>
@@ -30,10 +30,10 @@
 								<ObjectList Name="Effects">
 									<Reference>
 										<Local>
-											<EffectSlot Name="" ID="{DB6EAB55-BF3B-4F02-981F-CC37C73F1D5A}" ShortID="554470301">
+											<EffectSlot Name="" ID="{5D06A859-1493-4E96-8A02-98587B9C63E5}" ShortID="103587987">
 												<ReferenceList>
-													<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-														<ObjectRef Name="Hall_Medium" ID="{50286348-176A-4235-9E4C-CA5F73D87818}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+														<ObjectRef Name="Medium_Church_Stereo" ID="{F474ED32-C27E-4816-9B50-AC5B99453438}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
 													</Reference>
 												</ReferenceList>
 											</EffectSlot>
@@ -56,7 +56,7 @@
 											<EffectSlot Name="" ID="{526D2D10-8A38-414E-BB0B-9BA93CEC156C}" ShortID="376887488">
 												<ReferenceList>
 													<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
-														<ObjectRef Name="Dark_Cathedral_Stereo" ID="{5D107457-F392-439F-AF71-8D0235D9C0F8}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
+														<ObjectRef Name="Dark_Cathedral_Stereo_Cave_6" ID="{5D107457-F392-439F-AF71-8D0235D9C0F8}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
 													</Reference>
 												</ReferenceList>
 											</EffectSlot>
@@ -76,10 +76,10 @@
 								<ObjectList Name="Effects">
 									<Reference>
 										<Local>
-											<EffectSlot Name="" ID="{75E31175-4DF0-41E8-8FD6-6820DDFAB205}" ShortID="124998967">
+											<EffectSlot Name="" ID="{E2125729-FD60-4DA8-A0B0-6BE35410E746}" ShortID="592132879">
 												<ReferenceList>
-													<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-														<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+														<ObjectRef Name="Petite_Room_Stereo" ID="{B213362A-B021-4F48-AE45-8CD298A2BC29}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
 													</Reference>
 												</ReferenceList>
 											</EffectSlot>
@@ -131,10 +131,10 @@
 								<ObjectList Name="Effects">
 									<Reference>
 										<Local>
-											<EffectSlot Name="" ID="{258B72F3-48B9-4AD2-B73B-581D3E9873E2}" ShortID="393831337">
+											<EffectSlot Name="" ID="{7D597F95-A0DA-4505-A3A1-67DEE9BF9396}" ShortID="228399286">
 												<ReferenceList>
-													<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-														<ObjectRef Name="Hall_Guns" ID="{B35D266A-CE6E-40A1-B197-14C12F9C21B1}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+														<ObjectRef Name="Medium_Church_Stereo" ID="{F474ED32-C27E-4816-9B50-AC5B99453438}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
 													</Reference>
 												</ReferenceList>
 											</EffectSlot>
@@ -182,10 +182,10 @@
 								<ObjectList Name="Effects">
 									<Reference>
 										<Local>
-											<EffectSlot Name="" ID="{32C05EA3-15B0-470C-8A46-FAC151E5A05D}" ShortID="80628727">
+											<EffectSlot Name="" ID="{3F19B224-D4EC-4A8E-AC50-8C246A52C068}" ShortID="991312454">
 												<ReferenceList>
-													<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-														<ObjectRef Name="Room_Medium" ID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+														<ObjectRef Name="Damped_Chamber_Stereo" ID="{9835E14A-EDDC-4F14-83E9-C44D7B983E1C}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
 													</Reference>
 												</ReferenceList>
 											</EffectSlot>
@@ -279,10 +279,10 @@
 								<ObjectList Name="Effects">
 									<Reference>
 										<Local>
-											<EffectSlot Name="" ID="{98EEA96D-AEA4-4911-A7F4-2E96EB1E9725}" ShortID="989427324">
+											<EffectSlot Name="" ID="{72701156-B83F-4229-838A-BEB4C47101B7}" ShortID="836629480">
 												<ReferenceList>
-													<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-														<ObjectRef Name="Hall_Small" ID="{D65B5F04-B83B-412C-9434-34A13A477E24}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+														<ObjectRef Name="Damped_Chamber_Stereo" ID="{9835E14A-EDDC-4F14-83E9-C44D7B983E1C}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
 													</Reference>
 												</ReferenceList>
 											</EffectSlot>
@@ -302,10 +302,10 @@
 								<ObjectList Name="Effects">
 									<Reference>
 										<Local>
-											<EffectSlot Name="" ID="{33D6AF89-A553-431B-B849-457FA48F7CE4}" ShortID="69697246">
+											<EffectSlot Name="" ID="{2CAB220E-CEE0-4A0C-8744-CB25DF5EE3D0}" ShortID="669470677">
 												<ReferenceList>
-													<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-														<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+														<ObjectRef Name="Hamburg_Stadtpark_01_Org_Stereo" ID="{78CD34E4-8E38-4EC8-959D-2515592CD807}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
 													</Reference>
 												</ReferenceList>
 											</EffectSlot>
@@ -362,10 +362,10 @@
 								<ObjectList Name="Effects">
 									<Reference>
 										<Local>
-											<EffectSlot Name="" ID="{E39A4E3D-14FA-4806-8F13-303BC603DCF3}" ShortID="1068551926">
+											<EffectSlot Name="" ID="{DB1C92E2-ABF5-4CEA-8DF4-FBD5226FE461}" ShortID="339761696">
 												<ReferenceList>
-													<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-														<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+														<ObjectRef Name="Hamburg_Volksdorfer_Wald_Org_Stereo" ID="{3089900C-A344-4941-9605-5C4232550802}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
 													</Reference>
 												</ReferenceList>
 											</EffectSlot>
@@ -375,21 +375,6 @@
 							</ObjectLists>
 						</AuxBus>
 					</ChildrenList>
-					<ObjectLists>
-						<ObjectList Name="Effects">
-							<Reference>
-								<Local>
-									<EffectSlot Name="" ID="{E2AAD5C5-9AAB-438E-879B-14F1BDB2BC43}" ShortID="53567259">
-										<ReferenceList>
-											<Reference Name="Effect" PluginName="Wwise Recorder" CompanyID="0" PluginID="132" PluginType="3">
-												<ObjectRef Name="test_recorder1" ID="{4F408ACD-F191-4DCA-99B4-52591012133B}" WorkUnitID="{3CCE90C4-C1CC-429A-AFFA-E4C48D1C0D24}"/>
-											</Reference>
-										</ReferenceList>
-									</EffectSlot>
-								</Local>
-							</Reference>
-						</ObjectList>
-					</ObjectLists>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

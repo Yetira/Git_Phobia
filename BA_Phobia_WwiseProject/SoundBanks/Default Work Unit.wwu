@@ -56,9 +56,15 @@
 				</SoundBank>
 				<SoundBank Name="ConRev" ID="{36189A7C-BCA7-4A9B-9DB9-994ED869C5E2}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Dark_Cathedral_Stereo" ID="{5D107457-F392-439F-AF71-8D0235D9C0F8}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Dark_Cathedral_Stereo_Cave_6" ID="{5D107457-F392-439F-AF71-8D0235D9C0F8}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="BlueNoise_Room_03_Org_Stereo" ID="{3E386021-45A2-45D7-BC77-F2550965DF14}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Hamburg_Karl_Schneider_Halle_Org_Stereo" ID="{2F7FFF44-D67F-4804-95CD-9D99B00A397F}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Medium_Church_Stereo" ID="{F474ED32-C27E-4816-9B50-AC5B99453438}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Hamburg_Volksdorfer_Wald_Org_Stereo" ID="{3089900C-A344-4941-9605-5C4232550802}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Hamburg_Stadtpark_01_Org_Stereo" ID="{78CD34E4-8E38-4EC8-959D-2515592CD807}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Gated_Metallic_Reflections_Stereo" ID="{54CE8B32-9AA8-4EF3-A620-4530C27ABBF7}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Damped_Chamber_Stereo" ID="{9835E14A-EDDC-4F14-83E9-C44D7B983E1C}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Petite_Room_Stereo" ID="{B213362A-B021-4F48-AE45-8CD298A2BC29}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 3e860730979601429f3a22904a750a2e
     GuidInternal: 
-    m_lastTime: -8584624965098838625
+    m_lastTime: -8584623293432849983
     List:
     - name: AURO-3D
       guid: 9e3201dc27c92a4fb863d279a8472221
@@ -552,7 +552,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5b7d3d6d0746124ab1d6166bb3175237
     GuidInternal: 
-    m_lastTime: -8584624965098443020
+    m_lastTime: -8584623290496613047
     List:
     - name: ConRev
       guid: 7c9a1836a7bc9b4a9db9994ed869c5e2
@@ -670,7 +670,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 8585ffd7e3a8bf4b8d01dc725d3c010b
       Path: Events\Default Work Unit\Cave\girl_run
-      maxAttenuation: 38
+      maxAttenuation: 60
       maxDuration: -1
       minDuration: -1
     - name: lullaby_event
@@ -1114,7 +1114,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 296df7dc8861294ba7f3ee2fbe50e534
       Path: Events\Default Work Unit\Tutorial SFX\Play_radio
-      maxAttenuation: 300
+      maxAttenuation: 100
       maxDuration: -1
       minDuration: -1
     - name: player
@@ -1261,7 +1261,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: c612e8fcbfd4634ca0e919a7af58b5b4
       Path: Events\Default Work Unit\Elevator\lift_arrive
-      maxAttenuation: 38
+      maxAttenuation: 60
       maxDuration: 16
       minDuration: 16
     - name: lift_close
@@ -1533,7 +1533,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 7b71f01018121a468c1a9c00851cf004
       Path: Events\Default Work Unit\Tunnel\water_drips
-      maxAttenuation: 120
+      maxAttenuation: 70
       maxDuration: -1
       minDuration: -1
   RtpcWwu:
