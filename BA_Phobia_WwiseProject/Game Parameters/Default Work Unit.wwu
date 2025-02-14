@@ -12,6 +12,11 @@
 				</GameParameter>
 				<GameParameter Name="test" ID="{A73BA677-5052-4F16-82A5-A143AFADE4AF}"/>
 				<GameParameter Name="LPF_control" ID="{6C8E3815-CC24-4084-8337-0D5B263B10F1}"/>
+				<GameParameter Name="Level_Bus_Volume" ID="{B3A7734A-4869-4CAC-B97D-F96228BEF0BF}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

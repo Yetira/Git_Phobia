@@ -15,7 +15,8 @@ public class Elevator : MonoBehaviour
 
     //public GameObject liftTriggerZone;
 
-    public doorAnim doorAnim;
+    public doorAnim door1;
+    public doorAnim door2;
 
     public bool doorClosed;
     public float doorCloseDelay = 2f;
@@ -35,7 +36,8 @@ public class Elevator : MonoBehaviour
     {
         Debug.Log("Door Closing");
 
-        doorAnim.DoorClose();
+        door1.DoorClose();
+        door2.DoorClose();
         AkSoundEngine.PostEvent("lift_close", doorSoundSourceLift);
         //AkSoundEngine.PostEvent("lift_close", doorSoundSourceLevel);
 
@@ -85,7 +87,8 @@ public class Elevator : MonoBehaviour
     {
         yield return new WaitForSeconds(dingDelay);
 
-        doorAnim.DoorOpen();
+        door1.DoorOpen();
+        door2.DoorOpen();
         AkSoundEngine.PostEvent("lift_open", doorSoundSourceLift);
 
         doorClosed = false;
