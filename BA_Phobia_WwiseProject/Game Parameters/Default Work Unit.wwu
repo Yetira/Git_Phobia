@@ -12,11 +12,23 @@
 				</GameParameter>
 				<GameParameter Name="test" ID="{A73BA677-5052-4F16-82A5-A143AFADE4AF}"/>
 				<GameParameter Name="LPF_control" ID="{6C8E3815-CC24-4084-8337-0D5B263B10F1}"/>
-				<GameParameter Name="Level_Bus_Volume" ID="{B3A7734A-4869-4CAC-B97D-F96228BEF0BF}">
-					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="100"/>
-					</PropertyList>
-				</GameParameter>
+				<Folder Name="Level_Bus_Volumes" ID="{FF2C9CAF-6CB4-4818-8A42-311557ED9A42}" ShortID="996928090">
+					<ChildrenList>
+						<GameParameter Name="CAVE_Bus_Volume" ID="{B3A7734A-4869-4CAC-B97D-F96228BEF0BF}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="CABIN_Bus_Volume" ID="{A753A9CF-C2CA-42E8-8E9F-E1367FFC2B33}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="HALL_Bus_Volume" ID="{D34A074B-0CCF-4DAE-BF46-820C09571DDD}"/>
+						<GameParameter Name="END_Bus_Volume" ID="{01D7D63C-58EE-4346-91F7-E2C27B64FE36}"/>
+						<GameParameter Name="TUT_Bus_Volume" ID="{59EF1BCC-EEA0-477E-B7D1-2CC4E769065A}"/>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

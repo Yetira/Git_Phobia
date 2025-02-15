@@ -350,6 +350,7 @@
 				<Sound Name="fire_crackling" ID="{28723ED3-8941-4AF9-BE74-114267A3C542}" ShortID="1009827072">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
@@ -398,7 +399,7 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-2</Value>
+								<Value>-10</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -554,13 +555,13 @@
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Lowpass" Type="int16">
 							<ValueList>
-								<Value>47</Value>
+								<Value>51</Value>
 							</ValueList>
 						</Property>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-10</Value>
+								<Value>-15</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -572,7 +573,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+							<ObjectRef Name="CABIN" ID="{56FAB9B5-E3F4-4448-B894-043013D22E64}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -668,7 +669,7 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-10</Value>
+								<Value>-18</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>

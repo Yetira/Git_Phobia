@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID BREATH_SLOW = 2686168833U;
+        static const AkUniqueID CABIN_STOP = 3962411315U;
         static const AkUniqueID CABIN_TONE = 282656567U;
         static const AkUniqueID CABIN_WIND = 2710023793U;
         static const AkUniqueID CAT = 983016379U;
@@ -46,6 +47,7 @@ namespace AK
         static const AkUniqueID ROCK_FALL = 3378404558U;
         static const AkUniqueID ROCK_LAND = 119891818U;
         static const AkUniqueID STOP_GRANNY_SLEEP = 2269248021U;
+        static const AkUniqueID STOP_LEVEL_AUDIO = 2645868965U;
         static const AkUniqueID STOP_RADIO = 151474297U;
         static const AkUniqueID STOP_RAT = 639911593U;
         static const AkUniqueID WATER_DRIPS = 3853114527U;
@@ -99,9 +101,14 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID CABIN_BUS_VOLUME = 4130817544U;
+        static const AkUniqueID CAVE_BUS_VOLUME = 900695302U;
+        static const AkUniqueID END_BUS_VOLUME = 1954146744U;
+        static const AkUniqueID HALL_BUS_VOLUME = 2713085616U;
         static const AkUniqueID LPF_CONTROL = 3074830639U;
         static const AkUniqueID ROCK_FALL = 3378404558U;
         static const AkUniqueID TEST = 3157003241U;
+        static const AkUniqueID TUT_BUS_VOLUME = 988235148U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
@@ -115,23 +122,31 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID AURO_3D = 2857125394U;
+        static const AkUniqueID CABIN = 680291572U;
+        static const AkUniqueID CAVE = 4122393694U;
+        static const AkUniqueID ELEVATOR = 3705378287U;
+        static const AkUniqueID END = 529726532U;
+        static const AkUniqueID HALL = 3633416828U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID NARRATOR = 3272864290U;
+        static const AkUniqueID TEST_BIGSMALL = 3977152547U;
+        static const AkUniqueID TUTORIAL = 3762955427U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES
     {
-        static const AkUniqueID BIG_02 = 3623781482U;
-        static const AkUniqueID CABIN_5 = 3329045836U;
-        static const AkUniqueID CATHEDRAL_6 = 1175400888U;
-        static const AkUniqueID ELEVATOR_0 = 107126646U;
-        static const AkUniqueID END_OUTSIDE = 2427934152U;
-        static const AkUniqueID HALL_3 = 3819518786U;
-        static const AkUniqueID HALL_OUTSIDE_3 = 2715282542U;
+        static const AkUniqueID BIG_AUX = 909481490U;
+        static const AkUniqueID CABIN_AUX = 1565009407U;
+        static const AkUniqueID CATHEDRAL_AUX = 3806687776U;
+        static const AkUniqueID ELEVATOR_AUX = 1369003848U;
+        static const AkUniqueID END_AUX = 3251619119U;
+        static const AkUniqueID HALL_3_AUX = 1273610937U;
+        static const AkUniqueID HALL_OUTSIDE_AUX = 2510014443U;
         static const AkUniqueID REFLECT = 243379636U;
-        static const AkUniqueID SCHACHT_6 = 3193433734U;
-        static const AkUniqueID SMALL_2 = 1948235665U;
-        static const AkUniqueID TUNNEL_6 = 4186986556U;
-        static const AkUniqueID TUTORIAL_ROOM_1 = 1235075755U;
+        static const AkUniqueID SCHACHT_AUX = 1350779578U;
+        static const AkUniqueID SMALL_AUX = 2803388305U;
+        static const AkUniqueID TUNNEL_AUX = 1277990452U;
+        static const AkUniqueID TUTORIAL_AUX = 2278827948U;
     } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES

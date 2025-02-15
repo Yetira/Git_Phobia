@@ -9,6 +9,9 @@ public class granny : MonoBehaviour
     public roomCheckForPlayer room;
     public GameStateManager gameState;
 
+    public GameObject fireplace;
+    public GameObject tv;
+
     private bool isProcessing;
 
     public float grannySleepTime;
@@ -17,6 +20,8 @@ public class granny : MonoBehaviour
         isProcessing = false;
         
         AkSoundEngine.PostEvent("granny_sleep", gameObject);
+        AkSoundEngine.PostEvent("fire_crackling", fireplace);
+        AkSoundEngine.PostEvent("old_tv", tv);
 
         StartCoroutine(WaitForGrannyWakeUp());
     }

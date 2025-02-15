@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dad54a909eb91c240aa4f6d9e7ac712e, type: 3}
-  m_Name: CDE6399C-865F-4018-BD15-F88115BE90C8
+  m_Name: 539C49DA-071D-4213-93CA-B694C908C1E4
   m_EditorClassIdentifier: 
-  objectName: Schacht_aux
-  id: 1350779578
-  guid: CDE6399C-865F-4018-BD15-F88115BE90C8
+  objectName: Hall_3_aux
+  id: 1273610937
+  guid: 539C49DA-071D-4213-93CA-B694C908C1E4

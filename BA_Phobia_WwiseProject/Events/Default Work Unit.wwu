@@ -224,6 +224,65 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Cabin_STOP" ID="{9CE90EFF-BA14-4123-992F-37EFBF112760}">
+							<ChildrenList>
+								<Action Name="" ID="{FB1A4190-E621-49D0-B619-7CBB7B9FEB76}" ShortID="240020229">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="old_tv_program" ID="{340CE970-33D7-4281-A125-C929AA51EF6B}" WorkUnitID="{6E5FA8A8-1154-45BF-9934-DB0DCEB04F0B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E60C4609-36CB-43AE-AC88-96E37A66D167}" ShortID="728738385">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="chair_rock" ID="{633CCE14-09BF-4A04-AEFA-F35A1DB7F368}" WorkUnitID="{6E5FA8A8-1154-45BF-9934-DB0DCEB04F0B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{0F6D89FE-567F-4A47-AFEE-CBF56E976C18}" ShortID="407037560">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="fire_crackling" ID="{28723ED3-8941-4AF9-BE74-114267A3C542}" WorkUnitID="{6E5FA8A8-1154-45BF-9934-DB0DCEB04F0B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{64CB343A-5FED-45ED-88A8-5F15AA38CBF4}" ShortID="260382462">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="cat_mode" ID="{CA11775A-CA9B-42B0-AA22-DFF865928845}" WorkUnitID="{6E5FA8A8-1154-45BF-9934-DB0DCEB04F0B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{258B2E48-7EA5-4E85-9CD7-90795CE1BE88}" ShortID="615948683">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="wind_howl_soft_cabin" ID="{4A1D5EA7-2435-4E17-9653-0D89B4019B78}" WorkUnitID="{6E5FA8A8-1154-45BF-9934-DB0DCEB04F0B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Hall" ID="{FF78EBD9-17C5-464C-BD5B-57C4AB9CBDD7}" ShortID="580005792">
@@ -329,6 +388,16 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Stop_Level_Audio" ID="{304271DB-5E5F-4361-9C69-D1C6C879D3ED}">
+					<ChildrenList>
+						<Action Name="" ID="{BAF6F45D-EE36-45E5-B347-42EDD4FEE548}" ShortID="888724833">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

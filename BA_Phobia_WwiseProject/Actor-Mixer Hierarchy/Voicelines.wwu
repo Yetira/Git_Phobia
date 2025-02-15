@@ -4,6 +4,13 @@
 		<WorkUnit Name="Voicelines" ID="{B45F632D-8992-4305-AAB8-D9639597D5E5}" PersistMode="Standalone">
 			<ChildrenList>
 				<SwitchContainer Name="Level_Intro" ID="{C14C10FE-2993-4465-B11A-09AF97FF1164}" ShortID="1073125167">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
@@ -12,7 +19,7 @@
 							<ObjectRef Name="Level_1" ID="{62792E51-1353-4B7E-A3F6-049D629CDA4F}" WorkUnitID="{2A23D7E5-96CD-48AC-B5E6-61CD6C28EB44}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+							<ObjectRef Name="Narrator" ID="{ECAA7ACE-F853-4AFA-A793-87C10399EBF4}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 						</Reference>
 						<Reference Name="SwitchGroupOrStateGroup">
 							<ObjectRef Name="activeLevel" ID="{048EE82A-FA6C-421E-BC11-ADF2451E2F00}" WorkUnitID="{2A23D7E5-96CD-48AC-B5E6-61CD6C28EB44}"/>
@@ -201,6 +208,13 @@
 					</GroupingInfo>
 				</SwitchContainer>
 				<SwitchContainer Name="Level_Outro" ID="{97F64828-0834-4078-A361-A9961FCF493F}" ShortID="950665706">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
@@ -209,7 +223,7 @@
 							<ObjectRef Name="Level_1" ID="{62792E51-1353-4B7E-A3F6-049D629CDA4F}" WorkUnitID="{2A23D7E5-96CD-48AC-B5E6-61CD6C28EB44}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+							<ObjectRef Name="Narrator" ID="{ECAA7ACE-F853-4AFA-A793-87C10399EBF4}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 						</Reference>
 						<Reference Name="SwitchGroupOrStateGroup">
 							<ObjectRef Name="activeLevel" ID="{048EE82A-FA6C-421E-BC11-ADF2451E2F00}" WorkUnitID="{2A23D7E5-96CD-48AC-B5E6-61CD6C28EB44}"/>
@@ -490,7 +504,7 @@
 							<ObjectRef Name="Level_1" ID="{62792E51-1353-4B7E-A3F6-049D629CDA4F}" WorkUnitID="{2A23D7E5-96CD-48AC-B5E6-61CD6C28EB44}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+							<ObjectRef Name="Narrator" ID="{ECAA7ACE-F853-4AFA-A793-87C10399EBF4}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 						</Reference>
 						<Reference Name="SwitchGroupOrStateGroup">
 							<ObjectRef Name="activeLevel" ID="{048EE82A-FA6C-421E-BC11-ADF2451E2F00}" WorkUnitID="{2A23D7E5-96CD-48AC-B5E6-61CD6C28EB44}"/>

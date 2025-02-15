@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dad54a909eb91c240aa4f6d9e7ac712e, type: 3}
   m_Name: 0FC2E2D3-1E82-4CAE-9077-BF5FA2F98519
   m_EditorClassIdentifier: 
-  objectName: End_Outside
-  id: 2427934152
+  objectName: END_aux
+  id: 3251619119
   guid: 0FC2E2D3-1E82-4CAE-9077-BF5FA2F98519

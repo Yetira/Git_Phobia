@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dad54a909eb91c240aa4f6d9e7ac712e, type: 3}
   m_Name: 71C4D18D-0BB7-48F8-9BA5-19E94E41988C
   m_EditorClassIdentifier: 
-  objectName: Cabin_5
-  id: 3329045836
+  objectName: CABIN_aux
+  id: 1565009407
   guid: 71C4D18D-0BB7-48F8-9BA5-19E94E41988C

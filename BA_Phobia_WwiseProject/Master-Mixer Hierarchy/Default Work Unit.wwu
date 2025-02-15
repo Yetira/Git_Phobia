@@ -19,241 +19,6 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AuxBus Name="Tunnel_6" ID="{DC6C723B-12AC-4E68-9866-A0CCB1F0E65F}">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-							</PropertyList>
-							<ObjectLists>
-								<ObjectList Name="Effects">
-									<Reference>
-										<Local>
-											<EffectSlot Name="" ID="{5D06A859-1493-4E96-8A02-98587B9C63E5}" ShortID="103587987">
-												<ReferenceList>
-													<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
-														<ObjectRef Name="Medium_Church_Stereo" ID="{F474ED32-C27E-4816-9B50-AC5B99453438}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
-													</Reference>
-												</ReferenceList>
-											</EffectSlot>
-										</Local>
-									</Reference>
-								</ObjectList>
-								<ObjectList Name="RTPC">
-									<Reference>
-										<Local>
-											<RTPC Name="" ID="{1138FEB1-2F0D-414A-B5EB-33C4407271D4}" ShortID="1044442107">
-												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="BusVolume"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="ControlInput">
-														<ObjectRef Name="Level_Bus_Volume" ID="{B3A7734A-4869-4CAC-B97D-F96228BEF0BF}" WorkUnitID="{1DA3DB97-63A7-416A-B8D9-EB328C42A8C0}"/>
-													</Reference>
-													<Reference Name="Curve">
-														<Custom>
-															<Curve Name="" ID="{51DF07F3-67C3-4719-9708-2FA52DE2511F}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</RTPC>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</AuxBus>
-						<AuxBus Name="Cathedral_6" ID="{CABC0353-FB0A-4213-A2CC-B0B9F9B540F9}">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-							</PropertyList>
-							<ObjectLists>
-								<ObjectList Name="Effects">
-									<Reference>
-										<Local>
-											<EffectSlot Name="" ID="{526D2D10-8A38-414E-BB0B-9BA93CEC156C}" ShortID="376887488">
-												<ReferenceList>
-													<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
-														<ObjectRef Name="Dark_Cathedral_Stereo_Cave_6" ID="{5D107457-F392-439F-AF71-8D0235D9C0F8}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
-													</Reference>
-												</ReferenceList>
-											</EffectSlot>
-										</Local>
-									</Reference>
-								</ObjectList>
-								<ObjectList Name="RTPC">
-									<Reference>
-										<Local>
-											<RTPC Name="" ID="{2BB18543-74D6-4189-897E-9E41AF7A62DC}" ShortID="119546061">
-												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="BusVolume"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="ControlInput">
-														<ObjectRef Name="Level_Bus_Volume" ID="{B3A7734A-4869-4CAC-B97D-F96228BEF0BF}" WorkUnitID="{1DA3DB97-63A7-416A-B8D9-EB328C42A8C0}"/>
-													</Reference>
-													<Reference Name="Curve">
-														<Custom>
-															<Curve Name="" ID="{1E9C2383-17FE-4C9F-9BC5-5BF9243CAC99}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</RTPC>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</AuxBus>
-						<AuxBus Name="Elevator_0" ID="{0DBBFA98-7822-44D9-B900-38C3FDB0BBE0}">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-							</PropertyList>
-							<ObjectLists>
-								<ObjectList Name="Effects">
-									<Reference>
-										<Local>
-											<EffectSlot Name="" ID="{E2125729-FD60-4DA8-A0B0-6BE35410E746}" ShortID="592132879">
-												<ReferenceList>
-													<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
-														<ObjectRef Name="Petite_Room_Stereo" ID="{B213362A-B021-4F48-AE45-8CD298A2BC29}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
-													</Reference>
-												</ReferenceList>
-											</EffectSlot>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</AuxBus>
-						<AuxBus Name="Reflect" ID="{32F40114-197C-4E2E-87F1-D24A3C7DDA4E}">
-							<PropertyList>
-								<Property Name="BusChannelConfig" Type="int32">
-									<ValueList>
-										<Value>16641</Value>
-									</ValueList>
-								</Property>
-								<Property Name="BusVolume" Type="Real64">
-									<ValueList>
-										<Value>-20</Value>
-									</ValueList>
-								</Property>
-								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-							</PropertyList>
-							<ObjectLists>
-								<ObjectList Name="Effects">
-									<Reference>
-										<Local>
-											<EffectSlot Name="" ID="{07E072BE-9594-4C99-AFE2-AB38FBE7983A}" ShortID="996366123">
-												<ReferenceList>
-													<Reference Name="Effect" PluginName="Wwise Reflect" CompanyID="0" PluginID="171" PluginType="3">
-														<ObjectRef Name="Reflect" ID="{37779A87-4754-4420-8175-3236FA46AA12}" WorkUnitID="{923039AD-F8B4-46D4-BDA7-CB5A6EE595E0}"/>
-													</Reference>
-												</ReferenceList>
-											</EffectSlot>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</AuxBus>
-						<AuxBus Name="Schacht_6" ID="{CDE6399C-865F-4018-BD15-F88115BE90C8}">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-							</PropertyList>
-							<ObjectLists>
-								<ObjectList Name="Effects">
-									<Reference>
-										<Local>
-											<EffectSlot Name="" ID="{7D597F95-A0DA-4505-A3A1-67DEE9BF9396}" ShortID="228399286">
-												<ReferenceList>
-													<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
-														<ObjectRef Name="Medium_Church_Stereo" ID="{F474ED32-C27E-4816-9B50-AC5B99453438}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
-													</Reference>
-												</ReferenceList>
-											</EffectSlot>
-										</Local>
-									</Reference>
-								</ObjectList>
-								<ObjectList Name="RTPC">
-									<Reference>
-										<Local>
-											<RTPC Name="" ID="{7087D871-B9B5-480B-B6C7-EBF94779784F}" ShortID="543263610">
-												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="BusVolume"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="ControlInput">
-														<ObjectRef Name="Level_Bus_Volume" ID="{B3A7734A-4869-4CAC-B97D-F96228BEF0BF}" WorkUnitID="{1DA3DB97-63A7-416A-B8D9-EB328C42A8C0}"/>
-													</Reference>
-													<Reference Name="Curve">
-														<Custom>
-															<Curve Name="" ID="{088F54D8-EB3E-4DE3-B4D2-D04A86C7626A}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</RTPC>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</AuxBus>
 						<Bus Name="AURO-3D" ID="{DC01329E-C927-4F2A-B863-D279A8472221}">
 							<PropertyList>
 								<Property Name="BusChannelConfig" Type="int32">
@@ -262,6 +27,506 @@
 									</ValueList>
 								</Property>
 							</PropertyList>
+							<ChildrenList>
+								<Bus Name="CAVE" ID="{18580028-46E5-4D3C-9900-3F0243C06BC0}">
+									<ChildrenList>
+										<AuxBus Name="Cathedral_aux" ID="{CABC0353-FB0A-4213-A2CC-B0B9F9B540F9}">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<Reference>
+														<Local>
+															<EffectSlot Name="" ID="{526D2D10-8A38-414E-BB0B-9BA93CEC156C}" ShortID="376887488">
+																<ReferenceList>
+																	<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																		<ObjectRef Name="Dark_Cathedral_Stereo_Cave_6" ID="{5D107457-F392-439F-AF71-8D0235D9C0F8}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
+																	</Reference>
+																</ReferenceList>
+															</EffectSlot>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</AuxBus>
+										<AuxBus Name="Schacht_aux" ID="{CDE6399C-865F-4018-BD15-F88115BE90C8}">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<Reference>
+														<Local>
+															<EffectSlot Name="" ID="{7D597F95-A0DA-4505-A3A1-67DEE9BF9396}" ShortID="228399286">
+																<ReferenceList>
+																	<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																		<ObjectRef Name="Medium_Church_Stereo" ID="{F474ED32-C27E-4816-9B50-AC5B99453438}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
+																	</Reference>
+																</ReferenceList>
+															</EffectSlot>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</AuxBus>
+										<AuxBus Name="Tunnel_aux" ID="{DC6C723B-12AC-4E68-9866-A0CCB1F0E65F}">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<Reference>
+														<Local>
+															<EffectSlot Name="" ID="{5D06A859-1493-4E96-8A02-98587B9C63E5}" ShortID="103587987">
+																<ReferenceList>
+																	<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																		<ObjectRef Name="Medium_Church_Stereo" ID="{F474ED32-C27E-4816-9B50-AC5B99453438}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
+																	</Reference>
+																</ReferenceList>
+															</EffectSlot>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</AuxBus>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{26DDF51A-5ACB-482B-AA31-576271C5052C}" ShortID="342664369">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="CAVE_Bus_Volume" ID="{B3A7734A-4869-4CAC-B97D-F96228BEF0BF}" WorkUnitID="{1DA3DB97-63A7-416A-B8D9-EB328C42A8C0}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{066664BC-9A91-4DDF-B774-772DDBB14380}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</Bus>
+								<Bus Name="HALL" ID="{5CD1D74B-6B93-4E0E-9F28-84CC78A6E3B5}">
+									<ChildrenList>
+										<AuxBus Name="Hall_3_aux" ID="{539C49DA-071D-4213-93CA-B694C908C1E4}">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<Reference>
+														<Local>
+															<EffectSlot Name="" ID="{72701156-B83F-4229-838A-BEB4C47101B7}" ShortID="836629480">
+																<ReferenceList>
+																	<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																		<ObjectRef Name="Damped_Chamber_Stereo" ID="{9835E14A-EDDC-4F14-83E9-C44D7B983E1C}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
+																	</Reference>
+																</ReferenceList>
+															</EffectSlot>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</AuxBus>
+										<AuxBus Name="Hall_Outside_aux" ID="{BE4E5798-0B01-4D4F-AB5B-3FD1B566F6C3}">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<Reference>
+														<Local>
+															<EffectSlot Name="" ID="{2CAB220E-CEE0-4A0C-8744-CB25DF5EE3D0}" ShortID="669470677">
+																<ReferenceList>
+																	<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																		<ObjectRef Name="Hamburg_Stadtpark_01_Org_Stereo" ID="{78CD34E4-8E38-4EC8-959D-2515592CD807}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
+																	</Reference>
+																</ReferenceList>
+															</EffectSlot>
+														</Local>
+													</Reference>
+												</ObjectList>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{ACF7D449-DE32-4EF9-8865-CFB78C0DB879}" ShortID="400066258">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="OutputBusLowpass"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="LPF_control" ID="{6C8E3815-CC24-4084-8337-0D5B263B10F1}" WorkUnitID="{1DA3DB97-63A7-416A-B8D9-EB328C42A8C0}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{8E26596E-686C-4F98-9DAE-A3384AA7D3FD}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="65537"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-100</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>100</XPos>
+																						<YPos>100</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</AuxBus>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{9316A50C-701D-4F19-9E39-74EAFBDBEF33}" ShortID="450307026">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="HALL_Bus_Volume" ID="{D34A074B-0CCF-4DAE-BF46-820C09571DDD}" WorkUnitID="{1DA3DB97-63A7-416A-B8D9-EB328C42A8C0}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{168EDD9C-41F2-4BE2-85D5-D61602F275EF}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</Bus>
+								<Bus Name="CABIN" ID="{56FAB9B5-E3F4-4448-B894-043013D22E64}">
+									<ChildrenList>
+										<AuxBus Name="CABIN_aux" ID="{71C4D18D-0BB7-48F8-9BA5-19E94E41988C}">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Cabin" ID="{F3406D1E-F462-4F28-AD35-C7198E3F93CE}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<Reference>
+														<Local>
+															<EffectSlot Name="" ID="{82AAAAF2-BBA5-4EA2-A872-B0A614A38D3E}" ShortID="866762063">
+																<ReferenceList>
+																	<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																		<ObjectRef Name="BlueNoise_Room_03_Org_Stereo" ID="{3E386021-45A2-45D7-BC77-F2550965DF14}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
+																	</Reference>
+																</ReferenceList>
+															</EffectSlot>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</AuxBus>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{987376A7-6E48-4AA0-9D7D-727431638928}" ShortID="939459593">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="CABIN_Bus_Volume" ID="{A753A9CF-C2CA-42E8-8E9F-E1367FFC2B33}" WorkUnitID="{1DA3DB97-63A7-416A-B8D9-EB328C42A8C0}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{7481BB1E-6930-4133-BB35-A599DD4840B0}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</Bus>
+								<Bus Name="ELEVATOR" ID="{A7471B21-263C-4A37-83AC-7BDC7097CC3C}">
+									<ChildrenList>
+										<AuxBus Name="Elevator_aux" ID="{0DBBFA98-7822-44D9-B900-38C3FDB0BBE0}">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<Reference>
+														<Local>
+															<EffectSlot Name="" ID="{E2125729-FD60-4DA8-A0B0-6BE35410E746}" ShortID="592132879">
+																<ReferenceList>
+																	<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																		<ObjectRef Name="Petite_Room_Stereo" ID="{B213362A-B021-4F48-AE45-8CD298A2BC29}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
+																	</Reference>
+																</ReferenceList>
+															</EffectSlot>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</AuxBus>
+									</ChildrenList>
+								</Bus>
+								<Bus Name="END" ID="{587D04AB-0725-4056-8591-33B853D31195}">
+									<ChildrenList>
+										<AuxBus Name="END_aux" ID="{0FC2E2D3-1E82-4CAE-9077-BF5FA2F98519}">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<Reference>
+														<Local>
+															<EffectSlot Name="" ID="{DB1C92E2-ABF5-4CEA-8DF4-FBD5226FE461}" ShortID="339761696">
+																<ReferenceList>
+																	<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																		<ObjectRef Name="Hamburg_Volksdorfer_Wald_Org_Stereo" ID="{3089900C-A344-4941-9605-5C4232550802}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
+																	</Reference>
+																</ReferenceList>
+															</EffectSlot>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</AuxBus>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{C30836D5-68D6-49FD-B5F1-7ED0DBCB0443}" ShortID="305509630">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="END_Bus_Volume" ID="{01D7D63C-58EE-4346-91F7-E2C27B64FE36}" WorkUnitID="{1DA3DB97-63A7-416A-B8D9-EB328C42A8C0}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{8D658295-4BB6-45EE-83F5-371965E91FB7}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</Bus>
+								<Bus Name="TUTORIAL" ID="{B1AC3B06-9455-4D27-8F93-BBD927B391BE}">
+									<ChildrenList>
+										<AuxBus Name="TUTORIAL_aux" ID="{CB7535FB-34EB-4B3D-9DDB-58DE88C72415}">
+											<PropertyList>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<Reference>
+														<Local>
+															<EffectSlot Name="" ID="{3F19B224-D4EC-4A8E-AC50-8C246A52C068}" ShortID="991312454">
+																<ReferenceList>
+																	<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																		<ObjectRef Name="Damped_Chamber_Stereo" ID="{9835E14A-EDDC-4F14-83E9-C44D7B983E1C}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
+																	</Reference>
+																</ReferenceList>
+															</EffectSlot>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</AuxBus>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{2272F8FC-96D2-43BB-9B5E-99B84176349A}" ShortID="266465070">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="TUT_Bus_Volume" ID="{59EF1BCC-EEA0-477E-B7D1-2CC4E769065A}" WorkUnitID="{1DA3DB97-63A7-416A-B8D9-EB328C42A8C0}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{BE9DB391-C267-445E-997C-4E822452ED3E}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</Bus>
+								<AuxBus Name="Reflect" ID="{32F40114-197C-4E2E-87F1-D24A3C7DDA4E}">
+									<PropertyList>
+										<Property Name="BusChannelConfig" Type="int32">
+											<ValueList>
+												<Value>16641</Value>
+											</ValueList>
+										</Property>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-20</Value>
+											</ValueList>
+										</Property>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{07E072BE-9594-4C99-AFE2-AB38FBE7983A}" ShortID="996366123">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Reflect" CompanyID="0" PluginID="171" PluginType="3">
+																<ObjectRef Name="Reflect" ID="{37779A87-4754-4420-8175-3236FA46AA12}" WorkUnitID="{923039AD-F8B4-46D4-BDA7-CB5A6EE595E0}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</AuxBus>
+							</ChildrenList>
 							<ObjectLists>
 								<ObjectList Name="Effects">
 									<Reference>
@@ -272,7 +537,6 @@
 														<Custom>
 															<Effect Name="Auro Headphone (Custom)" ID="{C77FC002-CCE9-4759-945D-9933558F43D7}" ShortID="52925816" PluginName="Auro Headphone" CompanyID="263" PluginID="1100" PluginType="3">
 																<PropertyList>
-																	<Property Name="Bypass" Type="bool" Value="True"/>
 																	<Property Name="Reverb" Type="bool" Value="False"/>
 																</PropertyList>
 															</Effect>
@@ -285,318 +549,57 @@
 								</ObjectList>
 							</ObjectLists>
 						</Bus>
-						<AuxBus Name="Tutorial_Room_1" ID="{CB7535FB-34EB-4B3D-9DDB-58DE88C72415}">
-							<PropertyList>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-							</PropertyList>
-							<ObjectLists>
-								<ObjectList Name="Effects">
-									<Reference>
-										<Local>
-											<EffectSlot Name="" ID="{3F19B224-D4EC-4A8E-AC50-8C246A52C068}" ShortID="991312454">
-												<ReferenceList>
-													<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
-														<ObjectRef Name="Damped_Chamber_Stereo" ID="{9835E14A-EDDC-4F14-83E9-C44D7B983E1C}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
-													</Reference>
-												</ReferenceList>
-											</EffectSlot>
-										</Local>
-									</Reference>
-								</ObjectList>
-								<ObjectList Name="RTPC">
-									<Reference>
-										<Local>
-											<RTPC Name="" ID="{72063605-2AAE-4101-8BB9-A0C70C03B7A4}" ShortID="529300258">
-												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="BusVolume"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="ControlInput">
-														<ObjectRef Name="Level_Bus_Volume" ID="{B3A7734A-4869-4CAC-B97D-F96228BEF0BF}" WorkUnitID="{1DA3DB97-63A7-416A-B8D9-EB328C42A8C0}"/>
-													</Reference>
-													<Reference Name="Curve">
-														<Custom>
-															<Curve Name="" ID="{734152EE-D6EF-468A-A18A-1BCD06CEB7D1}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</RTPC>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</AuxBus>
-						<AuxBus Name="Cabin_5" ID="{71C4D18D-0BB7-48F8-9BA5-19E94E41988C}">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="Cabin" ID="{F3406D1E-F462-4F28-AD35-C7198E3F93CE}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
-								</Reference>
-							</ReferenceList>
-							<ObjectLists>
-								<ObjectList Name="Effects">
-									<Reference>
-										<Local>
-											<EffectSlot Name="" ID="{82AAAAF2-BBA5-4EA2-A872-B0A614A38D3E}" ShortID="866762063">
-												<ReferenceList>
-													<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
-														<ObjectRef Name="BlueNoise_Room_03_Org_Stereo" ID="{3E386021-45A2-45D7-BC77-F2550965DF14}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
-													</Reference>
-												</ReferenceList>
-											</EffectSlot>
-										</Local>
-									</Reference>
-								</ObjectList>
-								<ObjectList Name="RTPC">
-									<Reference>
-										<Local>
-											<RTPC Name="" ID="{947BF953-B483-41C0-BBD7-D3CDB460F5AC}" ShortID="626835464">
-												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="BusVolume"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="ControlInput">
-														<ObjectRef Name="Level_Bus_Volume" ID="{B3A7734A-4869-4CAC-B97D-F96228BEF0BF}" WorkUnitID="{1DA3DB97-63A7-416A-B8D9-EB328C42A8C0}"/>
-													</Reference>
-													<Reference Name="Curve">
-														<Custom>
-															<Curve Name="" ID="{B8F9C330-B73F-421E-9D13-9BF6395D0AD8}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>-0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</RTPC>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</AuxBus>
-						<AuxBus Name="Small_2" ID="{E15B9E77-BE54-4785-96C9-0BED391F09D3}">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-							</PropertyList>
-							<ObjectLists>
-								<ObjectList Name="Effects">
-									<Reference>
-										<Local>
-											<EffectSlot Name="" ID="{74B14501-93F6-4249-B501-1C0F05EF6170}" ShortID="639164098">
-												<ReferenceList>
-													<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-														<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-													</Reference>
-												</ReferenceList>
-											</EffectSlot>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</AuxBus>
-						<AuxBus Name="Big_02" ID="{BBD1DDC5-EB29-4A92-A4ED-7F2C548C650A}">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-							</PropertyList>
-							<ObjectLists>
-								<ObjectList Name="Effects">
-									<Reference>
-										<Local>
-											<EffectSlot Name="" ID="{6366AE1A-341B-406F-B326-1B736FFBB503}" ShortID="865186572">
-												<ReferenceList>
-													<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-														<ObjectRef Name="Room_Medium" ID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-													</Reference>
-												</ReferenceList>
-											</EffectSlot>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</AuxBus>
-						<AuxBus Name="Hall_3" ID="{539C49DA-071D-4213-93CA-B694C908C1E4}">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-							</PropertyList>
-							<ObjectLists>
-								<ObjectList Name="Effects">
-									<Reference>
-										<Local>
-											<EffectSlot Name="" ID="{72701156-B83F-4229-838A-BEB4C47101B7}" ShortID="836629480">
-												<ReferenceList>
-													<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
-														<ObjectRef Name="Damped_Chamber_Stereo" ID="{9835E14A-EDDC-4F14-83E9-C44D7B983E1C}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
-													</Reference>
-												</ReferenceList>
-											</EffectSlot>
-										</Local>
-									</Reference>
-								</ObjectList>
-								<ObjectList Name="RTPC">
-									<Reference>
-										<Local>
-											<RTPC Name="" ID="{DEB0BE5F-AD86-419D-9ABD-8866E7437A69}" ShortID="497746488">
-												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="BusVolume"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="ControlInput">
-														<ObjectRef Name="Level_Bus_Volume" ID="{B3A7734A-4869-4CAC-B97D-F96228BEF0BF}" WorkUnitID="{1DA3DB97-63A7-416A-B8D9-EB328C42A8C0}"/>
-													</Reference>
-													<Reference Name="Curve">
-														<Custom>
-															<Curve Name="" ID="{F769142C-912A-4A44-AD52-A602B60B46A0}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</RTPC>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</AuxBus>
-						<AuxBus Name="Hall_Outside_3" ID="{BE4E5798-0B01-4D4F-AB5B-3FD1B566F6C3}">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-							</PropertyList>
-							<ObjectLists>
-								<ObjectList Name="Effects">
-									<Reference>
-										<Local>
-											<EffectSlot Name="" ID="{2CAB220E-CEE0-4A0C-8744-CB25DF5EE3D0}" ShortID="669470677">
-												<ReferenceList>
-													<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
-														<ObjectRef Name="Hamburg_Stadtpark_01_Org_Stereo" ID="{78CD34E4-8E38-4EC8-959D-2515592CD807}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
-													</Reference>
-												</ReferenceList>
-											</EffectSlot>
-										</Local>
-									</Reference>
-								</ObjectList>
-								<ObjectList Name="RTPC">
-									<Reference>
-										<Local>
-											<RTPC Name="" ID="{ACF7D449-DE32-4EF9-8865-CFB78C0DB879}" ShortID="400066258">
-												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="OutputBusLowpass"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="ControlInput">
-														<ObjectRef Name="LPF_control" ID="{6C8E3815-CC24-4084-8337-0D5B263B10F1}" WorkUnitID="{1DA3DB97-63A7-416A-B8D9-EB328C42A8C0}"/>
-													</Reference>
-													<Reference Name="Curve">
-														<Custom>
-															<Curve Name="" ID="{8E26596E-686C-4F98-9DAE-A3384AA7D3FD}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="65537"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-100</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>100</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</RTPC>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</AuxBus>
-						<AuxBus Name="End_Outside" ID="{0FC2E2D3-1E82-4CAE-9077-BF5FA2F98519}">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-							</PropertyList>
-							<ObjectLists>
-								<ObjectList Name="Effects">
-									<Reference>
-										<Local>
-											<EffectSlot Name="" ID="{DB1C92E2-ABF5-4CEA-8DF4-FBD5226FE461}" ShortID="339761696">
-												<ReferenceList>
-													<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
-														<ObjectRef Name="Hamburg_Volksdorfer_Wald_Org_Stereo" ID="{3089900C-A344-4941-9605-5C4232550802}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
-													</Reference>
-												</ReferenceList>
-											</EffectSlot>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</AuxBus>
-						<Bus Name="CAVE" ID="{18580028-46E5-4D3C-9900-3F0243C06BC0}"/>
+						<Bus Name="Narrator" ID="{ECAA7ACE-F853-4AFA-A793-87C10399EBF4}"/>
+						<Bus Name="Test_BigSmall" ID="{8399C42A-2C55-4D0E-8F74-863156A02FFA}">
+							<ChildrenList>
+								<AuxBus Name="Big_aux" ID="{BBD1DDC5-EB29-4A92-A4ED-7F2C548C650A}">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{6366AE1A-341B-406F-B326-1B736FFBB503}" ShortID="865186572">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																<ObjectRef Name="Room_Medium" ID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</AuxBus>
+								<AuxBus Name="Small_aux" ID="{E15B9E77-BE54-4785-96C9-0BED391F09D3}">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{74B14501-93F6-4249-B501-1C0F05EF6170}" ShortID="639164098">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</AuxBus>
+							</ChildrenList>
+						</Bus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

@@ -6,9 +6,11 @@
 				<SoundBank Name="Main_test" ID="{8EB4BFF4-F49E-488E-8308-1F357E8CB44A}">
 					<ObjectInclusionList>
 						<ObjectRef Name="lift_music" ID="{950A13F4-B94B-4014-A8DC-62B803B9909D}" WorkUnitID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Cabin_STOP" ID="{9CE90EFF-BA14-4123-992F-37EFBF112760}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="lift_RoomTone" ID="{8C19E072-70ED-4172-AF75-56B3F8A54F11}" WorkUnitID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="end_tone" ID="{A9916FFF-8EF0-41EB-B0EC-222CDC41E55F}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="fire_crackling" ID="{85A8B58C-BF0B-42C1-96F2-5079D44D56D3}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Level_Audio" ID="{304271DB-5E5F-4361-9C69-D1C6C879D3ED}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="office_tone" ID="{E3D1D5E1-A641-4473-8969-8A843F5B70E7}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="footsteps" ID="{DA0ACF0A-AE71-44BA-9D70-8BD59292FACE}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="wind_howl" ID="{FC572F35-A093-45B6-B064-09DA893551F7}" WorkUnitID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" Origin="Manual" Filter="7"/>

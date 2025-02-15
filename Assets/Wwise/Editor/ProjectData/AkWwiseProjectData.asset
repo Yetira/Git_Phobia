@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 3e860730979601429f3a22904a750a2e
     GuidInternal: 
-    m_lastTime: -8584620745262243267
+    m_lastTime: -8584619897395668988
     List:
     - name: AURO-3D
       guid: 9e3201dc27c92a4fb863d279a8472221
@@ -322,9 +322,9 @@ MonoBehaviour:
         ObjectType: 2
         guid: 9e3201dc27c92a4fb863d279a8472221
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AURO-3D
-    - name: Big_02
+    - name: Big_aux
       guid: c5ddd1bb29eb924aa4ed7f2c548c650a
-      id: 3623781482
+      id: 909481490
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -335,13 +335,16 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Big_02
+      - ElementName: Test_BigSmall
+        ObjectType: 2
+        guid: 2ac49983552c0e4d8f74863156a02ffa
+      - ElementName: Big_aux
         ObjectType: 1
         guid: c5ddd1bb29eb924aa4ed7f2c548c650a
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Big_02
-    - name: Cabin_5
-      guid: 8dd1c471b70bf8489ba519e94e41988c
-      id: 3329045836
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Test_BigSmall\Big_aux
+    - name: CABIN
+      guid: b5b9fa56f4e34844b894043013d22e64
+      id: 680291572
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -352,13 +355,39 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Cabin_5
+      - ElementName: AURO-3D
+        ObjectType: 2
+        guid: 9e3201dc27c92a4fb863d279a8472221
+      - ElementName: CABIN
+        ObjectType: 2
+        guid: b5b9fa56f4e34844b894043013d22e64
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AURO-3D\CABIN
+    - name: CABIN_aux
+      guid: 8dd1c471b70bf8489ba519e94e41988c
+      id: 1565009407
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3e860730979601429f3a22904a750a2e
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AURO-3D
+        ObjectType: 2
+        guid: 9e3201dc27c92a4fb863d279a8472221
+      - ElementName: CABIN
+        ObjectType: 2
+        guid: b5b9fa56f4e34844b894043013d22e64
+      - ElementName: CABIN_aux
         ObjectType: 1
         guid: 8dd1c471b70bf8489ba519e94e41988c
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Cabin_5
-    - name: Cathedral_6
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AURO-3D\CABIN\CABIN_aux
+    - name: Cathedral_aux
       guid: 5303bcca0afb1342a2ccb0b9f9b540f9
-      id: 1175400888
+      id: 3806687776
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -369,10 +398,16 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Cathedral_6
+      - ElementName: AURO-3D
+        ObjectType: 2
+        guid: 9e3201dc27c92a4fb863d279a8472221
+      - ElementName: CAVE
+        ObjectType: 2
+        guid: 28005818e5463c4d99003f0243c06bc0
+      - ElementName: Cathedral_aux
         ObjectType: 1
         guid: 5303bcca0afb1342a2ccb0b9f9b540f9
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Cathedral_6
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AURO-3D\CAVE\Cathedral_aux
     - name: CAVE
       guid: 28005818e5463c4d99003f0243c06bc0
       id: 4122393694
@@ -386,13 +421,16 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AURO-3D
+        ObjectType: 2
+        guid: 9e3201dc27c92a4fb863d279a8472221
       - ElementName: CAVE
         ObjectType: 2
         guid: 28005818e5463c4d99003f0243c06bc0
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\CAVE
-    - name: Elevator_0
-      guid: 98fabb0d2278d944b90038c3fdb0bbe0
-      id: 107126646
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AURO-3D\CAVE
+    - name: ELEVATOR
+      guid: 211b47a73c26374a83ac7bdc7097cc3c
+      id: 3705378287
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -403,13 +441,39 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Elevator_0
+      - ElementName: AURO-3D
+        ObjectType: 2
+        guid: 9e3201dc27c92a4fb863d279a8472221
+      - ElementName: ELEVATOR
+        ObjectType: 2
+        guid: 211b47a73c26374a83ac7bdc7097cc3c
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AURO-3D\ELEVATOR
+    - name: Elevator_aux
+      guid: 98fabb0d2278d944b90038c3fdb0bbe0
+      id: 1369003848
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3e860730979601429f3a22904a750a2e
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AURO-3D
+        ObjectType: 2
+        guid: 9e3201dc27c92a4fb863d279a8472221
+      - ElementName: ELEVATOR
+        ObjectType: 2
+        guid: 211b47a73c26374a83ac7bdc7097cc3c
+      - ElementName: Elevator_aux
         ObjectType: 1
         guid: 98fabb0d2278d944b90038c3fdb0bbe0
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Elevator_0
-    - name: End_Outside
-      guid: d3e2c20f821eae4c9077bf5fa2f98519
-      id: 2427934152
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AURO-3D\ELEVATOR\Elevator_aux
+    - name: END
+      guid: ab047d5825075640859133b853d31195
+      id: 529726532
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -420,13 +484,39 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: End_Outside
+      - ElementName: AURO-3D
+        ObjectType: 2
+        guid: 9e3201dc27c92a4fb863d279a8472221
+      - ElementName: END
+        ObjectType: 2
+        guid: ab047d5825075640859133b853d31195
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AURO-3D\END
+    - name: END_aux
+      guid: d3e2c20f821eae4c9077bf5fa2f98519
+      id: 3251619119
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3e860730979601429f3a22904a750a2e
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AURO-3D
+        ObjectType: 2
+        guid: 9e3201dc27c92a4fb863d279a8472221
+      - ElementName: END
+        ObjectType: 2
+        guid: ab047d5825075640859133b853d31195
+      - ElementName: END_aux
         ObjectType: 1
         guid: d3e2c20f821eae4c9077bf5fa2f98519
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\End_Outside
-    - name: Hall_3
-      guid: da499c531d07134293cab694c908c1e4
-      id: 3819518786
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AURO-3D\END\END_aux
+    - name: HALL
+      guid: 4bd7d15c936b0e4e9f2884cc78a6e3b5
+      id: 3633416828
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -437,13 +527,39 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Hall_3
+      - ElementName: AURO-3D
+        ObjectType: 2
+        guid: 9e3201dc27c92a4fb863d279a8472221
+      - ElementName: HALL
+        ObjectType: 2
+        guid: 4bd7d15c936b0e4e9f2884cc78a6e3b5
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AURO-3D\HALL
+    - name: Hall_3_aux
+      guid: da499c531d07134293cab694c908c1e4
+      id: 1273610937
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3e860730979601429f3a22904a750a2e
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AURO-3D
+        ObjectType: 2
+        guid: 9e3201dc27c92a4fb863d279a8472221
+      - ElementName: HALL
+        ObjectType: 2
+        guid: 4bd7d15c936b0e4e9f2884cc78a6e3b5
+      - ElementName: Hall_3_aux
         ObjectType: 1
         guid: da499c531d07134293cab694c908c1e4
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Hall_3
-    - name: Hall_Outside_3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AURO-3D\HALL\Hall_3_aux
+    - name: Hall_Outside_aux
       guid: 98574ebe010b4f4dab5b3fd1b566f6c3
-      id: 2715282542
+      id: 2510014443
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -454,10 +570,16 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Hall_Outside_3
+      - ElementName: AURO-3D
+        ObjectType: 2
+        guid: 9e3201dc27c92a4fb863d279a8472221
+      - ElementName: HALL
+        ObjectType: 2
+        guid: 4bd7d15c936b0e4e9f2884cc78a6e3b5
+      - ElementName: Hall_Outside_aux
         ObjectType: 1
         guid: 98574ebe010b4f4dab5b3fd1b566f6c3
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Hall_Outside_3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AURO-3D\HALL\Hall_Outside_aux
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -472,6 +594,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Narrator
+      guid: ce7aaaec53f8fa4aa79387c10399ebf4
+      id: 3272864290
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3e860730979601429f3a22904a750a2e
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Narrator
+        ObjectType: 2
+        guid: ce7aaaec53f8fa4aa79387c10399ebf4
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Narrator
     - name: Reflect
       guid: 1401f4327c192e4e87f1d24a3c7dda4e
       id: 243379636
@@ -485,13 +624,16 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AURO-3D
+        ObjectType: 2
+        guid: 9e3201dc27c92a4fb863d279a8472221
       - ElementName: Reflect
         ObjectType: 1
         guid: 1401f4327c192e4e87f1d24a3c7dda4e
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reflect
-    - name: Schacht_6
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AURO-3D\Reflect
+    - name: Schacht_aux
       guid: 9c39e6cd5f861840bd15f88115be90c8
-      id: 3193433734
+      id: 1350779578
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -502,13 +644,19 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Schacht_6
+      - ElementName: AURO-3D
+        ObjectType: 2
+        guid: 9e3201dc27c92a4fb863d279a8472221
+      - ElementName: CAVE
+        ObjectType: 2
+        guid: 28005818e5463c4d99003f0243c06bc0
+      - ElementName: Schacht_aux
         ObjectType: 1
         guid: 9c39e6cd5f861840bd15f88115be90c8
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Schacht_6
-    - name: Small_2
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AURO-3D\CAVE\Schacht_aux
+    - name: Small_aux
       guid: 779e5be154be854796c90bed391f09d3
-      id: 1948235665
+      id: 2803388305
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -519,13 +667,16 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Small_2
+      - ElementName: Test_BigSmall
+        ObjectType: 2
+        guid: 2ac49983552c0e4d8f74863156a02ffa
+      - ElementName: Small_aux
         ObjectType: 1
         guid: 779e5be154be854796c90bed391f09d3
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Small_2
-    - name: Tunnel_6
-      guid: 3b726cdcac12684e9866a0ccb1f0e65f
-      id: 4186986556
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Test_BigSmall\Small_aux
+    - name: Test_BigSmall
+      guid: 2ac49983552c0e4d8f74863156a02ffa
+      id: 3977152547
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -536,13 +687,36 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Tunnel_6
+      - ElementName: Test_BigSmall
+        ObjectType: 2
+        guid: 2ac49983552c0e4d8f74863156a02ffa
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Test_BigSmall
+    - name: Tunnel_aux
+      guid: 3b726cdcac12684e9866a0ccb1f0e65f
+      id: 1277990452
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3e860730979601429f3a22904a750a2e
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AURO-3D
+        ObjectType: 2
+        guid: 9e3201dc27c92a4fb863d279a8472221
+      - ElementName: CAVE
+        ObjectType: 2
+        guid: 28005818e5463c4d99003f0243c06bc0
+      - ElementName: Tunnel_aux
         ObjectType: 1
         guid: 3b726cdcac12684e9866a0ccb1f0e65f
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Tunnel_6
-    - name: Tutorial_Room_1
-      guid: fb3575cbeb343d4b9ddb58de88c72415
-      id: 1235075755
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AURO-3D\CAVE\Tunnel_aux
+    - name: TUTORIAL
+      guid: 063bacb15594274d8f93bbd927b391be
+      id: 3762955427
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -553,10 +727,36 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Tutorial_Room_1
+      - ElementName: AURO-3D
+        ObjectType: 2
+        guid: 9e3201dc27c92a4fb863d279a8472221
+      - ElementName: TUTORIAL
+        ObjectType: 2
+        guid: 063bacb15594274d8f93bbd927b391be
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AURO-3D\TUTORIAL
+    - name: TUTORIAL_aux
+      guid: fb3575cbeb343d4b9ddb58de88c72415
+      id: 2278827948
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3e860730979601429f3a22904a750a2e
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AURO-3D
+        ObjectType: 2
+        guid: 9e3201dc27c92a4fb863d279a8472221
+      - ElementName: TUTORIAL
+        ObjectType: 2
+        guid: 063bacb15594274d8f93bbd927b391be
+      - ElementName: TUTORIAL_aux
         ObjectType: 1
         guid: fb3575cbeb343d4b9ddb58de88c72415
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Tutorial_Room_1
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AURO-3D\TUTORIAL\TUTORIAL_aux
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -569,7 +769,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5b7d3d6d0746124ab1d6166bb3175237
     GuidInternal: 
-    m_lastTime: -8584623290496613047
+    m_lastTime: -8584619767045730863
     List:
     - name: ConRev
       guid: 7c9a1836a7bc9b4a9db9994ed869c5e2
@@ -721,7 +921,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 199508fe3d34424d9564a328ccca3022
     GuidInternal: 
-    m_lastTime: -8584635221116920872
+    m_lastTime: -8584619767172980769
     List:
     - name: 5_Cabin
       guid: 2bbcea8b66788f4c89126f34d5d5e3ed
@@ -760,6 +960,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Cabin_STOP
+      guid: ff0ee99c14ba2341992f37efbf112760
+      id: 3962411315
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: 5_Cabin
+        ObjectType: 4
+        guid: 2bbcea8b66788f4c89126f34d5d5e3ed
+      - ElementName: Cabin_STOP
+        ObjectType: 3
+        guid: ff0ee99c14ba2341992f37efbf112760
+      Path: Events\Default Work Unit\5_Cabin\Cabin_STOP
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: cabin_tone
       guid: 89cb718e57bb594abc4bb47efee5248d
       id: 282656567
@@ -777,7 +997,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 89cb718e57bb594abc4bb47efee5248d
       Path: Events\Default Work Unit\5_Cabin\cabin_tone
-      maxAttenuation: 0
+      maxAttenuation: 100
       maxDuration: -1
       minDuration: -1
     - name: cabin_wind
@@ -1168,6 +1388,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: 6f4a7a095016d745adc6e17ec2a259c4
       Path: Events\Default Work Unit\5_Cabin\stop_granny_sleep
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Level_Audio
+      guid: db7142305f5e61439c69d1c6c879d3ed
+      id: 2645868965
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: Stop_Level_Audio
+        ObjectType: 3
+        guid: db7142305f5e61439c69d1c6c879d3ed
+      Path: Events\Default Work Unit\Stop_Level_Audio
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -1565,11 +1802,11 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 97dba31da7636a41b8d9eb328c42a8c0
     GuidInternal: 
-    m_lastTime: -8584620745261947818
+    m_lastTime: -8584619988746130288
     List:
-    - name: Level_Bus_Volume
-      guid: 4a73a7b36948ac4cb97df96228bef0bf
-      id: 3469914479
+    - name: CABIN_Bus_Volume
+      guid: cfa953a7cac2e8428e9fe1367ffc2b33
+      id: 4130817544
       PathAndIcons:
       - ElementName: Game Parameters
         ObjectType: 5
@@ -1577,10 +1814,78 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 97dba31da7636a41b8d9eb328c42a8c0
-      - ElementName: Level_Bus_Volume
+      - ElementName: Level_Bus_Volumes
+        ObjectType: 4
+        guid: af9c2cffb46c18488a42311557ed9a42
+      - ElementName: CABIN_Bus_Volume
+        ObjectType: 13
+        guid: cfa953a7cac2e8428e9fe1367ffc2b33
+      Path: Game Parameters\Default Work Unit\Level_Bus_Volumes\CABIN_Bus_Volume
+    - name: CAVE_Bus_Volume
+      guid: 4a73a7b36948ac4cb97df96228bef0bf
+      id: 900695302
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 97dba31da7636a41b8d9eb328c42a8c0
+      - ElementName: Level_Bus_Volumes
+        ObjectType: 4
+        guid: af9c2cffb46c18488a42311557ed9a42
+      - ElementName: CAVE_Bus_Volume
         ObjectType: 13
         guid: 4a73a7b36948ac4cb97df96228bef0bf
-      Path: Game Parameters\Default Work Unit\Level_Bus_Volume
+      Path: Game Parameters\Default Work Unit\Level_Bus_Volumes\CAVE_Bus_Volume
+    - name: END_Bus_Volume
+      guid: 3cd6d701ee58464391f7e2c27b64fe36
+      id: 1954146744
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 97dba31da7636a41b8d9eb328c42a8c0
+      - ElementName: Level_Bus_Volumes
+        ObjectType: 4
+        guid: af9c2cffb46c18488a42311557ed9a42
+      - ElementName: END_Bus_Volume
+        ObjectType: 13
+        guid: 3cd6d701ee58464391f7e2c27b64fe36
+      Path: Game Parameters\Default Work Unit\Level_Bus_Volumes\END_Bus_Volume
+    - name: HALL_Bus_Volume
+      guid: 4b074ad3cf0cae4dbf46820c09571ddd
+      id: 2713085616
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 97dba31da7636a41b8d9eb328c42a8c0
+      - ElementName: Level_Bus_Volumes
+        ObjectType: 4
+        guid: af9c2cffb46c18488a42311557ed9a42
+      - ElementName: HALL_Bus_Volume
+        ObjectType: 13
+        guid: 4b074ad3cf0cae4dbf46820c09571ddd
+      Path: Game Parameters\Default Work Unit\Level_Bus_Volumes\HALL_Bus_Volume
+    - name: Level_Bus_Volumes
+      guid: af9c2cffb46c18488a42311557ed9a42
+      id: 78467534
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 97dba31da7636a41b8d9eb328c42a8c0
+      - ElementName: Level_Bus_Volumes
+        ObjectType: 4
+        guid: af9c2cffb46c18488a42311557ed9a42
+      Path: Game Parameters\Default Work Unit\Level_Bus_Volumes
     - name: LPF_control
       guid: 15388e6c24cc844083370d5b263b10f1
       id: 3074830639
@@ -1623,6 +1928,23 @@ MonoBehaviour:
         ObjectType: 13
         guid: 77a63ba75250164f82a5a143afade4af
       Path: Game Parameters\Default Work Unit\test
+    - name: TUT_Bus_Volume
+      guid: cc1bef59a0ee7e47b7d12cc4e769065a
+      id: 988235148
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 97dba31da7636a41b8d9eb328c42a8c0
+      - ElementName: Level_Bus_Volumes
+        ObjectType: 4
+        guid: af9c2cffb46c18488a42311557ed9a42
+      - ElementName: TUT_Bus_Volume
+        ObjectType: 13
+        guid: cc1bef59a0ee7e47b7d12cc4e769065a
+      Path: Game Parameters\Default Work Unit\Level_Bus_Volumes\TUT_Bus_Volume
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -1928,7 +2250,7 @@ MonoBehaviour:
     m_lastTime: -8584663919773364773
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000020000000300000004000000050000000600000007000000090000000a0000000b0000000c0000000d0000000f00000012000000130000001400000015000000160000001700000018000000190000001b0000001d0000001e0000002300000024000000370000003800000039000000a0000000a1000000a2000000ac000000ad000000b0000000b1000000b2000000fb000000fc0000004801000049010000b0010000b1010000b3010000c7010000c8010000ca010000
+  ExpandedWaapiItemIds: 01000000020000000300000004000000050000000600000007000000090000000a0000000b0000000c0000000d0000000f00000012000000130000001400000015000000160000001700000018000000190000001b0000001d0000001e000000230000002400000033000000370000003800000039000000a0000000a1000000a2000000ac000000ad000000b0000000b1000000b2000000fb000000fc0000004801000049010000b0010000b1010000b3010000c7010000c8010000ca010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
