@@ -105,6 +105,7 @@ namespace AK
         static const AkUniqueID CAVE_BUS_VOLUME = 900695302U;
         static const AkUniqueID END_BUS_VOLUME = 1954146744U;
         static const AkUniqueID HALL_BUS_VOLUME = 2713085616U;
+        static const AkUniqueID LEVELAUDIOFADE_RTCP = 885933225U;
         static const AkUniqueID LPF_CONTROL = 3074830639U;
         static const AkUniqueID ROCK_FALL = 3378404558U;
         static const AkUniqueID TEST = 3157003241U;

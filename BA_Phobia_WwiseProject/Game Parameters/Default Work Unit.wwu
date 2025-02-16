@@ -27,6 +27,7 @@
 						<GameParameter Name="HALL_Bus_Volume" ID="{D34A074B-0CCF-4DAE-BF46-820C09571DDD}"/>
 						<GameParameter Name="END_Bus_Volume" ID="{01D7D63C-58EE-4346-91F7-E2C27B64FE36}"/>
 						<GameParameter Name="TUT_Bus_Volume" ID="{59EF1BCC-EEA0-477E-B7D1-2CC4E769065A}"/>
+						<GameParameter Name="LevelAudioFade_RTCP" ID="{9BFABAA3-2337-42E5-9F0F-0F02E42E9BE4}"/>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

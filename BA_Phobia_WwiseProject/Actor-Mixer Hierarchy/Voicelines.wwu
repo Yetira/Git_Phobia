@@ -27,13 +27,6 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="Lvl_1_Intro" ID="{41A4F568-E675-41C4-9EFA-59975D91A1F0}" ShortID="706964442">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>5</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>

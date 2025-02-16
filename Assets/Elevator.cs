@@ -6,6 +6,7 @@ public class Elevator : MonoBehaviour
 {
     public GameStateManager gameStateManager;
 
+    public GameObject liftRoom;
     public GameObject doorSoundSourceLift;
     public GameObject doorSoundSourceLevel;
     public GameObject bellSoundSource;
@@ -93,7 +94,10 @@ public class Elevator : MonoBehaviour
 
         doorClosed = false;
 
-        StartCoroutine(WaitForMusic());
+        // in case i cant fix transmission values
+        //AkSoundEngine.PostEvent("...", liftRoom);
+
+        //StartCoroutine(WaitForMusic());
     }
     private IEnumerator WaitForMusic()
     {

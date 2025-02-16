@@ -10,7 +10,7 @@ public class GameStateManager : MonoBehaviour
     public bool insideLift = false;
     public float transitionDelay = 2.0f;
 
-    public List<string> volumeRTPCs = new List<string>();
+    //public List<string> volumeRTPCs = new List<string>();
 
     public float fadeDuration = 5.0f;
 
@@ -34,7 +34,7 @@ public class GameStateManager : MonoBehaviour
         if (insideLift)
         {
             // Fade out before deactivating
-            StartCoroutine(FadeOutAudio(volumeRTPCs[currentLevelIndex], () =>
+            StartCoroutine(FadeOutAudio("LevelAudioFade_RTCP", () =>
             {
                 DeactivateCurrentLevel();
                 Invoke(nameof(ActivateNextLevel), transitionDelay);
@@ -68,7 +68,7 @@ public class GameStateManager : MonoBehaviour
         level[currentLevelIndex].SetActive(true);
         Debug.Log($"Switched to level {currentLevelIndex}");
 
-        StartCoroutine(FadeInAudio(volumeRTPCs[currentLevelIndex]));
+        StartCoroutine(FadeInAudio("LevelAudioFade_RTCP"));
     }
 
     private IEnumerator FadeOutAudio(string rtpcName, System.Action onComplete)
@@ -92,6 +92,8 @@ public class GameStateManager : MonoBehaviour
 
     private IEnumerator FadeInAudio(string rtpcName)
     {
+        yield return new WaitForSeconds(10);
+        
         float elapsedTime = 0f;
         float startValue = 0f;
         float targetValue = 100f;

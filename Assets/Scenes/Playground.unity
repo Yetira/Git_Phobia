@@ -845,7 +845,7 @@ MonoBehaviour:
   closePortalTriggerList: 
   rooms:
   - {fileID: 439893264}
-  - {fileID: 1528903752}
+  - {fileID: 1816617624}
 --- !u!65 &25655716
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2587,7 +2587,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &117795773
 Transform:
   m_ObjectHideFlags: 0
@@ -6882,6 +6882,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 125702488}
+  - {fileID: 2052246013}
   - {fileID: 947155216}
   - {fileID: 1529953296}
   - {fileID: 1176113898}
@@ -9132,7 +9133,7 @@ MonoBehaviour:
     WwiseObjectReference: {fileID: 11400000, guid: e28457b3eca45b14ebdcd0269599c3ca,
       type: 2}
   reverbLevel: 1
-  transmissionLoss: 0
+  transmissionLoss: 1
   roomToneEvent:
     idInternal: 0
     valueGuidInternal: 
@@ -28907,7 +28908,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1360847653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29022,6 +29023,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameStateManager: {fileID: 1878111551}
+  liftRoom: {fileID: 0}
   doorSoundSourceLift: {fileID: 573489991}
   doorSoundSourceLevel: {fileID: 1404197671}
   bellSoundSource: {fileID: 1402596175}
@@ -29159,6 +29161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameStateManager: {fileID: 1878111551}
+  liftRoom: {fileID: 0}
   doorSoundSourceLift: {fileID: 294813771}
   doorSoundSourceLevel: {fileID: 857574524}
   bellSoundSource: {fileID: 1529953295}
@@ -37589,16 +37592,10 @@ MonoBehaviour:
   - {fileID: 2030896663}
   - {fileID: 36795115}
   - {fileID: 2025227902}
-  currentLevelIndex: 1
+  currentLevelIndex: 0
   currentLevelComplete: 0
   insideLift: 0
   transitionDelay: 4
-  volumeRTPCs:
-  - TUT_Bus_Volume
-  - CABIN_Bus_Volume
-  - HALL_Bus_Volume
-  - CAVE_Bus_Volume
-  - END_Bus_Volume
   fadeDuration: 5
 --- !u!4 &1878111552
 Transform:
@@ -40680,6 +40677,111 @@ Transform:
   - {fileID: 1136978088}
   m_Father: {fileID: 1481553736}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2052246012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2052246013}
+  - component: {fileID: 2052246016}
+  - component: {fileID: 2052246015}
+  - component: {fileID: 2052246014}
+  m_Layer: 7
+  m_Name: lift_Door_DEBUG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2052246013
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052246012}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 9.45, y: 0.68000007, z: 7.32}
+  m_LocalScale: {x: 0.30412748, y: 5.696688, z: 4.272443}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 331323793}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!65 &2052246014
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052246012}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &2052246015
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052246012}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 6b911390c5825014e8377183a7837d3f, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2052246016
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052246012}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2058244600
 GameObject:
   m_ObjectHideFlags: 0
@@ -43827,7 +43929,7 @@ MonoBehaviour:
   vrCamera: {fileID: 1988112171}
   gameStateManager: {fileID: 1878111551}
   Feet: {fileID: 172558243}
-  m_StepInterval: 2.5
+  m_StepInterval: 2
   m_FixedSpeedFactor: 1
   canMove: 1
 --- !u!114 &135756641613574994
@@ -44127,7 +44229,7 @@ PrefabInstance:
     - target: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.362
+      value: 17.21
       objectReference: {fileID: 0}
     - target: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
@@ -44137,7 +44239,7 @@ PrefabInstance:
     - target: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -82.84
+      value: -68.45
       objectReference: {fileID: 0}
     - target: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}

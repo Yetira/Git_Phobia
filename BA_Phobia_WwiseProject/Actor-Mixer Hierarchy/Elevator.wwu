@@ -145,7 +145,7 @@
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="Lowpass" Type="int16">
 							<ValueList>
-								<Value>24</Value>
+								<Value>15</Value>
 							</ValueList>
 						</Property>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
@@ -275,6 +275,9 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="lift_hum2" ID="{F4F57979-85E2-433E-8F2C-BFFAC5940B0A}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>lift_hum2.wav</AudioFile>
 							<MediaIDList>

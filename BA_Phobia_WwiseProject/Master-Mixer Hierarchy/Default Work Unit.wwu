@@ -110,7 +110,7 @@
 														</PropertyList>
 														<ReferenceList>
 															<Reference Name="ControlInput">
-																<ObjectRef Name="CAVE_Bus_Volume" ID="{B3A7734A-4869-4CAC-B97D-F96228BEF0BF}" WorkUnitID="{1DA3DB97-63A7-416A-B8D9-EB328C42A8C0}"/>
+																<ObjectRef Name="LevelAudioFade_RTCP" ID="{9BFABAA3-2337-42E5-9F0F-0F02E42E9BE4}" WorkUnitID="{1DA3DB97-63A7-416A-B8D9-EB328C42A8C0}"/>
 															</Reference>
 															<Reference Name="Curve">
 																<Custom>
@@ -236,7 +236,7 @@
 														</PropertyList>
 														<ReferenceList>
 															<Reference Name="ControlInput">
-																<ObjectRef Name="HALL_Bus_Volume" ID="{D34A074B-0CCF-4DAE-BF46-820C09571DDD}" WorkUnitID="{1DA3DB97-63A7-416A-B8D9-EB328C42A8C0}"/>
+																<ObjectRef Name="LevelAudioFade_RTCP" ID="{9BFABAA3-2337-42E5-9F0F-0F02E42E9BE4}" WorkUnitID="{1DA3DB97-63A7-416A-B8D9-EB328C42A8C0}"/>
 															</Reference>
 															<Reference Name="Curve">
 																<Custom>
@@ -308,7 +308,7 @@
 														</PropertyList>
 														<ReferenceList>
 															<Reference Name="ControlInput">
-																<ObjectRef Name="CABIN_Bus_Volume" ID="{A753A9CF-C2CA-42E8-8E9F-E1367FFC2B33}" WorkUnitID="{1DA3DB97-63A7-416A-B8D9-EB328C42A8C0}"/>
+																<ObjectRef Name="LevelAudioFade_RTCP" ID="{9BFABAA3-2337-42E5-9F0F-0F02E42E9BE4}" WorkUnitID="{1DA3DB97-63A7-416A-B8D9-EB328C42A8C0}"/>
 															</Reference>
 															<Reference Name="Curve">
 																<Custom>
@@ -401,7 +401,7 @@
 														</PropertyList>
 														<ReferenceList>
 															<Reference Name="ControlInput">
-																<ObjectRef Name="END_Bus_Volume" ID="{01D7D63C-58EE-4346-91F7-E2C27B64FE36}" WorkUnitID="{1DA3DB97-63A7-416A-B8D9-EB328C42A8C0}"/>
+																<ObjectRef Name="LevelAudioFade_RTCP" ID="{9BFABAA3-2337-42E5-9F0F-0F02E42E9BE4}" WorkUnitID="{1DA3DB97-63A7-416A-B8D9-EB328C42A8C0}"/>
 															</Reference>
 															<Reference Name="Curve">
 																<Custom>
@@ -464,7 +464,7 @@
 														</PropertyList>
 														<ReferenceList>
 															<Reference Name="ControlInput">
-																<ObjectRef Name="TUT_Bus_Volume" ID="{59EF1BCC-EEA0-477E-B7D1-2CC4E769065A}" WorkUnitID="{1DA3DB97-63A7-416A-B8D9-EB328C42A8C0}"/>
+																<ObjectRef Name="LevelAudioFade_RTCP" ID="{9BFABAA3-2337-42E5-9F0F-0F02E42E9BE4}" WorkUnitID="{1DA3DB97-63A7-416A-B8D9-EB328C42A8C0}"/>
 															</Reference>
 															<Reference Name="Curve">
 																<Custom>
@@ -498,7 +498,7 @@
 									<PropertyList>
 										<Property Name="BusChannelConfig" Type="int32">
 											<ValueList>
-												<Value>16641</Value>
+												<Value>768</Value>
 											</ValueList>
 										</Property>
 										<Property Name="BusVolume" Type="Real64">
@@ -521,6 +521,43 @@
 															</Reference>
 														</ReferenceList>
 													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{E88C301C-8E83-4BBC-9E14-BE32ECDDAA0B}" ShortID="20857950">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="LevelAudioFade_RTCP" ID="{9BFABAA3-2337-42E5-9F0F-0F02E42E9BE4}" WorkUnitID="{1DA3DB97-63A7-416A-B8D9-EB328C42A8C0}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{7465080C-FF31-460D-8EC8-B1804167D29D}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
 												</Local>
 											</Reference>
 										</ObjectList>
