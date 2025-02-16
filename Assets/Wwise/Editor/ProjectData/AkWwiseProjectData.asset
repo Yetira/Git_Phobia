@@ -769,7 +769,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5b7d3d6d0746124ab1d6166bb3175237
     GuidInternal: 
-    m_lastTime: -8584619767045730863
+    m_lastTime: -8584618950340059093
     List:
     - name: ConRev
       guid: 7c9a1836a7bc9b4a9db9994ed869c5e2
@@ -921,7 +921,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 199508fe3d34424d9564a328ccca3022
     GuidInternal: 
-    m_lastTime: -8584619767172980769
+    m_lastTime: -8584618953787834729
     List:
     - name: 5_Cabin
       guid: 2bbcea8b66788f4c89126f34d5d5e3ed
@@ -1311,7 +1311,27 @@ MonoBehaviour:
         ObjectType: 3
         guid: e1d5d1e341a6734489698a843f5b70e7
       Path: Events\Default Work Unit\Hall\office_tone
-      maxAttenuation: 0
+      maxAttenuation: 10
+      maxDuration: -1
+      minDuration: -1
+    - name: office_tone2
+      guid: 130e0d46e8eedb46864c76910bd37653
+      id: 2378886518
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: Hall
+        ObjectType: 4
+        guid: d9eb78ffc5174c46bd5b57c4ab9cbdd7
+      - ElementName: office_tone2
+        ObjectType: 3
+        guid: 130e0d46e8eedb46864c76910bd37653
+      Path: Events\Default Work Unit\Hall\office_tone2
+      maxAttenuation: 10
       maxDuration: -1
       minDuration: -1
     - name: old_tv
@@ -1351,7 +1371,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 296df7dc8861294ba7f3ee2fbe50e534
       Path: Events\Default Work Unit\Tutorial SFX\Play_radio
-      maxAttenuation: 100
+      maxAttenuation: 40
       maxDuration: -1
       minDuration: -1
     - name: player
@@ -2267,7 +2287,7 @@ MonoBehaviour:
     m_lastTime: -8584663919773364773
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000020000000300000004000000050000000600000007000000090000000a0000000b0000000c0000000d0000000f00000012000000130000001400000015000000160000001700000018000000190000001b0000001d0000001e000000230000002400000033000000370000003800000039000000a0000000a1000000a2000000ac000000ad000000b0000000b1000000b2000000fb000000fc0000004801000049010000b0010000b1010000b3010000c7010000c8010000ca010000
+  ExpandedWaapiItemIds: 01000000020000000300000004000000050000000600000007000000090000000a0000000b0000000c0000000d0000000f00000012000000130000001400000015000000160000001700000018000000190000001b0000001d0000001e0000002300000024000000330000003700000038000000390000006f0000007000000075000000a0000000a1000000a2000000ac000000ad000000b0000000b1000000b2000000fb000000fc0000004801000049010000b0010000b1010000b3010000c7010000c8010000ca010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

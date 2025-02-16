@@ -18,6 +18,7 @@
 						<ObjectRef Name="water_drips" ID="{10F0717B-1218-461A-8C1A-9C00851CF004}" WorkUnitID="{71D003F0-866B-4C31-A330-E3E913374BAC}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="cabin_wind" ID="{EC04C779-1F8C-4673-8A78-0F635DB5EECB}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="floor_creak" ID="{DDC850F0-1851-46D6-9E07-CBE1B9AFF2C1}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="office_tone2" ID="{460D0E13-EEE8-46DB-864C-76910BD37653}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="lift_open" ID="{B234858E-1810-475C-9CC7-C4F8E6936301}" WorkUnitID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="hall_outside_tone" ID="{A2D84301-BC6A-4815-A2BB-5498B6A8CB52}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="cave_tone2" ID="{2011F105-F2CB-4A36-9B4D-51DF8861A4AC}" WorkUnitID="{83F8F8B2-3880-41F3-9975-C575370FFBDC}" Origin="Manual" Filter="7"/>

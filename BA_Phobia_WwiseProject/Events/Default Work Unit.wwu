@@ -321,14 +321,21 @@
 								<Action Name="" ID="{5EB6CB94-A5E4-45EB-9744-9A1F482766DC}" ShortID="64848467">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="office_phone" ID="{E04B5DE8-B438-464B-91F0-2BACD0391116}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
+											<ObjectRef Name="office_phone2" ID="{3BF7CFF8-AD75-4414-9B34-68C79855724F}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{4BBABCFD-72DC-455D-9DF3-4542B3F2371F}" ShortID="64236283">
+								<Action Name="" ID="{FCBFD4EE-C176-4693-BE37-01707FB1FA39}" ShortID="1070899865">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="typewriter" ID="{DDCF7066-7C5F-4A5E-9902-A146B80713BC}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
+											<ObjectRef Name="business_talk1" ID="{B265CA64-0A56-4E48-B895-0CDC402189B4}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{CC547DBA-EFCF-474F-9AA7-E18B5E3ADF1F}" ShortID="309920108">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="typewriter2" ID="{0D7EA4FF-AB70-4D43-88A0-283F529FDA68}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -340,6 +347,24 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="window_close" ID="{07069A0C-C8ED-469C-B84F-AD193BFCBC18}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="office_tone2" ID="{460D0E13-EEE8-46DB-864C-76910BD37653}">
+							<ChildrenList>
+								<Action Name="" ID="{43C67AAB-10E1-487A-82A8-6BD82C0878E8}" ShortID="386452091">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="office_phone" ID="{212DADC9-A02B-4207-8F07-8CCA8A65DC4A}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{78619047-113C-4CA7-BBAB-3D97EA62B085}" ShortID="831903157">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="typewriter" ID="{DDCF7066-7C5F-4A5E-9902-A146B80713BC}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

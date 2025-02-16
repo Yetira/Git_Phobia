@@ -41,6 +41,7 @@ namespace AK
         static const AkUniqueID LULLABY_EVENT = 2466003463U;
         static const AkUniqueID NEON_LIGHTBUZZ = 2028048627U;
         static const AkUniqueID OFFICE_TONE = 1783871532U;
+        static const AkUniqueID OFFICE_TONE2 = 2378886518U;
         static const AkUniqueID OLD_TV = 1802401821U;
         static const AkUniqueID PLAY_RADIO = 2953849999U;
         static const AkUniqueID PLAY_RAT = 2620876451U;

@@ -2587,7 +2587,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &117795773
 Transform:
   m_ObjectHideFlags: 0
@@ -18186,7 +18186,7 @@ MonoBehaviour:
   roomToneEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: a62cd8a093e651940a8dca3a65fc80c4,
+    WwiseObjectReference: {fileID: 11400000, guid: 07625fe58447e9c478fedcf79483e1ee,
       type: 2}
   roomToneAuxSend: 0
 --- !u!65 &953086975
@@ -37592,7 +37592,7 @@ MonoBehaviour:
   - {fileID: 2030896663}
   - {fileID: 36795115}
   - {fileID: 2025227902}
-  currentLevelIndex: 0
+  currentLevelIndex: 2
   currentLevelComplete: 0
   insideLift: 0
   transitionDelay: 4
@@ -39987,7 +39987,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2030896664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44229,7 +44229,7 @@ PrefabInstance:
     - target: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.21
+      value: 14.97
       objectReference: {fileID: 0}
     - target: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
@@ -44239,7 +44239,7 @@ PrefabInstance:
     - target: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -68.45
+      value: -82.46
       objectReference: {fileID: 0}
     - target: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
