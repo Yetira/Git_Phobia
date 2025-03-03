@@ -19,7 +19,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="AURO-3D" ID="{DC01329E-C927-4F2A-B863-D279A8472221}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+							<ObjectRef Name="ELEVATOR" ID="{A7471B21-263C-4A37-83AC-7BDC7097CC3C}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 						</Reference>
 						<Reference Name="ReflectionsAuxSend">
 							<ObjectRef Name="Reflect" ID="{32F40114-197C-4E2E-87F1-D24A3C7DDA4E}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
@@ -53,7 +53,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="AURO-3D" ID="{DC01329E-C927-4F2A-B863-D279A8472221}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+							<ObjectRef Name="ELEVATOR" ID="{A7471B21-263C-4A37-83AC-7BDC7097CC3C}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -85,7 +85,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="AURO-3D" ID="{DC01329E-C927-4F2A-B863-D279A8472221}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+							<ObjectRef Name="ELEVATOR" ID="{A7471B21-263C-4A37-83AC-7BDC7097CC3C}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 						</Reference>
 						<Reference Name="ReflectionsAuxSend">
 							<ObjectRef Name="Reflect" ID="{32F40114-197C-4E2E-87F1-D24A3C7DDA4E}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
@@ -120,7 +120,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="AURO-3D" ID="{DC01329E-C927-4F2A-B863-D279A8472221}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+							<ObjectRef Name="ELEVATOR" ID="{A7471B21-263C-4A37-83AC-7BDC7097CC3C}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 						</Reference>
 						<Reference Name="ReflectionsAuxSend">
 							<ObjectRef Name="Reflect" ID="{32F40114-197C-4E2E-87F1-D24A3C7DDA4E}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
@@ -149,6 +149,11 @@
 							</ValueList>
 						</Property>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-12</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -158,7 +163,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="AURO-3D" ID="{DC01329E-C927-4F2A-B863-D279A8472221}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+							<ObjectRef Name="ELEVATOR" ID="{A7471B21-263C-4A37-83AC-7BDC7097CC3C}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 						</Reference>
 						<Reference Name="ReflectionsAuxSend">
 							<ObjectRef Name="Reflect" ID="{32F40114-197C-4E2E-87F1-D24A3C7DDA4E}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
@@ -240,7 +245,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="AURO-3D" ID="{DC01329E-C927-4F2A-B863-D279A8472221}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+							<ObjectRef Name="ELEVATOR" ID="{A7471B21-263C-4A37-83AC-7BDC7097CC3C}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

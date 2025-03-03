@@ -284,7 +284,7 @@
 									<PropertyList>
 										<Property Name="BusVolume" Type="Real64">
 											<ValueList>
-												<Value>-10</Value>
+												<Value>3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -360,6 +360,13 @@
 									</ObjectLists>
 								</Bus>
 								<Bus Name="ELEVATOR" ID="{A7471B21-263C-4A37-83AC-7BDC7097CC3C}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ChildrenList>
 										<AuxBus Name="Elevator_aux" ID="{0DBBFA98-7822-44D9-B900-38C3FDB0BBE0}">
 											<PropertyList>

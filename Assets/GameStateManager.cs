@@ -92,7 +92,7 @@ public class GameStateManager : MonoBehaviour
 
     private IEnumerator FadeInAudio(string rtpcName)
     {
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(15);
         
         float elapsedTime = 0f;
         float startValue = 0f;
