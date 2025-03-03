@@ -9,10 +9,18 @@ public class triggerGirl : MonoBehaviour
 
     public girlBehavior girl;
 
+    private bool isProcessing;
+
+    private void Start()
+    {
+        isProcessing = false;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.layer == player)
+        if(other.gameObject.layer == player && !isProcessing)
         {
+            isProcessing = true;
             girl.girlRun();
         }
     }

@@ -2251,6 +2251,7 @@ IR Pre-delay: 20ms
 </Comment>
 							<PropertyList>
 								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="FrontRearDelay" Type="Real32" Value="14"/>
 								<Property Name="IRConvolutionSmooth" Type="Real32" Value="5"/>
 								<Property Name="IRConvolutionStop" Type="Real64" Value="4.04647541966427"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
@@ -2261,7 +2262,8 @@ IR Pre-delay: 20ms
 								<Property Name="IRLPFAutomate" Type="bool" Value="True"/>
 								<Property Name="IRLevel" Type="Real32" Value="-45"/>
 								<Property Name="IRStretch" Type="Real32" Value="200"/>
-								<Property Name="PreDelay" Type="Real32" Value="64"/>
+								<Property Name="PreDelay" Type="Real32" Value="72"/>
+								<Property Name="WetLevel" Type="Real32" Value="3.5"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="AK St-Katharinen" ID="{5314F988-340E-4631-B4BC-52FB22E4AD77}">

@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class rockFall : MonoBehaviour
 {
+    public VoiceLineManager voiceLineManager;
+    public triggerRock triggerRock;
 
     public int groundLayer;
 
@@ -74,6 +76,8 @@ public class rockFall : MonoBehaviour
 
             rat.ratRun();
 
+            StartCoroutine(WaitToDisableRock());
+
         }
     }
     private void ResetCube()
@@ -86,7 +90,9 @@ public class rockFall : MonoBehaviour
 
     private IEnumerator WaitToDisableRock()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(5);
+
+        voiceLineManager.PlayLevelVoiceline();
 
         gameObject.SetActive(false);
     }

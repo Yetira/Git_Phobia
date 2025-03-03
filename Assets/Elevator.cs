@@ -6,7 +6,7 @@ public class Elevator : MonoBehaviour
 {
     public GameStateManager gameStateManager;
 
-    public GameObject liftRoom;
+    //public GameObject liftRoom;
     public GameObject doorSoundSourceLift;
     public GameObject doorSoundSourceLevel;
     public GameObject bellSoundSource;

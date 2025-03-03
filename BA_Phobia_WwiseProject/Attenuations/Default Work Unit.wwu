@@ -226,7 +226,7 @@
 										</Point>
 										<Point>
 											<XPos>100</XPos>
-											<YPos>-200</YPos>
+											<YPos>-15.688</YPos>
 											<Flags>37</Flags>
 										</Point>
 									</PointList>
@@ -465,7 +465,7 @@
 				</Attenuation>
 				<Attenuation Name="girlRun" ID="{0885DA2F-A71E-40D4-B58D-D6866F5C9C3D}" ShortID="674574285">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="60"/>
+						<Property Name="RadiusMax" Type="Real64" Value="70"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -481,7 +481,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>60</XPos>
+											<XPos>70</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -747,7 +747,7 @@
 				</Attenuation>
 				<Attenuation Name="office" ID="{8C955D73-67A4-46BB-8BEC-1B4B6BACEDC4}" ShortID="9986745">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="10"/>
+						<Property Name="RadiusMax" Type="Real64" Value="13"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -763,7 +763,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>10</XPos>
+											<XPos>13</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -911,7 +911,7 @@
 				</Attenuation>
 				<Attenuation Name="Outside" ID="{1FC8F50F-36DF-49DC-8D34-D0C53488AFDE}" ShortID="831432438">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="50"/>
+						<Property Name="RadiusMax" Type="Real64" Value="30"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -927,12 +927,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>22.0358</XPos>
-											<YPos>-8.47053</YPos>
-											<Flags>0</Flags>
-										</Point>
-										<Point>
-											<XPos>50</XPos>
+											<XPos>30</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -1612,6 +1607,9 @@
 					</CurveUsageInfoList>
 				</Attenuation>
 				<Attenuation Name="lift_tone" ID="{32568689-28EC-4095-A770-FA85CC3AEB31}" ShortID="1032913877">
+					<PropertyList>
+						<Property Name="RadiusMax" Type="Real64" Value="50"/>
+					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
@@ -1622,11 +1620,11 @@
 									<PointList>
 										<Point>
 											<XPos>0</XPos>
-											<YPos>-0</YPos>
+											<YPos>0</YPos>
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>100</XPos>
+											<XPos>50</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>

@@ -10,7 +10,7 @@ public class triggerGirlVoiceline : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && triggerRock.voicelineCounter == 0)
+        if (other.CompareTag("Player"))
         {
             triggerRock.voicelineCounter++;
             voiceLineManager.PlayLevelVoiceline();

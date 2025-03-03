@@ -12,10 +12,19 @@ public class triggerLift : MonoBehaviour
 
     public Elevator elevator;
 
+    private bool isProcessing;
+
+    private void Start()
+    {
+        isProcessing = false;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.layer == player)
+        if (other.gameObject.layer == player && !isProcessing)
         {
+            isProcessing=true;
+            
             StateManager.currentLevelComplete = true;
             elevator.Arrive();
 

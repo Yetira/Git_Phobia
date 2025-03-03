@@ -57,7 +57,7 @@ public class AltFirstPersonController : MonoBehaviour
 
         if (gameStateManager.currentLevelIndex == 3 && !gameStateManager.insideLift)
         {
-            AkSoundEngine.PostEvent("breath_slow", gameObject);
+            //AkSoundEngine.PostEvent("breath_slow", gameObject);
         }
 
         if (vrCamera == null)

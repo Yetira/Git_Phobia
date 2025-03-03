@@ -14,14 +14,12 @@ public class officeTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player") && hall_Enter.voicelineCounter == 2)
         {
-            hall_Enter.voicelineCounter++;
-            voiceLineManager.PlayLevelVoiceline();
-
-            //office events: play conversation event in people game obj, play door open sound, move portal obstruction, (move people inside? + close door?)
+ 
+            //office events: play conversation event in people game obj
 
             StartCoroutine(WaitForOfficeEventEnd());
 
-            Debug.Log("Play third Voiceline");        }
+        }
     }
 
     private IEnumerator WaitForOfficeEventEnd()

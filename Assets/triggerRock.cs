@@ -37,8 +37,5 @@ public class triggerRock : MonoBehaviour
 
         rock.RockFall();
 
-        voiceLineManager.PlayLevelVoiceline();
-
-        Debug.Log("Play voiceline 2 (after rock)");
     }
 }
