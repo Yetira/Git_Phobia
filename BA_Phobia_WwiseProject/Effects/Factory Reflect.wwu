@@ -7,7 +7,6 @@
 					<PropertyList>
 						<Property Name="CurveUsageMask" Type="Uint32" Value="127"/>
 						<Property Name="DecorrAlgorithmSelect" Type="int32" Value="1"/>
-						<Property Name="MaxDistance" Type="Real32" Value="500"/>
 					</PropertyList>
 					<PluginData>
 	<ReflectData>
@@ -92,27 +91,27 @@
 							<Flags>5</Flags>
 						</Point>
 						<Point>
-							<XPos>34.85477</XPos>
+							<XPos>69.70954</XPos>
 							<YPos>-5.19523</YPos>
 							<Flags>0</Flags>
 						</Point>
 						<Point>
-							<XPos>79.56432</XPos>
+							<XPos>159.12864</XPos>
 							<YPos>-13.35922</YPos>
 							<Flags>0</Flags>
 						</Point>
 						<Point>
-							<XPos>146.6805</XPos>
+							<XPos>293.361</XPos>
 							<YPos>-22.21624</YPos>
 							<Flags>0</Flags>
 						</Point>
 						<Point>
-							<XPos>232.36514</XPos>
+							<XPos>464.73028</XPos>
 							<YPos>-26.81478</YPos>
 							<Flags>0</Flags>
 						</Point>
 						<Point>
-							<XPos>500</XPos>
+							<XPos>1000</XPos>
 							<YPos>-200</YPos>
 							<Flags>37</Flags>
 						</Point>
@@ -131,7 +130,7 @@
 							<Flags>5</Flags>
 						</Point>
 						<Point>
-							<XPos>500</XPos>
+							<XPos>1000</XPos>
 							<YPos>20</YPos>
 							<Flags>37</Flags>
 						</Point>
@@ -150,7 +149,7 @@
 							<Flags>5</Flags>
 						</Point>
 						<Point>
-							<XPos>500</XPos>
+							<XPos>1000</XPos>
 							<YPos>20</YPos>
 							<Flags>37</Flags>
 						</Point>
@@ -169,7 +168,7 @@
 							<Flags>5</Flags>
 						</Point>
 						<Point>
-							<XPos>500</XPos>
+							<XPos>1000</XPos>
 							<YPos>0</YPos>
 							<Flags>37</Flags>
 						</Point>

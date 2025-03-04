@@ -8,6 +8,11 @@
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-13</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -233,96 +238,13 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-36</Value>
+								<Value>-40</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
-							<Custom CreatedFrom="{B8F11F36-20D4-468E-BC66-5C6E1BEF8E7A}">
-								<Attenuation Name="test_30 (Custom)" ID="{FE47544D-AF97-4761-A891-6712996B19E5}" ShortID="314615781">
-									<PropertyList>
-										<Property Name="RadiusMax" Type="Real64" Value="30"/>
-									</PropertyList>
-									<CurveUsageInfoList>
-										<VolumeDryUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="VolumeDry" ID="{AAB94711-4555-47B6-AD51-E5C531E15C9F}">
-													<PropertyList>
-														<Property Name="Flags" Type="int32" Value="3"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>0</XPos>
-															<YPos>0</YPos>
-															<Flags>5</Flags>
-														</Point>
-														<Point>
-															<XPos>30</XPos>
-															<YPos>-200</YPos>
-															<Flags>37</Flags>
-														</Point>
-													</PointList>
-												</Curve>
-											</CurveUsageInfo>
-										</VolumeDryUsage>
-										<VolumeWetGameUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-										</VolumeWetGameUsage>
-										<VolumeWetUserUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-										</VolumeWetUserUsage>
-										<LowPassFilterUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</LowPassFilterUsage>
-										<HighPassFilterUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</HighPassFilterUsage>
-										<SpreadUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</SpreadUsage>
-										<FocusUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</FocusUsage>
-										<ObstructionVolumeUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-										</ObstructionVolumeUsage>
-										<ObstructionLPFUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-										</ObstructionLPFUsage>
-										<ObstructionHPFUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-										</ObstructionHPFUsage>
-										<OcclusionVolumeUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-										</OcclusionVolumeUsage>
-										<OcclusionLPFUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-										</OcclusionLPFUsage>
-										<OcclusionHPFUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-										</OcclusionHPFUsage>
-										<DiffractionVolumeUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-										</DiffractionVolumeUsage>
-										<DiffractionLPFUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-										</DiffractionLPFUsage>
-										<DiffractionHPFUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-										</DiffractionHPFUsage>
-										<TransmissionVolumeUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-										</TransmissionVolumeUsage>
-										<TransmissionLPFUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-										</TransmissionLPFUsage>
-										<TransmissionHPFUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-										</TransmissionHPFUsage>
-									</CurveUsageInfoList>
-								</Attenuation>
-							</Custom>
+							<ObjectRef Name="tv" ID="{13D453F5-290D-49EC-A8EA-447A1DC42E6A}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
 						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
@@ -336,6 +258,10 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="old_tv_program" ID="{BE9A4DB6-2218-4387-98AF-DE1D39A0F8E3}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="24.7003428571429"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>old_tv_program.wav</AudioFile>
 							<MediaIDList>
@@ -355,7 +281,7 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-30</Value>
+								<Value>-37</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -375,6 +301,10 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="fire_crackling" ID="{054A8006-2835-4A85-841C-FD00C9CF3FF8}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.2"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.2"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>fire_crackling.wav</AudioFile>
 							<MediaIDList>
@@ -390,16 +320,11 @@
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-						<Property Name="Highpass" Type="int16">
-							<ValueList>
-								<Value>29</Value>
-							</ValueList>
-						</Property>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-15</Value>
+								<Value>-25</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -538,6 +463,10 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="wind_howl_soft_cabin" ID="{0248E561-890C-4D0F-8823-E67CE98D5711}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.2"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.2"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>wind_howl_soft_cabin.wav</AudioFile>
 							<MediaIDList>
@@ -555,13 +484,13 @@
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Lowpass" Type="int16">
 							<ValueList>
-								<Value>51</Value>
+								<Value>57</Value>
 							</ValueList>
 						</Property>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-15</Value>
+								<Value>-25</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -578,6 +507,10 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="Ambiance_Rain_Calm_Loop_Stereo" ID="{5435A99A-3AB2-4308-B2AE-9E0119454B38}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.2"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.2"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>Ambiance_Rain_Calm_Loop_Stereo.wav</AudioFile>
 							<MediaIDList>
@@ -595,10 +528,15 @@
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
-							<ObjectRef Name="fireplace" ID="{85786744-8786-40E4-B3C8-F2D9A8FE7CC4}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+							<ObjectRef Name="granny" ID="{36C5B3AA-FC9C-4C7D-B517-57E628CBF635}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
 						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
@@ -612,6 +550,10 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="grandma_event2" ID="{C6D69CDD-6EE8-4781-95BB-77CF28160E87}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.2"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.2"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>grandma_event2.wav</AudioFile>
 							<MediaIDList>
@@ -630,13 +572,13 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>3</Value>
+								<Value>-8</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
-							<ObjectRef Name="fireplace" ID="{85786744-8786-40E4-B3C8-F2D9A8FE7CC4}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+							<ObjectRef Name="granny" ID="{36C5B3AA-FC9C-4C7D-B517-57E628CBF635}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
 						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
@@ -666,16 +608,21 @@
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>29</Value>
+							</ValueList>
+						</Property>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-18</Value>
+								<Value>-30</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
-							<ObjectRef Name="fireplace" ID="{85786744-8786-40E4-B3C8-F2D9A8FE7CC4}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+							<ObjectRef Name="granny" ID="{36C5B3AA-FC9C-4C7D-B517-57E628CBF635}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
 						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
@@ -689,6 +636,10 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="chair_rock" ID="{6935F36D-CECF-48F9-B712-221D676B621C}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.2"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.2"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>chair_rock.wav</AudioFile>
 							<MediaIDList>
@@ -708,7 +659,7 @@
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
-							<ObjectRef Name="fireplace" ID="{85786744-8786-40E4-B3C8-F2D9A8FE7CC4}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+							<ObjectRef Name="cat" ID="{BC8903AB-B37B-4FB2-81CC-DC66A506E77A}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
 						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
@@ -747,7 +698,7 @@
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-5</Value>
+										<Value>-17</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -875,7 +826,7 @@
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-20</Value>
+										<Value>-25</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -931,6 +882,75 @@
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
+				<Sound Name="637083__nox_sound__ambiance_nature_night_cricket_calm_loop_stereo(1)" ID="{E72EEC49-9AD4-46C1-8D60-20111455A0E7}" ShortID="796170172">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>57</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-20</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="637083__nox_sound__ambiance_nature_night_cricket_calm_loop_stereo(1)" ID="{E88BEEE9-8D9D-4EE9-AB4D-339514F97FE8}">
+							<Language>SFX</Language>
+							<AudioFile>637083__nox_sound__ambiance_nature_night_cricket_calm_loop_stereo(1).wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="537205632"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="637083__nox_sound__ambiance_nature_night_cricket_calm_loop_stereo(1)" ID="{E88BEEE9-8D9D-4EE9-AB4D-339514F97FE8}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="482118__nox_sound__ambience_night_loop_stereo" ID="{F48A933F-E995-48B4-B3C2-53BBB0326737}" ShortID="928030831">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>27</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-25</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="482118__nox_sound__ambience_night_loop_stereo" ID="{EBE51BBD-31A5-4F9D-8C54-A581B68D8801}">
+							<Language>SFX</Language>
+							<AudioFile>482118__nox_sound__ambience_night_loop_stereo.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="765162866"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="482118__nox_sound__ambience_night_loop_stereo" ID="{EBE51BBD-31A5-4F9D-8C54-A581B68D8801}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

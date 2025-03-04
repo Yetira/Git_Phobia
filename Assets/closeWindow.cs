@@ -15,10 +15,12 @@ public class closeWindow : MonoBehaviour
     public float speed = 5f;             
     private bool isClosing = false;
     private bool isProcessing;
+    private bool outroPlayed;
 
     private void Start()
     {
         isProcessing = false;
+        outroPlayed = false;
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -41,9 +43,10 @@ public class closeWindow : MonoBehaviour
 
 
 
-            if (window.transform.localPosition == windowClosedPosition)
+            if (window.transform.localPosition == windowClosedPosition && !outroPlayed)
             {
                 isClosing = false;
+                outroPlayed = true;
 
                 VoiceLineManager.PlayOutro();
 

@@ -35,16 +35,21 @@ public class Elevator : MonoBehaviour
 
     public void Close()
     {
-        Debug.Log("Door Closing");
+        if(gameStateManager.currentLevelIndex <4)
+        {
+            Debug.Log("Door Closing");
 
-        door1.DoorClose();
-        door2.DoorClose();
-        AkSoundEngine.PostEvent("lift_close", doorSoundSourceLift);
-        //AkSoundEngine.PostEvent("lift_close", doorSoundSourceLevel);
+            door1.DoorClose();
+            door2.DoorClose();
+            AkSoundEngine.PostEvent("lift_close", doorSoundSourceLift);
+            //AkSoundEngine.PostEvent("lift_close", doorSoundSourceLevel);
 
-        StartCoroutine(Wait());
+            StartCoroutine(Wait());
 
-        doorClosed = true;
+            doorClosed = true;
+        }
+        
+       
 
     }
 

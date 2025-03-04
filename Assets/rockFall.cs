@@ -6,7 +6,6 @@ using UnityEngine;
 public class rockFall : MonoBehaviour
 {
     public VoiceLineManager voiceLineManager;
-    public triggerRock triggerRock;
 
     public int groundLayer;
 
@@ -19,6 +18,7 @@ public class rockFall : MonoBehaviour
     private Vector3 startPosition;
 
     uint rockFallId;
+    uint rockLandId;
 
     private bool rockLanded;
 
@@ -59,7 +59,8 @@ public class rockFall : MonoBehaviour
             rbRock.useGravity = true;
             rbRock.isKinematic = false;
 
-            rockFallId = AkSoundEngine.PostEvent("rock_fall", gameObject);
+            rockFallId = AkSoundEngine.PostEvent("play_rock_fall", gameObject);
+            //AkSoundEngine.PostEvent("play_rock_fall", gameObject);
             Debug.Log("rock is falling.");
         }
     }
@@ -69,12 +70,13 @@ public class rockFall : MonoBehaviour
         {
             rockLanded = true;
 
-            AkSoundEngine.PostEvent("rock_land", gameObject);
+            rockLandId = AkSoundEngine.PostEvent("rock_land", gameObject);
             Debug.Log("rock has landed.");
 
             AkSoundEngine.StopPlayingID(rockFallId);
+            //AkSoundEngine.PostEvent("stop_rock_fall", gameObject);
 
-            rat.ratRun();
+            //rat.ratRun();
 
             StartCoroutine(WaitToDisableRock());
 
@@ -90,7 +92,13 @@ public class rockFall : MonoBehaviour
 
     private IEnumerator WaitToDisableRock()
     {
-        yield return new WaitForSeconds(5);
+
+        yield return new WaitForSeconds(3.5f);
+
+        Debug.Log("cut out rock");
+        //AkSoundEngine.StopPlayingID(rockLandId);
+
+        yield return new WaitForSeconds(3);
 
         voiceLineManager.PlayLevelVoiceline();
 

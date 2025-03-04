@@ -8,10 +8,15 @@
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>35</Value>
+							</ValueList>
+						</Property>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-20</Value>
+								<Value>-27</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -31,6 +36,12 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="outside" ID="{1216033F-24F4-4F51-A0A9-FFE1282CF10E}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.2"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.1"/>
+								<Property Name="LoopBegin" Type="Real64" Value="0.279270055555556"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>outside.wav</AudioFile>
 							<MediaIDList>
@@ -94,7 +105,7 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-36.5</Value>
+								<Value>-42.5</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -114,6 +125,12 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="neon_lightbuzz" ID="{622FB03D-C392-434E-9EAD-B848FF7498B3}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.2"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.2"/>
+								<Property Name="LoopBegin" Type="Real64" Value="0.240916220710506"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>neon_lightbuzz.wav</AudioFile>
 							<MediaIDList>
@@ -154,7 +171,7 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-20</Value>
+								<Value>-30</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -266,7 +283,7 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-19</Value>
+								<Value>-30</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -392,7 +409,7 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-30</Value>
+								<Value>-35</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -603,7 +620,7 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-5</Value>
+								<Value>-10</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -651,10 +668,15 @@
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Lowpass" Type="int16">
 							<ValueList>
-								<Value>63</Value>
+								<Value>66</Value>
 							</ValueList>
 						</Property>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -715,7 +737,7 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-25</Value>
+								<Value>-35</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -861,7 +883,7 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-20</Value>
+								<Value>-33</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>

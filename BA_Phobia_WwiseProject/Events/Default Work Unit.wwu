@@ -122,9 +122,23 @@
 						<Event Name="cabin_tone" ID="{8E71CB89-BB57-4A59-BC4B-B47EFEE5248D}">
 							<ChildrenList>
 								<Action Name="" ID="{CD3856FC-9627-424E-ACDF-08BA62019306}" ShortID="705530358">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Ambiance_Rain_Calm_Loop_Stereo" ID="{A28E9798-63AF-4226-A741-EF4426B72B82}" WorkUnitID="{6E5FA8A8-1154-45BF-9934-DB0DCEB04F0B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{75BF1B46-A7EA-47B3-AEDA-C9FCF2FCF182}" ShortID="888922186">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="637083__nox_sound__ambiance_nature_night_cricket_calm_loop_stereo(1)" ID="{E72EEC49-9AD4-46C1-8D60-20111455A0E7}" WorkUnitID="{6E5FA8A8-1154-45BF-9934-DB0DCEB04F0B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

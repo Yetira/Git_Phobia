@@ -45,12 +45,13 @@ namespace AK
         static const AkUniqueID OLD_TV = 1802401821U;
         static const AkUniqueID PLAY_RADIO = 2953849999U;
         static const AkUniqueID PLAY_RAT = 2620876451U;
-        static const AkUniqueID ROCK_FALL = 3378404558U;
+        static const AkUniqueID PLAY_ROCK_FALL = 1730393267U;
         static const AkUniqueID ROCK_LAND = 119891818U;
         static const AkUniqueID STOP_GRANNY_SLEEP = 2269248021U;
         static const AkUniqueID STOP_LEVEL_AUDIO = 2645868965U;
         static const AkUniqueID STOP_RADIO = 151474297U;
         static const AkUniqueID STOP_RAT = 639911593U;
+        static const AkUniqueID STOP_ROCK_FALL = 1386686261U;
         static const AkUniqueID WATER_DRIPS = 3853114527U;
         static const AkUniqueID WIND_HOWL = 652692592U;
         static const AkUniqueID WINDOW_CLOSE = 3146991628U;
@@ -107,6 +108,7 @@ namespace AK
         static const AkUniqueID CAVE_BUS_VOLUME = 900695302U;
         static const AkUniqueID END_BUS_VOLUME = 1954146744U;
         static const AkUniqueID HALL_BUS_VOLUME = 2713085616U;
+        static const AkUniqueID LEVEL_LPF = 2487395322U;
         static const AkUniqueID LEVELAUDIOFADE_RTCP = 885933225U;
         static const AkUniqueID LPF_CONTROL = 3074830639U;
         static const AkUniqueID ROCK_FALL = 3378404558U;

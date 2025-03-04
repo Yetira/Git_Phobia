@@ -14,10 +14,21 @@ public class GameStateManager : MonoBehaviour
 
     public float fadeDuration = 5.0f;
 
+    public float focusFadeDuration = 5;
+    private bool isFocusingHum;
+
     private void Start()
     {
         InitializeLevels();
+    }
 
+    private void Update()
+    {
+        if(currentLevelComplete && !isFocusingHum)
+        {
+            isFocusingHum=true;
+            StartCoroutine(FocusElevatorHum("LevelAudioFade_RTCP"));
+        }
     }
 
     private void InitializeLevels()
@@ -26,6 +37,7 @@ public class GameStateManager : MonoBehaviour
         {
             level[i].SetActive(i == currentLevelIndex);
             currentLevelComplete = false;
+            isFocusingHum = false;
         }
     }
 
@@ -38,6 +50,7 @@ public class GameStateManager : MonoBehaviour
             {
                 DeactivateCurrentLevel();
                 Invoke(nameof(ActivateNextLevel), transitionDelay);
+
             }));
         }
     }
@@ -61,7 +74,6 @@ public class GameStateManager : MonoBehaviour
     }
    
 
-
     private void ActivateNextLevel()
     {
         
@@ -70,16 +82,16 @@ public class GameStateManager : MonoBehaviour
 
         StartCoroutine(FadeInAudio("LevelAudioFade_RTCP"));
 
-        if(currentLevelIndex == 4)
-        {
+        currentLevelComplete = false;
+        isFocusingHum = false;
 
-        }
     }
 
     private IEnumerator FadeOutAudio(string rtpcName, System.Action onComplete)
     {
         float elapsedTime = 0f;
-        float startValue = 100f;
+        // start 50 when focus hum goes down to there?
+        float startValue = 15;
         float targetValue = 0f;
 
         while (elapsedTime < fadeDuration)
@@ -107,6 +119,27 @@ public class GameStateManager : MonoBehaviour
         {
             elapsedTime += Time.deltaTime;
             float newValue = Mathf.Lerp(startValue, targetValue, elapsedTime / fadeDuration);
+            AkSoundEngine.SetRTPCValue(rtpcName, newValue);
+            yield return null;
+        }
+
+        AkSoundEngine.SetRTPCValue(rtpcName, targetValue);
+    }
+
+    private IEnumerator FocusElevatorHum(string rtpcName)
+    {
+        Debug.Log("focusing elevator.");
+        
+        yield return new WaitForSeconds(20);
+
+        float elapsedTime = 0f;
+        float startValue = 100f;
+        float targetValue = 15f;
+
+        while (elapsedTime < focusFadeDuration)
+        {
+            elapsedTime += Time.deltaTime;
+            float newValue = Mathf.Lerp(startValue, targetValue, elapsedTime / focusFadeDuration);
             AkSoundEngine.SetRTPCValue(rtpcName, newValue);
             yield return null;
         }

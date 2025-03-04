@@ -151,7 +151,7 @@
 									<PropertyList>
 										<Property Name="BusVolume" Type="Real64">
 											<ValueList>
-												<Value>5</Value>
+												<Value>10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -531,7 +531,7 @@
 										</Property>
 										<Property Name="BusVolume" Type="Real64">
 											<ValueList>
-												<Value>-20</Value>
+												<Value>-15</Value>
 											</ValueList>
 										</Property>
 										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
@@ -578,6 +578,41 @@
 																			<Point>
 																				<XPos>100</XPos>
 																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{03CA1B58-3347-4786-91DD-BB389B80FACC}" ShortID="661479855">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="OutputBusLowpass"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="Level_LPF" ID="{45241D39-7CC7-4DCC-B3FD-B500ABCBF212}" WorkUnitID="{1DA3DB97-63A7-416A-B8D9-EB328C42A8C0}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{8851592A-2690-44E2-8016-18470A939F6D}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>100</YPos>
 																				<Flags>37</Flags>
 																			</Point>
 																		</PointList>

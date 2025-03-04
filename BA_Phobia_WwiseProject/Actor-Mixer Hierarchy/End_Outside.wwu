@@ -28,6 +28,10 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="outside_tone" ID="{19ED3D1D-90DB-4E59-BE6B-4DE53BD79DA2}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.2"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.2"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>outside_tone.wav</AudioFile>
 							<MediaIDList>

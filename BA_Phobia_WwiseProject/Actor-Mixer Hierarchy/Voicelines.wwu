@@ -144,7 +144,7 @@
 							<ChildrenList>
 								<AudioFileSource Name="B_Lvl_5_Intro_Outro_combined" ID="{7E037C40-BCA1-43F0-8A07-207354B37AC4}">
 									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.618170731707316"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.476208240287121"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 									</PropertyList>
 									<Language>SFX</Language>
@@ -1045,6 +1045,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="B_Lvl_2_1" ID="{BDFE0A7E-9D7D-4DF1-BB21-A86F9F108830}" ShortID="470951711">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>

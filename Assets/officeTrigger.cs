@@ -10,11 +10,19 @@ public class officeTrigger : MonoBehaviour
     public GameObject windowCloseTrigger;
 
     public float officeEventDuration;
+
+    private bool hasProcessed;
+
+    private void Start()
+    {
+        hasProcessed = false;
+    }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && hall_Enter.voicelineCounter == 2)
+        if (other.CompareTag("Player") && hall_Enter.voicelineCounter == 2 && !hasProcessed)
         {
- 
+            hasProcessed = true;
+            
             //office events: play conversation event in people game obj
 
             StartCoroutine(WaitForOfficeEventEnd());

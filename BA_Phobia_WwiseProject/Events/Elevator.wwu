@@ -74,7 +74,7 @@
 						<Action Name="" ID="{6867AB72-1F27-42D7-85E0-7AD53E320609}" ShortID="944576360">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="lift_hum2" ID="{A86ED8E4-9C0E-4140-A21B-9A7CB2CE8CA4}" WorkUnitID="{A9476F65-4DAD-4770-81F4-5F0BDB0B9BC8}"/>
+									<ObjectRef Name="lift_hum_main" ID="{A86ED8E4-9C0E-4140-A21B-9A7CB2CE8CA4}" WorkUnitID="{A9476F65-4DAD-4770-81F4-5F0BDB0B9BC8}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

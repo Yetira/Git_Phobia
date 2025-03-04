@@ -35,14 +35,20 @@
 							<ChildrenList>
 								<Sound Name="rock_land1_1" ID="{D579E8E9-3888-4C8B-9A9D-E9B888DB2CA2}" ShortID="706574923">
 									<PropertyList>
+										<Property Name="GameAuxSendVolume" Type="Real64">
+											<ValueList>
+												<Value>-96</Value>
+											</ValueList>
+										</Property>
 										<Property Name="InitialDelay" Type="Real64">
 											<ValueList>
 												<Value>1</Value>
 											</ValueList>
 										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-10</Value>
+												<Value>-15</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -70,9 +76,11 @@
 								<Sound Name="rock_fall_noise" ID="{530278E2-9DD5-4D24-9228-D110C626D357}" ShortID="720235096">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-10</Value>
+												<Value>-15</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -86,6 +94,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="rock_fall_noise" ID="{4F79554B-165F-4B27-AB45-C0BB5F654EE9}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.40463458110517"/>
+												<Property Name="LoopBegin" Type="Real64" Value="1.51158645276292"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>rock_fall_noise.wav</AudioFile>
 											<MediaIDList>
@@ -140,7 +153,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-15</Value>
+												<Value>-20</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -221,10 +234,10 @@
 						<Sound Name="rock_land_FINAL" ID="{C86EDC77-2D99-4304-960F-5C0B3B170A32}" ShortID="104932376">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 								<Property Name="GameAuxSendVolume" Type="Real64">
 									<ValueList>
-										<Value>-8</Value>
+										<Value>-26</Value>
 									</ValueList>
 								</Property>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
@@ -236,7 +249,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<ObjectRef Name="rockFall" ID="{C3352CCD-936E-4D67-8F97-D497B1A5F319}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+									<ObjectRef Name="rock_Land" ID="{619001BD-C7EE-4A36-8F8D-7B76D185AE4F}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
 								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
@@ -250,10 +263,15 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="rock_land1_2" ID="{B0A9B360-79EC-4494-BE2E-BE2C65D29ACA}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0195555555555555"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.565953654188949"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>rock_land1.2.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="313438146"/>
+										<MediaID ID="70483652"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
@@ -273,6 +291,11 @@
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -413,11 +436,6 @@
 								</Property>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>3</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -561,7 +579,7 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>10</Value>
+								<Value>-5</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>

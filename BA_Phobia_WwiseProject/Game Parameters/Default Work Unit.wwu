@@ -27,7 +27,11 @@
 						<GameParameter Name="HALL_Bus_Volume" ID="{D34A074B-0CCF-4DAE-BF46-820C09571DDD}"/>
 						<GameParameter Name="END_Bus_Volume" ID="{01D7D63C-58EE-4346-91F7-E2C27B64FE36}"/>
 						<GameParameter Name="TUT_Bus_Volume" ID="{59EF1BCC-EEA0-477E-B7D1-2CC4E769065A}"/>
-						<GameParameter Name="LevelAudioFade_RTCP" ID="{9BFABAA3-2337-42E5-9F0F-0F02E42E9BE4}"/>
+						<GameParameter Name="LevelAudioFade_RTCP" ID="{9BFABAA3-2337-42E5-9F0F-0F02E42E9BE4}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
+							</PropertyList>
+						</GameParameter>
 					</ChildrenList>
 				</Folder>
 				<GameParameter Name="allSoundsButNarratorVolume" ID="{7077882C-69E1-4242-88CF-05BD27E3009E}">
@@ -35,6 +39,12 @@
 						<Property Name="InitialValue" Type="Real64" Value="100"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="Level_LPF" ID="{45241D39-7CC7-4DCC-B3FD-B500ABCBF212}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="humVolume" ID="{7CE266A0-7DE2-4B89-B070-1F8102F4716C}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

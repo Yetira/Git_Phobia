@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 3e860730979601429f3a22904a750a2e
     GuidInternal: 
-    m_lastTime: -8584605304920232945
+    m_lastTime: -8584604960536061343
     List:
     - name: AURO-3D
       guid: 9e3201dc27c92a4fb863d279a8472221
@@ -789,7 +789,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5b7d3d6d0746124ab1d6166bb3175237
     GuidInternal: 
-    m_lastTime: -8584618950340059093
+    m_lastTime: -8584605202146251280
     List:
     - name: ConRev
       guid: 7c9a1836a7bc9b4a9db9994ed869c5e2
@@ -941,7 +941,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 199508fe3d34424d9564a328ccca3022
     GuidInternal: 
-    m_lastTime: -8584618953787834729
+    m_lastTime: -8584604943875584347
     List:
     - name: 5_Cabin
       guid: 2bbcea8b66788f4c89126f34d5d5e3ed
@@ -1017,9 +1017,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 89cb718e57bb594abc4bb47efee5248d
       Path: Events\Default Work Unit\5_Cabin\cabin_tone
-      maxAttenuation: 100
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 0
+      maxDuration: 59.790627
+      minDuration: 59.790627
     - name: cabin_wind
       guid: 79c704ec8c1f73468a780f635db5eecb
       id: 2710023793
@@ -1057,7 +1057,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: c345c0460f9bfe4f94fe17b62d70775a
       Path: Events\Default Work Unit\5_Cabin\cat
-      maxAttenuation: 20
+      maxAttenuation: 25
       maxDuration: -1
       minDuration: -1
     - name: During_Level
@@ -1115,8 +1115,8 @@ MonoBehaviour:
         guid: ff6f91a9f08eeb41b0ec222cdc41e55f
       Path: Events\Default Work Unit\End_Outside\end_tone
       maxAttenuation: 100
-      maxDuration: 29.921791
-      minDuration: 29.921791
+      maxDuration: -1
+      minDuration: -1
     - name: fire_crackling
       guid: 8cb5a8850bbfc14296f25079d44d56d3
       id: 2109043066
@@ -1251,7 +1251,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 0143d8a26abc1548a2bb5498b6a8cb52
       Path: Events\Default Work Unit\Hall\hall_outside_tone
-      maxAttenuation: 30
+      maxAttenuation: 20
       maxDuration: -1
       minDuration: -1
     - name: Level_Intro
@@ -1311,7 +1311,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: b60744952d03c24bb03590936e268969
       Path: Events\Default Work Unit\Hall\neon_lightbuzz
-      maxAttenuation: 6
+      maxAttenuation: 4
       maxDuration: -1
       minDuration: -1
     - name: office_tone
@@ -1331,7 +1331,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: e1d5d1e341a6734489698a843f5b70e7
       Path: Events\Default Work Unit\Hall\office_tone
-      maxAttenuation: 13
+      maxAttenuation: 10
       maxDuration: -1
       minDuration: -1
     - name: office_tone2
@@ -1351,7 +1351,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 130e0d46e8eedb46864c76910bd37653
       Path: Events\Default Work Unit\Hall\office_tone2
-      maxAttenuation: 13
+      maxAttenuation: 10
       maxDuration: -1
       minDuration: -1
     - name: old_tv
@@ -1371,7 +1371,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: d040941c5ce1964b9bad76c1d2d927b2
       Path: Events\Default Work Unit\5_Cabin\old_tv
-      maxAttenuation: 30
+      maxAttenuation: 20
       maxDuration: 882.1551
       minDuration: 882.1551
     - name: Play_radio
@@ -1536,7 +1536,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Elevator
     guid: 1c8d5089a6e54240a7386c7b74797c4f
     GuidInternal: 
-    m_lastTime: -8584632731050942673
+    m_lastTime: -8584605034310639339
     List:
     - name: lift_arrive
       guid: c612e8fcbfd4634ca0e919a7af58b5b4
@@ -1675,7 +1675,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 72e0198ced707241af7556b3f8a54f11
       Path: Events\Default Work Unit\Elevator\lift_RoomTone
-      maxAttenuation: 50
+      maxAttenuation: 30
       maxDuration: -1
       minDuration: -1
   - PhysicalPath: Events\Schacht.wwu
@@ -1692,7 +1692,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Schacht
     guid: af502f23f2719c4da70873b37c56f205
     GuidInternal: 
-    m_lastTime: -8584662210256504024
+    m_lastTime: -8584605202146151121
     List:
     - name: Play_Rat
       guid: 06a87c5d8be54247b44326b0989959ec
@@ -1711,12 +1711,12 @@ MonoBehaviour:
         ObjectType: 3
         guid: 06a87c5d8be54247b44326b0989959ec
       Path: Events\Default Work Unit\Schacht\Play_Rat
-      maxAttenuation: 120
+      maxAttenuation: 100
       maxDuration: -1
       minDuration: -1
-    - name: rock_fall
+    - name: play_rock_fall
       guid: 8b386ce1bac4de49b0ae415c5abccd0a
-      id: 3378404558
+      id: 1730393267
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -1727,10 +1727,10 @@ MonoBehaviour:
       - ElementName: Schacht
         ObjectType: 12
         guid: af502f23f2719c4da70873b37c56f205
-      - ElementName: rock_fall
+      - ElementName: play_rock_fall
         ObjectType: 3
         guid: 8b386ce1bac4de49b0ae415c5abccd0a
-      Path: Events\Default Work Unit\Schacht\rock_fall
+      Path: Events\Default Work Unit\Schacht\play_rock_fall
       maxAttenuation: 300
       maxDuration: -1
       minDuration: -1
@@ -1752,8 +1752,8 @@ MonoBehaviour:
         guid: 218a8e0dc47323468cd05a7d792c00d0
       Path: Events\Default Work Unit\Schacht\rock_land
       maxAttenuation: 300
-      maxDuration: 0.6666667
-      minDuration: 0.6666667
+      maxDuration: 0.5659537
+      minDuration: 0.5659537
     - name: Stop_Rat
       guid: fd84f38390f6804cab9ebedcd1fc5563
       id: 639911593
@@ -1774,6 +1774,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: stop_rock_fall
+      guid: b35d52db08e4e045a8882438b2dd552c
+      id: 1386686261
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: Schacht
+        ObjectType: 12
+        guid: af502f23f2719c4da70873b37c56f205
+      - ElementName: stop_rock_fall
+        ObjectType: 3
+        guid: b35d52db08e4e045a8882438b2dd552c
+      Path: Events\Default Work Unit\Schacht\stop_rock_fall
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: wind_howl
       guid: 352f57fc93a0b645b06409da893551f7
       id: 652692592
@@ -1791,7 +1811,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 352f57fc93a0b645b06409da893551f7
       Path: Events\Default Work Unit\Schacht\wind_howl
-      maxAttenuation: 30
+      maxAttenuation: 300
       maxDuration: -1
       minDuration: -1
   - PhysicalPath: Events\Tunnel.wwu
@@ -1827,7 +1847,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 7b71f01018121a468c1a9c00851cf004
       Path: Events\Default Work Unit\Tunnel\water_drips
-      maxAttenuation: 70
+      maxAttenuation: 50
       maxDuration: -1
       minDuration: -1
   RtpcWwu:
@@ -1842,7 +1862,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 97dba31da7636a41b8d9eb328c42a8c0
     GuidInternal: 
-    m_lastTime: -8584605304919702128
+    m_lastTime: -8584604943873976881
     List:
     - name: allSoundsButNarratorVolume
       guid: 2c887770e169424288cf05bd27e3009e
@@ -1926,6 +1946,20 @@ MonoBehaviour:
         ObjectType: 13
         guid: 4b074ad3cf0cae4dbf46820c09571ddd
       Path: Game Parameters\Default Work Unit\Level_Bus_Volumes\HALL_Bus_Volume
+    - name: humVolume
+      guid: a066e27ce27d894bb0701f8102f4716c
+      id: 2825934075
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 97dba31da7636a41b8d9eb328c42a8c0
+      - ElementName: humVolume
+        ObjectType: 13
+        guid: a066e27ce27d894bb0701f8102f4716c
+      Path: Game Parameters\Default Work Unit\humVolume
     - name: Level_Bus_Volumes
       guid: af9c2cffb46c18488a42311557ed9a42
       id: 78467534
@@ -1940,6 +1974,20 @@ MonoBehaviour:
         ObjectType: 4
         guid: af9c2cffb46c18488a42311557ed9a42
       Path: Game Parameters\Default Work Unit\Level_Bus_Volumes
+    - name: Level_LPF
+      guid: 391d2445c77ccc4db3fdb500abcbf212
+      id: 2487395322
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 97dba31da7636a41b8d9eb328c42a8c0
+      - ElementName: Level_LPF
+        ObjectType: 13
+        guid: 391d2445c77ccc4db3fdb500abcbf212
+      Path: Game Parameters\Default Work Unit\Level_LPF
     - name: LevelAudioFade_RTCP
       guid: a3bafa9b3723e5429f0f0f02e42e9be4
       id: 885933225
@@ -2321,7 +2369,7 @@ MonoBehaviour:
     m_lastTime: -8584663919773364773
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000020000000300000004000000050000000600000007000000090000000a0000000b0000000c0000000d0000000f00000012000000130000001400000015000000160000001700000018000000190000001b0000001d0000001e0000002300000024000000330000003700000038000000390000003d0000006f0000007000000075000000a0000000a1000000a2000000ac000000ad000000b0000000b1000000b2000000fb000000fc0000004801000049010000b0010000b1010000b3010000c7010000c8010000ca010000
+  ExpandedWaapiItemIds: 01000000020000000300000004000000050000000600000007000000090000000a0000000b0000000c0000000d0000000f00000012000000130000001400000015000000160000001700000018000000190000001b0000001d0000001e00000020000000210000002300000024000000330000003700000038000000390000003d0000006f0000007000000075000000a0000000a1000000a2000000ac000000ad000000b0000000b1000000b2000000fb000000fc0000004801000049010000b0010000b1010000b3010000c7010000c8010000ca010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
