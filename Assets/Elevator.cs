@@ -82,6 +82,12 @@ public class Elevator : MonoBehaviour
     private IEnumerator WaitForArrive()
     {
         yield return new WaitForSeconds(16);
+        
+        if (gameStateManager.currentLevelIndex == 4)
+        {
+            yield return new WaitForSeconds(10);
+        }
+
         Open();
     }
     private IEnumerator DelayAfterDing()

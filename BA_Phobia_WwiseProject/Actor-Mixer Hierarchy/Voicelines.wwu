@@ -387,6 +387,33 @@
 								<ActiveSource Name="B_Lvl_4_Outro" ID="{6BE038B1-C2F6-4912-AE96-90064D13E683}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="B_Lvl_5_Outro" ID="{DCC39792-692A-4A7D-B393-34C016119E42}" ShortID="277773746">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Narrator" ID="{ECAA7ACE-F853-4AFA-A793-87C10399EBF4}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="B_Lvl_5_1" ID="{E5BB0BA7-F733-4778-BB92-7707E36B7EAC}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="8.00847457627118"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="47.4576271186441"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>B_Lvl_5_1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="454236039"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="B_Lvl_5_1" ID="{E5BB0BA7-F733-4778-BB92-7707E36B7EAC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<GroupingInfo>
 						<GroupingBehaviorList>
@@ -397,6 +424,9 @@
 								<ItemRef Name="B_Lvl_3_Outro" ID="{2FB37A87-E8AD-4A47-AD68-8E65650A69E5}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
+								<ItemRef Name="B_Lvl_5_Outro" ID="{DCC39792-692A-4A7D-B393-34C016119E42}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
 								<ItemRef Name="B_Lvl_4_Outro" ID="{D27C05B2-E057-470F-B145-2FDD6FA1DA44}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
@@ -404,6 +434,12 @@
 							</GroupingBehavior>
 						</GroupingBehaviorList>
 						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Level_5" ID="{2E28A823-ECAE-4321-8453-8510F1FAA60E}"/>
+								<ItemList>
+									<ItemRef Name="B_Lvl_5_Outro" ID="{DCC39792-692A-4A7D-B393-34C016119E42}"/>
+								</ItemList>
+							</Grouping>
 							<Grouping>
 								<SwitchRef Name="Level_4" ID="{E8520445-C4AE-4735-86E0-D79D3FDC163A}"/>
 								<ItemList>
@@ -1210,37 +1246,6 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
 								</Reference>
 							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="B_Lvl_5_1" ID="{DCC39792-692A-4A7D-B393-34C016119E42}" ShortID="277773746">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="B_Lvl_5_1" ID="{E5BB0BA7-F733-4778-BB92-7707E36B7EAC}">
-											<Language>SFX</Language>
-											<AudioFile>B_Lvl_5_1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="454236039"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="B_Lvl_5_1" ID="{E5BB0BA7-F733-4778-BB92-7707E36B7EAC}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-							<ObjectLists>
-								<ObjectList Name="Playlist">
-									<Reference>
-										<ObjectRef Name="B_Lvl_5_1" ID="{DCC39792-692A-4A7D-B393-34C016119E42}" WorkUnitID="{B45F632D-8992-4305-AAB8-D9639597D5E5}"/>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
 						</RandomSequenceContainer>
 					</ChildrenList>
 					<ObjectLists>

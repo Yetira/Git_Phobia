@@ -102,6 +102,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID ALLSOUNDSBUTNARRATORVOLUME = 2295397070U;
         static const AkUniqueID CABIN_BUS_VOLUME = 4130817544U;
         static const AkUniqueID CAVE_BUS_VOLUME = 900695302U;
         static const AkUniqueID END_BUS_VOLUME = 1954146744U;
@@ -131,6 +132,7 @@ namespace AK
         static const AkUniqueID HALL = 3633416828U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID NARRATOR = 3272864290U;
+        static const AkUniqueID PLAYER = 1069431850U;
         static const AkUniqueID TEST_BIGSMALL = 3977152547U;
         static const AkUniqueID TUTORIAL = 3762955427U;
     } // namespace BUSSES

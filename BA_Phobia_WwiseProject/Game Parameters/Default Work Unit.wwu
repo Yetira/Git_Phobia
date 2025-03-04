@@ -30,6 +30,11 @@
 						<GameParameter Name="LevelAudioFade_RTCP" ID="{9BFABAA3-2337-42E5-9F0F-0F02E42E9BE4}"/>
 					</ChildrenList>
 				</Folder>
+				<GameParameter Name="allSoundsButNarratorVolume" ID="{7077882C-69E1-4242-88CF-05BD27E3009E}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

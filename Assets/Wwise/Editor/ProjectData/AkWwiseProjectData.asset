@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 3e860730979601429f3a22904a750a2e
     GuidInternal: 
-    m_lastTime: -8584605801766410841
+    m_lastTime: -8584605304920232945
     List:
     - name: AURO-3D
       guid: 9e3201dc27c92a4fb863d279a8472221
@@ -611,6 +611,26 @@ MonoBehaviour:
         ObjectType: 2
         guid: ce7aaaec53f8fa4aa79387c10399ebf4
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Narrator
+    - name: Player
+      guid: 0d230335f9520a41a754425b753f1882
+      id: 1069431850
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3e860730979601429f3a22904a750a2e
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AURO-3D
+        ObjectType: 2
+        guid: 9e3201dc27c92a4fb863d279a8472221
+      - ElementName: Player
+        ObjectType: 2
+        guid: 0d230335f9520a41a754425b753f1882
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AURO-3D\Player
     - name: Reflect
       guid: 1401f4327c192e4e87f1d24a3c7dda4e
       id: 243379636
@@ -1058,7 +1078,7 @@ MonoBehaviour:
         guid: 79537db8cd11ab42bc8240e5d589480b
       Path: Events\Default Work Unit\Voicelines\During_Level
       maxAttenuation: 0
-      maxDuration: 26.5
+      maxDuration: 29.5
       minDuration: 0
     - name: End_Outside
       guid: 733fb0e81ee4134dbf717a3f8855b2ab
@@ -1272,7 +1292,7 @@ MonoBehaviour:
         guid: e1e606055c16a842863524031cfce0bc
       Path: Events\Default Work Unit\Voicelines\Level_Outro
       maxAttenuation: 0
-      maxDuration: 12.921927
+      maxDuration: 47.457626
       minDuration: 3.5
     - name: neon_lightbuzz
       guid: b60744952d03c24bb03590936e268969
@@ -1822,8 +1842,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 97dba31da7636a41b8d9eb328c42a8c0
     GuidInternal: 
-    m_lastTime: -8584619115649377760
+    m_lastTime: -8584605304919702128
     List:
+    - name: allSoundsButNarratorVolume
+      guid: 2c887770e169424288cf05bd27e3009e
+      id: 2295397070
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 97dba31da7636a41b8d9eb328c42a8c0
+      - ElementName: allSoundsButNarratorVolume
+        ObjectType: 13
+        guid: 2c887770e169424288cf05bd27e3009e
+      Path: Game Parameters\Default Work Unit\allSoundsButNarratorVolume
     - name: CABIN_Bus_Volume
       guid: cfa953a7cac2e8428e9fe1367ffc2b33
       id: 4130817544

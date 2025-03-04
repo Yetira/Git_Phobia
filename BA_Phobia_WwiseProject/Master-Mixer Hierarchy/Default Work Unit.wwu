@@ -591,6 +591,7 @@
 										</ObjectList>
 									</ObjectLists>
 								</AuxBus>
+								<Bus Name="Player" ID="{3503230D-52F9-410A-A754-425B753F1882}"/>
 							</ChildrenList>
 							<ObjectLists>
 								<ObjectList Name="Effects">
@@ -609,6 +610,43 @@
 													</Reference>
 												</ReferenceList>
 											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{4D5C54E0-93DC-4EA9-B9CF-343375CBCD06}" ShortID="229034499">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="allSoundsButNarratorVolume" ID="{7077882C-69E1-4242-88CF-05BD27E3009E}" WorkUnitID="{1DA3DB97-63A7-416A-B8D9-EB328C42A8C0}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{83D00D50-5874-41D5-8F5E-1189F372BC7B}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
 										</Local>
 									</Reference>
 								</ObjectList>
