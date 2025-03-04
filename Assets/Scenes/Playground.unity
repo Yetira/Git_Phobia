@@ -844,7 +844,7 @@ MonoBehaviour:
   closePortalTriggerList: 
   rooms:
   - {fileID: 439893264}
-  - {fileID: 0}
+  - {fileID: 1507323040}
 --- !u!65 &25655716
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20849,12 +20849,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1793c6d8a9c3204e8ef80bba4cccf2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeTime: 0.5
+  fadeTime: 3
   LayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
   maxDistance: -1
-  refreshInterval: 1
+  refreshInterval: 0.1
 --- !u!114 &1024602891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26067,7 +26067,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voiceLineManager: {fileID: 2025227907}
-  EndFadeDuration: 30
+  EndFadeDuration: 20
 --- !u!114 &1219714146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30125,9 +30125,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1371325614}
-  - component: {fileID: 1371325615}
   - component: {fileID: 1371325618}
   - component: {fileID: 1371325617}
+  - component: {fileID: 1371325615}
   - component: {fileID: 1371325616}
   m_Layer: 0
   m_Name: END_ELEVATOR

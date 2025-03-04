@@ -69,6 +69,11 @@ public class GameStateManager : MonoBehaviour
         Debug.Log($"Switched to level {currentLevelIndex}");
 
         StartCoroutine(FadeInAudio("LevelAudioFade_RTCP"));
+
+        if(currentLevelIndex == 4)
+        {
+
+        }
     }
 
     private IEnumerator FadeOutAudio(string rtpcName, System.Action onComplete)

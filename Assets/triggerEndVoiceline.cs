@@ -26,7 +26,7 @@ public class triggerEndVoiceline : MonoBehaviour
 
             StartCoroutine(FadeOutAudio("allSoundsButNarratorVolume", () =>
             {
-                //end game here
+                StartCoroutine(EndGame());
                 Debug.Log("Game is over and you won, I promise!");
             }));
         }
@@ -48,5 +48,13 @@ public class triggerEndVoiceline : MonoBehaviour
         AkSoundEngine.SetRTPCValue(rtpcName, targetValue);
 
         onComplete?.Invoke();
+    }
+
+    private IEnumerator EndGame()
+    {
+        yield return new WaitForSeconds(10);
+
+        Debug.Log("Bye!");
+        Application.Quit();
     }
 }

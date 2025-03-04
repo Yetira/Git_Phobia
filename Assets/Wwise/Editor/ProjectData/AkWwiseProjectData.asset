@@ -1292,7 +1292,7 @@ MonoBehaviour:
         guid: e1e606055c16a842863524031cfce0bc
       Path: Events\Default Work Unit\Voicelines\Level_Outro
       maxAttenuation: 0
-      maxDuration: 47.457626
+      maxDuration: 12.921927
       minDuration: 3.5
     - name: neon_lightbuzz
       guid: b60744952d03c24bb03590936e268969
@@ -1595,7 +1595,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 0d9d5a6b8181114ba1aed47e2a1079f4
       Path: Events\Default Work Unit\Elevator\lift_ding
-      maxAttenuation: 0
+      maxAttenuation: 40
       maxDuration: 2
       minDuration: 2
     - name: lift_music

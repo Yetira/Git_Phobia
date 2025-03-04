@@ -132,6 +132,32 @@
 								<ActiveSource Name="B_Lvl_5_Intro" ID="{09510DEE-CDE4-4C82-B51A-2E28B5A23A5C}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="B_Lvl_5_Intro_Outro_combined" ID="{93083ED6-0181-48EA-8618-E35DB4D04091}" ShortID="834914628">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="B_Lvl_5_Intro_Outro_combined" ID="{7E037C40-BCA1-43F0-8A07-207354B37AC4}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.618170731707316"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>B_Lvl_5_Intro_Outro_combined.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="746794759"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="B_Lvl_5_Intro_Outro_combined" ID="{7E037C40-BCA1-43F0-8A07-207354B37AC4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<ObjectLists>
 						<ObjectList Name="Effects">
@@ -166,6 +192,9 @@
 								<ItemRef Name="B_Lvl_4_Intro" ID="{7298CF93-F456-4EAC-A203-DAA95D5D11FC}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
+								<ItemRef Name="B_Lvl_5_Intro_Outro_combined" ID="{93083ED6-0181-48EA-8618-E35DB4D04091}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
 								<ItemRef Name="B_Lvl_2_Intro" ID="{B22043DB-B08B-411A-90BF-AE84290C0D16}"/>
 							</GroupingBehavior>
 						</GroupingBehaviorList>
@@ -173,7 +202,7 @@
 							<Grouping>
 								<SwitchRef Name="Level_5" ID="{2E28A823-ECAE-4321-8453-8510F1FAA60E}"/>
 								<ItemList>
-									<ItemRef Name="B_Lvl_5_Intro" ID="{0539513F-B971-4F42-BC33-25EABA7BFEED}"/>
+									<ItemRef Name="B_Lvl_5_Intro_Outro_combined" ID="{93083ED6-0181-48EA-8618-E35DB4D04091}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>
@@ -388,6 +417,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="B_Lvl_5_Outro" ID="{DCC39792-692A-4A7D-B393-34C016119E42}" ShortID="277773746">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>

@@ -138,7 +138,11 @@ public class Elevator : MonoBehaviour
             Debug.Log("Wait for Ride to End.");
             yield return new WaitForSeconds(rideDuration);
 
-
+            if(gameStateManager.currentLevelIndex == 4)
+            {
+                yield return new WaitForSeconds(19);
+            }
+            
             Debug.Log("Open Door.");
             Open();
 
