@@ -2,6 +2,9 @@
 <WwiseDocument Type="WorkUnit" ID="{B6DD193C-9BE9-44D1-9F22-7C3429AACC3D}" SchemaVersion="119">
 	<AudioObjects>
 		<WorkUnit Name="Player" ID="{B6DD193C-9BE9-44D1-9F22-7C3429AACC3D}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<SwitchContainer Name="Footsteps" ID="{08D9EED9-A01C-4A92-AC20-9D654B114B01}" ShortID="66491788">
 					<PropertyList>

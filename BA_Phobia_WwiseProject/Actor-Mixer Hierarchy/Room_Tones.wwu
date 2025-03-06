@@ -4,6 +4,10 @@
 		<WorkUnit Name="Room_Tones" ID="{88E26C86-0A4C-47B2-99CA-45BC07B014FE}" PersistMode="Standalone">
 			<ChildrenList>
 				<Sound Name="water_drips" ID="{2B9D7BA7-9B18-4EC4-A422-A53785EB1FAE}" ShortID="250397734">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>

@@ -20,6 +20,8 @@ namespace AK
         static const AkUniqueID CAT = 983016379U;
         static const AkUniqueID CAVE_TONE1 = 2937454218U;
         static const AkUniqueID CAVE_TONE2 = 2937454217U;
+        static const AkUniqueID CONVOA = 4104583547U;
+        static const AkUniqueID CONVOB = 4104583544U;
         static const AkUniqueID DURING_LEVEL = 2818012169U;
         static const AkUniqueID END_TONE = 1065358247U;
         static const AkUniqueID FIRE_CRACKLING = 2109043066U;
@@ -52,6 +54,7 @@ namespace AK
         static const AkUniqueID STOP_RADIO = 151474297U;
         static const AkUniqueID STOP_RAT = 639911593U;
         static const AkUniqueID STOP_ROCK_FALL = 1386686261U;
+        static const AkUniqueID WATER_COOLER = 2035707747U;
         static const AkUniqueID WATER_DRIPS = 3853114527U;
         static const AkUniqueID WIND_HOWL = 652692592U;
         static const AkUniqueID WINDOW_CLOSE = 3146991628U;
@@ -108,6 +111,7 @@ namespace AK
         static const AkUniqueID CAVE_BUS_VOLUME = 900695302U;
         static const AkUniqueID END_BUS_VOLUME = 1954146744U;
         static const AkUniqueID HALL_BUS_VOLUME = 2713085616U;
+        static const AkUniqueID HUMVOLUME = 2825934075U;
         static const AkUniqueID LEVEL_LPF = 2487395322U;
         static const AkUniqueID LEVELAUDIOFADE_RTCP = 885933225U;
         static const AkUniqueID LPF_CONTROL = 3074830639U;

@@ -6,6 +6,7 @@
 				<Sound Name="outside_birds" ID="{4D924651-ED19-437D-B749-008DA02E4C39}" ShortID="102553283">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="15"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Lowpass" Type="int16">
@@ -13,6 +14,7 @@
 								<Value>35</Value>
 							</ValueList>
 						</Property>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -95,6 +97,7 @@
 				<Sound Name="neon_lightbuzz" ID="{3AE93893-0C67-4AF5-8788-7E595C7D07BF}" ShortID="681582946">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="20"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="Highpass" Type="int16">
 							<ValueList>
@@ -102,6 +105,7 @@
 							</ValueList>
 						</Property>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -145,12 +149,14 @@
 				<RandomSequenceContainer Name="office_phone" ID="{212DADC9-A02B-4207-8F07-8CCA8A65DC4A}" ShortID="457197014">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="13"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="Lowpass" Type="int16">
 							<ValueList>
 								<Value>60</Value>
 							</ValueList>
 						</Property>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
@@ -171,7 +177,7 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-30</Value>
+								<Value>-40</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -271,19 +277,21 @@
 				<RandomSequenceContainer Name="typewriter" ID="{DDCF7066-7C5F-4A5E-9902-A146B80713BC}" ShortID="612468512">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="12"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="Lowpass" Type="int16">
 							<ValueList>
 								<Value>60</Value>
 							</ValueList>
 						</Property>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-30</Value>
+								<Value>-45</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -322,6 +330,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="typerwriter_typing" ID="{8FC1C12E-86CF-4837-AF27-139D745F25DB}" ShortID="345905881">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
@@ -344,6 +359,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="typewriter_typing2" ID="{FCBA2574-52EA-4E9D-9E01-4F4F426687B4}" ShortID="11794694">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
@@ -389,7 +411,9 @@
 				<RandomSequenceContainer Name="car_driveby" ID="{18411708-ABB7-4F86-A089-AEC4D02CFFD3}" ShortID="836814881">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="17"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
@@ -616,7 +640,9 @@
 				<Sound Name="window_close" ID="{07069A0C-C8ED-469C-B84F-AD193BFCBC18}" ShortID="128504166">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="10"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -659,6 +685,7 @@
 				<Sound Name="business_talk1" ID="{B265CA64-0A56-4E48-B895-0CDC402189B4}" ShortID="673558192">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="24"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="InitialDelay" Type="Real64">
 							<ValueList>
@@ -671,6 +698,7 @@
 								<Value>66</Value>
 							</ValueList>
 						</Property>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -725,12 +753,14 @@
 				<RandomSequenceContainer Name="typewriter2" ID="{0D7EA4FF-AB70-4D43-88A0-283F529FDA68}" ShortID="1010809194">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="11"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="Lowpass" Type="int16">
 							<ValueList>
 								<Value>60</Value>
 							</ValueList>
 						</Property>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
@@ -857,12 +887,14 @@
 				<RandomSequenceContainer Name="office_phone2" ID="{3BF7CFF8-AD75-4414-9B34-68C79855724F}" ShortID="646561316">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="23"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="Lowpass" Type="int16">
 							<ValueList>
 								<Value>60</Value>
 							</ValueList>
 						</Property>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
@@ -980,6 +1012,513 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<Sound Name="water_cooler" ID="{B99E4125-5063-4B7C-9EAE-5D6BC891EEEE}" ShortID="744787208">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="15"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>26</Value>
+							</ValueList>
+						</Property>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-30</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="water_cooler" ID="{3AF224B3-3B57-4DB8-A0E5-4AF8832BF087}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="HALL" ID="{5CD1D74B-6B93-4E0E-9F28-84CC78A6E3B5}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+						</Reference>
+						<Reference Name="ReflectionsAuxSend">
+							<ObjectRef Name="Reflect" ID="{32F40114-197C-4E2E-87F1-D24A3C7DDA4E}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="water_cooler" ID="{C3387700-A4A5-4A44-BAD9-1693AA1381DC}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.756199697266731"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.0855188141391121"/>
+								<Property Name="LoopBegin" Type="Real64" Value="0.762236700338537"/>
+								<Property Name="LoopEnd" Type="Real64" Value="12.2368421052632"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>water_cooler.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="357816337"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="water_cooler" ID="{C3387700-A4A5-4A44-BAD9-1693AA1381DC}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Folder Name="conversation" ID="{F93DCEBF-1FB6-4FB1-8706-73F945E4B314}" ShortID="600077470">
+					<ChildrenList>
+						<RandomSequenceContainer Name="convoA" ID="{48BEF094-9365-4DD7-A02F-30383A820605}" ShortID="367593072">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="GameAuxSendVolume" Type="Real64">
+									<ValueList>
+										<Value>-96</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-30</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="convo" ID="{FA1CD341-5A4E-4560-8D6A-932EDF8D0935}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="HALL" ID="{5CD1D74B-6B93-4E0E-9F28-84CC78A6E3B5}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+								</Reference>
+								<Reference Name="ReflectionsAuxSend">
+									<ObjectRef Name="Reflect" ID="{32F40114-197C-4E2E-87F1-D24A3C7DDA4E}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="convo1" ID="{5C35A0FE-941B-46DD-ADE0-AA741B06FBA6}" ShortID="497108196">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="office" ID="{8C955D73-67A4-46BB-8BEC-1B4B6BACEDC4}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="HALL" ID="{5CD1D74B-6B93-4E0E-9F28-84CC78A6E3B5}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="convo1" ID="{7197576D-B548-407B-B314-EE91BE7B5C9D}">
+											<Language>SFX</Language>
+											<AudioFile>convo1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="952631232"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="convo1" ID="{7197576D-B548-407B-B314-EE91BE7B5C9D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="convo2" ID="{F7D170AA-9DE4-452C-A7A1-B8AFD7E94393}" ShortID="457113827">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="office" ID="{8C955D73-67A4-46BB-8BEC-1B4B6BACEDC4}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="HALL" ID="{5CD1D74B-6B93-4E0E-9F28-84CC78A6E3B5}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="convo2" ID="{B094F623-DF31-4399-87CF-DB643253020B}">
+											<Language>SFX</Language>
+											<AudioFile>convo2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="880750116"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="convo2" ID="{B094F623-DF31-4399-87CF-DB643253020B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="convo3" ID="{6F75DC14-E544-4AEA-8FED-7FA31AF217F1}" ShortID="602387933">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="office" ID="{8C955D73-67A4-46BB-8BEC-1B4B6BACEDC4}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="HALL" ID="{5CD1D74B-6B93-4E0E-9F28-84CC78A6E3B5}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="convo3" ID="{9A16FCA5-034C-4F4A-A783-9A4EE546E8A8}">
+											<Language>SFX</Language>
+											<AudioFile>convo3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="858690769"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="convo3" ID="{9A16FCA5-034C-4F4A-A783-9A4EE546E8A8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="convo4" ID="{3346F480-CBED-4388-B008-E8F3477C0FA3}" ShortID="211721821">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="office" ID="{8C955D73-67A4-46BB-8BEC-1B4B6BACEDC4}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="HALL" ID="{5CD1D74B-6B93-4E0E-9F28-84CC78A6E3B5}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="convo4" ID="{7280EB9E-14F8-4531-A33E-6271E1197267}">
+											<Language>SFX</Language>
+											<AudioFile>convo4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="680206133"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="convo4" ID="{7280EB9E-14F8-4531-A33E-6271E1197267}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="convo5" ID="{61A96763-BD67-49DB-B3EA-C193729DC397}" ShortID="47278865">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="office" ID="{8C955D73-67A4-46BB-8BEC-1B4B6BACEDC4}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="HALL" ID="{5CD1D74B-6B93-4E0E-9F28-84CC78A6E3B5}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="convo5" ID="{743892DB-797B-4814-A89A-63B406CCE45A}">
+											<Language>SFX</Language>
+											<AudioFile>convo5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="219827083"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="convo5" ID="{743892DB-797B-4814-A89A-63B406CCE45A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Playlist">
+									<Reference>
+										<ObjectRef Name="convo1" ID="{5C35A0FE-941B-46DD-ADE0-AA741B06FBA6}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="convo2" ID="{F7D170AA-9DE4-452C-A7A1-B8AFD7E94393}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="convo3" ID="{6F75DC14-E544-4AEA-8FED-7FA31AF217F1}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="convo4" ID="{3346F480-CBED-4388-B008-E8F3477C0FA3}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="convo5" ID="{61A96763-BD67-49DB-B3EA-C193729DC397}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="convoB" ID="{0647A3FF-6F7D-4248-AD36-DD442CB39165}" ShortID="429704913">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="GameAuxSendVolume" Type="Real64">
+									<ValueList>
+										<Value>-96</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-30</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="convo" ID="{FA1CD341-5A4E-4560-8D6A-932EDF8D0935}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="HALL" ID="{5CD1D74B-6B93-4E0E-9F28-84CC78A6E3B5}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+								</Reference>
+								<Reference Name="ReflectionsAuxSend">
+									<ObjectRef Name="Reflect" ID="{32F40114-197C-4E2E-87F1-D24A3C7DDA4E}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="convo1b" ID="{16843852-D4F4-4812-B33D-F2612CB5FCC0}" ShortID="140584641">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="office" ID="{8C955D73-67A4-46BB-8BEC-1B4B6BACEDC4}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="HALL" ID="{5CD1D74B-6B93-4E0E-9F28-84CC78A6E3B5}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="convo1b" ID="{874CD4F4-47D5-4D92-9AC4-32F41E67E306}">
+											<Language>SFX</Language>
+											<AudioFile>convo1b.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="715969708"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="convo1b" ID="{874CD4F4-47D5-4D92-9AC4-32F41E67E306}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="convo2b" ID="{67391DAE-B323-4FD3-B112-D90D771C0E35}" ShortID="649902778">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="office" ID="{8C955D73-67A4-46BB-8BEC-1B4B6BACEDC4}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="HALL" ID="{5CD1D74B-6B93-4E0E-9F28-84CC78A6E3B5}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="convo2b" ID="{5A31E904-A384-431C-88E1-36FAB26B8DB7}">
+											<Language>SFX</Language>
+											<AudioFile>convo2b.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="207797064"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="convo2b" ID="{5A31E904-A384-431C-88E1-36FAB26B8DB7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="convo3b" ID="{DCF43893-6600-4CF2-AC24-9FBACF1D6EE5}" ShortID="314494970">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="office" ID="{8C955D73-67A4-46BB-8BEC-1B4B6BACEDC4}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="HALL" ID="{5CD1D74B-6B93-4E0E-9F28-84CC78A6E3B5}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="convo3b" ID="{37996E95-ED74-45D1-B7FF-3387967201E7}">
+											<Language>SFX</Language>
+											<AudioFile>convo3b.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="18172540"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="convo3b" ID="{37996E95-ED74-45D1-B7FF-3387967201E7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="convo4b" ID="{B1D28204-1E56-42DD-AC05-7A1657C90EAF}" ShortID="1046548617">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="office" ID="{8C955D73-67A4-46BB-8BEC-1B4B6BACEDC4}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="HALL" ID="{5CD1D74B-6B93-4E0E-9F28-84CC78A6E3B5}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="convo4b" ID="{02B713EE-3849-44E7-ADD9-90FD54F1FDFF}">
+											<Language>SFX</Language>
+											<AudioFile>convo4b.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="839515733"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="convo4b" ID="{02B713EE-3849-44E7-ADD9-90FD54F1FDFF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="convo5b" ID="{43990394-BDC8-4BB8-80D0-AF7675EAC3A1}" ShortID="518497619">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="office" ID="{8C955D73-67A4-46BB-8BEC-1B4B6BACEDC4}" WorkUnitID="{FD039F96-4582-4AD4-A6EA-F2F7CCC5694A}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="HALL" ID="{5CD1D74B-6B93-4E0E-9F28-84CC78A6E3B5}" WorkUnitID="{3007863E-9697-4201-9F3A-22904A750A2E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="convo5b" ID="{0E790D12-1F60-4ADD-AC07-24C03E4F4C28}">
+											<Language>SFX</Language>
+											<AudioFile>convo5b.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="839444166"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="convo5b" ID="{0E790D12-1F60-4ADD-AC07-24C03E4F4C28}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Playlist">
+									<Reference>
+										<ObjectRef Name="convo1b" ID="{16843852-D4F4-4812-B33D-F2612CB5FCC0}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="convo2b" ID="{67391DAE-B323-4FD3-B112-D90D771C0E35}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="convo3b" ID="{DCF43893-6600-4CF2-AC24-9FBACF1D6EE5}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="convo4b" ID="{B1D28204-1E56-42DD-AC05-7A1657C90EAF}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="convo5b" ID="{43990394-BDC8-4BB8-80D0-AF7675EAC3A1}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

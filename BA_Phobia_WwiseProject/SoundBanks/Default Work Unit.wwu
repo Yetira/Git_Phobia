@@ -10,6 +10,7 @@
 						<ObjectRef Name="lift_RoomTone" ID="{8C19E072-70ED-4172-AF75-56B3F8A54F11}" WorkUnitID="{89508D1C-E5A6-4042-A738-6C7B74797C4F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="end_tone" ID="{A9916FFF-8EF0-41EB-B0EC-222CDC41E55F}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="fire_crackling" ID="{85A8B58C-BF0B-42C1-96F2-5079D44D56D3}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="water_cooler" ID="{7A575726-12DE-4344-9D86-E392D49E54AC}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Level_Audio" ID="{304271DB-5E5F-4361-9C69-D1C6C879D3ED}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="office_tone" ID="{E3D1D5E1-A641-4473-8969-8A843F5B70E7}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="footsteps" ID="{DA0ACF0A-AE71-44BA-9D70-8BD59292FACE}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
@@ -41,6 +42,7 @@
 						<ObjectRef Name="Voicelines" ID="{0473E742-5B50-41B5-8131-999B40E884D5}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Level_Outro" ID="{0506E6E1-165C-42A8-8635-24031CFCE0BC}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="During_Level" ID="{B87D5379-11CD-42AB-BC82-40E5D589480B}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="convoA" ID="{99E59EB7-D7B0-43D7-85F0-C2C2923AD4F6}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="stop_granny_sleep" ID="{097A4A6F-1650-45D7-ADC6-E17EC2A259C4}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="stop_rock_fall" ID="{DB525DB3-E408-45E0-A888-2438B2DD552C}" WorkUnitID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="rock_land" ID="{0D8E8A21-73C4-4623-8CD0-5A7D792C00D0}" WorkUnitID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" Origin="Manual" Filter="7"/>
@@ -53,6 +55,7 @@
 						<ObjectRef Name="granny_sleep" ID="{1E532E48-8C2F-4C29-B89C-958F2B7CF39C}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Rat" ID="{83F384FD-F690-4C80-AB9E-BEDCD1FC5563}" WorkUnitID="{232F50AF-71F2-4D9C-A708-73B37C56F205}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Level_Intro" ID="{D8F2C654-6F05-4E6E-99CE-D38DC3F90635}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="convoB" ID="{1B356AFB-8862-4F6E-98B8-C09E64658DD8}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="cat" ID="{46C045C3-9B0F-4FFE-94FE-17B62D70775A}" WorkUnitID="{FE089519-343D-4D42-9564-A328CCCA3022}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

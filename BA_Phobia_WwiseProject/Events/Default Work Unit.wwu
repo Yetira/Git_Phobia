@@ -384,6 +384,39 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="water_cooler" ID="{7A575726-12DE-4344-9D86-E392D49E54AC}">
+							<ChildrenList>
+								<Action Name="" ID="{70C26A1D-9BAB-4511-9948-06EE60EE4F4B}" ShortID="689102786">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="water_cooler" ID="{B99E4125-5063-4B7C-9EAE-5D6BC891EEEE}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="convoA" ID="{99E59EB7-D7B0-43D7-85F0-C2C2923AD4F6}">
+							<ChildrenList>
+								<Action Name="" ID="{D5A265BF-977D-48E5-9344-1F5010C233D7}" ShortID="588847023">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="convoA" ID="{48BEF094-9365-4DD7-A02F-30383A820605}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="convoB" ID="{1B356AFB-8862-4F6E-98B8-C09E64658DD8}">
+							<ChildrenList>
+								<Action Name="" ID="{E3DFC4D3-4D65-4E26-8918-DADA78FD3629}" ShortID="627866249">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="convoB" ID="{0647A3FF-6F7D-4248-AD36-DD442CB39165}" WorkUnitID="{869E843F-E7E3-4202-84DA-07F48F07613F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="player" ID="{F6B7CD59-D389-48CE-AD94-E66A43E53B76}" ShortID="101825083">

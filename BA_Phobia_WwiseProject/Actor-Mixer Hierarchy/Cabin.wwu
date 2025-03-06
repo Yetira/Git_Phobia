@@ -6,7 +6,9 @@
 				<RandomSequenceContainer Name="wood_creaks" ID="{E49283A5-36E9-42DF-A061-E3DDCDF28D59}" ShortID="663980252">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="10"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -234,7 +236,9 @@
 				<Sound Name="old_tv_program" ID="{340CE970-33D7-4281-A125-C929AA51EF6B}" ShortID="587698400">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="18"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -276,8 +280,10 @@
 				<Sound Name="fire_crackling" ID="{28723ED3-8941-4AF9-BE74-114267A3C542}" ShortID="1009827072">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="8"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -319,8 +325,10 @@
 				<Sound Name="wind_howl_soft_cabin" ID="{4A1D5EA7-2435-4E17-9653-0D89B4019B78}" ShortID="602165238">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="2"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -480,6 +488,7 @@
 				</Sound>
 				<Sound Name="Ambiance_Rain_Calm_Loop_Stereo" ID="{A28E9798-63AF-4226-A741-EF4426B72B82}" ShortID="1028115670">
 					<PropertyList>
+						<Property Name="Color" Type="int16" Value="3"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Lowpass" Type="int16">
@@ -487,6 +496,7 @@
 								<Value>57</Value>
 							</ValueList>
 						</Property>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -525,8 +535,10 @@
 				<Sound Name="granny_sleep" ID="{9389C93E-30F3-4165-9BF9-BBC1EA22C623}" ShortID="704554090">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="24"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -568,7 +580,9 @@
 				<Sound Name="granny_wakeup" ID="{EA9A804E-3987-4BE2-9180-9036BC4BF7FA}" ShortID="227241689">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="24"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -606,6 +620,7 @@
 				<Sound Name="chair_rock" ID="{633CCE14-09BF-4A04-AEFA-F35A1DB7F368}" ShortID="167596154">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="11"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Lowpass" Type="int16">
@@ -613,6 +628,7 @@
 								<Value>29</Value>
 							</ValueList>
 						</Property>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -654,7 +670,9 @@
 				<SwitchContainer Name="cat_mode" ID="{CA11775A-CA9B-42B0-AA22-DFF865928845}" ShortID="893235702">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="20"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
@@ -884,11 +902,13 @@
 				</SwitchContainer>
 				<Sound Name="637083__nox_sound__ambiance_nature_night_cricket_calm_loop_stereo(1)" ID="{E72EEC49-9AD4-46C1-8D60-20111455A0E7}" ShortID="796170172">
 					<PropertyList>
+						<Property Name="Color" Type="int16" Value="3"/>
 						<Property Name="Lowpass" Type="int16">
 							<ValueList>
 								<Value>57</Value>
 							</ValueList>
 						</Property>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-20</Value>
@@ -918,12 +938,14 @@
 				</Sound>
 				<Sound Name="482118__nox_sound__ambience_night_loop_stereo" ID="{F48A933F-E995-48B4-B3C2-53BBB0326737}" ShortID="928030831">
 					<PropertyList>
+						<Property Name="Color" Type="int16" Value="3"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Lowpass" Type="int16">
 							<ValueList>
 								<Value>27</Value>
 							</ValueList>
 						</Property>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-25</Value>

@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 3e860730979601429f3a22904a750a2e
     GuidInternal: 
-    m_lastTime: -8584604960536061343
+    m_lastTime: -8584603291447526730
     List:
     - name: AURO-3D
       guid: 9e3201dc27c92a4fb863d279a8472221
@@ -789,7 +789,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5b7d3d6d0746124ab1d6166bb3175237
     GuidInternal: 
-    m_lastTime: -8584605202146251280
+    m_lastTime: -8584603149112559551
     List:
     - name: ConRev
       guid: 7c9a1836a7bc9b4a9db9994ed869c5e2
@@ -907,7 +907,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 8585ffd7e3a8bf4b8d01dc725d3c010b
       Path: Events\Default Work Unit\Cave\girl_run
-      maxAttenuation: 70
+      maxAttenuation: 100
       maxDuration: -1
       minDuration: -1
     - name: lullaby_event
@@ -941,7 +941,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 199508fe3d34424d9564a328ccca3022
     GuidInternal: 
-    m_lastTime: -8584604943875584347
+    m_lastTime: -8584603152715588315
     List:
     - name: 5_Cabin
       guid: 2bbcea8b66788f4c89126f34d5d5e3ed
@@ -1058,6 +1058,46 @@ MonoBehaviour:
         guid: c345c0460f9bfe4f94fe17b62d70775a
       Path: Events\Default Work Unit\5_Cabin\cat
       maxAttenuation: 25
+      maxDuration: -1
+      minDuration: -1
+    - name: convoA
+      guid: b79ee599b0d7d74385f0c2c2923ad4f6
+      id: 4104583547
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: Hall
+        ObjectType: 4
+        guid: d9eb78ffc5174c46bd5b57c4ab9cbdd7
+      - ElementName: convoA
+        ObjectType: 3
+        guid: b79ee599b0d7d74385f0c2c2923ad4f6
+      Path: Events\Default Work Unit\Hall\convoA
+      maxAttenuation: 20
+      maxDuration: -1
+      minDuration: -1
+    - name: convoB
+      guid: fb6a351b62886e4f98b8c09e64658dd8
+      id: 4104583544
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: Hall
+        ObjectType: 4
+        guid: d9eb78ffc5174c46bd5b57c4ab9cbdd7
+      - ElementName: convoB
+        ObjectType: 3
+        guid: fb6a351b62886e4f98b8c09e64658dd8
+      Path: Events\Default Work Unit\Hall\convoB
+      maxAttenuation: 20
       maxDuration: -1
       minDuration: -1
     - name: During_Level
@@ -1251,7 +1291,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 0143d8a26abc1548a2bb5498b6a8cb52
       Path: Events\Default Work Unit\Hall\hall_outside_tone
-      maxAttenuation: 20
+      maxAttenuation: 25
       maxDuration: -1
       minDuration: -1
     - name: Level_Intro
@@ -1502,6 +1542,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: water_cooler
+      guid: 2657577ade1244439d86e392d49e54ac
+      id: 2035707747
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 199508fe3d34424d9564a328ccca3022
+      - ElementName: Hall
+        ObjectType: 4
+        guid: d9eb78ffc5174c46bd5b57c4ab9cbdd7
+      - ElementName: water_cooler
+        ObjectType: 3
+        guid: 2657577ade1244439d86e392d49e54ac
+      Path: Events\Default Work Unit\Hall\water_cooler
+      maxAttenuation: 15
+      maxDuration: -1
+      minDuration: -1
     - name: window_close
       guid: 1ad5c4ed1d28f847a6fb4659a6cdbdce
       id: 3146991628
@@ -1555,7 +1615,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: c612e8fcbfd4634ca0e919a7af58b5b4
       Path: Events\Default Work Unit\Elevator\lift_arrive
-      maxAttenuation: 70
+      maxAttenuation: 100
       maxDuration: 16
       minDuration: 16
     - name: lift_close
@@ -1675,7 +1735,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 72e0198ced707241af7556b3f8a54f11
       Path: Events\Default Work Unit\Elevator\lift_RoomTone
-      maxAttenuation: 30
+      maxAttenuation: 40
       maxDuration: -1
       minDuration: -1
   - PhysicalPath: Events\Schacht.wwu
@@ -2369,7 +2429,7 @@ MonoBehaviour:
     m_lastTime: -8584663919773364773
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000020000000300000004000000050000000600000007000000090000000a0000000b0000000c0000000d0000000f00000012000000130000001400000015000000160000001700000018000000190000001b0000001d0000001e00000020000000210000002300000024000000330000003700000038000000390000003d0000006f0000007000000075000000a0000000a1000000a2000000ac000000ad000000b0000000b1000000b2000000fb000000fc0000004801000049010000b0010000b1010000b3010000c7010000c8010000ca010000
+  ExpandedWaapiItemIds: 01000000020000000300000004000000050000000600000007000000090000000a0000000b0000000c0000000d0000000f00000012000000130000001400000015000000160000001700000018000000190000001b0000001d0000001e00000020000000210000002300000024000000330000003700000038000000390000003d0000006f0000007000000075000000a0000000a1000000a2000000ac000000ad000000b0000000b1000000b2000000fb000000fc000000480100004901000054010000550100005a010000b0010000b1010000b3010000c7010000c8010000ca010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

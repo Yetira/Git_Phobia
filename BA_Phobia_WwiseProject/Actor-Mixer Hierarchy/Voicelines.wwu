@@ -2,6 +2,10 @@
 <WwiseDocument Type="WorkUnit" ID="{B45F632D-8992-4305-AAB8-D9639597D5E5}" SchemaVersion="119">
 	<AudioObjects>
 		<WorkUnit Name="Voicelines" ID="{B45F632D-8992-4305-AAB8-D9639597D5E5}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="18"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<SwitchContainer Name="Level_Intro" ID="{C14C10FE-2993-4465-B11A-09AF97FF1164}" ShortID="1073125167">
 					<ReferenceList>

@@ -4,6 +4,10 @@
 		<WorkUnit Name="Schacht" ID="{702988FB-4A56-44EE-941C-588512765CD5}" PersistMode="Standalone">
 			<ChildrenList>
 				<Folder Name="rock_fall" ID="{23B11A5C-C8AC-4194-9E49-6B23A3AA0829}" ShortID="132770711">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<RandomSequenceContainer Name="rock_fall" ID="{3B8EC0FD-FFD3-4975-A88A-FF57D73AD0A4}" ShortID="428068032">
 							<PropertyList>
@@ -282,6 +286,10 @@
 					</ChildrenList>
 				</Folder>
 				<Folder Name="rats_kickoff" ID="{AE71CBA2-0DAA-47C5-89EE-702591FB8B44}" ShortID="13871784">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<RandomSequenceContainer Name="rats_run" ID="{223EF516-AC3F-4513-B45E-7E1C3D4075E9}" ShortID="575347170">
 							<PropertyList>
@@ -569,6 +577,7 @@
 				<Sound Name="wind_howl_soft" ID="{256DC20B-3B4D-445E-A077-1D0878AA3FD0}" ShortID="585194153">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="15"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="Highpass" Type="int16">
 							<ValueList>
@@ -576,6 +585,7 @@
 							</ValueList>
 						</Property>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -613,7 +623,9 @@
 				<RandomSequenceContainer Name="water_drips" ID="{0809478D-5DD3-4DA2-A5C0-229C92B06849}" ShortID="554031624">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="2"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>10</Value>

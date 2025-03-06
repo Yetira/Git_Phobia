@@ -6,7 +6,9 @@
 				<RandomSequenceContainer Name="water_drips" ID="{DF6AB88B-8A00-4B3C-8499-901EA506EC05}" ShortID="739298610">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="2"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
@@ -135,6 +137,7 @@
 						<Sound Name="lullaby" ID="{5672310C-91B8-4B5E-860B-3D045330F51C}" ShortID="654926703">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Color" Type="int16" Value="21"/>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 								<Property Name="GameAuxSendVolume" Type="Real64">
 									<ValueList>
@@ -142,6 +145,7 @@
 									</ValueList>
 								</Property>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -179,7 +183,9 @@
 						<RandomSequenceContainer Name="girl_chuckles" ID="{59CA9887-F320-43CD-BC4E-9F6CF4DA32BF}" ShortID="897992759">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Color" Type="int16" Value="21"/>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
@@ -367,6 +373,7 @@
 						<Sound Name="girl_running_cut2" ID="{3F7111BC-FB05-4F34-AC77-F4539EFC82C9}" ShortID="1002938789">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Color" Type="int16" Value="8"/>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 								<Property Name="GameAuxSendVolume" Type="Real64">
 									<ValueList>
@@ -379,6 +386,7 @@
 									</ValueList>
 								</Property>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="ReflectionsVolume" Type="Real64">
 									<ValueList>
 										<Value>-5</Value>
@@ -422,8 +430,10 @@
 				</Folder>
 				<Sound Name="Ambiance_Cave_Dark_Loop_Stereo" ID="{3FC4C49C-75F2-4DAF-9481-58FA23559F53}" ShortID="594856152">
 					<PropertyList>
+						<Property Name="Color" Type="int16" Value="3"/>
 						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -457,7 +467,9 @@
 				</Sound>
 				<Sound Name="Ambiance_Cave_Deep_Loop_Stereo" ID="{417301B1-5E46-4D1B-9A79-06CBEDE3F4A2}" ShortID="215607667">
 					<PropertyList>
+						<Property Name="Color" Type="int16" Value="3"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>

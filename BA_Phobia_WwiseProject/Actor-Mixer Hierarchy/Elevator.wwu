@@ -6,7 +6,9 @@
 				<Sound Name="lift_door_close" ID="{03B40A78-6ED6-44CF-A060-6CF626E6E6C6}" ShortID="782001871">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="27"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -40,7 +42,9 @@
 				</Sound>
 				<Sound Name="lift_ride" ID="{18D1602C-0CA4-480B-826A-43B1C8E8919B}" ShortID="193547861">
 					<PropertyList>
+						<Property Name="Color" Type="int16" Value="27"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -72,12 +76,14 @@
 				<Sound Name="lift_ding" ID="{322B70CA-38EF-48E5-8FA3-D6A26DE24CD2}" ShortID="732822997">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="27"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="GameAuxSendVolume" Type="Real64">
 							<ValueList>
 								<Value>-10</Value>
 							</ValueList>
 						</Property>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -115,12 +121,14 @@
 				<Sound Name="lift_door_open" ID="{F1B59715-8021-420B-9CC7-791B8CE89B8D}" ShortID="904697371">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="27"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="GameAuxSendVolume" Type="Real64">
 							<ValueList>
 								<Value>-8</Value>
 							</ValueList>
 						</Property>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -155,12 +163,14 @@
 				<Sound Name="lift_arrive" ID="{0FFA02C5-7655-4A61-BB0E-7B9FFCECBEE1}" ShortID="949792895">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="27"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="Lowpass" Type="int16">
 							<ValueList>
 								<Value>15</Value>
 							</ValueList>
 						</Property>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -236,6 +246,7 @@
 				<Sound Name="lift_hum_main" ID="{A86ED8E4-9C0E-4140-A21B-9A7CB2CE8CA4}" ShortID="49043968">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="27"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Lowpass" Type="int16">
@@ -243,10 +254,11 @@
 								<Value>50</Value>
 							</ValueList>
 						</Property>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-40</Value>
+								<Value>-35</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -282,6 +294,7 @@
 				<Sound Name="lift_hum_end" ID="{16F5F608-7ABA-4FF5-81CC-7CA254D20EB0}" ShortID="254868391">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="27"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Lowpass" Type="int16">
@@ -289,6 +302,7 @@
 								<Value>50</Value>
 							</ValueList>
 						</Property>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
