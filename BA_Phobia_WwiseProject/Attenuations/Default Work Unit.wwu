@@ -211,6 +211,9 @@
 					</CurveUsageInfoList>
 				</Attenuation>
 				<Attenuation Name="lullaby" ID="{1E151F2E-5741-45DE-846F-C002B7C54F63}" ShortID="285883329">
+					<PropertyList>
+						<Property Name="RadiusMax" Type="Real64" Value="110"/>
+					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
@@ -225,7 +228,22 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>100</XPos>
+											<XPos>5.32441</XPos>
+											<YPos>-1.79305</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>15.4068</XPos>
+											<YPos>-3.6664</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>29.79403</XPos>
+											<YPos>-5.55284</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>110</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -302,11 +320,6 @@
 											<XPos>0</XPos>
 											<YPos>0</YPos>
 											<Flags>5</Flags>
-										</Point>
-										<Point>
-											<XPos>83.3333333333333</XPos>
-											<YPos>-200</YPos>
-											<Flags>0</Flags>
 										</Point>
 										<Point>
 											<XPos>100</XPos>
@@ -461,6 +474,9 @@
 					</CurveUsageInfoList>
 				</Attenuation>
 				<Attenuation Name="girlRun" ID="{0885DA2F-A71E-40D4-B58D-D6866F5C9C3D}" ShortID="674574285">
+					<PropertyList>
+						<Property Name="RadiusMax" Type="Real64" Value="120"/>
+					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
@@ -475,27 +491,32 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>11.24567</XPos>
-											<YPos>-2.8387</YPos>
+											<XPos>7.68636</XPos>
+											<YPos>-2.36054</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>26.64359</XPos>
-											<YPos>-6.54479</YPos>
+											<XPos>18.37808</XPos>
+											<YPos>-4.68719</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>46.28027</XPos>
-											<YPos>-11.49683</YPos>
+											<XPos>36.133644</XPos>
+											<YPos>-8.09624</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>69.11765</XPos>
+											<XPos>56.972196</XPos>
+											<YPos>-12.17482</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>82.94118</XPos>
 											<YPos>-18.15406</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>100</XPos>
+											<XPos>120</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -679,7 +700,7 @@
 				</Attenuation>
 				<Attenuation Name="lightbuzz" ID="{0BA8B124-FAE8-4817-9127-D5333438A2EC}" ShortID="605772088">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="4"/>
+						<Property Name="RadiusMax" Type="Real64" Value="7"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -695,7 +716,37 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>4</XPos>
+											<XPos>0.273945</XPos>
+											<YPos>-1.9458</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>0.771365</XPos>
+											<YPos>-4.52993</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>1.65086833333333</XPos>
+											<YPos>-8.10306</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>2.59526166666667</XPos>
+											<YPos>-11.38357</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>3.77035166666667</XPos>
+											<YPos>-16.43461</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>5.082385</XPos>
+											<YPos>-23.27127</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>7</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -893,6 +944,26 @@
 											<XPos>0</XPos>
 											<YPos>0</YPos>
 											<Flags>5</Flags>
+										</Point>
+										<Point>
+											<XPos>0.92688</XPos>
+											<YPos>-2.10674</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>2.57467</XPos>
+											<YPos>-4.93975</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>5.58188</XPos>
+											<YPos>-8.97208</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>10.07209</XPos>
+											<YPos>-14.26091</YPos>
+											<Flags>0</Flags>
 										</Point>
 										<Point>
 											<XPos>20</XPos>
@@ -1992,9 +2063,9 @@
 						</TransmissionHPFUsage>
 					</CurveUsageInfoList>
 				</Attenuation>
-				<Attenuation Name="drips" ID="{05A4A128-15DA-4701-BAFE-0C31FC19ACAC}" ShortID="641280531">
+				<Attenuation Name="drips_cath" ID="{05A4A128-15DA-4701-BAFE-0C31FC19ACAC}" ShortID="641280531">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="50"/>
+						<Property Name="RadiusMax" Type="Real64" Value="60"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -2010,27 +2081,27 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>4.88754</XPos>
+											<XPos>5.865048</XPos>
 											<YPos>-2.69633</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>11.07267</XPos>
+											<XPos>13.287204</XPos>
 											<YPos>-6.42473</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>23.44291</XPos>
+											<XPos>28.131492</XPos>
 											<YPos>-12.04707</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>35.20761</XPos>
+											<XPos>42.249132</XPos>
 											<YPos>-19.77288</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>50</XPos>
+											<XPos>60</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -2051,27 +2122,27 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>4.88754</XPos>
+											<XPos>5.865048</XPos>
 											<YPos>-2.69633</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>11.07267</XPos>
+											<XPos>13.287204</XPos>
 											<YPos>-6.42473</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>23.44291</XPos>
+											<XPos>28.131492</XPos>
 											<YPos>-12.04707</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>35.20761</XPos>
+											<XPos>42.249132</XPos>
 											<YPos>-19.77288</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>50</XPos>
+											<XPos>60</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -2095,7 +2166,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>50</XPos>
+											<XPos>60</XPos>
 											<YPos>100</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -2202,7 +2273,31 @@
 											<XPos>0</XPos>
 											<YPos>0</YPos>
 											<Flags>5</Flags>
-											<SegmentShape>Log1</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>2.30691</XPos>
+											<YPos>-0</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>6.22039</XPos>
+											<YPos>-3.93242</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>11.28733</XPos>
+											<YPos>-8.23628</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>19.60865</XPos>
+											<YPos>-12.77297</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>27.84758</XPos>
+											<YPos>-19.34571</YPos>
+											<Flags>0</Flags>
 										</Point>
 										<Point>
 											<XPos>40</XPos>
@@ -2386,7 +2481,7 @@
 				</Attenuation>
 				<Attenuation Name="office_talk" ID="{94FAA1F1-8281-424F-92A9-9F816EFF74BB}" ShortID="822858888">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="10"/>
+						<Property Name="RadiusMax" Type="Real64" Value="15"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -2402,7 +2497,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>10</XPos>
+											<XPos>15</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -2550,7 +2645,7 @@
 				</Attenuation>
 				<Attenuation Name="rock_Land" ID="{619001BD-C7EE-4A36-8F8D-7B76D185AE4F}" ShortID="781668657">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="3"/>
+						<Property Name="RadiusMax" Type="Real64" Value="10"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -2566,7 +2661,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>3</XPos>
+											<XPos>10</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -2730,6 +2825,26 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
+											<XPos>0.90628</XPos>
+											<YPos>-2.14437</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>2.65705</XPos>
+											<YPos>-4.71163</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>5.29351</XPos>
+											<YPos>-7.99846</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>8.71267</XPos>
+											<YPos>-11.84989</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
 											<XPos>20</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
@@ -2810,6 +2925,36 @@
 											<XPos>0</XPos>
 											<YPos>0</YPos>
 											<Flags>5</Flags>
+										</Point>
+										<Point>
+											<XPos>0.61792</XPos>
+											<YPos>-1.57242</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>1.85376</XPos>
+											<YPos>-3.74639</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>3.8105</XPos>
+											<YPos>-6.31276</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>6.54995</XPos>
+											<YPos>-9.46449</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>10.19567</XPos>
+											<YPos>-14.47188</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>14.93306</XPos>
+											<YPos>-21.42095</YPos>
+											<Flags>0</Flags>
 										</Point>
 										<Point>
 											<XPos>20</XPos>
@@ -2980,7 +3125,7 @@
 				</Attenuation>
 				<Attenuation Name="convo" ID="{FA1CD341-5A4E-4560-8D6A-932EDF8D0935}" ShortID="297081035">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="20"/>
+						<Property Name="RadiusMax" Type="Real64" Value="24"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -2996,27 +3141,27 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>1.4094</XPos>
+											<XPos>1.69128</XPos>
 											<YPos>-2.83303</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>4.46308</XPos>
+											<XPos>5.355696</XPos>
 											<YPos>-7.58218</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>9.19463</XPos>
+											<XPos>11.033556</XPos>
 											<YPos>-13.56278</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>14.12752</XPos>
-											<YPos>-22.06105</YPos>
+											<XPos>16.90359</XPos>
+											<YPos>-21.51664</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>20</XPos>
+											<XPos>24</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>

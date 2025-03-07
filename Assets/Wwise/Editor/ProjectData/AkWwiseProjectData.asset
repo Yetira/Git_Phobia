@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 3e860730979601429f3a22904a750a2e
     GuidInternal: 
-    m_lastTime: -8584603291447526730
+    m_lastTime: -8584602622564855689
     List:
     - name: AURO-3D
       guid: 9e3201dc27c92a4fb863d279a8472221
@@ -907,7 +907,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 8585ffd7e3a8bf4b8d01dc725d3c010b
       Path: Events\Default Work Unit\Cave\girl_run
-      maxAttenuation: 100
+      maxAttenuation: 120
       maxDuration: -1
       minDuration: -1
     - name: lullaby_event
@@ -927,7 +927,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 4b518889229a79419d52d1101588b153
       Path: Events\Default Work Unit\Cave\lullaby_event
-      maxAttenuation: 100
+      maxAttenuation: 110
       maxDuration: -1
       minDuration: -1
   - PhysicalPath: Events\Default Work Unit.wwu
@@ -1077,7 +1077,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: b79ee599b0d7d74385f0c2c2923ad4f6
       Path: Events\Default Work Unit\Hall\convoA
-      maxAttenuation: 20
+      maxAttenuation: 24
       maxDuration: -1
       minDuration: -1
     - name: convoB
@@ -1097,7 +1097,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: fb6a351b62886e4f98b8c09e64658dd8
       Path: Events\Default Work Unit\Hall\convoB
-      maxAttenuation: 20
+      maxAttenuation: 24
       maxDuration: -1
       minDuration: -1
     - name: During_Level
@@ -1118,7 +1118,7 @@ MonoBehaviour:
         guid: 79537db8cd11ab42bc8240e5d589480b
       Path: Events\Default Work Unit\Voicelines\During_Level
       maxAttenuation: 0
-      maxDuration: 29.5
+      maxDuration: 31.5
       minDuration: 0
     - name: End_Outside
       guid: 733fb0e81ee4134dbf717a3f8855b2ab
@@ -1351,7 +1351,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: b60744952d03c24bb03590936e268969
       Path: Events\Default Work Unit\Hall\neon_lightbuzz
-      maxAttenuation: 4
+      maxAttenuation: 7
       maxDuration: -1
       minDuration: -1
     - name: office_tone
@@ -1371,7 +1371,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: e1d5d1e341a6734489698a843f5b70e7
       Path: Events\Default Work Unit\Hall\office_tone
-      maxAttenuation: 10
+      maxAttenuation: 15
       maxDuration: -1
       minDuration: -1
     - name: office_tone2
@@ -1615,7 +1615,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: c612e8fcbfd4634ca0e919a7af58b5b4
       Path: Events\Default Work Unit\Elevator\lift_arrive
-      maxAttenuation: 100
+      maxAttenuation: 120
       maxDuration: 16
       minDuration: 16
     - name: lift_close
@@ -1635,7 +1635,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: af1a7fa4f9ee784a88133ca24aac8c76
       Path: Events\Default Work Unit\Elevator\lift_close
-      maxAttenuation: 0
+      maxAttenuation: 40
       maxDuration: 3.3333333
       minDuration: 3.3333333
     - name: lift_ding
@@ -1695,7 +1695,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 8e8534b210185c479cc7c4f8e6936301
       Path: Events\Default Work Unit\Elevator\lift_open
-      maxAttenuation: 0
+      maxAttenuation: 40
       maxDuration: 2.1666667
       minDuration: 2.1666667
     - name: lift_ride
@@ -1811,7 +1811,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 218a8e0dc47323468cd05a7d792c00d0
       Path: Events\Default Work Unit\Schacht\rock_land
-      maxAttenuation: 300
+      maxAttenuation: 10
       maxDuration: 0.5659537
       minDuration: 0.5659537
     - name: Stop_Rat
@@ -1907,7 +1907,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 7b71f01018121a468c1a9c00851cf004
       Path: Events\Default Work Unit\Tunnel\water_drips
-      maxAttenuation: 50
+      maxAttenuation: 60
       maxDuration: -1
       minDuration: -1
   RtpcWwu:

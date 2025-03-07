@@ -7,7 +7,7 @@ public class radio : MonoBehaviour
     public MoveToTarget moveToTarget;
 
     private int enableCounter = 0; 
-    public float initialDelay = 3f; 
+    public float initialDelay = 3; 
 
     private void OnEnable()
     {

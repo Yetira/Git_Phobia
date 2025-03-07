@@ -40,6 +40,15 @@ public class officeTrigger : MonoBehaviour
         voiceLineManager.PlayLevelVoiceline();
         Debug.Log("Office Event over. Play fourth voiceline");
 
+        StartCoroutine(WaitForWindowCloseTrigger());
+
+    }
+
+    private IEnumerator WaitForWindowCloseTrigger()
+    {
+        yield return new WaitForSeconds(7);
+
         windowCloseTrigger.SetActive(true);
+
     }
 }

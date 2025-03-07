@@ -18,7 +18,7 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-27</Value>
+								<Value>-35</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -109,7 +109,7 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-42.5</Value>
+								<Value>-47</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -433,7 +433,7 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-35</Value>
+								<Value>-40</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -702,7 +702,7 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-3</Value>
+								<Value>-10</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -767,7 +767,7 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-35</Value>
+								<Value>-40</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>

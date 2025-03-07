@@ -1052,7 +1052,7 @@
 									<PropertyList>
 										<Property Name="InitialDelay" Type="Real64">
 											<ValueList>
-												<Value>5</Value>
+												<Value>10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1197,7 +1197,7 @@
 									<PropertyList>
 										<Property Name="InitialDelay" Type="Real64">
 											<ValueList>
-												<Value>3</Value>
+												<Value>5</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
