@@ -93,7 +93,7 @@ public class rockFall : MonoBehaviour
     private IEnumerator WaitToDisableRock()
     {
 
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(5f);
 
         Debug.Log("cut out rock");
         //AkSoundEngine.StopPlayingID(rockLandId);

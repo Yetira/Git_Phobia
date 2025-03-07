@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 3e860730979601429f3a22904a750a2e
     GuidInternal: 
-    m_lastTime: -8584602622564855689
+    m_lastTime: -8584602550987556312
     List:
     - name: AURO-3D
       guid: 9e3201dc27c92a4fb863d279a8472221
@@ -1811,7 +1811,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 218a8e0dc47323468cd05a7d792c00d0
       Path: Events\Default Work Unit\Schacht\rock_land
-      maxAttenuation: 10
+      maxAttenuation: 15
       maxDuration: 0.5659537
       minDuration: 0.5659537
     - name: Stop_Rat

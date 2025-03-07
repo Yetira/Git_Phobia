@@ -783,6 +783,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="footstep4" ID="{A87E7219-2110-4382-8B00-4DF9DF77FD96}" ShortID="1020865704">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{89F4C448-27FF-47AF-A005-9FE08FCD020F}"/>

@@ -152,7 +152,7 @@
 									<PropertyList>
 										<Property Name="BusVolume" Type="Real64">
 											<ValueList>
-												<Value>10</Value>
+												<Value>12</Value>
 											</ValueList>
 										</Property>
 										<Property Name="Color" Type="int16" Value="10"/>
@@ -287,7 +287,7 @@
 									<PropertyList>
 										<Property Name="BusVolume" Type="Real64">
 											<ValueList>
-												<Value>3</Value>
+												<Value>7</Value>
 											</ValueList>
 										</Property>
 										<Property Name="Color" Type="int16" Value="20"/>

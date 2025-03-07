@@ -126,13 +126,18 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>65.7485</XPos>
-											<YPos>-6.10157</YPos>
+											<XPos>22.71444</XPos>
+											<YPos>-2.93444</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>136.52695</XPos>
-											<YPos>-13.65581</YPos>
+											<XPos>54.79876</XPos>
+											<YPos>-6.96243</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>128.78701</XPos>
+											<YPos>-14.44128</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
@@ -228,18 +233,33 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>5.32441</XPos>
-											<YPos>-1.79305</YPos>
+											<XPos>9.97389</XPos>
+											<YPos>0</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>15.4068</XPos>
-											<YPos>-3.6664</YPos>
+											<XPos>15.17999</XPos>
+											<YPos>-2.03413</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>29.79403</XPos>
-											<YPos>-5.55284</YPos>
+											<XPos>24.12394</XPos>
+											<YPos>-4.26407</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>37.53608</XPos>
+											<YPos>-6.86988</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>58.17526</XPos>
+											<YPos>-10.63944</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>81.76289</XPos>
+											<YPos>-16.78912</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
@@ -2276,7 +2296,7 @@
 										</Point>
 										<Point>
 											<XPos>2.30691</XPos>
-											<YPos>-0</YPos>
+											<YPos>0</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
@@ -2645,7 +2665,7 @@
 				</Attenuation>
 				<Attenuation Name="rock_Land" ID="{619001BD-C7EE-4A36-8F8D-7B76D185AE4F}" ShortID="781668657">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="10"/>
+						<Property Name="RadiusMax" Type="Real64" Value="15"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -2661,7 +2681,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>10</XPos>
+											<XPos>15</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>

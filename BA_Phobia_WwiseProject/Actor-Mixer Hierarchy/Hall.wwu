@@ -109,7 +109,7 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-47</Value>
+								<Value>-50</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -1027,7 +1027,7 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-30</Value>
+								<Value>-35</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>

@@ -32,7 +32,7 @@
 					<ChildrenList>
 						<AudioFileSource Name="tutorial_target" ID="{092AFFAF-D910-4FC9-B68A-2852B18B7649}">
 							<PropertyList>
-								<Property Name="FadeOutDuration" Type="Real64" Value="0.0272456364410387"/>
+								<Property Name="LoopBegin" Type="Real64" Value="2.32672332389046"/>
 								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 							</PropertyList>
 							<Language>SFX</Language>
